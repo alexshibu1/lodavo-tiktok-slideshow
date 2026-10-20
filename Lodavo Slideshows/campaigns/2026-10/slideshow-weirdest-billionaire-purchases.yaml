@@ -1,0 +1,65 @@
+slideshow:
+  slug: weirdest-billionaire-purchases
+  language: en
+  account: lodavo.money
+  series: wealth-unreal
+  slot: "2026-10-20 19:00"
+  opening: intro
+  end: white
+  # Intro card over the shark (paid off on slide 4), then six purchases, ending on the
+  # Canadian one. The Rubens was bought by Ken Thomson (2nd Baron Thomson of Fleet), not
+  # his son David, per The Art Newspaper and Wikipedia. Cohen's shark price was never
+  # confirmed (The Art Newspaper, 2005), so the slide carries none.
+  slides:
+    - text: "here are the weirdest things billionaires actually bought 👉"
+      image: { url: "https://i.pinimg.com/originals/e1/71/e4/e171e4036a0e19644248f35d164cd923.jpg" } # Hirst's shark, head-on
+      focus: "50% 60%"
+    - text: "Jeff Bezos: a clock inside a mountain"
+      sub: "US$42M, built to run for 10,000 years"
+      image: { url: "https://www.10000yearclock.net/img/2026_img01.jpg" } # the clock, inside the Sierra Diablo
+      focus: "50% 60%"
+    - text: "Larry Ellison: about 98% of a Hawaiian island"
+      sub: "Lanai, Hawaii's sixth-largest island, 2012"
+      image: { url: "http://static1.squarespace.com/static/6226f62738f4f73d2b353e79/6226f784f0c44161f8d9e904/67672b995f22aa6f9ecc6247/1736322435379/DSC00109.jpg?format=1500w" } # Pu'u Pehe, Lanai
+      focus: "50% 45%"
+    - text: "Steve Cohen: a dead shark in a tank"
+      sub: "Damien Hirst's tiger shark in formaldehyde, 2004"
+      image: { url: "https://a.1stdibscdn.com/damien-hirst-prints-works-on-paper-the-physical-impossibility-of-death-in-the-mind-of-someone-living-for-sale-picture-3/a_237/a_128599521691688890461/shark_detail_master.jpg" } # The Physical Impossibility of Death in the Mind of Someone Living
+    - text: "Elon Musk: James Bond's submarine car"
+      sub: "from The Spy Who Loved Me, US$989,000 in 2013"
+      image: { url: "https://media.gq.com.mx/photos/626bdbf91e7e8a4eaa1edb7e/master/w_1600%2Cc_limit/wet%2520nellie.jpg" } # the Lotus underwater, film still
+    - text: "Ken Griffin: a first printing of the US Constitution"
+      sub: "US$43.2M, 2021, outbidding about 17,000 crypto fans"
+      image: { url: "https://www.antiquesandthearts.com/wp-content/uploads/2021/11/Sotheby’s-Constitution-Image.jpg" } # the copy he bought
+    - text: "Ken Thomson: a Rubens painting of a massacre"
+      sub: "C$117M in 2002, later given to the AGO"
+      image: { url: "https://larryspeck.com/wp-content/uploads/2012/11/Frank-Gehry-Art-Gallery-of-Ontario-Toronto-Larry-Speck-UTSOA-2.jpg" } # the AGO, where it hangs (the painting itself is too graphic for the feed)
+      focus: "60% 50%"
+    - app: hero
+      text: "Want to build your savings?"
+      sub: "Lodavo gives you free jackpot tickets for every $25 you save"
+  caption: |
+    A clock inside a mountain, most of a Hawaiian island, a dead shark in a tank and James Bond's submarine car.
+    And a Canadian one: Ken Thomson paid C$117 million for a Rubens, then gave it to the AGO.
+    Which one would you buy?
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#billionaire", "#richpeople", "#moneytok", "#canada"]
+  sources:
+    # Bezos's clock: US$42M, deep inside a West Texas mountain, meant to run for 10,000 years (2024)
+    - https://thehustle.co/bezos-builds-10000-year-mountain-clock
+    # The clock's own site: "Inside the Mountain", entrance carved into the Sierra Diablo
+    - https://www.10000yearclock.net/
+    # CNN: Ellison bought about 98% of Lana'i, Hawaii's sixth-largest island; the governor confirmed it, June 2012
+    - https://www.wtvr.com/2012/06/22/oracle-ceo-splurges-buys-98-percent-of-hawaiian-island
+    # The Art Newspaper: the Saatchi Collection sold Hirst's tiger shark to Steve Cohen, confirmed before Christmas 2004
+    - https://www.theartnewspaper.com/2005/02/01/rumoured-sale-of-damien-hirsts-formaldehyde-tiger-shark-to-us-billionaire-steve-cohen-confirmed-by-saatchi-collection
+    # NBC News: Musk bought the Lotus submarine from The Spy Who Loved Me for $989,000 (RM Auctions, London, Sept 2013), confirmed by Musk
+    - https://www.nbcnews.com/business/elon-musk-buys-007s-underwater-car-wants-make-it-work-8C11417904
+    # AP: a first printing of the Constitution, $43.2M at Sotheby's, 18 Nov 2021; buyer Ken Griffin; ConstitutionDAO (about 17,000 crypto backers) the underbidder
+    - https://www.ksat.com/entertainment/2021/11/19/rare-first-printing-of-constitution-sells-for-record-43m/
+    # The Art Newspaper: Ken Thomson bought it at Sotheby's London in 2002 for £49.5m; given to the AGO in 2008
+    - https://www.theartnewspaper.com/2018/08/10/heading-home-early-rubens-masterpiece-returns-to-the-artists-antwerp-studio-for-the-first-time
+    # Wikipedia: Sotheby's London, 10 July 2002, £49.5 million (C$117 million), to Kenneth Thomson; transferred to the AGO in 2008
+    - https://en.wikipedia.org/wiki/Massacre_of_the_Innocents_(Rubens)
+    # Contest rules s.4.1(a): 1 ticket per $25 of balance at the Sunday snapshot
+    - https://lodavo.com/rules

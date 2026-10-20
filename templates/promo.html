@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family={{ heading_font | replace(" ", "+") }}:wght@600;700;800&family={{ body_font | replace(" ", "+") }}:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    background: linear-gradient(170deg, #1a08d6 0%, #1000aa 30%, {{ bg }} 65%, #060028 100%);
+    color: {{ fg }};
+    font-family: '{{ body_font }}', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .bg-glow { position: absolute; border-radius: 50%; filter: blur(140px); pointer-events: none; }
+  .bg1 { width: 600px; height: 600px; background: #2a00ee; opacity: 0.35; top: -150px; left: -100px; }
+  .bg2 { width: 400px; height: 400px; background: {{ accent }}; opacity: 0.05; top: 400px; right: -50px; }
+  .bg3 { width: 500px; height: 500px; background: #1500bb; opacity: 0.25; bottom: -100px; left: 100px; }
+
+  .sparkle { position: absolute; border-radius: 50%; background: #fff; pointer-events: none; }
+  .sp1 { width: 4px; height: 4px; top: 80px; left: 180px; opacity: 0.5; }
+  .sp2 { width: 3px; height: 3px; top: 260px; right: 200px; opacity: 0.4; }
+  .sp3 { width: 5px; height: 5px; top: 500px; left: 60px; opacity: 0.3; }
+  .sp4 { width: 3px; height: 3px; top: 750px; right: 100px; opacity: 0.35; }
+  .sp5 { width: 4px; height: 4px; top: 350px; left: 900px; opacity: 0.25; }
+  .sp6 { width: 3px; height: 3px; top: 950px; left: 250px; opacity: 0.2; }
+  .sp7 { width: 5px; height: 5px; top: 1100px; right: 350px; opacity: 0.3; }
+  .sp8 { width: 3px; height: 3px; top: 120px; left: 700px; opacity: 0.45; }
+
+  .top-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, {{ accent }}, {{ accent }}dd, {{ accent }});
+    z-index: 10;
+  }
+
+  /* ── Text zone: top 30% ── */
+  .text-zone {
+    position: absolute;
+    top: 30px;
+    left: 72px;
+    right: 72px;
+    z-index: 5;
+  }
+
+  .slide-counter {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 22px;
+    color: {{ accent }};
+    font-weight: 700;
+    background: {{ accent }}15;
+    border: 1px solid {{ accent }}28;
+    padding: 5px 18px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .main-headline {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 0.96;
+    margin-bottom: 14px;
+    text-shadow: 0 4px 30px rgba(0,0,0,0.4);
+  }
+  .hook-slide .main-headline { font-size: 88px; }
+  .regular-slide .main-headline { font-size: 78px; }
+  .cta-slide .main-headline { font-size: 72px; }
+
+  .sub-text {
+    font-size: 34px;
+    line-height: 1.25;
+    font-weight: 500;
+    opacity: 0.75;
+    max-width: 650px;
+  }
+
+  .accent-line {
+    width: 80px; height: 6px;
+    background: {{ accent }};
+    border-radius: 3px;
+    margin-bottom: 18px;
+    box-shadow: 0 0 20px {{ accent }}40;
+  }
+
+  /* ── Phone mockup ── */
+  .phone-wrapper {
+    position: absolute;
+    bottom: -30px;
+    right: -40px;
+    width: 520px;
+    height: 780px;
+    transform: rotate(-6deg);
+    z-index: 3;
+  }
+
+  .phone-frame {
+    width: 100%;
+    height: 100%;
+    background: #1a1a2e;
+    border-radius: 56px;
+    border: 4px solid #333;
+    overflow: hidden;
+    box-shadow:
+      0 30px 80px rgba(0,0,0,0.6),
+      0 0 0 1px rgba(255,255,255,0.05),
+      inset 0 0 0 2px #000;
+    position: relative;
+  }
+
+  .phone-notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 36px;
+    background: #000;
+    border-radius: 0 0 24px 24px;
+    z-index: 2;
+  }
+  .phone-notch::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 40px;
+    width: 10px;
+    height: 10px;
+    background: #1a1a3a;
+    border-radius: 50%;
+  }
+
+  .phone-status {
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    z-index: 3;
+  }
+
+  .phone-screen {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(180deg, #f8f6ff 0%, #fff 30%, #f0f4ff 100%);
+    overflow: hidden;
+  }
+
+  /* ── Mock app content inside phone ── */
+  .app-header {
+    padding: 52px 24px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .app-header .app-icon-small {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+  .app-header .app-name {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #1a0066;
+  }
+
+  .app-card {
+    margin: 8px 16px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+
+  .app-card-label {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 4px;
+  }
+  .app-card-value {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a0066;
+    line-height: 1.1;
+  }
+  .app-card-sub {
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+  }
+
+  .app-progress {
+    margin: 4px 16px 0;
+    background: #fff;
+    border-radius: 16px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .app-progress-bar {
+    height: 8px;
+    background: #e8e4f4;
+    border-radius: 4px;
+    margin: 8px 0;
+    overflow: hidden;
+  }
+  .app-progress-fill {
+    height: 100%;
+    width: 65%;
+    background: linear-gradient(90deg, #1a0066, {{ accent }});
+    border-radius: 4px;
+  }
+  .app-progress-text {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .app-tickets {
+    margin: 8px 16px;
+    background: linear-gradient(135deg, #1a0066, #2a10b0);
+    border-radius: 16px;
+    padding: 16px 20px;
+    color: #fff;
+  }
+  .app-tickets-label {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+  .app-tickets-num {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: {{ accent }};
+    line-height: 1.1;
+  }
+  .app-tickets-sub {
+    font-size: 11px;
+    opacity: 0.6;
+    margin-top: 2px;
+  }
+
+  .app-btn {
+    margin: 10px 16px;
+    background: linear-gradient(135deg, {{ accent }}, #ffb800);
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a0066;
+  }
+
+  .app-winner-screen {
+    text-align: center;
+    padding: 60px 20px 20px;
+  }
+  .app-winner-icon {
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+  .app-winner-title {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #1a0066;
+    margin-bottom: 4px;
+  }
+  .app-winner-amount {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a0066;
+  }
+  .app-winner-sub {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  .app-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+  }
+  .nav-item {
+    text-align: center;
+    font-size: 10px;
+    color: #999;
+  }
+  .nav-item.active { color: #1a0066; }
+  .nav-dot {
+    width: 24px;
+    height: 24px;
+    background: #e8e4f4;
+    border-radius: 6px;
+    margin: 0 auto 3px;
+  }
+  .nav-item.active .nav-dot {
+    background: #1a0066;
+  }
+
+  /* ── Floating cards (outside phone) ── */
+  .float-el {
+    position: absolute;
+    z-index: 4;
+    pointer-events: none;
+  }
+
+  .float-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 14px 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2), 0 0 0 1px rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .float-card-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: #f0f0f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a0066;
+    flex-shrink: 0;
+  }
+  .float-card-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    white-space: nowrap;
+  }
+  .float-card-sub {
+    font-size: 11px;
+    color: #888;
+    white-space: nowrap;
+  }
+
+  .number-ball {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+  .ball-purple { background: linear-gradient(135deg, #3a1aaa, #5a30dd); }
+  .ball-gold { background: linear-gradient(135deg, #e6a800, {{ accent }}); color: #1a0066; }
+  .ball-blue { background: linear-gradient(135deg, #1a44cc, #2a66ee); }
+
+  .confetti-piece {
+    position: absolute;
+    pointer-events: none;
+    border-radius: 2px;
+  }
+  .conf1 { width: 8px; height: 20px; background: {{ accent }}; top: 60px; left: 110px; transform: rotate(35deg); opacity: 0.6; }
+  .conf2 { width: 6px; height: 16px; background: #ff6b6b; top: 120px; left: 50px; transform: rotate(-20deg); opacity: 0.5; }
+  .conf3 { width: 8px; height: 18px; background: #4ade80; top: 80px; right: 180px; transform: rotate(60deg); opacity: 0.4; }
+  .conf4 { width: 6px; height: 14px; background: {{ accent }}; top: 200px; left: 180px; transform: rotate(-45deg); opacity: 0.3; }
+  .conf5 { width: 8px; height: 20px; background: #818cf8; top: 150px; right: 160px; transform: rotate(15deg); opacity: 0.35; }
+  .conf6 { width: 10px; height: 10px; background: {{ accent }}; top: 40px; left: 380px; border-radius: 50%; opacity: 0.5; }
+
+  /* ── Floating element positions ── */
+  .fe-card1 { top: 480px; left: 30px; transform: rotate(-4deg); }
+  .fe-card2 { top: 680px; left: 10px; transform: rotate(3deg); }
+  .fe-card3 { top: 880px; left: 50px; transform: rotate(-2deg); }
+
+  .fe-ball1 { top: 410px; left: 200px; }
+  .fe-ball2 { top: 600px; left: 380px; }
+  .fe-ball3 { top: 800px; left: 20px; }
+  .fe-ball4 { top: 1000px; left: 300px; }
+
+  /* ── Footer ── */
+  .footer {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 90px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,20,0.7) 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    gap: 12px;
+    z-index: 6;
+  }
+  .footer img { width: 34px; height: 34px; }
+  .footer-tagline {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    opacity: 0.25;
+    flex: 1;
+  }
+  .footer-handle {
+    font-size: 22px;
+    font-weight: 600;
+    color: {{ accent }};
+    opacity: 0.6;
+  }
+
+  .swipe-hint {
+    position: absolute;
+    bottom: 108px;
+    left: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.18;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    z-index: 6;
+  }
+
+  .cta-handle-big {
+    position: absolute;
+    bottom: 240px;
+    left: 72px;
+    font-size: 40px;
+    font-weight: 700;
+    color: {{ accent }};
+    z-index: 6;
+  }
+  .cta-disclaimer {
+    position: absolute;
+    bottom: 200px;
+    left: 72px;
+    font-size: 18px;
+    opacity: 0.28;
+    z-index: 6;
+  }
+
+  .verify-marker {
+    display: inline-block;
+    background: #FF6B6B;
+    color: #fff;
+    font-size: 16px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+  <div class="bg-glow bg1"></div>
+  <div class="bg-glow bg2"></div>
+  <div class="bg-glow bg3"></div>
+  <div class="top-bar"></div>
+
+  <div class="sparkle sp1"></div><div class="sparkle sp2"></div>
+  <div class="sparkle sp3"></div><div class="sparkle sp4"></div>
+  <div class="sparkle sp5"></div><div class="sparkle sp6"></div>
+  <div class="sparkle sp7"></div><div class="sparkle sp8"></div>
+
+  <div class="confetti-piece conf1"></div>
+  <div class="confetti-piece conf2"></div>
+  <div class="confetti-piece conf3"></div>
+  <div class="confetti-piece conf4"></div>
+  <div class="confetti-piece conf5"></div>
+  <div class="confetti-piece conf6"></div>
+
+  <!-- ── Text zone ── -->
+  <div class="text-zone {{ slide_class }}">
+    <div class="slide-counter">{{ slide_number }}/{{ total_slides }}</div>
+    {% if slide_role != "HOOK" %}
+    <div class="accent-line"></div>
+    {% endif %}
+    <div class="main-headline">{{ headline }}{% if needs_verification and show_verify %}<span class="verify-marker">[verify]</span>{% endif %}</div>
+    {% if body %}
+    <div class="sub-text">{{ body }}</div>
+    {% endif %}
+  </div>
+
+  <!-- ── Phone mockup ── -->
+  <div class="phone-wrapper">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        {% if slide_role == "CTA" %}
+        <div class="app-winner-screen">
+          <div class="app-winner-icon">🏆</div>
+          <div class="app-winner-title">Congratulations!</div>
+          <div class="app-winner-amount">$10,000</div>
+          <div class="app-winner-sub">Grand prize draw</div>
+        </div>
+        <div class="app-btn">Claim your prize</div>
+        {% else %}
+        <div class="app-header">
+          {% if app_icon %}<img src="{{ app_icon }}" class="app-icon-small">{% endif %}
+          <span class="app-name">Lodavo</span>
+        </div>
+        <div class="app-card">
+          <div class="app-card-label">Total balance</div>
+          <div class="app-card-value">$1,164.35</div>
+          <div class="app-card-sub">Across all connected accounts</div>
+        </div>
+        <div class="app-progress">
+          <div class="app-progress-text">
+            <span>Savings goal</span>
+            <span>$1,164 / $1,500</span>
+          </div>
+          <div class="app-progress-bar"><div class="app-progress-fill"></div></div>
+          <div class="app-progress-text">
+            <span>🔥 63 day streak</span>
+            <span></span>
+          </div>
+        </div>
+        <div class="app-tickets">
+          <div class="app-tickets-label">Tickets this week</div>
+          <div class="app-tickets-num">~48 tickets</div>
+          <div class="app-tickets-sub">Every $25 saved = 1 free ticket</div>
+        </div>
+        <div class="app-btn">Save numbers</div>
+        {% endif %}
+        <div class="app-nav">
+          <div class="nav-item active"><div class="nav-dot"></div>Home</div>
+          <div class="nav-item"><div class="nav-dot"></div>Tickets</div>
+          <div class="nav-item"><div class="nav-dot"></div>Savings</div>
+          <div class="nav-item"><div class="nav-dot"></div>More</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Floating elements ── -->
+  <div class="float-el fe-card1">
+    <div class="float-card">
+      <div class="float-card-icon">🎫</div>
+      <div>
+        <div class="float-card-text">Free tickets</div>
+        <div class="float-card-sub">Every $25 saved</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="float-el fe-card2">
+    <div class="float-card">
+      <div class="float-card-icon" style="background: #e8f5e9; color: #2e7d32;">$0</div>
+      <div>
+        <div class="float-card-text">Always free</div>
+        <div class="float-card-sub">No fees ever</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="float-el fe-card3">
+    <div class="float-card">
+      <div class="float-card-icon" style="background: #fff3e0; color: #e65100;">🏦</div>
+      <div>
+        <div class="float-card-text">100+ banks</div>
+        <div class="float-card-sub">Connect in 2 min</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="float-el fe-ball1">
+    <div class="number-ball ball-purple">17</div>
+  </div>
+  <div class="float-el fe-ball2">
+    <div class="number-ball ball-gold">41</div>
+  </div>
+  <div class="float-el fe-ball3">
+    <div class="number-ball ball-blue">7</div>
+  </div>
+  <div class="float-el fe-ball4">
+    <div class="number-ball ball-purple">34</div>
+  </div>
+
+  <!-- ── CTA extras ── -->
+  {% if slide_role == "CTA" %}
+  <div class="cta-handle-big">{{ handle }}</div>
+  {% if disclaimer %}<div class="cta-disclaimer">{{ disclaimer }}</div>{% endif %}
+  {% elif slide_number < total_slides %}
+  <div class="swipe-hint">swipe →</div>
+  {% endif %}
+
+  <!-- ── Footer ── -->
+  <div class="footer">
+    {% if logo_svg %}<img src="{{ logo_svg }}">{% endif %}
+    <span class="footer-tagline">Save more. Win cash. Free.</span>
+    <span class="footer-handle">{{ handle }}</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "slides": [
+    {
+      "role": "HOOK",
+      "headline": "$400 a week. Here's how.",
+      "body": null,
+      "needs_verification": false
+    },
+    {
+      "role": "PROBLEM_OR_STAT",
+      "headline": "Most students blow through their money by Wednesday",
+      "body": "and eat ramen til Friday",
+      "needs_verification": false
+    },
+    {
+      "role": "VALUE",
+      "headline": "Split it: 50/30/20",
+      "body": "$200 needs, $120 wants, $80 savings",
+      "needs_verification": false
+    },
+    {
+      "role": "VALUE",
+      "headline": "Meal prep Sundays",
+      "body": "Cook 5 lunches for ~$25. That's $5 each",
+      "needs_verification": false
+    },
+    {
+      "role": "VALUE",
+      "headline": "Use student discounts everywhere",
+      "body": "UNiDAYS, SPC, campus deals. Flash that student ID",
+      "needs_verification": false
+    },
+    {
+      "role": "CTA",
+      "headline": "Save $25 and win cash weekly",
+      "body": "Download Lodavo free \u2014 link in bio",
+      "needs_verification": false
+    }
+  ],
+  "caption": "Broke by Wednesday? Not anymore",
+  "hashtags": [
+    "#studentbudget",
+    "#moneytips",
+    "#canada",
+    "#budgeting",
+    "#savemoney",
+    "#lodavo",
+    "#studentlife"
+  ],
+  "hook_alternatives": [
+    "$400/week is enough. Seriously.",
+    "Stop being broke by Wednesday",
+    "The budget that actually works"
+  ]
+}

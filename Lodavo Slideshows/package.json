@@ -1,0 +1,26 @@
+{
+  "name": "lodavo-slideshows",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Photo slideshows for Lodavo's growth account: TikTok photo posts and Instagram carousels",
+  "scripts": {
+    "slideshow": "ts-node scripts/render-slideshow.ts",
+    "find-images": "ts-node scripts/find-images.ts",
+    "qa": "ts-node scripts/qa.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.1",
+    "puppeteer": "^24.39.1",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

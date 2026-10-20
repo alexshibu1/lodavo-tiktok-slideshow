@@ -1,0 +1,20 @@
+# Claude
+.claude/
+CLAUDE.md
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated output
+out/
+
+# Caches
+.bg-cache/
+
+# macOS
+.DS_Store
+
+# Large assets
+Lodavo Slideshows.zip

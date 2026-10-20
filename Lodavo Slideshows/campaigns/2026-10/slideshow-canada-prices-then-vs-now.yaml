@@ -1,0 +1,70 @@
+slideshow:
+  slug: canada-prices-then-vs-now
+  language: en
+  account: lodavo.money
+  series: canada-prices
+  slot: "2026-10-23 19:00"
+  opening: intro
+  end: white
+  slides:
+    # 2000, not the 1990s: The Economist's Big Mac data starts in April 2000, and every
+    # other item has an official figure for that year.
+    - text: "here's what things cost in Canada in 2000 vs now 👉"
+      image: { url: "https://external-preview.redd.it/E8kJDUl5SI65nDVYEVlHSg0XxUeptvZhJfrCUF8nlb8.jpg?auto=webp&s=2e4cb75e2ef0af940226bae3bb675190ee21c0e0" } # Toronto skyline, 2001 above 2014, no text on it
+      focus: "50% 45%"
+    - text: "$2.85 → $8.17"
+      sub: "a Big Mac in Canada, 2000 vs 2026"
+      image: { url: "https://www.narcity.com/media-library/an-american-big-mac-box.jpg?id=33370640&width=980" } # a Big Mac box, no people
+      focus: "50% 55%"
+    - text: "69.2¢ → 170.3¢ a litre"
+      sub: "Toronto regular gas, August 2000 vs August 2026"
+      image: { url: "https://s3-media0.fl.yelpcdn.com/bphoto/MvhgP51L5abfHPwik9ULjQ/o.jpg" } # Petro-Canada pump in Oakville, no price sign in frame
+      focus: "50% 55%"
+    - text: "$3,447 → $8,021 a year"
+      sub: "average undergrad tuition in Canada, 2000/01 vs 2026/27"
+      image: { url: "https://i.redd.it/qpqhe43u18n81.jpg" } # University College, University of Toronto, in snow
+      focus: "40% 50%"
+    - text: "$6.85 → $17.95 an hour"
+      sub: "Ontario minimum wage, 2000 vs October 2026"
+      image: { url: "https://www.heritagetoronto.org/wp-content/uploads/10-LAO-Visitor-Welcome-Centre.jpg" } # Ontario Legislative Building, Queen's Park
+      focus: "45% 50%"
+    - text: "$248,604 → $1,006,409"
+      sub: "average Toronto-area home, September 2000 vs September 2026"
+      image: { url: "https://i.pinimg.com/originals/98/99/80/9899801dbad49e7661c73e2820e1a7dd.jpg" } # Victorian house, Toronto
+      focus: "50% 55%"
+    - app: hero
+      text: "Want to save more as prices go up?"
+      sub: "On Lodavo, $500 saved earns 20 free jackpot tickets every week"
+  caption: |
+    Guess before you swipe: what did a Big Mac cost in Canada in 2000?
+    Here's 2000 vs 2026 for a Big Mac, gas, a year of university, minimum wage and a Toronto home.
+    Ontario's minimum wage is 2.6 times what it was. The average Toronto-area home is 4 times.
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#costofliving", "#inflation", "#toronto", "#canada"]
+  sources:
+    # The Economist, big-mac-data, output-data/big-mac-full-index.csv: Canada local_price
+    # C$2.85 on 2000-04-01 (the first row) and C$8.17 on 2026-07-01 (the latest).
+    - https://github.com/TheEconomist/big-mac-data
+    # Statistics Canada Table 18-10-0001-01, Toronto, regular unleaded at self-service
+    # stations: 69.2 cents a litre in August 2000, 170.3 in August 2026 (latest month).
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000101
+    # Statistics Canada summary table (Library and Archives Canada web archive), average
+    # undergraduate tuition, full-time students, Canada, "Total undergraduate": $3,447 in 2000-2001.
+    - https://bac-lac.wayback.archive-it.org/web/20061128183508/http://www40.statcan.ca/l01/cst01/educ50a.htm
+    # Statistics Canada Table 37-10-0045-01, Canada, Canadian undergraduate: $8,021 in 2026/2027.
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3710004501
+    # ESDC historical minimum wage dataset (wages_general CSV): Ontario $6.85 effective
+    # 1995-01-01, next rate $7.15 on 2004-02-01, so $6.85 all through 2000.
+    - https://open.canada.ca/data/dataset/390ee890-59bb-4f34-a37c-9732781ef8a0
+    # Ontario.ca: general minimum wage $17.95 an hour from October 1, 2026 ($17.60 before).
+    - https://www.ontario.ca/document/your-guide-employment-standards-act-0/minimum-wage
+    # TREB Market Watch, September 2000: average price $248,604 (all home types, TREB area).
+    # TRREB notes its market area has changed over time, so historic comparisons are approximate.
+    - https://trreb.ca/wp-content/files/market-stats/market-watch/mw0009.pdf
+    # TRREB Market Watch, September 2026: GTA average selling price $1,006,409.
+    - https://trreb.ca/hlfiles/pdf/mw_september_2026_564895214753249.pdf
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance at the Sunday 8 PM ET
+    # snapshot, rounded down. floor(1000 / 25) = 40.
+    - https://lodavo.com/rules
+    # Dropped: the Canada Post stamp. Sources disagree on the 2000 rate (46 or 47 cents),
+    # and no Canada Post page for it could be opened.

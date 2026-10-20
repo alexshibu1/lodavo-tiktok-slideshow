@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: {{ canvas_w | default(1080) }}px;
+    height: {{ canvas_h | default(1350) }}px;
+    overflow: hidden;
+    background: #0a0a0a;
+  }
+
+  .slide {
+    position: relative;
+    width: {{ canvas_w | default(1080) }}px;
+    height: {{ canvas_h | default(1350) }}px;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, 'Helvetica Neue', sans-serif;
+  }
+
+  /* ── Background: full-bleed photo, minimal treatment ── */
+  .bg-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .bg-gradient {
+    position: absolute;
+    inset: 0;
+  }
+
+  /* Very light overlay — just enough to not wash out text boxes */
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  /* ── Clipboard / sticky-note text boxes ── */
+  .content-area {
+    position: absolute;
+    left: 60px;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .text-box {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.94);
+    padding: 18px 26px;
+    border-radius: 6px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+    max-width: 88%;
+  }
+
+  .text-box.headline-box {
+    padding: 22px 30px;
+  }
+
+  .text-box .text {
+    font-size: {{ font_size }}px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+  }
+
+  .text-box.body-box .text {
+    font-size: {{ body_font_size }}px;
+    font-weight: 500;
+    color: #2a2a2a;
+    line-height: 1.35;
+    letter-spacing: -0.005em;
+  }
+
+  {% if is_hook %}
+  .content-area {
+    align-items: center;
+  }
+  .text-box .text {
+    font-weight: 900;
+    font-size: {{ font_size }}px;
+    text-align: center;
+  }
+  {% endif %}
+
+  /* ── Swipe indicator (hook slide only) ── */
+  .swipe {
+    position: absolute;
+    bottom: 72px;
+    right: 60px;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 14px 28px;
+    border-radius: 24px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1a1a1a;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .swipe-arrow {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: #3478f6;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  /* ── Slide dots ── */
+  .dots {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+  }
+
+  .dot.active {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  /* ── Branded CTA slide ── */
+  .brand-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(90% 55% at 50% 38%, #3b22d6 0%, rgba(59, 34, 214, 0) 70%),
+      radial-gradient(120% 90% at 50% 100%, #12005e 0%, rgba(18, 0, 94, 0) 70%),
+      {{ brand_bg }};
+  }
+
+  .brand-sparkles {
+    position: absolute;
+    inset: 0;
+    background: url("{{ sparkles_uri }}") center / cover no-repeat;
+    mix-blend-mode: soft-light;
+    opacity: 0.85;
+  }
+
+  .cta-logo {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 56px;
+    width: auto;
+  }
+
+  .cta-text-wrap {
+    position: absolute;
+    left: 80px;
+    right: 80px;
+    top: 42%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
+  .cta-headline {
+    font-size: {{ font_size }}px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.10;
+    letter-spacing: -0.025em;
+    text-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+  }
+
+  .cta-body {
+    font-size: {{ body_font_size }}px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    margin-top: 16px;
+  }
+
+  .cta-phone {
+    position: absolute;
+    left: 50%;
+    bottom: 200px;
+    width: 340px;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
+  }
+
+  .cta-badges {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 16px;
+  }
+
+  .cta-badges img {
+    height: 50px;
+    width: auto;
+  }
+
+  .cta-disclaimer {
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    bottom: 44px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.45);
+  }
+</style>
+</head>
+<body>
+  <div class="slide">
+
+    {% if is_cta %}
+      {# ── Branded CTA slide ── #}
+      <div class="brand-bg"></div>
+      {% if sparkles_uri %}<div class="brand-sparkles"></div>{% endif %}
+
+      {% if logo_uri %}
+      <img class="cta-logo" src="{{ logo_uri }}" alt="">
+      {% endif %}
+
+      <div class="cta-text-wrap">
+        <div class="cta-headline">{{ headline }}</div>
+        {% if body %}
+        <div class="cta-body">{{ body }}</div>
+        {% endif %}
+      </div>
+
+      {% if phone_uri %}
+      <img class="cta-phone" src="{{ phone_uri }}" alt="">
+      {% endif %}
+
+      {% if app_store_uri or google_play_uri %}
+      <div class="cta-badges">
+        {% if app_store_uri %}<img src="{{ app_store_uri }}" alt="App Store">{% endif %}
+        {% if google_play_uri %}<img src="{{ google_play_uri }}" alt="Google Play">{% endif %}
+      </div>
+      {% endif %}
+
+      {% if disclaimer %}
+      <p class="cta-disclaimer">{{ disclaimer }}</p>
+      {% endif %}
+
+    {% else %}
+      {# ── Content slides: clipboard text on photo ── #}
+      {% if bg_type == 'image' %}
+      <img class="bg-photo" src="{{ bg_image }}">
+      {% else %}
+      <div class="bg-gradient" style="background: {{ bg_gradient }}"></div>
+      {% endif %}
+
+      <div class="overlay"></div>
+
+      <div class="content-area">
+        <div class="text-box headline-box">
+          <div class="text">{{ headline }}</div>
+        </div>
+        {% if body %}
+        <div class="text-box body-box">
+          <div class="text">{{ body }}</div>
+        </div>
+        {% endif %}
+      </div>
+
+      {% if is_hook %}
+      <div class="swipe">Swipe <span class="swipe-arrow">→</span></div>
+      {% endif %}
+
+      <div class="dots">
+        {% for i in range(total_slides) %}
+        <div class="dot {{ 'active' if i == slide_index else '' }}"></div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  </div>
+</body>
+</html>

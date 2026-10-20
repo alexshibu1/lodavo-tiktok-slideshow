@@ -1,0 +1,52 @@
+slideshow:
+  slug: sunshine-list-guess-the-job
+  language: en
+  account: lodavo.money
+  series: guess-the-number
+  slot: "2026-10-20 12:00"
+  title: "Ontario paid one person $1,907,408 in 2025. Guess the job"
+  opening: cold
+  end: blue
+  # Figures are the official 2025 "Salary" column (ontario.ca CSV, released 2026-03-27),
+  # cents dropped, never rounded up (outlets print both $1,907,408 and $1,907,409).
+  # Ascending order: the hook's $1,907,408 is paid off on the last reveal. The nurse's
+  # hospital is left off on purpose: at a small hospital it names one person.
+  slides:
+    - text: "Ontario paid one person $1,907,408 in 2025"
+      sub: "guess the job"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ontario_Legislative_Building%2C_Toronto.jpg/3840px-Ontario_Legislative_Building%2C_Toronto.jpg" } # Queen's Park
+    - text: "$322,245"
+      sub: "Registered nurse at an Ontario hospital"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Stethoscope-ja-2019.jpg/3840px-Stethoscope-ja-2019.jpg" } # stethoscopes
+    - text: "$366,484"
+      sub: "Police constable, Toronto Police Service"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Toronto_Police_Car_at_Danforth_and_Coxwell_-_20260125.jpg/3840px-Toronto_Police_Car_at_Danforth_and_Coxwell_-_20260125.jpg" } # Toronto Police SUV
+      focus: "66% 50%"
+    - text: "$750,440"
+      sub: "Coroner, Ontario Ministry of the Solicitor General"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/a/af/Ontario_Legislative_Building_West_Wing.jpg" } # Queen's Park west wing
+    - text: "$939,603"
+      sub: "Hospital CEO, University Health Network"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Toronto_General_Hospital%2C_September_27_2025.jpg/3840px-Toronto_General_Hospital%2C_September_27_2025.jpg" } # Toronto General Hospital
+      focus: "40% 50%"
+    - text: "$1,907,408"
+      sub: "Special advisor (ex-CEO), Ontario Power Generation"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Darlington_Nuclear_Generating_Station_Courtice_IMG_7475.jpg/3840px-Darlington_Nuclear_Generating_Station_Courtice_IMG_7475.jpg" } # Darlington
+      focus: "66% 50%"
+    - app: cta
+      text: "Want to save more of your paycheque?"
+      sub: "Every $25 you save earns a free jackpot ticket on Lodavo"
+  caption: |
+    Comment your guess for the $1,907,408 job before you swipe.
+    Ontario's 2026 Sunshine List has over 400,000 public sector salaries of $100,000 or more in 2025. 7 of the top 10 work at Ontario Power Generation.
+    Lodavo is a free app that gives you a ticket for every $25 you have saved, every week, for a chance to win $100 or the $10,000 jackpot. Connect your chequing or savings account to start.
+    It's linked in our bio.
+  hashtags: ["#lodavo", "#sunshinelist", "#ontario", "#salary", "#canada"]
+  sources:
+    - https://www.ontario.ca/public-sector-salary-disclosure/2025/all-sectors-and-seconded-employees/
+    - https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv
+    - https://www.blogto.com/city/2026/03/ontario-sunshine-list-2026
+    - https://www.bnnbloomberg.ca/business/2026/03/27/sunshine-list-these-were-ontarios-highest-paid-public-sector-employees-in-2025/
+    - https://www.cp24.com/local/toronto/2026/03/27/sunshine-list-these-were-ontarios-highest-paid-public-sector-employees-in-2025/
+    - https://www.opg.com/release/opg-announces-new-president-and-chief-executive-officer
+    - https://lodavo.com/rules

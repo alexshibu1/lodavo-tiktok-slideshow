@@ -1,0 +1,75 @@
+slideshow:
+  slug: costliest-money-mistakes
+  language: en
+  account: lodavo.money
+  series: diabolical-money
+  slot: "2026-10-23 12:00"
+  opening: cold
+  end: white
+  slides:
+    # Laszlo Hanyecz, Jacksonville, Fla.: 10,000 BTC for two Papa John's pizzas, May 22, 2010
+    - text: "he paid 10,000 bitcoin for two pizzas"
+      image: { url: "https://i.redd.it/s0m5tjzbf8ue1.jpeg" } # a Papa John's pizza in its box
+      focus: "50% 55%"
+    # 10,000 BTC x C$115,401 (CoinGecko, Oct. 17, 2026) = C$1.154 billion
+    - text: "in October 2026, that's about $1.15 billion"
+      sub: "Laszlo Hanyecz, Florida, May 22, 2010"
+      image: { url: "https://i.pinimg.com/originals/86/1b/5b/861b5bbd05dd0641e287360cacafda3f.jpg" } # gold bitcoin coins
+      focus: "50% 50%"
+    # James Howells: the drive went out with the trash in summer 2013, now in Newport's landfill.
+    # 7,500 BTC x C$115,401 (Oct. 17, 2026) = C$865.5 million
+    - text: "his hard drive with 7,500 bitcoin went to the dump"
+      sub: "Wales, 2013 · $865 million in 2026"
+      image: { url: "https://cdn.arstechnica.net/wp-content/uploads/2025/01/newport-landfill.jpg" } # the Newport landfill
+      focus: "28% 55%"
+    # Ronald Wayne: his 10% stake, sold 12 days after Apple's founding
+    - text: "he sold his 10% of Apple for US$800"
+      sub: "Ronald Wayne, 12 days after Apple began · 1976"
+      image: { url: "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/11/09/158310.jpg" } # an Apple-1, 1976
+      focus: "45% 55%"
+    # Netflix offered itself for US$50M in 2000; Blockbuster filed for Chapter 11 on Sept. 23, 2010
+    - text: "Blockbuster passed on buying Netflix for US$50 million"
+      sub: "2000 · Blockbuster went bankrupt 10 years later"
+      image: { url: "https://visitcentraloregon.com/wp-content/uploads/2024/01/IMG_4177.jpg" } # the last Blockbuster, Bend, Ore.
+      focus: "50% 35%"
+    # Canada sold off the remainder of its gold by March 2016. Gold futures: under US$1,300 from
+    # Dec. 2015 to Mar. 2016, US$4,091 to US$4,259 in Oct. 2026
+    - text: "Canada sold off its gold by 2016"
+      sub: "under US$1,300 an ounce then, over US$4,000 in 2026"
+      image: { url: "https://ucsh.com/wp-content/uploads/2021/02/110-Perkins_Will_Bank_of_Canada_Exteriors_final.jpg" } # Bank of Canada, Ottawa
+      focus: "40% 50%"
+    - app: hero
+      text: "Trying to save more this year?"
+      sub: "With Lodavo, every $25 you save earns a free jackpot ticket"
+  caption: |
+    The most expensive money mistakes ever, from Bitcoin Pizza Day to Canada selling off its gold 💸
+    A lost bitcoin hard drive, Apple's forgotten co-founder and Blockbuster passing on Netflix.
+    Which one hurts the most?
+    Lodavo is a free app that rewards saving: every $25 you have saved earns a ticket for that week's draw, with a chance to win $100 every week or the $10,000 jackpot.
+    It's linked in our bio.
+  hashtags: ["#lodavo", "#bitcoin", "#moneymistakes", "#moneytok", "#canada"]
+  sources:
+    # laszlo's offer (May 18, 2010), "I successfully traded 10,000 bitcoins for pizza" (May 22, 2010), Jacksonville, Florida
+    - https://bitcointalk.org/index.php?topic=137.0
+    # Bitcoin Pizza Day 2026 (May 22, 2026): two Papa John's pizzas, Laszlo Hanyecz
+    - https://blockchain.news/news/bitcoin-pizza-day-2026-10k-btc-two-pizzas
+    # BTC at C$115,401 / US$81,524 on Oct. 17, 2026: 10,000 BTC = C$1.15 billion, 7,500 BTC = C$865 million
+    - https://api.coingecko.com/api/v3/coins/bitcoin/history?date=17-10-2026&localization=false
+    # Howells: 7,500 bitcoin, the drive was thrown out with the trash in summer 2013, Newport landfill (Feb. 11, 2025)
+    - https://fortune.com/2025/02/11/bitcoin-trash-landfill-purchase-james-howells-newport
+    # Howells: a Welsh landfill, High Court ruling against him (Jan. 2025)
+    - https://www.tomshardware.com/tech-industry/cryptocurrency/high-court-ruling-ends-mans-hopes-of-recovering-usd750m-bitcoin-hard-drive-from-a-welsh-landfill-hard-drive-storing-8-000-bitcoins-was-lost-over-10-years-ago
+    # Ronald Wayne: a 10% stake, sold for $800 in 1976, 12 days after Apple's inception (Dec. 12, 2025)
+    - https://fortune.com/2025/12/12/apple-cofounder-ronald-wayne-sold-10-percent-stake-early-today-worth-400-billion-steve-jobs-steve-wozniak/
+    # Netflix's founders tried to sell to Blockbuster for $50 million in 2000 and were turned down
+    - https://fortune.com/2023/04/14/netflix-cofounder-marc-randolph-recalls-blockbuster-rejecting-chance-to-buy-it
+    # Blockbuster filed for Chapter 11 bankruptcy on Sept. 23, 2010 (AP)
+    - https://www.cbsnews.com/news/blockbuster-files-for-bankruptcy-protection/
+    # Canada sold off the remainder of its gold by March 2016, 77 oz left, valued at "essentially zero" (Apr. 18, 2025)
+    - https://www.thecanadianpressnews.ca/fact_checking/posts-falsely-claim-carney-sold-off-canadian-gold-to-u-k-confuse-reserves-with-mineral/article_3aaf1d39-d541-5031-839b-03b0ff59c50f.html
+    # Gold futures (GC=F), monthly: highest US$1,281 from Dec. 2015 to Mar. 2016
+    - https://query1.finance.yahoo.com/v8/finance/chart/GC=F?period1=1446336000&period2=1462060800&interval=1mo
+    # Gold futures (GC=F): US$4,091 to US$4,259 in Oct. 2026, US$4,181 close on Oct. 16, 2026
+    - https://query1.finance.yahoo.com/v8/finance/chart/GC=F?period1=1790812800&period2=1792368000&interval=1mo
+    # Contest rules s.4.1(a): every $25 of linked balance at the Sunday snapshot earns 1 ticket
+    - https://lodavo.com/rules

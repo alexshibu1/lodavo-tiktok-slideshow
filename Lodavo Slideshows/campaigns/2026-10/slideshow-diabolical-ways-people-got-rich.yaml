@@ -1,0 +1,53 @@
+slideshow:
+  slug: diabolical-ways-people-got-rich
+  language: en
+  account: lodavo.money
+  series: diabolical-money
+  slot: "2026-10-19 12:00"
+  opening: intro
+  end: white
+  slides:
+    # title card; the teaser is Kipling's giant red paperclip, the first story's monument
+    - text: "here are the most diabolical ways people made money 👉"
+      image: { url: "https://i.pinimg.com/originals/f4/7a/6a/f47a6a9d21a67aaaab474ab8c30ed52f.jpg" } # giant red paperclip, Kipling, Sask., no people
+      focus: "25% 45%" # left of the camera date stamp in the bottom right
+    # Kyle MacDonald, 26: one red paper clip, almost a year of trades, a house in Kipling (July 2006)
+    - text: "a Canadian traded a red paperclip up to a house"
+      sub: "under a year · Kipling, Sask., 2006"
+      image: { url: "https://pbs.twimg.com/media/Gowi0HZbsAEsWup.jpg" } # the Kipling house, the giant paperclip out front
+      focus: "40% 50%"
+    # Vitality Air: Edmonton startup bottling Banff air; its first 500 containers sold quickly in China
+    - text: "an Edmonton startup sold bottled Banff air to China"
+      sub: "the first 500 sold fast · 2015"
+      image: { url: "https://cdn.shopify.com/s/files/1/0010/0981/1516/products/8l-banff-air-diamonds_1024x1024.jpg?v=1529529054" } # a Vitality Air can of Banff air
+      focus: "50% 50%"
+    # Alex Tew, 21: a million pixels at US$1 each, more than US$1 million in four months
+    - text: "a student sold a webpage at US$1 a pixel"
+      sub: "over US$1 million in four months · 2005"
+      image: { url: "https://img.wikiwand.com/wikipedia/en/thumb/3/3f/The_Million_Dollar_Homepage.png/1280px-The_Million_Dollar_Homepage.png" } # the Million Dollar Homepage itself
+      style: box
+    # Gary Dahl, California ad executive: smooth stones in a box with a care manual, about 1.5 million at roughly US$4
+    - text: "a California ad man sold rocks as pets"
+      sub: "about 1.5 million, roughly US$4 each · 1975"
+      image: { url: "https://www.uavme.com.au/assets/full/40903.jpg?20240125123307" } # an original 1975 Pet Rock with its box and manual
+      focus: "50% 55%"
+    # "I Am Rich": a US$999.99 iPhone app that showed a glowing red gem; eight people bought it
+    - text: "an iPhone app that did nothing cost US$999.99"
+      sub: "eight people bought it · 2008"
+      image: { url: "https://www.cultofmac.com/wp-content/uploads/2017/08/Image-uploaded-from-iOS.jpg" } # the app's red gem on an iPhone
+      focus: "65% 45%"
+    - app: hero
+      text: "Want to start saving more money?"
+      sub: "Lodavo gives you a free jackpot ticket for every $25 you save"
+  caption: |
+    Which one would you have bought?
+    One red paperclip traded up to a house in Saskatchewan, bottled Banff air sold to China, a webpage sold at US$1 a pixel and the Pet Rock: the most diabolical legal ways people made money.
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#moneyfacts", "#entrepreneur", "#moneytok", "#canada"]
+  sources:
+    - https://abcnews.com/WNT/story?id=2171378 # ABC News, July 9 2006: a 26-year-old Canadian traded one red paper clip up to a house in Kipling, Sask., starting almost a year earlier
+    - https://theworld.org/stories/2015/12/23/bottled-canadian-air-started-novelty-takes-china # The World (PRI), Dec 23 2015: Edmonton's Vitality Air bottles Banff air; its first 500 containers sold quickly in China
+    - https://abcnews.com/Business/Technology/story?id=1498764 # ABC News, Jan 12 2006: British student Alex Tew, 21, sold a million pixels at US$1 each, more than US$1 million in four months
+    - https://globalnews.ca/news/1916698/gary-dahl-creator-of-pet-rock-dies-at-78 # Global News (AP), 2015: California ad executive Gary Dahl's 1975 Pet Rock, stones in a box, about 1.5 million sold at roughly US$4
+    - https://6abc.com/archive/6317125/ # 6abc (AP), Aug 9 2008: the "I Am Rich" iPhone app cost US$999.99, did nothing but show a red icon, eight people bought it
+    - https://lodavo.com/rules # contest rules s.4.1a: every $25 of linked balance at the Sunday snapshot earns 1 ticket for that week

@@ -1,0 +1,48 @@
+slideshow:
+  slug: canada-rent-six-cities
+  language: en
+  account: lodavo.money
+  series: canada-prices
+  slot: "2026-10-22 12:00"
+  opening: cold
+  end: blue
+  slides:
+    - text: "one-bedroom rent in 6 Canadian cities"
+      sub: "$1,110 a month apart"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Apartment_building_balconies_%28Unsplash%29.jpg" } # Apartment building balconies (Unsplash)
+    - text: "$1,280/month"
+      sub: "Regina, 1-bedroom (Zumper, October 2026)"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Regina_Skyline_2012_%288235702487%29.jpg/3840px-Regina_Skyline_2012_%288235702487%29.jpg" } # Regina Skyline 2012
+    - text: "$1,600/month"
+      sub: "Calgary, 1-bedroom"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Calgary_Skyline_Panorama_Sunset_From_Nose_Hill_%28Oct-27-2018%29.jpg/3840px-Calgary_Skyline_Panorama_Sunset_From_Nose_Hill_%28Oct-27-2018%29.jpg" } # Calgary skyline panorama from Nose Hill
+    - text: "$1,730/month"
+      sub: "Montréal, 1-bedroom"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Montreal_Skyline.jpg/3840px-Montreal_Skyline.jpg" } # Montreal Skyline
+    - text: "$2,080/month"
+      sub: "Halifax, 1-bedroom"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/2022-08-15_01_Wide_angle_view_of_Halifax_skyline%2C_Nova_Scotia%2C_Canada.jpg/3840px-2022-08-15_01_Wide_angle_view_of_Halifax_skyline%2C_Nova_Scotia%2C_Canada.jpg" } # Halifax skyline with the harbour ferry
+    - text: "$2,100/month"
+      sub: "Toronto, 1-bedroom"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Toronto_Skyline_2017.jpg/3840px-Toronto_Skyline_2017.jpg" } # Toronto Skyline 2017
+      focus: "70% 50%" # keeps the CN Tower in both crops
+    - text: "$2,390/month"
+      sub: "Vancouver, 1-bedroom"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Vancouver_Skyline_and_Mountains.jpg/3840px-Vancouver_Skyline_and_Mountains.jpg" } # Vancouver Skyline and Mountains
+    - app: cta
+      text: "Saving for your own place?"
+      sub: "Every $25 you save earns you a free jackpot ticket on Lodavo"
+  caption: |
+    Rent in Canada right now: the median asking rent for a one-bedroom in 6 cities, from Zumper's October 2026 report.
+    Regina to Vancouver is a $1,110 a month gap, and Halifax is just $20 under Toronto.
+    Where does your city land?
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#rent", "#costofliving", "#canada", "#moneytok"]
+  sources:
+    # Zumper Canadian Rent Report, Crystal Chen, published 2026-10-14 (September 2026 listings),
+    # median one-bedroom asking rent: Vancouver $2,390 (#1 of 23), Toronto $2,100, Halifax $2,080,
+    # Montreal $1,730, Calgary $1,600, Regina $1,280 (#23 of 23). Evergreen URL, updated monthly.
+    - https://www.zumper.com/blog/rental-price-data-canada/
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance at the Sunday 8 PM ET
+    # snapshot, rounded down. floor(2390 / 25) = 95.
+    - https://lodavo.com/rules

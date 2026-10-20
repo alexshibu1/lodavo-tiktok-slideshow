@@ -1,0 +1,60 @@
+slideshow:
+  slug: people-who-beat-the-lottery
+  language: en
+  account: lodavo.money
+  series: windfall-stories
+  slot: "2026-10-21 12:00"
+  opening: intro
+  end: blue
+  slides:
+    # title card; the teaser is a scratch-ticket dispenser, hands only
+    - text: "here are people who actually beat the lottery 👉"
+      image: { url: "https://s.hdnux.com/photos/01/23/30/65/21859685/4/1200x0.jpg" } # scratch tickets at a store dispenser, no faces
+      focus: "50% 50%"
+    # Mohan Srivastava, Toronto geostatistician: noticed the Tic-Tac-Toe flaw after a 2003 gag gift
+    - text: "a Toronto statistician could spot winning scratch tickets"
+      sub: "without scratching them · Ontario, 2003"
+      image: { url: "https://media.wired.com/photos/63223ea440fe1e8870aa3acf/master/w_1600,c_limit/0211WIFFLOTT008.jpg" } # the Ontario Tic-Tac-Toe ticket, singletons circled
+      focus: "50% 50%"
+    # he reported it instead of exploiting it; OLG pulled the Tic-Tac-Toe tickets off the shelf
+    - text: "instead of cashing in, he told the lottery"
+      sub: "they pulled the game off the shelves"
+      image: { url: "https://lafleurs.com/wp-content/uploads/2023/11/OLG-DMB-CDU-2023-1011x1024.png" } # an OLG lottery counter in Ontario
+      focus: "50% 55%"
+    # Jerry and Marge Selbee of Evart, Mich.: Winfall 2003-05, Cash WinFall 2005-12, about US$26.85M won
+    - text: "a retired Michigan couple found a lottery loophole"
+      sub: "nearly US$27 million won · 2003 to 2012"
+      image: { url: "https://m.cbhomes.com/p/241/24038913/3B48774756024a2/original.webp" } # Main Street, Evart, Mich., their hometown
+      focus: "22% 50%"
+    # MIT's Random Strategies: 700,000 tickets for the Aug. 2010 roll-down; at least US$3.5M profit 2005-12
+    - text: "MIT students bought 700,000 lottery tickets for one draw"
+      sub: "at least US$3.5 million profit by 2012"
+      image: { url: "https://interaktiv.ipa.fraunhofer.de/wp-content/uploads/2022/12/MIT_4.jpg" } # MIT's Great Dome
+      focus: "50% 60%"
+    # Stefan Mandel: 14 jackpots; Virginia, Feb. 15 1992, US$27,036,142, 6.4M of 7M combinations covered
+    - text: "he won the lottery 14 times buying nearly every combination"
+      sub: "one jackpot: US$27 million, Virginia, 1992"
+      image: { url: "https://fortune.com/img-assets/wp-content/uploads/2023/01/AP23002770087194.jpg?w=1440&q=75" } # stacks of lottery play slips, no people
+      focus: "50% 60%"
+    # Joan Ginther of Bishop, Texas: math degree, Stanford PhD, four jackpots, about US$20M, first in 1993
+    - text: "a math grad with a Stanford PhD won 4 Texas jackpots"
+      sub: "about US$20 million since 1993"
+      image: { url: "https://s.hdnux.com/photos/01/54/67/74/28540705/17/ratio4x3_1920.jpg" } # a Texas Lottery ticket
+      focus: "40% 55%"
+    - app: cta
+      text: "Want jackpot tickets you don't have to buy?"
+      sub: "Lodavo gives you a jackpot ticket for every $25 you save"
+  caption: |
+    Which story surprised you most?
+    Real people who beat the lottery, from a Toronto statistician who cracked Ontario's scratch tickets to a retired Michigan couple who found a loophole.
+    Lottery tickets cost money. Lodavo's are free: every $25 you have saved earns one, every week, and you choose 7 numbers for the weekly draw.
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#lottery", "#scratchtickets", "#lotterywinner", "#canada"]
+  sources:
+    - https://www.lotteryusa.com/news/how-one-man-cracked-code-scratch-off-games # Lottery USA: Mohan Srivastava, Toronto geostatistical consultant, 2003 gag gift; sorted 20 unscratched tickets for OLG, which pulled Tic-Tac-Toe off the shelf
+    - https://gizmodo.com/5748942/how-a-statistician-beat-scratch-lottery-tickets # Gizmodo, Feb 1 2011 (on WIRED's story): predicted winners from the visible numbers, reported the flaw instead of exploiting it
+    - https://highline.huffingtonpost.com/articles/en/lotto-winners/ # HuffPost Highline, 2018: Jerry and Marge Selbee of Evart, Mich., retired store owners; Winfall 2003-05, Cash WinFall 2005-12; about US$26.85 million won
+    - https://thetech.com/2012/08/01/cashwinfall-v132-n30 # The Tech (MIT), Aug 1 2012: Random Strategies stockpiled 700,000 tickets for the Aug 2010 roll-down; Inspector General: at least US$3.5 million profit 2005-2012
+    - https://thehustle.co/the-man-who-won-the-lottery-14-times # The Hustle (citing NYT and Washington Post, Feb 1992): Stefan Mandel won 14 times; Virginia, Feb 15 1992, US$27,036,142 jackpot, 6.4M of 7M combinations covered
+    - https://www.ksat.com/news/2012/05/10/woman-wins-4-texas-lotto-jackpots-in-small-town # KSAT, May 2012: Joan Ginther of Bishop, Texas, math degree and Stanford PhD, four jackpots, about US$20 million, first Lotto Texas win 1993
+    - https://lodavo.com/rules # contest rules s.4.1a: every $25 of linked balance at the Sunday snapshot earns 1 ticket for that week

@@ -1,0 +1,64 @@
+slideshow:
+  slug: celebrities-who-blew-fortunes
+  language: en
+  account: lodavo.money
+  series: wealth-unreal
+  slot: "2026-10-22 19:00"
+  opening: intro
+  end: blue
+  # All amounts are US$. Depp's figures are his ex-managers' 2017 countersuit (as reported
+  # by NBC News) and his own 2018 Rolling Stone interview (as quoted by ET). Dropped: Tyson's
+  # gold bathtub (no reliable source) and MC Hammer (no reliable figure for the payroll or
+  # the debt). The intro's tiger pays off on slide 7, the way the billionaire-homes hook does.
+  slides:
+    - text: "here's what celebrities blew their fortunes on 👉"
+      image: { url: "https://wallpapers.com/images/hd/mike-tyson-with-his-tiger-qj0xs35anynofhw5.jpg" } # Tyson walking his white tiger
+      focus: "50% 60%"
+    - text: "Nicolas Cage: a dinosaur skull"
+      sub: "US$276,000 in 2007. It turned out to be stolen."
+      image: { url: "https://people.ohio.edu/witmerl/collections/images/tarbosaurus_DSC_9090.JPG" } # a Tarbosaurus skull, the species Cage bought
+    - text: "Nicolas Cage, again: his own pyramid tomb"
+      sub: "9 feet tall in New Orleans. Still empty."
+      image: { url: "https://external-preview.redd.it/9nL6CwH8e3IyyKgzBzPESdLmeXYCQ-F90LtSkfLD6Ho.jpg?auto=webp&s=4377c8183f0b1189cffed0bc3748012cccd89e25" } # the tomb, St. Louis Cemetery No. 1
+      focus: "50% 60%"
+    - text: "Johnny Depp: wine"
+      sub: "His ex-managers said US$30,000 a month. Depp: 'it was far more'"
+      image: { url: "https://cdn.thehollywoodgossip.com/uploads/2017/11/johnny-depp-red-carpet-image-683x1024.jpg" }
+      pos: middle
+    - text: "Depp again: Hunter S. Thompson's ashes, fired from a cannon"
+      sub: "Ex-managers: US$3 million. Depp: '$5 million'"
+      image: { url: "https://i.pinimg.com/originals/03/db/d1/03dbd1a82e054d8b754f2021f7d833af.png" } # Hunter S. Thompson
+      pos: middle
+    - text: "Kim Basinger: (almost) a whole town in Georgia"
+      sub: "US$20 million in 1989. Bankrupt by 1993."
+      image: { url: "https://64.media.tumblr.com/c4ae0cc554be2f602eb82efe07ee9d08/tumblr_mzk00vPpWQ1shiodwo1_1280.jpg" }
+      pos: middle
+    - text: "Mike Tyson: Bengal tigers"
+      sub: "Nearly US$300 million gone. Bankruptcy in 2003."
+      image: { url: "https://64.media.tumblr.com/ee68b59ff527cd7f4ee73197738c7b28/279051c225069502-83/s1280x1920/d30752a17b8afeed5fb08f5c8a883c5dcac3222b.jpg" } # Tyson crouching with his tiger
+    - app: hero
+      text: "Want to keep more of your money?"
+      sub: "On Lodavo, every $25 you save earns you a free jackpot ticket"
+  caption: |
+    Which one is the most unhinged?
+    Celebrities who blew their fortunes on a stolen dinosaur skull, a pyramid tomb and pet tigers.
+    Nicolas Cage, Johnny Depp, Kim Basinger and Mike Tyson, from court filings and news reports.
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#celebrities", "#nicolascage", "#johnnydepp", "#moneytok"]
+  sources:
+    # TODAY (NBC), Dec 22, 2015: Cage bought the Tyrannosaurus bataar skull in 2007 for $276,000; authorities found it was stolen; he handed it over to be returned to Mongolia
+    - https://www.today.com/today/amp/tdna63436
+    # Slate / Atlas Obscura, Mar 18, 2015: "a stark, 9-foot-tall stone pyramid" in St. Louis Cemetery No. 1, "the empty grave", no name on it yet
+    - https://www.slate.com/blogs/atlas_obscura/2015/03/18/nicolas_cage_pyramid_tomb_in_new_orleans_cemetery.html
+    # NBC News, Feb 1, 2017: ex-managers' countersuit says $30,000 a month on wine and $3 million to blast Thompson's ashes out of a cannon
+    - https://www.nbcnews.com/pop-culture/celebrity/johnny-depp-spent-3m-blast-hunter-s-thompsons-ashes-out-n715231
+    # ET, Jun 21, 2018, quoting Depp's Rolling Stone interview: wine "was far more"; the cannon "was $5 million"
+    - https://www.etonline.com/node/104556
+    # Deseret News, Mar 29, 1989: Basinger "has bought virtually the entire town of Braselton" for $20 million
+    - https://www.deseret.com/1989/3/29/18800571/kim-basinger-buys-herself-a-town/
+    # New Georgia Encyclopedia: bought Braselton in 1989 for some $20 million; filed for bankruptcy in 1993 after the Boxing Helena case
+    - https://www.georgiaencyclopedia.org/articles/arts-culture/kim-basinger-b-1953/
+    # AP via Deseret News, Aug 3, 2003: Tyson files for bankruptcy; "squandered nearly $300 million in ring earnings" on mansions, Bentleys, jewelry "and even Bengal tigers"
+    - https://www.deseret.com/2003/8/3/19739381/tyson-files-for-bankruptcy-says-finances-are-in-disarray/
+    # Contest rules s.4.1(a): every $25 of balance at the Sunday snapshot earns 1 ticket
+    - https://lodavo.com/rules

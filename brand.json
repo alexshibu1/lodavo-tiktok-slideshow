@@ -1,0 +1,49 @@
+{
+  "name": "Lodavo",
+  "one_line_pitch": "Canada's free prize-linked savings app — every $25 saved earns a free ticket into weekly cash draws.",
+  "audience": "Canadian university students (18-25)",
+  "voice": {
+    "adjectives": ["friendly", "real", "sharp", "helpful", "no-bs"],
+    "do": [
+      "Write like you're texting a smart friend — short, punchy, clear",
+      "Use Canadian references (TFSA, RRSP, OSAP, tuition tax credits, chequing accounts)"
+    ],
+    "dont": [
+      "Never sound like a financial advisor or use legal-sounding disclaimers in the main copy",
+      "Never be condescending about money struggles — students are broke and that's real"
+    ]
+  },
+  "colors": {
+    "bg": "#0A0033",
+    "fg": "#FFFFFF",
+    "accent": "#FFD700"
+  },
+  "fonts": {
+    "heading": "Space Grotesk",
+    "body": "Inter"
+  },
+  "logo_svg": "brand/lodavo-logomark.svg",
+  "cta_text": "Download Lodavo free — link in bio",
+  "handle": "@lodavo",
+  "banned_phrases": [
+    "in today's fast-paced world",
+    "unlock",
+    "game-changer",
+    "let's dive in",
+    "it's no secret",
+    "look no further",
+    "the truth is",
+    "imagine a world",
+    "buckle up",
+    "without further ado",
+    "at the end of the day",
+    "leverage",
+    "synergy",
+    "paradigm shift",
+    "guaranteed returns",
+    "get rich",
+    "financial advice"
+  ],
+  "disclaimer_text": "General info only — not financial advice.",
+  "model": "claude-sonnet-5-5"
+}

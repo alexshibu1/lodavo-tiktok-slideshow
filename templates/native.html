@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: "TikTok Sans";
+    font-weight: 300 900;
+    font-display: block;
+    src: url("{{ tiktok_font }}") format("truetype");
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1080px;
+    height: 1440px;
+    background: #000;
+    overflow: hidden;
+  }
+
+  .slide {
+    position: relative;
+    width: 1080px;
+    height: 1440px;
+    overflow: hidden;
+    font-family: "TikTok Sans", system-ui, sans-serif;
+  }
+
+  /* ── Background layers ── */
+  .bg-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bg-gradient {
+    position: absolute;
+    inset: 0;
+  }
+
+  .brand-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(90% 55% at 50% 38%, #3b22d6 0%, rgba(59, 34, 214, 0) 70%),
+      radial-gradient(120% 90% at 50% 100%, #12005e 0%, rgba(18, 0, 94, 0) 70%),
+      #2200b3;
+  }
+  .brand-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("{{ sparkles_image }}") center / cover no-repeat;
+    mix-blend-mode: soft-light;
+    opacity: 0.9;
+  }
+
+  .white-bg {
+    position: absolute;
+    inset: 0;
+    background: #fff;
+  }
+
+  /* Sparkles texture overlay for non-photo slides */
+  .sparkle-layer {
+    position: absolute;
+    inset: 0;
+    background: url("{{ sparkles_image }}") center / cover no-repeat;
+    mix-blend-mode: soft-light;
+    opacity: 0.7;
+  }
+
+  /* Big decorative slide number */
+  .big-num {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "TikTok Sans", system-ui, sans-serif;
+    font-size: 900px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.06);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Progress bar at bottom of non-photo slides */
+  .progress-bar {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .progress-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .progress-dot.active {
+    width: 48px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Accent stripe */
+  .accent-stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+  }
+
+  /* Glow orbs for atmosphere */
+  .glow { position: absolute; border-radius: 50%; filter: blur(100px); pointer-events: none; }
+  .g1 { width: 600px; height: 600px; opacity: 0.35; }
+  .g2 { width: 500px; height: 500px; opacity: 0.25; }
+  .g3 { width: 450px; height: 450px; opacity: 0.2; }
+
+  /* ── Shade overlay for legibility ── */
+  .shade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.42) 0%,
+      rgba(0, 0, 0, 0.22) 38%,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.18) 100%
+    );
+  }
+  .shade-app {
+    position: absolute;
+    inset: 0;
+  }
+
+  /* ── Text ── */
+  .txt {
+    position: absolute;
+    left: 80px;
+    right: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: {{ font_size }}px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: -0.005em;
+  }
+  /* With a photo: text in upper band, leaving room for the image below */
+  .txt.pos-upper {
+    top: 180px;
+  }
+  /* Without a photo: text centered vertically so the slide doesn't feel empty */
+  .txt.pos-middle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /* App slide: text in upper portion above phone */
+  .txt.pos-app {
+    top: 100px;
+  }
+
+  /* TikTok "Classic" outline: white fill, thick black stroke behind */
+  .txt .ln,
+  .txt .sub {
+    -webkit-text-stroke: {{ (font_size * 0.13) | round(1) }}px #000;
+    paint-order: stroke fill;
+    text-shadow: 0 {{ (font_size * 0.04) | round(1) }}px {{ (font_size * 0.16) | round(1) }}px rgba(0, 0, 0, 0.35);
+  }
+
+  .ln {
+    display: inline;
+  }
+
+  .sub {
+    display: block;
+    margin-top: 0.5em;
+    font-size: 0.66em;
+    font-weight: 650;
+    line-height: 1.2;
+  }
+
+  .hl {
+    color: #ffd700;
+  }
+
+  .is-hook .txt {
+    font-weight: 800;
+  }
+
+  /* ── Decorative line accents for non-photo slides ── */
+  .deco-line {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.07);
+    pointer-events: none;
+  }
+  .dl1 { width: 2px; height: 400px; top: 80px; left: 50px; }
+  .dl2 { width: 2px; height: 300px; bottom: 160px; right: 50px; }
+  .dl3 { width: 400px; height: 2px; bottom: 120px; left: 50%; transform: translateX(-50%); }
+
+  /* Corner brackets */
+  .corner { position: absolute; pointer-events: none; }
+  .corner::before, .corner::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .corner-tl { top: 50px; left: 40px; }
+  .corner-tl::before { width: 50px; height: 3px; top: 0; left: 0; }
+  .corner-tl::after { width: 3px; height: 50px; top: 0; left: 0; }
+  .corner-br { bottom: 50px; right: 40px; }
+  .corner-br::before { width: 50px; height: 3px; bottom: 0; right: 0; }
+  .corner-br::after { width: 3px; height: 50px; bottom: 0; right: 0; }
+
+  /* ── App slide: phone + badges ── */
+  .phone {
+    position: absolute;
+    left: 50%;
+    top: 560px;
+    width: 560px;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 28px 48px rgba(0, 0, 0, 0.4));
+  }
+  .phone.with-badges {
+    width: 460px;
+  }
+
+  .badges {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+  }
+  .badges img {
+    height: 84px;
+    width: auto;
+  }
+
+  /* ── Legal line ── */
+  .disc {
+    position: absolute;
+    left: 140px;
+    right: 140px;
+    bottom: 60px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .verify-marker {
+    display: inline-block;
+    background: #FF6B6B;
+    color: #fff;
+    font-size: 16px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+  <div class="slide {{ 'is-hook' if is_hook else '' }}">
+
+    {% if is_app %}
+      {% if end_white %}
+        <div class="white-bg"></div>
+      {% else %}
+        <div class="brand-bg"></div>
+      {% endif %}
+      <div class="shade-app"></div>
+    {% elif bg_image %}
+      <img class="bg-photo" src="{{ bg_image }}" style="object-position: {{ bg_focus | default('50% 50%') }}">
+      <div class="shade"></div>
+    {% else %}
+      <div class="bg-gradient" style="background: {{ bg_gradient }}"></div>
+      {% if sparkles_image %}
+      <div class="sparkle-layer"></div>
+      {% endif %}
+      <div class="glow g1" style="background: {{ glow_color_1 }}; top: {{ glow_pos_1 }};"></div>
+      <div class="glow g2" style="background: {{ glow_color_2 }}; {{ glow_pos_2 }};"></div>
+      <div class="glow g3" style="background: {{ glow_color_3 }}; {{ glow_pos_3 }};"></div>
+      {% if slide_number %}<div class="big-num">{{ slide_number }}</div>{% endif %}
+      <div class="deco-line dl1"></div>
+      <div class="deco-line dl2"></div>
+      <div class="deco-line dl3"></div>
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-br"></div>
+    {% endif %}
+
+    {% if headline and not is_app and not bg_image %}
+    <div class="accent-stripe"></div>
+    <div class="txt pos-middle">
+      <span class="ln">{{ headline }}{% if needs_verification and show_verify %}<span class="verify-marker">[verify]</span>{% endif %}</span>
+      {% if body %}
+      <span class="sub">{{ body }}</span>
+      {% endif %}
+    </div>
+    <div class="progress-bar">
+      {% for n in range(total_slides) %}
+      <div class="progress-dot {{ 'active' if n + 1 == slide_number else '' }}"></div>
+      {% endfor %}
+    </div>
+    {% elif headline %}
+    <div class="txt {{ text_pos }}">
+      <span class="ln">{{ headline }}{% if needs_verification and show_verify %}<span class="verify-marker">[verify]</span>{% endif %}</span>
+      {% if body %}
+      <span class="sub">{{ body }}</span>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {% if is_app and phone_image %}
+    <img class="phone {{ 'with-badges' if show_badges else '' }}" src="{{ phone_image }}">
+      {% if show_badges %}
+      <div class="badges" style="top: {{ badges_top }}px">
+        {% if app_store_badge %}<img src="{{ app_store_badge }}" alt="App Store">{% endif %}
+        {% if google_play_badge %}<img src="{{ google_play_badge }}" alt="Google Play">{% endif %}
+      </div>
+      {% endif %}
+    {% endif %}
+
+    {% if is_app %}
+    <p class="disc">No purchase necessary. Skill-testing question required. Rules and odds: lodavo.com/rules</p>
+    {% endif %}
+
+  </div>
+</body>
+</html>

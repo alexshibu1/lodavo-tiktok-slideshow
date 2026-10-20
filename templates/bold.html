@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family={{ heading_font | replace(" ", "+") }}:wght@600;700;800&family={{ body_font | replace(" ", "+") }}:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    background: linear-gradient(165deg, #1a0a6e 0%, {{ bg }} 30%, #060028 65%, #120052 100%);
+    color: {{ fg }};
+    font-family: '{{ body_font }}', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* ── Background ── */
+  .sparkle { position: absolute; border-radius: 50%; background: #fff; }
+  .s1 { width: 4px; height: 4px; top: 180px; left: 320px; opacity: 0.5; }
+  .s2 { width: 3px; height: 3px; top: 300px; right: 250px; opacity: 0.35; }
+  .s3 { width: 5px; height: 5px; top: 500px; left: 150px; opacity: 0.3; }
+  .s4 { width: 3px; height: 3px; top: 700px; right: 280px; opacity: 0.4; }
+  .s5 { width: 4px; height: 4px; top: 900px; left: 400px; opacity: 0.3; }
+  .s6 { width: 3px; height: 3px; top: 1100px; right: 380px; opacity: 0.25; }
+  .s7 { width: 6px; height: 6px; top: 240px; left: 750px; opacity: 0.18; }
+  .s8 { width: 4px; height: 4px; top: 800px; left: 100px; opacity: 0.35; }
+  .s9 { width: 3px; height: 3px; top: 600px; right: 180px; opacity: 0.28; }
+  .s10 { width: 5px; height: 5px; top: 1200px; left: 250px; opacity: 0.2; }
+
+  .glow-orb { position: absolute; border-radius: 50%; filter: blur(100px); }
+  .orb1 { width: 500px; height: 500px; background: #2200b3; opacity: 0.4; top: -150px; right: -100px; }
+  .orb2 { width: 400px; height: 400px; background: {{ accent }}; opacity: 0.05; bottom: 100px; left: -120px; }
+  .orb3 { width: 400px; height: 400px; background: #4400cc; opacity: 0.25; bottom: -120px; right: -60px; }
+
+  .bg-number {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 500px;
+    font-weight: 800;
+    color: {{ fg }};
+    opacity: 0.03;
+    line-height: 1;
+  }
+
+  /* ── Top ── */
+  .top-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 7px;
+    background: linear-gradient(90deg, {{ accent }}, {{ accent }}aa, {{ accent }});
+  }
+
+  .slide-pill {
+    position: absolute;
+    top: 36px;
+    left: 64px;
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 28px;
+    color: {{ accent }};
+    font-weight: 700;
+    background: {{ accent }}15;
+    border: 1px solid {{ accent }}28;
+    padding: 8px 24px;
+    border-radius: 26px;
+    letter-spacing: 2px;
+  }
+
+  .top-logo {
+    position: absolute;
+    top: 34px;
+    right: 64px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .top-logo img { width: 40px; height: 40px; }
+  .top-logo span {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 28px; font-weight: 700; opacity: 0.5;
+  }
+
+  /* ── Main ── */
+  .safe-zone {
+    position: absolute;
+    top: 110px;
+    left: 64px;
+    right: 80px;
+    bottom: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .headline {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -3px;
+    margin-bottom: 28px;
+  }
+  .hook-slide .headline { font-size: 108px; }
+  .regular-slide .headline { font-size: 88px; }
+  .cta-slide .headline { font-size: 80px; }
+
+  .body-text {
+    font-size: 44px;
+    line-height: 1.35;
+    font-weight: 500;
+    opacity: 0.78;
+    max-width: 780px;
+  }
+
+  .accent-bar {
+    width: 100px; height: 8px;
+    background: {{ accent }};
+    margin-bottom: 36px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px {{ accent }}50;
+  }
+
+  .side-line {
+    position: absolute;
+    left: 28px; top: 160px;
+    width: 3px; height: 180px;
+    background: linear-gradient(180deg, {{ accent }}50, transparent);
+    border-radius: 2px;
+  }
+
+  /* ── Bottom ── */
+  .bottom-band {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 280px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,20,0.5) 50%, rgba(0,0,20,0.8) 100%);
+  }
+
+  .footer-strip {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 110px;
+    background: linear-gradient(180deg, transparent, rgba(34, 0, 179, 0.12));
+    border-top: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    align-items: center;
+    padding: 0 64px;
+    gap: 16px;
+  }
+  .footer-strip img { width: 40px; height: 40px; }
+  .footer-strip .footer-text {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 28px; font-weight: 700; opacity: 0.35;
+  }
+
+  .swipe-hint {
+    position: absolute;
+    bottom: 136px;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    opacity: 0.22;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .handle {
+    position: absolute;
+    bottom: 200px;
+    left: 64px;
+    font-size: 38px;
+    font-weight: 700;
+    color: {{ accent }};
+  }
+
+  .disclaimer {
+    position: absolute;
+    bottom: 162px;
+    left: 64px;
+    font-size: 20px;
+    opacity: 0.3;
+  }
+
+  .verify-marker {
+    display: inline-block;
+    background: #FF6B6B;
+    color: #fff;
+    font-size: 20px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+  <div class="glow-orb orb1"></div>
+  <div class="glow-orb orb2"></div>
+  <div class="glow-orb orb3"></div>
+  <div class="top-bar"></div>
+
+  <div class="sparkle s1"></div><div class="sparkle s2"></div>
+  <div class="sparkle s3"></div><div class="sparkle s4"></div>
+  <div class="sparkle s5"></div><div class="sparkle s6"></div>
+  <div class="sparkle s7"></div><div class="sparkle s8"></div>
+  <div class="sparkle s9"></div><div class="sparkle s10"></div>
+
+  <div class="bg-number">{{ slide_number }}</div>
+  <div class="side-line"></div>
+
+  <div class="slide-pill">{{ slide_number }}/{{ total_slides }}</div>
+  <div class="top-logo">
+    {% if logo_svg %}<img src="{{ logo_svg }}">{% endif %}
+    <span>Lodavo</span>
+  </div>
+
+  <div class="bottom-band"></div>
+
+  <div class="safe-zone {{ slide_class }}">
+    {% if slide_role != "HOOK" %}
+    <div class="accent-bar"></div>
+    {% endif %}
+    <div class="headline">{{ headline }}{% if needs_verification and show_verify %}<span class="verify-marker">[verify]</span>{% endif %}</div>
+    {% if body %}
+    <div class="body-text">{{ body }}</div>
+    {% endif %}
+  </div>
+
+  {% if slide_role == "CTA" %}
+    {% if handle %}<div class="handle">{{ handle }}</div>{% endif %}
+    {% if disclaimer %}<div class="disclaimer">{{ disclaimer }}</div>{% endif %}
+  {% elif slide_number < total_slides %}
+    <div class="swipe-hint">swipe →</div>
+  {% endif %}
+
+  <div class="footer-strip">
+    {% if logo_svg %}<img src="{{ logo_svg }}">{% endif %}
+    <span class="footer-text">Save more. Win cash. Free.</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+slideshow:
+  slug: lotto-max-wildest-wins
+  language: en
+  account: lodavo.money
+  series: windfall-stories
+  slot: "2026-10-24 12:00"
+  opening: cold
+  end: blue
+  slides:
+    # Kingston, Ont.: checked the OLG app in a drive-thru coffee line, first read it as $75,000
+    - text: "he found out he won $75 million in a drive-thru"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/4/4d/McDonald%E2%80%99s_drive-thru_window%2C_2026.jpg" } # drive-thru window, no people
+      focus: "50% 45%"
+    - text: "in line for coffee, he thought he'd won $75,000"
+      sub: "it was $75 million · Ontario, 2025"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Kingston_City_Hall-_Kingston-_Ontario-_20180414.jpg" } # Kingston City Hall
+      focus: "50% 50%"
+    # Surrey, B.C.: bought the ticket on a Walmart run for buns and cheese
+    - text: "he only went out for burger buns"
+      sub: "$80 million, Canada's biggest solo jackpot · B.C., 2025"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Hamburger_Buns_and_Hotdog_Rolls_%2809-04-2022%29.jpg/3840px-Hamburger_Buns_and_Hotdog_Rolls_%2809-04-2022%29.jpg" } # buns on a store shelf
+      focus: "40% 50%"
+    # Etobicoke: wants to ride the Orient Express, the Shinkansen, VIA's The Canadian and more
+    - text: "an Etobicoke man's plan: luxury trains around the world"
+      sub: "$65 million · Ontario, 2024"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/6/64/Via_Rail_Park_sleeper.jpg" } # VIA Rail Park car, The Canadian
+      focus: "45% 50%"
+    # Brampton: "I came to Canada with $300 in my pocket", Aug. 6 Lotto 6/49 jackpot
+    - text: "he came to Canada with $300 in his pocket"
+      sub: "then won $5 million · Ontario, 2025"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Terminal_Link_train_at_Toronto_Pearson_Airport%2C_April_30_2026_%28cropped%29.jpg/3840px-Terminal_Link_train_at_Toronto_Pearson_Airport%2C_April_30_2026_%28cropped%29.jpg" } # Toronto Pearson Terminal Link train
+      focus: "68% 50%"
+    # Chaudiere-Appalaches: his third-ever Lotto 6/49 ticket, a third of the Sept. 10 $5M jackpot
+    - text: "his third time ever playing Lotto 6/49"
+      sub: "$1,666,666 jackpot share · Quebec, 2025"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Levis%2C_Quebec.jpg/3840px-Levis%2C_Quebec.jpg" } # Levis from across the St. Lawrence
+      focus: "38% 50%"
+    - app: hero
+      text: "Lottery tickets cost money."
+      sub: "Lodavo's are free: every $25 you save earns a jackpot ticket"
+  caption: |
+    Canada's wildest Lotto Max and Lotto 6/49 jackpot winner stories, all true.
+    Which one would you believe least?
+    Lottery tickets cost money. Lodavo gives you free tickets for saving instead: every $25 you have saved earns one, every week, for a chance to win $100 or the $10,000 jackpot.
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#lottomax", "#lotto649", "#lotterywinner", "#canada"]
+  sources:
+    - https://globalnews.ca/news/11471372/lotto-max-jackpot-winner-75-million-august-2025
+    - https://globalnews.ca/news/11181909/canada-largest-lotto-winner-spontaneous-ticket-purchase
+    - https://globalnews.ca/news/11237667/big-winner-ontario-man-eyes-luxurious-train-ride-after-65m-lotto-max-win
+    - https://www.insauga.com/5m-lotto-jackpot-winner-in-brampton-came-to-canada-with-300-in-his-pocket/
+    - https://dailyhive.com/canada/lottery-winner-alexis-michaud
+    - https://lodavo.com/rules

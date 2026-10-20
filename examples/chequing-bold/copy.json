@@ -1,0 +1,55 @@
+{
+  "slides": [
+    {
+      "role": "HOOK",
+      "headline": "Your chequing account pays you $0",
+      "body": null,
+      "needs_verification": false
+    },
+    {
+      "role": "PROBLEM_OR_STAT",
+      "headline": "Money sitting in chequing loses value every single day",
+      "body": "inflation eats it while you sleep",
+      "needs_verification": false
+    },
+    {
+      "role": "VALUE",
+      "headline": "Open a HISA",
+      "body": "High-interest savings accounts pay 4-5% right now",
+      "needs_verification": true
+    },
+    {
+      "role": "VALUE",
+      "headline": "Automate the split",
+      "body": "Pay hits \u2192 bills to chequing, rest to savings. Set it once",
+      "needs_verification": false
+    },
+    {
+      "role": "VALUE",
+      "headline": "Your savings can win you cash",
+      "body": "Every $25 saved = a free weekly draw ticket on Lodavo",
+      "needs_verification": false
+    },
+    {
+      "role": "CTA",
+      "headline": "Make your savings work harder",
+      "body": "Download Lodavo free \u2014 link in bio",
+      "needs_verification": false
+    }
+  ],
+  "caption": "Your money is losing value while you scroll",
+  "hashtags": [
+    "#savingmoney",
+    "#studentfinance",
+    "#canada",
+    "#hisa",
+    "#lodavo",
+    "#moneymoves",
+    "#chequing"
+  ],
+  "hook_alternatives": [
+    "Your bank thanks you for the free loan",
+    "Chequing = parking lot for your money",
+    "$0 interest is not a flex"
+  ]
+}

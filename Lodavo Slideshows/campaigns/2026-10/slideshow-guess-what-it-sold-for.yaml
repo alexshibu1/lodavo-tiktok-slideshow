@@ -1,0 +1,59 @@
+slideshow:
+  slug: guess-what-it-sold-for
+  language: en
+  account: lodavo.money
+  series: guess-the-number
+  slot: "2026-10-21 19:00"
+  title: "Someone paid US$6.2M for a duct-taped banana. Guess the rest"
+  opening: cold
+  end: white
+  # Cold open: the banana's price is the hook, then five reveals in ascending price,
+  # Canada first. Every price includes the buyer's premium, as the auction house or the
+  # cited outlet reported it, and is never rounded up past the reported figure.
+  slides:
+    - text: "someone paid US$6.2M for a duct-taped banana"
+      sub: "guess the rest"
+      image: { url: "https://images.squarespace-cdn.com/content/v1/56703520d8af1045cf9bcf0d/1575913760103-0Z887W2CZG6DZV7XKH4I/Comedian+by+Maurizio+Cattelan+Banana.jpeg?format=2500w" } # Cattelan's Comedian
+      focus: "50% 60%"
+    - text: "US$3.75 million"
+      sub: "a Wayne Gretzky rookie card, 2021"
+      image: { url: "https://dygtyjqp7pi0m.cloudfront.net/i/34991/30066296_3.jpg?v=8D5BA0056EAFBC0" } # 1979-80 O-Pee-Chee #18
+      focus: "60% 50%"
+    - text: "US$10 million"
+      sub: "the original Birkin bag, made for Jane Birkin, 2025"
+      image: { url: "https://hips.hearstapps.com/hmg-prod/images/a26dcd9c-0e83-4867-90b8-89973a759272.jpeg?crop=1xw:1xh;center" } # the original Birkin on view before the sale
+      focus: "50% 70%"
+    - text: "US$16.49 million"
+      sub: "Logan Paul's Pikachu card, 2026. He paid US$5.275M in 2021"
+      image: { url: "https://static.feber.se/article_images/64/46/97/644697_1280.jpg" } # his PSA 10 (cert 23000982) in its pendant
+      focus: "50% 45%"
+    - text: "US$32.5 million"
+      sub: "Dorothy's ruby slippers, stolen in 2005, sold in 2024"
+      image: { url: "https://images.ctfassets.net/m3qyzuwrf176/6ONVa28sa9sWqTCOVpPcaH/c76a83a65ee5fe8aa7c363f341dc5a91/Ruby-Slippers-Optimized-JWPictures-8721.jpg?fm=webp&w=1800&q=100" } # a screen-worn pair (Academy Museum); Heritage's photos of the sold pair carry a burned-in credit
+      focus: "50% 55%"
+    - text: "US$44.6 million"
+      sub: "a Stegosaurus skeleton, the most ever paid for a fossil, 2024"
+      image: { url: "https://sothebys-md.brightspotcdn.com/dims4/default/acfdfae/2147483647/strip/true/crop/3496x4662+0+0/resize/4096x5462!/quality/90/?url=http:%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F53%2F23%2Ff57216a148b0923d90f8facde548%2Fn11503-cy8f2-cs-18.jpg" } # Apex, Sotheby's photo
+    - app: cta
+      text: "Have $1,000 saved?"
+      sub: "On Lodavo, that earns you 40 free jackpot tickets every week"
+  caption: |
+    Guess the price before you swipe: a Wayne Gretzky rookie card, the original Birkin bag, Logan Paul's Pikachu card, Dorothy's ruby slippers and a Stegosaurus.
+    How close were your guesses? Comment the one you'd actually buy 👇
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#auction", "#pokemon", "#hockeycards", "#moneytok"]
+  sources:
+    # Comedian (2019): $6,240,000 with fees ($5.2M hammer), Sotheby's New York, 20 Nov 2024
+    - https://hyperallergic.com/967962/banana-artwork-sells-for-6-2-million/
+    # 1979 O-Pee-Chee Gretzky rookie, Gem Mint 10: $3.75M private sale via Heritage, May 2021
+    - https://www.upi.com/Sports_News/NHL/2021/05/27/NHL-Wayne-Gretzky-rookie-card-historic-sale/9411622165437/
+    # AFP: the first Birkin, made for Jane Birkin, EUR 8.58M (US$10M) with fees, Sotheby's Paris, July 2025
+    - https://fashionunited.com/news/fashion/the-10-million-dollar-bag-original-birkin-smashes-records-at-paris-auction/2025071067093
+    # Guinness: Paul's PSA 10 Pikachu Illustrator, $16,492,000 at Goldin, 16 Feb 2026; he bought it in 2021 for $5,275,000
+    - https://www.guinnessworldrecords.com/news/2026/2/logan-pauls-rare-pokemon-card-becomes-most-expensive-ever-sold-in-record-setting-auction
+    # AFP: the pair that disappeared in 2005 (found 2018), $32.5M with taxes and fees at Heritage, Dec 2024
+    - https://gulfnews.com/business/markets/way-up-high-dorothys-ruby-slippers-fetch-record-325-million-1.1733629626391
+    # ABC News: Apex, $44.6M at Sotheby's New York, 17 July 2024, the most ever paid for a fossil
+    - https://abc7ny.com/post/stegosaurus-skeleton-nicknamed-apex-sells-record-446m-sothebys/15065154/
+    # Contest rules s.4.1(a): 1 ticket per $25 of balance at the Sunday snapshot, so $1,000 = 40 a week (under the 1,000 cap)
+    - https://lodavo.com/rules

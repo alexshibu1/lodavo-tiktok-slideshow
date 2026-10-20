@@ -1,0 +1,56 @@
+{
+  "slides": [
+    {
+      "role": "HOOK",
+      "headline": "TFSA or RRSP? Wrong answer costs you",
+      "body": null,
+      "needs_verification": false
+    },
+    {
+      "role": "PROBLEM_OR_STAT",
+      "headline": "Most students pick the wrong one because nobody explains it simply",
+      "body": null,
+      "needs_verification": false
+    },
+    {
+      "role": "VALUE",
+      "headline": "TFSA: tax-free growth",
+      "body": "Put money in after tax. It grows and you never pay tax on gains",
+      "needs_verification": false
+    },
+    {
+      "role": "VALUE",
+      "headline": "RRSP: tax refund now",
+      "body": "Deduct contributions from income. But you pay tax when you withdraw",
+      "needs_verification": false
+    },
+    {
+      "role": "VALUE",
+      "headline": "Students: TFSA wins",
+      "body": "Your income is low now. RRSP deductions save you almost nothing",
+      "needs_verification": false
+    },
+    {
+      "role": "CTA",
+      "headline": "Start your TFSA and win cash",
+      "body": "Download Lodavo free \u2014 link in bio",
+      "needs_verification": false
+    }
+  ],
+  "caption": "TFSA first. Always. Here's why",
+  "hashtags": [
+    "#tfsa",
+    "#rrsp",
+    "#studentfinance",
+    "#canada",
+    "#investing",
+    "#lodavo",
+    "#moneytips",
+    "#personalfinance"
+  ],
+  "hook_alternatives": [
+    "RRSP at 21? Probably a mistake",
+    "The account every student needs first",
+    "TFSA vs RRSP in 30 seconds"
+  ]
+}

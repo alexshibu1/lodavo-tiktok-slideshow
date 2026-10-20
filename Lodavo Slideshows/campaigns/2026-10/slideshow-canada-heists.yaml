@@ -1,0 +1,63 @@
+slideshow:
+  slug: canada-heists
+  language: en
+  account: lodavo.money
+  series: diabolical-money
+  slot: "2026-10-19 19:00"
+  opening: cold
+  end: white
+  slides:
+    # The Great Canadian Maple Syrup Heist, 2011-12: the producers' strategic reserve, more than $18M CAD
+    - text: "thieves stole $18 million of maple syrup in Quebec"
+      image: { url: "https://images.squarespace-cdn.com/content/v1/5913667115cf7d6cced1bd26/1509999506725-DB45J7NYYGNEZE8RTH55/P1019364.JPG" } # steel syrup drums
+      focus: "50% 50%"
+    # They siphoned the syrup off and returned the barrels filled with water; found at the July 2012 inventory
+    - text: "they drained the barrels and refilled them with water"
+      sub: "over 9,500 barrels · 2011-2012"
+      image: { url: "https://thewoodenskillet.com/wp-content/uploads/2016/04/how-to-make-maple-syrup-recipe-2.jpg" } # syrup poured into a jar
+      focus: "50% 55%"
+    # Toronto Pearson, April 17, 2023: 6,600 bars from Zurich, over C$20M, taken on a fraudulent airway bill
+    - text: "6,600 gold bars left Pearson on fake paperwork"
+      sub: "over $20 million · Canada's largest gold heist, 2023"
+      image: { url: "https://www.torontopearson.com/ar2017/_assets/img/our-neighbourhood/growth/cargo.jpg" } # Air Canada cargo at Pearson
+      focus: "45% 50%"
+    # Big Maple Leaf: Royal Canadian Mint, 100 kg, C$1M face value, taken from the Bode Museum on March 27, 2017
+    - text: "a 100 kg Canadian gold coin, gone in a wheelbarrow"
+      sub: "Berlin's Bode Museum, 2017 · never found"
+      image: { url: "https://smartcdn.gprod.postmedia.digital/nationalpost/wp-content/uploads/2011/11/20111103-biggoldcoin-05.jpg" } # a Big Maple Leaf coin
+      focus: "40% 50%"
+    # Montreal Museum of Fine Arts, Sept. 4, 1972: in through a skylight, 18 paintings and 39 objects; unsolved
+    - text: "Canada's biggest art heist was never solved"
+      sub: "Montreal, 1972 · 18 paintings, a Rembrandt among them"
+      image: { url: "https://thegoguy.com/wp-content/uploads/2024/06/Montreal-Museum-of-Fine-Arts-Black-and-White.jpg" } # the museum on Sherbrooke St.
+      focus: "50% 50%"
+    - app: cta
+      text: "Saving for something big?"
+      sub: "On Lodavo, every $25 you save earns a free jackpot ticket"
+  caption: |
+    The craziest Canadian heists, all real 🍁
+    The Great Maple Syrup Heist, the Pearson airport gold heist, the 100 kg Big Maple Leaf coin and the 1972 Montreal art heist.
+    Which one would you make a movie about?
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#heist", "#canada", "#maplesyrup", "#truecrime"]
+  sources:
+    # Maple syrup: "more than $18 million CAD", more than 9,500 barrels, barrels returned filled with water, found July 2012 (Dec. 18, 2024)
+    - https://www.today.com/today/amp/rcna182982
+    # Maple syrup: "$18 million worth of maple syrup", Richard Vallieres sentenced to 8 years (Apr. 28, 2017)
+    - https://globalnews.ca/news/3413782/maple-syrup-theft-sentence/
+    # Maple syrup: theft over 2011 and 2012, 9,571 barrels, siphoned and refilled with water
+    - https://en.wikipedia.org/wiki/Great_Canadian_Maple_Syrup_Heist
+    # Pearson: April 17, 2023, 6,600 gold bars, about $20 million, fraudulent airway bill, "the largest gold heist in Canadian history"
+    - https://www.cbsnews.com/news/canada-gold-heist-toronto-police-charge-suspects/
+    # Pearson: the value is over C$20 million (CBC, Reuters); forged waybill copied from a seafood shipment's
+    - https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport_heist
+    # Big Maple Leaf: 100 kg, Royal Canadian Mint 2007, C$1M face value, Bode Museum, Berlin, carted off in a wheelbarrow (Mar. 28, 2017)
+    - https://fortune.com/2017/03/28/coin-stolen-big-maple-leaf
+    # Big Maple Leaf: stolen Mar. 27, 2017, whereabouts still unknown, thought melted down
+    - https://en.wikipedia.org/wiki/Big_Maple_Leaf
+    # MMFA: Sept. 4, 1972, in through a skylight, 18 paintings and 39 objects incl. Rembrandt's Landscape with Cottages, unsolved
+    - https://www.thecanadianencyclopedia.ca/en/article/skylight-caper-1972-montreal-art-heist
+    # MMFA: "the biggest art heist in Canadian history", still a cold case (Canadian Press, Sept. 4, 2022)
+    - https://cfjctoday.com/?p=919335
+    # Contest rules s.4.1(a): every $25 of linked balance at the Sunday snapshot earns 1 ticket
+    - https://lodavo.com/rules

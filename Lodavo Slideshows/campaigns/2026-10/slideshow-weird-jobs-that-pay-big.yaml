@@ -1,0 +1,58 @@
+slideshow:
+  slug: weird-jobs-that-pay-big
+  language: en
+  account: lodavo.money
+  series: diabolical-money
+  slot: "2026-10-25 12:00"
+  opening: intro
+  end: white
+  # Canadian wages are Job Bank hourly medians from its November 19, 2025 update (the
+  # page's own reference period is 2023-2024 or 2024), so slides say "Job Bank 2025",
+  # not "in 2025". US figures are marked US$. Ice road trucker was dropped: no pay
+  # figure from a reliable source. The intro's underwater divers pay off on slide 6,
+  # and the app slide calls back to the alligators.
+  slides:
+    - text: "5 weird jobs that pay way more than you'd think 👉"
+      image: { url: "https://hakaimagazine.com/wp-content/uploads/underwater-golf-balls.jpg" } # divers bagging golf balls
+      focus: "50% 55%"
+    - text: "Elevator mechanic"
+      sub: "$45 an hour median, $55.62 in Alberta (Job Bank 2025)"
+      image: { url: "https://unionjackelevator.com/wp-content/uploads/2025/04/9bf2e344-ab1b-4d69-93ac-e4a02e9cb928.jpg" } # crew in a shaft
+    - text: "Heavy equipment operator, Fort McMurray area"
+      sub: "$40 an hour median vs $32.50 nationally (Job Bank 2025)"
+      image: { url: "https://external-preview.redd.it/0J08W0CDikYGa1EuXzlEMZ5mtBQejSKhokEl1r6gxv0.jpg?auto=webp&s=90c75ed86b4f331310d997b8d1ba29a2fc2588c4" } # haul truck bound for Fort McMurray
+      focus: "50% 60%"
+    - text: "Air traffic controller"
+      sub: "$54.88 an hour median, $75.19 in New Brunswick (Job Bank 2025)"
+      image: { url: "https://matkoviccontracting.com/wp-content/uploads/2021/02/Air-Traffic-Control-Tower-Calgary-719x1030.jpg" } # Calgary airport tower
+    - text: "Professional line sitter"
+      sub: "Up to US$40 an hour to wait in line for someone else (2025)"
+      image: { url: "https://pbs.twimg.com/media/HDZwf-WaMAAgR97.jpg" } # NYC sidewalk line
+    - text: "Golf ball diver"
+      sub: "Top divers: up to US$100,000 a year (2011). Alligators included."
+      image: { url: "https://sustainable.golf/assets/media/images/highlights/3974/Golfballdiving.jpg?1" } # diver in a pond, face masked
+      focus: "45% 55%"
+    - app: cta
+      text: "Want a reason to save more?"
+      sub: "On Lodavo, each $25 you save earns a free jackpot ticket"
+  caption: |
+    Weird jobs that pay way more than you'd think, from elevator mechanic to golf ball diver.
+    Which one would you actually do?
+    Canadian wages are Government of Canada Job Bank medians, 2025.
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#weirdjobs", "#salary", "#jobs", "#canada"]
+  sources:
+    # Elevator constructor-mechanic (NOC 72406): Canada median $45.00/h, Alberta $55.62/h; wages updated 2025-11-19
+    - https://www.jobbank.gc.ca/marketreport/wages-occupation/723/ca
+    # Heavy equipment operator (NOC 73400): Wood Buffalo-Cold Lake Region median $40.00/h, Canada $32.50/h; updated 2025-11-19
+    - https://www.jobbank.gc.ca/marketreport/wages-occupation/15029/geo25350
+    # Air traffic controller (NOC 72601): Canada median $54.88/h, New Brunswick $75.19/h; updated 2025-11-19
+    - https://www.jobbank.gc.ca/marketreport/wages-occupation/22712/ca
+    # Fortune, May 18, 2025: "People are being paid as much as $40 an hour to wait in line for others"
+    - https://www.fortune.com/2025/05/18/gen-x-entrepreneur-line-sitting-business-nyc-diddy-trial-sample-sale
+    # Indianapolis Business Journal, Aug 11, 2011: "successful divers can make as much as $100,000 a year"; alligators among the risks
+    - https://www.ibj.com/articles/28896-firm-makes-splash-retrieving-golf-balls
+    # CNN, Mar 10, 2025: golf ball diver Jim Best working around alligators, up to two million balls a year at his peak
+    - https://kvia.com/cnn-sports/2025/03/10/the-scuba-diver-who-fights-alligators-and-murky-waters-to-rescue-your-golf-balls/
+    # Contest rules s.4.1(a): every $25 of balance at the Sunday snapshot earns 1 ticket
+    - https://lodavo.com/rules

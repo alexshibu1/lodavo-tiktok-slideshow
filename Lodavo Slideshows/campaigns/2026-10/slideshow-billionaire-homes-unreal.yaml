@@ -1,0 +1,58 @@
+# Posted on TikTok 2026-10-18. Its Instagram set is the first 4:5 render, same text. Don't
+# re-render: the current layout would no longer match what went up.
+slideshow:
+  slug: billionaire-homes-unreal
+  language: en
+  account: lodavo.money
+  series: wealth-unreal
+  opening: cold
+  end: blue
+  slides:
+    # Hook photo: Hearst Castle's Neptune Pool (the estate pays off on slide 7)
+    - text: "6 billionaire homes that don't look real"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/8/87/DSC27413%2C_Hearst_Castle%2C_San_Simeon%2C_California%2C_USA_%286433990083%29.jpg" }
+      focus: "55% 50%"
+    - text: "Antilia, Mumbai"
+      sub: "27 floors for one family"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/0/06/Antilia%2C_Mumbai.jpg" }
+    - text: "Kensington Palace Gardens, London"
+      sub: "Its nickname is Billionaires' Row"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/15_Kensington_Palace_Gardens%2C_Kensington%2C_September_2022.jpg/3840px-15_Kensington_Palace_Gardens%2C_Kensington%2C_September_2022.jpg" }
+    - text: "Witanhurst, London"
+      sub: "London's biggest home after Buckingham Palace"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/8/8b/Witanhurst_and_St_Michael%27s_Church%2C_Highgate-8491910905.jpg" }
+      focus: "50% 45%"
+    - text: "The Breakers, Rhode Island"
+      sub: "A 70-room summer cottage"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/The_Breakers_Newport.jpg/3840px-The_Breakers_Newport.jpg" }
+      focus: "45% 50%"
+    - text: "Villa Leopolda, French Riviera"
+      sub: "A buyer backed out and lost €39 million"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/1/17/Villa_Leopolda_Villefranche-sur-Mer.JPG" }
+      focus: "75% 50%"
+      dim: 0.5
+    - text: "Hearst Castle, California"
+      sub: "It once had the world's largest private zoo"
+      image: { url: "https://upload.wikimedia.org/wikipedia/commons/3/30/Hearst_Castle_Casa_Grande_September_2012_panorama_2.jpg" }
+    - app: hero
+      text: "Meanwhile, us: every $25 saved earns a free Lodavo ticket"
+  caption: |
+    Billionaire homes and mansions that look fake but are real…
+    A 27-floor house for one family and a castle that had its own zoo.
+    Which one would you live in?
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#billionairehomes", "#mansions", "#luxuryhomes", "#moneytok"]
+  sources:
+    # Antilia: 27 floors, residence of Mukesh Ambani and his family
+    - https://en.wikipedia.org/wiki/Antilia_(building)
+    # Kensington Palace Gardens: "has long been known as 'Billionaires Row'"
+    - https://en.wikipedia.org/wiki/Kensington_Palace_Gardens
+    # Witanhurst: second-largest private residence in London, after Buckingham Palace
+    - https://en.wikipedia.org/wiki/Witanhurst
+    # The Breakers: 70-room summer residence; "the grandest of Newport's summer 'cottages'"
+    - https://en.wikipedia.org/wiki/The_Breakers
+    - https://www.newportmansions.org/explore/the-breakers/
+    # Villa Leopolda: Prokhorov's €39 million deposit, French court ruled against him (2012)
+    - https://en.wikipedia.org/wiki/Villa_Leopolda
+    # Hearst Castle: the world's largest private zoo during Hearst's lifetime
+    - https://en.wikipedia.org/wiki/Hearst_Castle

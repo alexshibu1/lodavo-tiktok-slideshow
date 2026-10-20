@@ -1,0 +1,44 @@
+slideshow:
+  slug: where-100-dollars-makes-you-a-millionaire
+  language: en
+  account: lodavo.money
+  series: guess-the-number
+  slot: "2026-10-24 19:00"
+  opening: intro
+  end: blue
+  slides:
+    - text: "here's where $100 Canadian makes you a millionaire 👉"
+      image: { url: "https://i.ebayimg.com/images/g/8zUAAOSwp8Jjdm5M/s-l1600.jpg" } # Vietnamese dong notes, 500 to 500,000, fanned out
+      focus: "50% 60%"
+    # Every amount: CA$100 at XE's CAD table for 2026-10-16, rounded down to the thousand.
+    - text: "1,276,000 rupiah"
+      sub: "Indonesia (XE rate, October 16, 2026)"
+      image: { url: "https://images.squarespace-cdn.com/content/v1/596b2969d2b85786e6892853/1571465409643-RUVDUOFG0CHDHEMKFTTR/Pura+Ulun+Danu+Bratan+Opening+hours" } # Pura Ulun Danu Bratan, Bali, no people
+      focus: "50% 55%"
+    - text: "1,584,000 kip"
+      sub: "Laos"
+      image: { url: "https://globusliebe.com/wp-content/uploads/2025/02/Laos-Luang-Prabang-Altstadt.webp" } # Luang Prabang old town lane, no faces
+      focus: "50% 60%"
+    - text: "1,826,000 dong"
+      sub: "Vietnam"
+      image: { url: "https://images.squarespace-cdn.com/content/v1/5bbcf00a9b8fe874ed2f03d0/d8ca91a7-dc74-4a64-a0ca-221d09d77893/hanoi-old-quarter.jpg?format=2500w" } # Hanoi Old Quarter street, people small and in the distance
+      focus: "50% 50%"
+    - app: cta
+      text: "Have $100 saved?"
+      sub: "On Lodavo, that earns 4 free jackpot tickets every week"
+  caption: |
+    Indonesia, Laos and Vietnam: where $100 Canadian makes you a millionaire ✈️
+    Amounts use XE's exchange rates for October 16, 2026, rounded down.
+    Which one would you visit first?
+    Lodavo is linked in our bio.
+  hashtags: ["#lodavo", "#currency", "#exchangerate", "#travel", "#canada"]
+  sources:
+    # XE Currency Tables, CAD, 2026-10-16, units per CAD: IDR 12,765.33, LAK 15,841.70,
+    # VND 18,263.47 (x100 = 1,276,532 / 1,584,169 / 1,826,346).
+    # Lebanon (6,332,775 pounds) is left out on purpose: its number comes from a currency collapse.
+    # Left out: Iran (XE does not quote the rial; its CAD-to-IRR page is a 404), Uzbekistan
+    # (852,494 som), and redenominated codes XE still lists (SLL, STD, ZWL).
+    - https://www.xe.com/currencytables/?from=CAD&date=2026-10-16
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance at the Sunday 8 PM ET
+    # snapshot, rounded down. floor(100 / 25) = 4, far under the 1,000-a-week cap (s.4.1).
+    - https://lodavo.com/rules

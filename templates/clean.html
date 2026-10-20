@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family={{ heading_font | replace(" ", "+") }}:wght@600;700;800&family={{ body_font | replace(" ", "+") }}:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    background: linear-gradient(170deg, #1a0a6e 0%, {{ bg }} 35%, #060028 100%);
+    color: {{ fg }};
+    font-family: '{{ body_font }}', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* ── Background ── */
+  .sparkle { position: absolute; border-radius: 50%; background: #fff; }
+  .s1 { width: 4px; height: 4px; top: 100px; left: 200px; opacity: 0.4; }
+  .s2 { width: 3px; height: 3px; top: 300px; right: 250px; opacity: 0.3; }
+  .s3 { width: 5px; height: 5px; top: 550px; left: 300px; opacity: 0.2; }
+  .s4 { width: 3px; height: 3px; top: 950px; right: 280px; opacity: 0.35; }
+  .s5 { width: 4px; height: 4px; top: 1100px; left: 500px; opacity: 0.25; }
+  .s6 { width: 3px; height: 3px; top: 160px; right: 350px; opacity: 0.3; }
+
+  .glow-orb { position: absolute; border-radius: 50%; filter: blur(100px); }
+  .orb1 { width: 450px; height: 450px; background: #2200b3; opacity: 0.35; top: -80px; right: -60px; }
+  .orb2 { width: 350px; height: 350px; background: #4400cc; opacity: 0.18; bottom: 20px; left: -80px; }
+
+  .bg-number {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 440px;
+    font-weight: 800;
+    color: {{ fg }};
+    opacity: 0.02;
+    line-height: 1;
+  }
+
+  /* ── Top strip ── */
+  .top-strip {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0 48px;
+    gap: 12px;
+    background: linear-gradient(180deg, rgba(0,0,30,0.4) 0%, transparent 100%);
+  }
+  .top-strip img { width: 36px; height: 36px; }
+  .top-strip .brand-name {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 26px; font-weight: 700; opacity: 0.5;
+    flex: 1;
+  }
+  .top-strip .slide-pill {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 24px;
+    color: {{ accent }};
+    font-weight: 700;
+    background: {{ accent }}12;
+    border: 1px solid {{ accent }}22;
+    padding: 6px 20px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+  }
+
+  /* ── Card ── */
+  .card {
+    position: absolute;
+    top: 110px;
+    left: 48px;
+    right: 48px;
+    bottom: 260px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%);
+    border-radius: 32px;
+    padding: 56px 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .card-line {
+    position: absolute;
+    top: 0; left: 44px; right: 44px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, {{ accent }}40, transparent);
+    border-radius: 2px;
+  }
+
+  .slide-role-label {
+    font-family: '{{ body_font }}', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: {{ accent }};
+    margin-bottom: 24px;
+  }
+
+  .headline {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+  }
+  .hook-slide .headline { font-size: 82px; }
+  .regular-slide .headline { font-size: 70px; }
+  .cta-slide .headline { font-size: 64px; }
+
+  .body-text {
+    font-size: 38px;
+    line-height: 1.4;
+    font-weight: 500;
+    opacity: 0.72;
+  }
+
+  .accent-dot {
+    width: 20px; height: 20px;
+    background: {{ accent }};
+    border-radius: 50%;
+    margin-bottom: 32px;
+    box-shadow: 0 0 16px {{ accent }}50;
+  }
+
+  /* ── Bottom ── */
+  .bottom-fade {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 270px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,20,0.5) 50%, rgba(0,0,20,0.8) 100%);
+  }
+
+  .swipe-hint {
+    position: absolute;
+    bottom: 130px;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    opacity: 0.2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .footer-strip {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 100px;
+    background: linear-gradient(180deg, transparent, rgba(34, 0, 179, 0.1));
+    border-top: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 64px;
+  }
+  .footer-strip img { width: 36px; height: 36px; opacity: 0.6; }
+  .footer-strip .tagline {
+    font-family: '{{ heading_font }}', sans-serif;
+    font-size: 26px; font-weight: 700; opacity: 0.3;
+  }
+
+  .handle {
+    position: absolute;
+    bottom: 196px;
+    left: 64px;
+    font-size: 34px;
+    font-weight: 700;
+    color: {{ accent }};
+  }
+
+  .disclaimer {
+    position: absolute;
+    bottom: 162px;
+    left: 64px;
+    font-size: 20px;
+    opacity: 0.28;
+  }
+
+  .verify-marker {
+    display: inline-block;
+    background: #FF6B6B;
+    color: #fff;
+    font-size: 18px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-left: 8px;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+  <div class="glow-orb orb1"></div>
+  <div class="glow-orb orb2"></div>
+
+  <div class="sparkle s1"></div><div class="sparkle s2"></div>
+  <div class="sparkle s3"></div><div class="sparkle s4"></div>
+  <div class="sparkle s5"></div><div class="sparkle s6"></div>
+
+  <div class="bg-number">{{ slide_number }}</div>
+
+  <div class="top-strip">
+    {% if logo_svg %}<img src="{{ logo_svg }}">{% endif %}
+    <span class="brand-name">Lodavo</span>
+    <span class="slide-pill">{{ slide_number }}/{{ total_slides }}</span>
+  </div>
+
+  <div class="bottom-fade"></div>
+
+  <div class="card {{ slide_class }}">
+    <div class="card-line"></div>
+
+    {% if slide_role == "HOOK" %}
+    <div class="accent-dot"></div>
+    {% else %}
+    <div class="slide-role-label">{{ slide_role_label }}</div>
+    {% endif %}
+
+    <div class="headline">{{ headline }}{% if needs_verification and show_verify %}<span class="verify-marker">[verify]</span>{% endif %}</div>
+
+    {% if body %}
+    <div class="body-text">{{ body }}</div>
+    {% endif %}
+  </div>
+
+  {% if slide_role == "CTA" %}
+    {% if handle %}<div class="handle">{{ handle }}</div>{% endif %}
+    {% if disclaimer %}<div class="disclaimer">{{ disclaimer }}</div>{% endif %}
+  {% elif slide_number < total_slides %}
+    <div class="swipe-hint">swipe →</div>
+  {% endif %}
+
+  <div class="footer-strip">
+    {% if logo_svg %}<img src="{{ logo_svg }}">{% endif %}
+    <span class="tagline">Save more. Win cash. Free.</span>
+  </div>
+</body>
+</html>
