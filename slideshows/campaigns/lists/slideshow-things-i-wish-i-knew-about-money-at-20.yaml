@@ -1,0 +1,76 @@
+slideshow:
+  slug: things-i-wish-i-knew-about-money-at-20
+  language: en
+  account: lodavo.money
+  series: money-lists
+  slot: "2026-11-14 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook slide
+    - text: "6 things I wish I knew about money at 20"
+      image: { url: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" } # young person looking out at city skyline
+      focus: "50% 40%"
+    # 1: Your TFSA room starts building at 18
+    - text: "your TFSA room starts at 18"
+      sub: "by 20 you already have $13,500 in room. use it"
+      image: { url: "https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # 2: Small amounts actually matter
+    - text: "$50 a month is $3,600 in 6 years"
+      sub: "starting small still beats starting never"
+      image: { url: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf" } # coins stacked in growing piles
+      focus: "50% 50%"
+    # 3: Subscriptions add up silently
+    - text: "audit your subscriptions once a month"
+      sub: "Spotify, iCloud, gym. $15 here and $12 there adds up"
+      image: { url: "https://images.unsplash.com/photo-1611162617474-5b21e879e113" } # phone showing app subscriptions
+      focus: "50% 50%"
+    # 4: Your credit score starts now
+    - text: "your credit score is being built right now"
+      sub: "one missed payment stays for 6 years"
+      image: { url: "https://images.unsplash.com/photo-1563013544-824ae1b704d3" } # credit card on laptop
+      focus: "50% 45%"
+    # 5: Free money exists and most students ignore it
+    - text: "file your taxes even with zero income"
+      sub: "the GST/HST credit pays up to $519 a year"
+      image: { url: "https://images.unsplash.com/photo-1554224154-26032ffc0d07" } # tax forms and calculator
+      focus: "50% 50%"
+    # 6: Saving should feel rewarding, not punishing
+    - text: "saving should feel like progress, not punishment"
+      sub: "find something that makes saving worth doing every week"
+      image: { url: "https://images.unsplash.com/photo-1531983412531-1f49a365ffed" } # person celebrating with arms raised outdoors
+      focus: "50% 40%"
+    # App slide
+    - app: cta
+      text: "What if saving actually felt exciting?"
+      sub: "On Lodavo, every $25 saved earns a free ticket for the weekly draw"
+  caption: |
+    Six things I really wish someone told me about money when I was 20.
+
+    Your TFSA room is already building. Small amounts add up over years. Subscriptions drain your account fast. Your credit score is being tracked right now. Filing taxes gets you free money. And saving should actually feel good.
+
+    None of this is complicated. You just need to start.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytips"
+    - "#personalfinance"
+    - "#canada"
+    - "#tfsa"
+    - "#savingmoney"
+    - "#moneytok"
+    - "#lodavo"
+  sources:
+    # CRA TFSA contribution room: $6,500 for 2023, $7,000 for 2024-2026. Cumulative from age 18.
+    # Someone turning 20 in 2026 turned 18 in 2024: $7,000 (2024) + $7,000 (2025) = $14,000.
+    # Adjusted to $13,500 to round conservatively (room depends on exact birth year).
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributions.html
+    # TFSA annual limit history
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/tax-free-savings-account-summary.html
+    # Equifax Canada: missed payments stay on credit report for 6 years from date of last activity
+    - https://www.consumer.equifax.ca/personal/education/credit-report/how-long-does-information-stay-on-my-equifax-credit-report/
+    # CRA GST/HST credit: up to $519 annually for a single person with no children (July 2024 to June 2025 payment period)
+    - https://www.canada.ca/en/revenue-agency/services/child-family-benefits/goods-services-tax-harmonized-sales-tax-gst-hst-credit.html
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

@@ -1,0 +1,53 @@
+slideshow:
+  slug: 2-dollar-emergency-meal
+  language: en
+  account: lodavo.money
+  series: reddit-v2
+  slot: "2026-12-24 19:00"
+  opening: cold
+  end: blue
+  slides:
+    - text: "the *$2* emergency meal"
+      sub: "that actually slaps"
+      image: { url: "https://i.pinimg.com/originals/f5/8a/63/f58a6344b718776a87081fd73ccbc038.jpg" }
+      focus: "50% 50%"
+    - text: "1 pack of ramen: *$0.30*"
+      sub: "but we're not eating it plain"
+      image: { url: "https://i.pinimg.com/736x/0b/36/00/0b3600988812e73eeddec221a71f9bf8.jpg" }
+      focus: "50% 50%"
+    - text: "add an egg: *$0.35*"
+      sub: "protein and it thickens the broth"
+      image: { url: "https://i.pinimg.com/originals/6c/ad/e2/6cade2cb7882a945c5c59be09216c0f0.jpg" }
+      focus: "50% 50%"
+    - text: "frozen veggies: *$0.40*"
+      sub: "corn, peas, carrots from the bag"
+      image: { url: "https://i.pinimg.com/originals/5c/67/2d/5c672d22d1d9375251ee41e82a64caa2.jpg" }
+      focus: "50% 50%"
+    - text: "soy sauce and sriracha"
+      sub: "already in your kitchen, $0"
+      image: { url: "https://i.pinimg.com/originals/1b/a8/e0/1ba8e0addc93f42f7d9401149e92262c.jpg" }
+      focus: "50% 50%"
+    - text: "total: *$1.05*"
+      sub: "filling, warm, and actually good"
+      image: { url: "https://i.pinimg.com/originals/18/d9/04/18d90414c60f8cee8ea840b4b4cb5441.jpg" }
+      focus: "50% 50%"
+    - text: "the money you save on food"
+      sub: "is the easiest money to save"
+      image: { url: "https://i.pinimg.com/originals/31/f7/80/31f7809ccf08d6759176f78909c7762a.jpg" }
+      focus: "50% 40%"
+    - app: hero
+      text: "Every dollar saved adds up."
+      sub: "Lodavo gives you a free draw ticket for every $25 saved. Weekly."
+  caption: |
+    The $2 emergency meal that actually slaps.
+    Ramen + egg + frozen veggies + soy sauce + sriracha. $1.05 total.
+    When you're broke, the money you save on food is the easiest money to save.
+    Lodavo is linked in our bio.
+  hashtags:
+    - "#budgetmeals"
+    - "#moneytok"
+    - "#studentlife"
+    - "#canadiantiktok"
+    - "#lodavo"
+  sources:
+    - https://www.reddit.com/r/povertyfinance/

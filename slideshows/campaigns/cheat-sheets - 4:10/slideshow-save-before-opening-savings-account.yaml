@@ -1,0 +1,77 @@
+slideshow:
+  slug: save-before-opening-savings-account
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-21 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: urgent save-worthy reference
+    - text: "save this before you open a savings account"
+      image: { url: "https://images.pexels.com/photos/4050367/pexels-photo-4050367.jpeg?cs=srgb&dl=pexels-vlada-karpovich-4050367.jpg&fm=jpg" }
+      focus: "50% 45%"
+    # Interest rate benchmark: what to look for
+    - text: "check the interest rate"
+      sub: "below 3% is not competitive. top HISAs pay 4% or more"
+      image: { url: "https://images.pexels.com/photos/6964053/pexels-photo-6964053.jpeg?cs=srgb&dl=pexels-mikhail-nilov-6964053.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Monthly fees: the silent killer
+    - text: "monthly fees eat your savings"
+      sub: "$4.95 a month costs $59 a year. choose $0 fee accounts"
+      image: { url: "https://i0.wp.com/thefrugalspinster.com/wp-content/uploads/2021/01/expensesdesk_1200pixels.jpg?resize=1200%2C1797&ssl=1" }
+      focus: "50% 50%"
+    # CDIC insurance: is your money protected
+    - text: "make sure it's CDIC insured"
+      sub: "covers up to $100,000 per account. always check"
+      image: { url: "https://images.pexels.com/photos/4066267/pexels-photo-4066267.jpeg?cs=srgb&dl=pexels-henk-mohabier-4066267.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Minimum balance traps
+    - text: "minimum balance traps"
+      sub: "some charge fees below $1,000 to $3,000. read the fine print"
+      image: { url: "https://images.pexels.com/photos/4494644/pexels-photo-4494644.jpeg?cs=srgb&dl=pexels-nothing-ahead-4494644.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Transfer limits and access
+    - text: "check withdrawal limits"
+      sub: "some cap free withdrawals to once or twice a month"
+      image: { url: "https://images.pexels.com/photos/6373129/pexels-photo-6373129.jpeg?cs=srgb&dl=pexels-ekaterina-bolovtsova-6373129.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # What makes saving actually stick
+    - text: "the real problem"
+      sub: "savings accounts work, but nothing makes you want to keep going"
+      image: { url: "https://i.pinimg.com/originals/ae/6d/e6/ae6de6243b88821b690f6206056bee1e.jpg" }
+      focus: "50% 50%"
+    # App slide: Lodavo as the layer on top
+    - app: hero
+      text: "What if saving gave you a chance to win?"
+      sub: "Lodavo is free. Every $25 saved earns a free draw ticket."
+  caption: |
+    Read this before you open a savings account. Seriously, save it.
+
+    Interest rate, monthly fees, CDIC insurance, minimum balance traps, withdrawal limits. These five things will cost you hundreds if you get them wrong.
+
+    And once you have the right account, add a layer that makes saving feel worth it.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#savingmoney"
+    - "#canada"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#personalfinance"
+    - "#lodavo"
+  sources:
+    # Ratehub best high-interest savings accounts in Canada (2026 rates)
+    - https://www.ratehub.ca/savings-accounts/best-savings-accounts
+    # CDIC deposit insurance coverage ($100,000 per eligible deposit category)
+    - https://www.cdic.ca/your-coverage/protecting-your-deposit/
+    # Financial Consumer Agency of Canada, comparing savings accounts
+    - https://www.canada.ca/en/financial-consumer-agency/services/banking/savings-accounts.html
+    # Big Five bank monthly savings account fees comparison
+    - https://www.ratehub.ca/savings-accounts/compare
+    # Bank of Canada interest rate and HISA benchmark context
+    - https://www.bankofcanada.ca/rates/interest-rates/
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

@@ -1,0 +1,82 @@
+slideshow:
+  slug: make-500-a-month-as-a-student
+  language: en
+  account: lodavo.money
+  series: student-life
+  slot: "2026-12-03 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: specific dollar amount, every student wants this
+    - text: "how to make $500/month as a student in Canada"
+      image: { url: "https://blog.remitly.com/wp-content/uploads/2024/02/canadian-dollars-scaled.jpg" }
+      focus: "50% 50%"
+    # Option 1: campus jobs that work around your schedule
+    - text: "campus jobs pay $16-17/hr"
+      sub: "library, front desk, food court. 8 hrs/week gets you there"
+      image: { url: "https://images.pexels.com/photos/6205508/pexels-photo-6205508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Option 2: tutoring other students
+    - text: "tutor first and second years"
+      sub: "$25-40/hr on Wyzant or campus boards. 4 hrs/week adds up"
+      image: { url: "https://images.pexels.com/photos/7972378/pexels-photo-7972378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Option 3: food delivery in your city
+    - text: "deliver on Uber Eats or DoorDash"
+      sub: "students in Toronto, Vancouver, Montreal average $18-22/hr during dinner rush"
+      image: { url: "https://www.ridester.com/wp-content/uploads/2021/07/uber_eats_bicycle_2.jpg" }
+      focus: "50% 50%"
+    # Option 4: TA and research positions
+    - text: "apply for TA and research positions"
+      sub: "upper years can earn $20-28/hr. check your department every September"
+      image: { url: "https://wcc.ca/wp-content/uploads/2024/10/wcc-blog-Benefits-of-starting-a-career-as-a-Teaching-Assistant.jpg" }
+      focus: "50% 50%"
+    # Option 5: sell your notes and study guides
+    - text: "sell your notes on Studocu or Oneclass"
+      sub: "popular courses earn $100-200 a semester, totally passive"
+      image: { url: "https://i.pinimg.com/originals/6d/c3/01/6dc3014ca249a14ac490dcb22f086d10.jpg" }
+      focus: "50% 50%"
+    # Option 6: paid research studies on campus
+    - text: "sign up for paid research studies"
+      sub: "psych and business departments pay $15-50 per session"
+      image: { url: "https://www.mtholyoke.edu/sites/default/files/styles/1024x800/public/2025-10/psych-students-observing-research.jpg?itok=5CU-ABuE" }
+      focus: "50% 50%"
+    # App slide: bridge income to saving and Lodavo
+    - app: hero
+      text: "Making money is half the game. Saving it is the other."
+      sub: "Lodavo gives you a free draw ticket for every $25 saved"
+  caption: |
+    $500 a month as a student is very doable in Canada.
+
+    Campus jobs alone can get you there at 8 hours a week. Mix in tutoring, delivery apps, selling notes, or paid research studies and you can clear it easily without destroying your GPA. The key is choosing things that flex around your schedule, not the other way around.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#studentlife"
+    - "#uoft"
+    - "#mcgill"
+    - "#savingmoney"
+    - "#lodavo"
+  sources:
+    # Ontario minimum wage 2024: $16.55/hr (campus jobs base rate)
+    - https://www.ontario.ca/document/your-guide-employment-standards-act-0/minimum-wage
+    # BC minimum wage 2024: $17.40/hr
+    - https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/wages/minimum-wage
+    # Wyzant tutoring platform rates for Canadian tutors
+    - https://www.wyzant.com/
+    # Uber Eats Canada driver earnings estimates
+    - https://www.uber.com/ca/en/deliver/
+    # University of Toronto TA collective agreement: hourly rates
+    - https://www.cupe3902.org/unit-1/
+    # Studocu note-sharing platform
+    - https://www.studocu.com/en-ca
+    # SONA Systems: paid research studies at Canadian universities
+    - https://www.sona-systems.com/
+    # Statistics Canada: employment rates for full-time post-secondary students
+    - https://www150.statcan.gc.ca/n1/daily-quotidien/240105/dq240105a-eng.htm
+    # Contest rules s.4.1(a): every $25 of linked balance earns 1 ticket
+    - https://lodavo.com/rules

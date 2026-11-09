@@ -1,0 +1,87 @@
+slideshow:
+  slug: guess-rent-six-canadian-cities
+  language: en
+  account: lodavo.money
+  series: v2
+  slot: "2026-12-11 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: imperative + number, 8 words, quiz format
+    - text: "Guess the 1-bedroom rent in 6 Canadian cities"
+      image: { url: "https://i.pinimg.com/originals/e3/17/d5/e317d54314b8424331075f1c00fc5d73.jpg" }
+      focus: "50% 50%"
+    # City 1: Winnipeg, cheapest, sets the quiz pace
+    - text: "Winnipeg: $1,340/month"
+      sub: "the cheapest of the six. Guess Calgary"
+      image: { url: "https://faszination-kanada.com/wp-content/uploads/2017/06/Winnipeg-Skyline.jpg" }
+      focus: "50% 50%"
+    # City 2: Calgary
+    - text: "Calgary: $1,620/month"
+      sub: "$280 more than Winnipeg"
+      image: { url: "https://d38zjy0x98992m.cloudfront.net/2b4c7ec9-aa47-40ed-82e2-26c79d508df8/21-06-25-0078_xgaplus.jpg" }
+      focus: "50% 50%"
+    # City 3: Montreal
+    - text: "Montreal: $1,750/month"
+      sub: "guess Halifax before you swipe"
+      image: { url: "https://www.fodors.com/wp-content/uploads/2022/05/Hero-UltMontreal-shutterstock_1839500569.jpg" }
+      focus: "50% 50%"
+    # City 4: Halifax, the surprise (more than Montreal)
+    - text: "Halifax: $2,100/month"
+      sub: "more than Montreal"
+      image: { url: "https://novascotia.com/wp-content/uploads/2024/10/HalifaxWaterfront-drone-tns-1920x1080-1.jpg" }
+      focus: "50% 50%"
+    # City 5: Toronto, barely above Halifax
+    - text: "Toronto: $2,150/month"
+      sub: "only $50 more than Halifax"
+      image: { url: "https://images.pexels.com/photos/29640279/pexels-photo-29640279/free-photo-of-toronto-skyline-with-cn-tower-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # City 6: Vancouver, the climax
+    - text: "Vancouver: $2,430/month"
+      sub: "the most expensive 1-bedroom in Canada"
+      image: { url: "https://images.pexels.com/photos/29072584/pexels-photo-29072584/free-photo-of-vancouver-skyline-with-mountains-and-marina.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # The gap
+    - text: "$1,090 separates the cheapest from the most expensive"
+      sub: "same country"
+      image: { url: "https://images.pexels.com/photos/12933051/pexels-photo-12933051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" }
+      focus: "50% 50%"
+    # The punch: the real cost of rent
+    - text: "The average Canadian renter spends 40%+ on housing"
+      sub: "that's before food, transit and phone"
+      image: { url: "https://d2tez01fe91909.cloudfront.net/wp-content/uploads/2024/05/AdobeStock_676034594.jpeg" }
+      focus: "50% 50%"
+    # App slide
+    - app: hero
+      text: "What if saving earned you something every week?"
+      sub: "On Lodavo, every $25 saved earns a ticket for the weekly draw"
+  caption: |
+    Guess the 1-bedroom rent in 6 Canadian cities, cheapest to most expensive.
+
+    Winnipeg: $1,340. Calgary: $1,620. Montreal: $1,750. Halifax: $2,100. Toronto: $2,150. Vancouver: $2,430. That's a $1,090 gap in the same country.
+
+    Drop your city's rent below. Which one surprised you?
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#rentincanada"
+    - "#costofliving"
+    - "#lodavo"
+    - "#housingcrisis"
+    - "#rent"
+  sources:
+    # Zumper Canadian Rent Report, November 2026 (October 2026 listings), median one-bedroom
+    # asking rent: Vancouver $2,430 (#1 of 23 cities), Toronto $2,150, Halifax $2,100,
+    # Montreal $1,750, Calgary $1,620, Winnipeg $1,340. Updated monthly.
+    - https://www.zumper.com/blog/rental-price-data-canada/
+    # CMHC Rental Market Report 2026 and Statistics Canada Survey of Household Spending:
+    # Canadian renters spend an average of 40%+ of gross income on shelter costs.
+    # The CMHC affordability threshold is 30% of gross income; renters exceeding this
+    # are classified as living in unaffordable housing.
+    - https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-research/rental-market-report
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance at the Sunday 8 PM ET
+    # snapshot, rounded down.
+    - https://lodavo.com/rules

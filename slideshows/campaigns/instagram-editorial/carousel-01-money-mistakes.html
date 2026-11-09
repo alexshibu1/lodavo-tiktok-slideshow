@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Money Mistakes Every Canadian Makes Before 30 — Lodavo</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Reset and base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'DM Sans', sans-serif; background: #1a1a1a; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+
+/* IG Frame */
+.ig-frame { width: 420px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+.ig-header { display: flex; align-items: center; gap: 10px; padding: 14px 16px; background: #fff; border-bottom: 1px solid #eee; }
+.ig-avatar { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(165deg, #18007d, #5533e6); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 14px; font-family: 'Playfair Display', serif; }
+.ig-username { font-weight: 600; font-size: 14px; color: #262626; }
+.ig-follow { color: #2200b3; font-weight: 700; font-size: 13px; margin-left: auto; }
+
+/* Carousel viewport */
+.carousel-viewport { width: 420px; height: 525px; overflow: hidden; position: relative; cursor: grab; }
+.carousel-viewport:active { cursor: grabbing; }
+.carousel-track { display: flex; transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); height: 100%; }
+
+/* Slides */
+.slide { width: 420px; height: 525px; flex-shrink: 0; position: relative; display: flex; flex-direction: column; justify-content: center; padding: 40px 36px; overflow: hidden; }
+.slide.light { background: #F8F6F3; color: #1a1a1a; }
+.slide.dark { background: #0F0A1F; color: #F8F6F3; }
+
+/* Typography */
+.tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 20px; width: fit-content; }
+.slide.dark .tag { background: rgba(85,51,230,0.25); color: #a88fff; }
+.slide.light .tag { background: rgba(34,0,179,0.08); color: #2200b3; }
+h1, h2 { font-family: 'Playfair Display', serif; }
+.slide h1 { font-size: 32px; font-weight: 900; line-height: 1.15; margin-bottom: 16px; }
+.slide h2 { font-size: 26px; font-weight: 800; line-height: 1.2; margin-bottom: 14px; }
+.slide p { font-size: 15px; line-height: 1.6; opacity: 0.85; }
+.slide .stat { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 900; margin: 10px 0; }
+.slide.dark .stat { color: #a88fff; }
+.slide.light .stat { color: #2200b3; }
+.slide .caption { font-size: 13px; opacity: 0.6; margin-top: 4px; }
+.slide ul { list-style: none; padding: 0; margin: 12px 0; }
+.slide ul li { padding: 8px 0; font-size: 14px; line-height: 1.5; display: flex; align-items: flex-start; gap: 10px; }
+.slide ul li::before { content: '\2192'; font-weight: 700; color: #5533e6; flex-shrink: 0; }
+.slide.light ul li::before { color: #2200b3; }
+
+/* Logo lockup */
+.logo-lockup { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+.logo-circle { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(165deg, #18007d, #5533e6); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Playfair Display', serif; font-weight: 900; font-size: 20px; }
+.logo-text { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 18px; }
+.slide.dark .logo-text { color: #F8F6F3; }
+.slide.light .logo-text { color: #1a1a1a; }
+
+/* CTA button */
+.cta-btn { display: inline-block; padding: 16px 32px; background: linear-gradient(165deg, #18007d, #5533e6); color: #fff; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 16px; border-radius: 100px; text-decoration: none; margin-top: 20px; text-align: center; border: none; cursor: pointer; }
+.cta-handle { font-size: 13px; opacity: 0.5; margin-top: 16px; }
+
+/* Progress bar */
+.progress-bar { position: absolute; bottom: 0; left: 0; right: 0; display: flex; gap: 3px; padding: 0 3px 3px; }
+.progress-seg { flex: 1; height: 3px; border-radius: 2px; }
+.slide.dark .progress-seg { background: rgba(255,255,255,0.2); }
+.slide.dark .progress-seg.active { background: rgba(255,255,255,0.9); }
+.slide.light .progress-seg { background: rgba(0,0,0,0.1); }
+.slide.light .progress-seg.active { background: rgba(0,0,0,0.5); }
+
+/* Swipe arrow */
+.swipe-arrow { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; opacity: 0.5; transition: opacity 0.2s; }
+.slide.dark .swipe-arrow { background: rgba(255,255,255,0.1); color: #fff; }
+.slide.light .swipe-arrow { background: rgba(0,0,0,0.06); color: #1a1a1a; }
+
+/* Number circle for lists */
+.num { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; font-weight: 700; font-size: 14px; flex-shrink: 0; margin-right: 2px; }
+.slide.dark .num { background: rgba(85,51,230,0.3); color: #a88fff; }
+.slide.light .num { background: rgba(34,0,179,0.1); color: #2200b3; }
+
+/* Comparison / feature boxes */
+.info-box { padding: 16px; border-radius: 12px; margin: 8px 0; }
+.slide.dark .info-box { background: rgba(255,255,255,0.05); }
+.slide.light .info-box { background: rgba(34,0,179,0.04); border: 1px solid #E8E4DF; }
+
+/* Highlight text */
+.highlight { color: #a88fff; font-weight: 700; }
+.slide.light .highlight { color: #2200b3; }
+
+/* IG actions bar */
+.ig-actions { display: flex; gap: 16px; padding: 12px 16px; background: #fff; }
+.ig-actions svg { width: 24px; height: 24px; }
+.ig-actions .bookmark { margin-left: auto; }
+.ig-likes { padding: 4px 16px 8px; font-weight: 600; font-size: 13px; color: #262626; background: #fff; }
+</style>
+</head>
+<body>
+<div class="ig-frame">
+  <div class="ig-header">
+    <div class="ig-avatar">L</div>
+    <span class="ig-username">lodavo.money</span>
+    <span class="ig-follow">Follow</span>
+  </div>
+  <div class="carousel-viewport" id="carousel">
+    <div class="carousel-track" id="track">
+
+      <!-- SLIDE 1: HERO (dark) -->
+      <div class="slide dark">
+        <div class="tag">MONEY HABITS</div>
+        <h1>5 Money Mistakes Every Canadian Makes Before 30</h1>
+        <p>The costly habits draining your bank account — and exactly how to fix each one.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2: Mistake #1 (light) -->
+      <div class="slide light">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
+          <div class="num">1</div>
+          <span style="font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#2200b3;">MISTAKE #1</span>
+        </div>
+        <h2>No Budget At All</h2>
+        <div class="stat">67%</div>
+        <p class="caption">of Canadians don't track their spending</p>
+        <div class="info-box" style="margin-top:16px;">
+          <p style="font-size:14px;line-height:1.5;margin:0;"><strong>The real cost:</strong> The average Canadian overspends by <span class="highlight">$483/month</span> without a budget. That's $5,796/year going nowhere.</p>
+        </div>
+        <p style="font-size:13px;margin-top:12px;opacity:0.7;">Even a simple 50/30/20 split changes everything. Needs, wants, savings — in that order.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3: Mistake #2 (dark) -->
+      <div class="slide dark">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
+          <div class="num">2</div>
+          <span style="font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#a88fff;">MISTAKE #2</span>
+        </div>
+        <h2>Ignoring Your TFSA</h2>
+        <div class="stat">$88,000</div>
+        <p class="caption">Lifetime TFSA room by age 30</p>
+        <div class="info-box" style="margin-top:16px;">
+          <p style="font-size:14px;line-height:1.5;margin:0;">You get <span class="highlight">$6,500/year</span> in contribution room that grows completely tax-free. No tax on withdrawals. Ever.</p>
+        </div>
+        <p style="font-size:13px;margin-top:12px;opacity:0.7;">Most under-30s have used less than 20% of their room. That's tens of thousands in tax-free growth you're leaving behind.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 4: Mistake #3 (light) -->
+      <div class="slide light">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
+          <div class="num">3</div>
+          <span style="font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#2200b3;">MISTAKE #3</span>
+        </div>
+        <h2>Lifestyle Inflation Kills Savings</h2>
+        <div class="info-box">
+          <p style="font-size:14px;line-height:1.6;margin:0;"><strong>Got a $5K raise?</strong></p>
+          <p style="font-size:14px;line-height:1.6;margin:4px 0 0 0;">Most people increase spending by <span class="highlight">$4,800</span>. Only $200 actually saved.</p>
+        </div>
+        <div class="info-box" style="border-color:#2200b3;border-width:2px;">
+          <p style="font-size:14px;line-height:1.6;margin:0;font-weight:600;color:#2200b3;">The fix:</p>
+          <p style="font-size:14px;line-height:1.6;margin:4px 0 0 0;">Auto-save <span class="highlight">50% of every raise</span> before you see it. You won't miss money you never had.</p>
+        </div>
+        <p style="font-size:13px;margin-top:12px;opacity:0.7;">Your future self will thank you. A $2,500/year auto-save at 7% becomes $34,000 in 10 years.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 5: Mistake #4 (dark) -->
+      <div class="slide dark">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
+          <div class="num">4</div>
+          <span style="font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#a88fff;">MISTAKE #4</span>
+        </div>
+        <h2>No Emergency Fund</h2>
+        <div class="stat">53%</div>
+        <p class="caption">of Canadians are $200 away from not making ends meet</p>
+        <div class="info-box" style="margin-top:16px;">
+          <p style="font-size:14px;line-height:1.5;margin:0;">One car repair. One dental bill. One layoff. Without a cushion, you're one bad month from debt.</p>
+        </div>
+        <p style="font-size:14px;margin-top:14px;"><strong style="color:#a88fff;">Target:</strong> 3-6 months of expenses in a high-interest savings account. Start with $1,000 — then build from there.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 6: Mistake #5 (light) -->
+      <div class="slide light">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
+          <div class="num">5</div>
+          <span style="font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#2200b3;">MISTAKE #5</span>
+        </div>
+        <h2>Leaving Free Money on the Table</h2>
+        <p style="margin-bottom:14px;">Money that's literally waiting for you to claim it:</p>
+        <ul>
+          <li><strong>Employer RRSP match</strong> — If they match 4%, contribute at least 4%. It's a 100% return.</li>
+          <li><strong>GST/HST credit</strong> — Up to $496/year, auto-deposited quarterly if you file taxes.</li>
+          <li><strong>Canada Child Benefit</strong> — Up to $7,437/child/year for eligible parents.</li>
+          <li><strong>Prize-linked savings tickets</strong> — Free ticket for every $25 saved. Your money stays yours.</li>
+        </ul>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 7: CTA (dark) -->
+      <div class="slide dark">
+        <div class="logo-lockup">
+          <div class="logo-circle">L</div>
+          <span class="logo-text">Lodavo</span>
+        </div>
+        <h2 style="font-size:28px;margin-bottom:16px;">Start fixing these today.</h2>
+        <p style="font-size:15px;line-height:1.7;opacity:0.85;">Every <strong style="color:#a88fff;">$25</strong> you save on Lodavo earns a free prize ticket for the weekly draw.</p>
+        <p style="font-size:15px;line-height:1.7;opacity:0.85;margin-top:10px;">Your money stays yours — plus a real shot at winning.</p>
+        <button class="cta-btn">Start saving smarter &rarr;</button>
+        <div class="cta-handle">@lodavo.money</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="ig-actions">
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    <svg class="bookmark" fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+  </div>
+  <div class="ig-likes">1,247 likes</div>
+</div>
+<script>
+const track = document.getElementById('track');
+const viewport = document.getElementById('carousel');
+const slides = track.children;
+const total = slides.length;
+let current = 0;
+let startX = 0, deltaX = 0, dragging = false;
+
+viewport.addEventListener('pointerdown', e => { startX = e.clientX; deltaX = 0; dragging = true; track.style.transition = 'none'; });
+viewport.addEventListener('pointermove', e => { if (!dragging) return; deltaX = e.clientX - startX; track.style.transform = `translateX(${-current * 420 + deltaX}px)`; });
+viewport.addEventListener('pointerup', () => {
+  if (!dragging) return; dragging = false; track.style.transition = 'transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94)';
+  if (deltaX < -40 && current < total - 1) current++;
+  else if (deltaX > 40 && current > 0) current--;
+  track.style.transform = `translateX(${-current * 420}px)`;
+});
+viewport.addEventListener('pointerleave', () => { if (dragging) viewport.dispatchEvent(new Event('pointerup')); });
+</script>
+</body>
+</html>

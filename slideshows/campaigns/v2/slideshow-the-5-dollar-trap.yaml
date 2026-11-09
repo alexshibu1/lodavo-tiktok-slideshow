@@ -1,0 +1,78 @@
+slideshow:
+  slug: the-5-dollar-trap
+  language: en
+  account: lodavo.money
+  series: v2
+  slot: "2026-12-14 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: named idea — labeling the behavior makes it shareable
+    - text: "it's called the $5 trap"
+      sub: "and it's costing you thousands"
+      image: { url: "https://hardbacon.ca/wp-content/uploads/2023/02/Canadian-5-Dollar-Bill.jpg" }
+      focus: "50% 50%"
+    # Slide 2: immediate value — name the mechanism
+    - text: "$5 never feels like real money"
+      sub: "that's exactly why it adds up"
+      image: { url: "https://signapay.com/wp-content/uploads/2024/09/tap.jpg" }
+      focus: "50% 60%"
+    # The coffee
+    - text: "$5 coffee every morning"
+      sub: "$1,825 a year"
+      image: { url: "https://images.pexels.com/photos/28650254/pexels-photo-28650254.jpeg" }
+      focus: "50% 40%"
+    # The delivery fee
+    - text: "$5 Uber Eats fee, 5 times a week"
+      sub: "$1,300 a year"
+      image: { url: "https://ubereatsshop.ca/cdn/shop/files/IMG_6001_2048x.jpg?v=1689207415" }
+      focus: "50% 50%"
+    # The forgotten subscription
+    - text: "$5 app subscription you forgot about"
+      sub: "$60 a year"
+      image: { url: "https://cdn.pixabay.com/photo/2020/09/02/03/26/iphone-5537230_1280.jpg" }
+      focus: "50% 40%"
+    # The convenience store
+    - text: "$5 at the convenience store, 5 days a week"
+      sub: "$1,300 a year"
+      image: { url: "https://i.pinimg.com/originals/c2/60/36/c26036ec6b492e6a29dc679192991712.jpg" }
+      focus: "50% 50%"
+    # The stack: total damage
+    - text: "add them up"
+      sub: "$4,485 a year vanishing in $5 increments"
+      image: { url: "https://cdn.pixabay.com/photo/2014/09/20/13/54/calculator-453792_640.jpg" }
+      focus: "50% 50%"
+    # What it looks like saved — ticket math (no branding)
+    - text: "$4,485 saved? 179 free tickets a week"
+      sub: "every single week"
+      image: { url: "https://images.pexels.com/photos/7718028/pexels-photo-7718028.jpeg" }
+      focus: "50% 40%"
+    # The reframe
+    - text: "you don't need a raise"
+      sub: "you need to notice the $5"
+      image: { url: "https://cdn.pixabay.com/photo/2020/08/24/09/53/smartphone-5513375_1280.jpg" }
+      focus: "50% 50%"
+    # App slide
+    - app: hero
+      text: "Start seeing where $5 goes"
+      sub: "Every $25 saved earns a free ticket for the weekly draw. Download Lodavo free."
+  caption: |
+    It's called the $5 trap. And it's probably costing you thousands.
+
+    $5 coffee. $5 delivery fee. $5 subscription you forgot. $5 at the store. Stack them and that's $4,485 a year disappearing in $5 increments.
+
+    The trap isn't the $5. It's not seeing where it goes.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#budgeting"
+    - "#personalfinance"
+  sources:
+    - https://www.numbeo.com/cost-of-living/country_result.jsp?country=Canada
+    - https://www.ubereats.com/ca
+    - https://lodavo.com/rules

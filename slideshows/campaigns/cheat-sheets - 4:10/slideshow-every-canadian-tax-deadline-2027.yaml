@@ -1,0 +1,82 @@
+slideshow:
+  slug: every-canadian-tax-deadline-2027
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-24 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: fear/urgency style, calendar reference
+    - text: "every Canadian tax deadline you'll miss this year"
+      image: { url: "https://images.pexels.com/photos/6170653/pexels-photo-6170653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # January 1: TFSA contribution room resets
+    - text: "January 1"
+      sub: "TFSA contribution room resets. $7,000 new room plus anything you withdrew last year. set a reminder"
+      image: { url: "https://images.pexels.com/photos/17415374/pexels-photo-17415374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 40%"
+    # February 28: T4 and T5 slips due
+    - text: "February 28"
+      sub: "your employer must send your T4 by this date. also T5 (investment income) and RRSP contribution receipts"
+      image: { url: "https://images.pexels.com/photos/1921957/pexels-photo-1921957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # March 1: RRSP contribution deadline for 2026 tax year
+    - text: "March 1, 2027"
+      sub: "RRSP contribution deadline for 2026 tax year. miss it by one day and you wait a full year"
+      image: { url: "https://images.pexels.com/photos/1314543/pexels-photo-1314543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # April 30: personal tax filing deadline
+    - text: "April 30"
+      sub: "personal income tax return due. file late and CRA charges 5% plus 1% per month. owe nothing? file anyway for credits"
+      image: { url: "https://images.pexels.com/photos/8518848/pexels-photo-8518848.jpeg?cs=srgb&dl=pexels-artempodrez-8518848.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # June 15: self-employed filing deadline
+    - text: "June 15"
+      sub: "self-employed tax filing deadline. but interest on any balance owing starts May 1. pay by April 30, file by June 15"
+      image: { url: "https://livingthegraylife.com/wp-content/uploads/2019/07/freelance-desk-setup-2.jpg" }
+      focus: "50% 50%"
+    # Quarterly GST/HST credit dates
+    - text: "GST/HST credit dates"
+      sub: "Jan 3, April 4, July 4, Oct 3. up to $519 a year. must file your taxes to get it"
+      image: { url: "https://images.pexels.com/photos/5474298/pexels-photo-5474298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide
+    - app: cta
+      text: "Deadlines saved. Now make your savings work harder?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved. Every week."
+  caption: |
+    Every tax deadline that matters in 2027. You will forget at least one. Save this.
+
+    TFSA resets Jan 1. RRSP deadline March 1. Tax filing April 30. Self-employed June 15. GST credits quarterly. Miss one and you either lose money or wait a full year.
+
+    Screenshot this. Set your reminders now.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#taxtips"
+    - "#canada"
+    - "#taxseason"
+    - "#lodavo"
+  sources:
+    # TFSA contribution room reset rules (January 1 annually)
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributions.html
+    # T4 and T5 filing deadlines for employers and issuers (February 28)
+    - https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4-information-employers/t4-filing-dates.html
+    # RRSP contribution deadline (60 days after year end, March 1 for 2026)
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/rrsp-mp-prpp-contributions.html
+    # Personal income tax filing deadline (April 30) and late-filing penalty
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html
+    # Self-employed filing deadline (June 15) and interest rules
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html
+    # GST/HST credit payment dates and income threshold
+    - https://www.canada.ca/en/revenue-agency/services/child-family-benefits/goods-services-tax-harmonized-sales-tax-gst-hst-credit/gst-hst-credit-payment-dates.html
+    # GST/HST credit amounts for 2026-2027 benefit year
+    - https://www.canada.ca/en/revenue-agency/services/child-family-benefits/goods-services-tax-harmonized-sales-tax-gst-hst-credit.html
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

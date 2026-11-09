@@ -7,8 +7,12 @@ __pycache__/
 *.pyc
 .pytest_cache/
 
-# Generated output
-out/
+# Node
+node_modules/
+
+# Generated output (root-level only)
+/out/
+/pinterest/out/
 
 # Caches
 .bg-cache/
@@ -16,5 +20,9 @@ out/
 # macOS
 .DS_Store
 
-# Large assets
-Lodavo Slideshows.zip
+# Archives
+*.zip
+
+# Duplicates
+Lodavo company offical Slideshows/
+

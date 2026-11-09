@@ -1,0 +1,53 @@
+slideshow:
+  slug: 103-meals-for-211
+  language: en
+  account: lodavo.money
+  series: reddit-v2
+  slot: "2026-12-21 19:00"
+  opening: cold
+  end: blue
+  slides:
+    - text: "*103* prepped meals for *$211*"
+      sub: "here's the full breakdown"
+      image: { url: "https://i.pinimg.com/originals/69/96/75/699675357d66aadace628bb74c6ab1b1.jpg" }
+      focus: "50% 50%"
+    - text: "rice and beans: 30 servings"
+      sub: "*$18* total"
+      image: { url: "https://i.pinimg.com/originals/80/ac/36/80ac36ffda8f3397c69fba289d051aa6.jpg" }
+      focus: "50% 50%"
+    - text: "frozen veggies and chicken thighs"
+      sub: "35 servings, *$52*"
+      image: { url: "https://i.pinimg.com/originals/ca/f9/de/caf9de60052b4647ba3189b2b67973fc.jpg" }
+      focus: "50% 40%"
+    - text: "oats and bananas for breakfast"
+      sub: "28 servings, *$14*"
+      image: { url: "https://i.pinimg.com/originals/6e/ce/26/6ece269812a3e2fac33a2c730c228079.jpg" }
+      focus: "50% 50%"
+    - text: "eggs, bread, peanut butter"
+      sub: "fills every gap, $22"
+      image: { url: "https://i.pinimg.com/originals/b6/a7/7f/b6a77fa82b941ee4fe7190009ee1fa2a.jpg" }
+      focus: "50% 50%"
+    - text: "the secret is buying nothing extra"
+      sub: "no snacks, no drinks, no impulse buys"
+      image: { url: "https://i.pinimg.com/originals/fa/11/cd/fa11cd3190d2d8dd4fe7bd607e8b359a.jpg" }
+      focus: "50% 50%"
+    - text: "that's *$2.05* per meal"
+      sub: "less than a Tim Hortons coffee"
+      image: { url: "https://i.pinimg.com/originals/e3/1e/23/e31e239395bcdb2a599cc5e67b6080b9.jpg" }
+      focus: "50% 50%"
+    - app: hero
+      text: "Saving on groceries? Make it count."
+      sub: "Every $25 you save earns a free draw ticket on Lodavo. Every week."
+  caption: |
+    103 prepped meals for $211. That's $2.05 per meal.
+    Rice, beans, chicken thighs, frozen veggies, oats, eggs. Nothing fancy.
+    The trick is buying nothing extra. No snacks, no drinks, no impulse grabs.
+    Lodavo is linked in our bio.
+  hashtags:
+    - "#mealprep"
+    - "#budgetmeals"
+    - "#savingmoney"
+    - "#canadiantiktok"
+    - "#lodavo"
+  sources:
+    - https://www.reddit.com/r/povertyfinance/

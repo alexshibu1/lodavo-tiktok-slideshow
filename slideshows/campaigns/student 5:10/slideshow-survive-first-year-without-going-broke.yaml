@@ -1,0 +1,80 @@
+slideshow:
+  slug: survive-first-year-without-going-broke
+  language: en
+  account: lodavo.money
+  series: student-life
+  slot: "2026-12-01 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: every freshman's fear, direct and relatable
+    - text: "how to survive first year without going broke"
+      image: { url: "https://euroconsultants.ca/wp-content/uploads/2026/01/group-university-students-walking-across-scenic-campus-with-large-historic-buildings-wearing-backpacks-chatting-happily-683x1024.jpg" }
+      focus: "50% 50%"
+    # Tip 1: used textbooks through campus channels
+    - text: "never buy textbooks full price"
+      sub: "Libgen, campus FB groups, upper-year sales. save $400+ easy"
+      image: { url: "https://images.pexels.com/photos/5905435/pexels-photo-5905435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Tip 2: meal plan math and stretching it
+    - text: "learn your meal plan math early"
+      sub: "most plans run out by March if you eat there daily"
+      image: { url: "https://dining.gwu.edu/sites/g/files/zaxdzs6186/files/2023-08/dining-resources-food-insecurity.jpg" }
+      focus: "50% 60%"
+    # Tip 3: stack student discounts aggressively
+    - text: "stack SPC and UNiDAYS on everything"
+      sub: "10-15% off food, clothes, tech. free with your student email"
+      image: { url: "https://images.pexels.com/photos/7821552/pexels-photo-7821552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Tip 4: use every free thing campus offers
+    - text: "use every free thing your campus offers"
+      sub: "gym, therapy, printing, clubs with free food, career workshops"
+      image: { url: "https://campusrec.fsu.edu/wp-content/uploads/2023/04/BL-Leach8-22-2022-9.jpg" }
+      focus: "50% 50%"
+    # Tip 5: transit pass and getting around cheap
+    - text: "your student card is a transit pass"
+      sub: "UBC U-Pass, TTC, STM. already included in your fees"
+      image: { url: "https://assets.metrolinx.com/image/upload/s--1kYPaUSh--/c_limit,q_auto,w_3840/v1/Images/GO/PRESTOdevicebus" }
+      focus: "50% 40%"
+    # Tip 6: the $50 weekly cash rule
+    - text: "give yourself $50 cash per week"
+      sub: "when it's gone, it's gone. way less than tapping a card"
+      image: { url: "https://www.bankofcanada.ca/wp-content/uploads/2024/02/Annual-Report-2023-Currency-Banknotes.jpg" }
+      focus: "50% 50%"
+    # App slide: bridge first-year survival to Lodavo
+    - app: hero
+      text: "What if saving actually earned you something?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved"
+  caption: |
+    First year is expensive and nobody warns you.
+
+    Textbooks, food, going out, random fees. It adds up before October. But the students who figure it out early save hundreds without even trying. Used textbooks, stacking SPC and UNiDAYS, milking campus freebies, and keeping cash spending tight. None of this is hard. You just need to know about it.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#studentlife"
+    - "#uoft"
+    - "#mcgill"
+    - "#savingmoney"
+    - "#lodavo"
+  sources:
+    # Canadian University Survey Consortium: average undergraduate spending on textbooks ~$600-$800/year
+    - https://cusc-ccreu.ca/
+    # SPC student discount card (Canada)
+    - https://www.spccard.ca/
+    # UNiDAYS student discounts for Canadian students
+    - https://www.myunidays.com/CA/en-CA
+    # UBC U-Pass BC program: mandatory transit pass for students
+    - https://planning.ubc.ca/transportation/transit/u-pass-bc
+    # University of Toronto student TTC discount (post-secondary)
+    - https://www.ttc.ca/en/fares/fare-types/post-secondary-students.jsp
+    # McGill student STM reduced fare info
+    - https://www.mcgill.ca/transport/transit
+    # FCAC guide to student budgeting (Government of Canada)
+    - https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html
+    # Contest rules s.4.1(a): every $25 of linked balance earns 1 ticket
+    - https://lodavo.com/rules

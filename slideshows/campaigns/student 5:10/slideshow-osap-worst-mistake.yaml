@@ -1,0 +1,75 @@
+slideshow:
+  slug: osap-worst-mistake
+  language: en
+  account: lodavo.money
+  series: student-life
+  slot: "2026-12-08 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: OSAP is universally relatable for Ontario students
+    - text: "my OSAP came in and I blew it"
+      image: { url: "https://images.pexels.com/photos/5234776/pexels-photo-5234776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 40%"
+    # Beat 1: the lump sum high
+    - text: "$6,200 hit my account in September"
+      sub: "felt like I was rich for the first time"
+      image: { url: "https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 2: the spending spree
+    - text: "new shoes, AirPods, Uber Eats every night"
+      sub: "I wasn't even tracking it"
+      image: { url: "https://images.pexels.com/photos/2664443/pexels-photo-2664443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 3: the reckoning
+    - text: "by October I checked my account"
+      sub: "$900 left to last until April"
+      image: { url: "https://images.pexels.com/photos/6958533/pexels-photo-6958533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 4: the consequences, real and raw
+    - text: "that was the longest semester of my life"
+      sub: "noodles every night because I had to"
+      image: { url: "https://images.pexels.com/photos/3026805/pexels-photo-3026805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 5: the turn, what changed the next year
+    - text: "next year I treated OSAP like a paycheck"
+      sub: "split it by week, not by vibe"
+      image: { url: "https://i.pinimg.com/originals/dc/e9/91/dce991582b24826769ad1170ba9b9333.png" }
+      focus: "50% 50%"
+    # Beat 6: the result
+    - text: "by April I had $1,400 left"
+      sub: "from the exact same OSAP amount"
+      image: { url: "https://images.pexels.com/photos/7683764/pexels-photo-7683764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 7: the lesson for the reader
+    - text: "OSAP is not a windfall"
+      sub: "it's a paycheck spread across eight months"
+      image: { url: "https://images.pexels.com/photos/13169876/pexels-photo-13169876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide: bridge to Lodavo
+    - app: cta
+      text: "What if saving that OSAP earned you something extra?"
+      sub: "Lodavo gives you a free ticket for every $25 saved."
+  caption: |
+    $6,200 hit my account in September. I felt rich for the first time in my life.
+
+    New shoes. AirPods. Uber Eats every single night. By October I had $900 left to last until April. That was the longest semester of my life.
+
+    Next year I treated OSAP like a paycheck. Split it by week. By April I had $1,400 saved from the exact same amount.
+
+    OSAP is not a windfall. It's a paycheck spread across eight months.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#studentlife"
+    - "#storytime"
+    - "#lodavo"
+    - "#osap"
+    - "#universitylife"
+  sources:
+    - https://www.ontario.ca/page/osap-ontario-student-assistance-program
+    - https://lodavo.com/rules
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html

@@ -1,0 +1,72 @@
+slideshow:
+  slug: roommate-won-100
+  language: en
+  account: lodavo.money
+  series: savings-stories
+  slot: "2026-11-17 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: curiosity gap, conversational TikTok energy
+    - text: "my roommate won $100 for doing nothing"
+      image: { url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f" }
+      focus: "50% 40%"
+    # Beat 1: set the scene, real and casual
+    - text: "she was just sitting on the couch"
+      sub: "scrolling, like every other Monday"
+      image: { url: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0" }
+      focus: "50% 50%"
+    # Beat 2: the discovery moment
+    - text: "then she screamed"
+      sub: "I thought the landlord raised rent again"
+      image: { url: "https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2" }
+      focus: "50% 45%"
+    # Beat 3: the reveal
+    - text: "she won $100 from some app"
+      sub: "I'd never even heard of it"
+      image: { url: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3" }
+      focus: "50% 50%"
+    # Beat 4: curiosity and skepticism
+    - text: "I said 'what's the catch'"
+      sub: "she said 'I literally just have savings'"
+      image: { url: "https://images.unsplash.com/photo-1516726817505-f5ed825624d8" }
+      focus: "50% 50%"
+    # Beat 5: the explanation, natural and conversational
+    - text: "every $25 saved earns a free ticket"
+      sub: "she had 20 a week just from her balance"
+      image: { url: "https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 6: the turn, what hit me
+    - text: "she didn't do anything extra"
+      sub: "her money was already in her own account"
+      image: { url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85" }
+      focus: "50% 50%"
+    # Beat 7: what it means for the reader
+    - text: "I downloaded it that night"
+      sub: "worst case, I just keep saving"
+      image: { url: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c" }
+      focus: "50% 50%"
+    # App slide: bridge to Lodavo
+    - app: cta
+      text: "Your savings are already sitting there."
+      sub: "Lodavo gives you free weekly draw tickets for every $25 saved."
+  caption: |
+    She literally screamed on the couch and I thought rent went up again.
+
+    Nope. She won $100 from a weekly draw. Her savings just sat in her own account and earned free tickets every week. No catch.
+
+    I downloaded it that night. Worst case, you just keep saving.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#foryou"
+    - "#moneytips"
+    - "#studentlife"
+  sources:
+    - https://lodavo.com/rules
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html

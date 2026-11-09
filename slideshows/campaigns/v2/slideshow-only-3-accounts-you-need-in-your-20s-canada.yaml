@@ -1,0 +1,89 @@
+slideshow:
+  slug: only-3-accounts-you-need-in-your-20s-canada
+  language: en
+  account: lodavo.money
+  series: v2
+  slot: "2026-12-17 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: number + specific promise, reference/cheat sheet format
+    - text: "the only 3 accounts you need in your 20s, Canada"
+      image: { url: "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 2: account 1 with recommendations
+    - text: "1. no-fee chequing: Simplii, Tangerine, or CIBC"
+      sub: "stop paying $15/month to hold your own money"
+      image: { url: "https://images.pexels.com/photos/5054532/pexels-photo-5054532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 4: account 2 intro
+    - text: "2. TFSA (tax-free savings account)"
+      sub: "this is where your money actually grows"
+      image: { url: "https://images.pexels.com/photos/4386476/pexels-photo-4386476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 5: TFSA details
+    - text: "you get $7,000 in contribution room every year starting at 18"
+      sub: "and it carries over. by 25, that's $49,000 of tax-free room"
+      image: { url: "https://images.pexels.com/photos/6549598/pexels-photo-6549598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 6: account 3 intro
+    - text: "3. high-interest savings account (HISA)"
+      sub: "where your emergency fund sits and earns 4 to 5%"
+      image: { url: "https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 7: HISA rates
+    - text: "best HISA rates in Canada right now: 4% to 4.75%"
+      sub: "EQ Bank, Wealthsimple, Tangerine all offer competitive rates"
+      image: { url: "https://images.pexels.com/photos/11251720/pexels-photo-11251720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 8: the missing layer
+    - text: "the missing layer: something that makes saving worth it"
+      sub: "opening the accounts is step 1. actually putting money in is harder"
+      image: { url: "https://images.pexels.com/photos/3760790/pexels-photo-3760790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 9: what NOT to open yet
+    - text: "what NOT to open yet: an RRSP"
+      sub: "the tax deduction is worth more when your income is higher. wait until you're earning $50,000+"
+      image: { url: "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 10: the bridge to Lodavo
+    - text: "every $25 you save earns a free ticket for a weekly draw"
+      sub: "a chance to win $100 or the $10,000 jackpot"
+      image: { url: "https://images.pexels.com/photos/3808057/pexels-photo-3808057.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide
+    - app: hero
+      text: "3 accounts. 1 app that makes saving easier."
+      sub: "Connect your account on Lodavo, every $25 saved earns a free ticket"
+  caption: |
+    You don't need 7 accounts and 4 apps. You need 3.
+
+    1. No-fee chequing (Simplii, Tangerine, CIBC). Stop paying $15/month to hold your own money.
+    2. TFSA. $7,000/year in room starting at 18. By 25 that's $49,000 of tax-free growth.
+    3. HISA for your emergency fund. Best rates in Canada right now: 4 to 4.75%.
+
+    What NOT to open yet: RRSP. The tax deduction is worth more when your income is higher.
+
+    The hard part isn't knowing which accounts. It's actually saving. Lodavo gives you a free ticket for every $25 you save, for a weekly draw. $100 winner every week, $10,000 jackpot.
+
+    Save this for later. Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#tfsa"
+    - "#personalfinancecanada"
+  sources:
+    # TFSA annual contribution limit $7,000 (2024+): CRA
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributions.html
+    # HISA rates 4-4.75%: Ratehub.ca comparison, 2024
+    - https://www.ratehub.ca/savings-accounts/best-savings-accounts
+    # No-fee chequing: Simplii, Tangerine, CIBC offers
+    - https://www.simplii.com/en/bank-accounts/no-fee-chequing.html
+    - https://www.tangerine.ca/en/products/spending/chequing-account
+    # RRSP deferral strategy: CRA marginal tax brackets
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    # Lodavo contest rules: $25 = 1 ticket, $100/week prize, $10,000 jackpot
+    - https://lodavo.com/rules

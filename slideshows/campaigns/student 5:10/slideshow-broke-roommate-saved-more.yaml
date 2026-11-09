@@ -1,0 +1,75 @@
+slideshow:
+  slug: broke-roommate-saved-more
+  language: en
+  account: lodavo.money
+  series: student-life
+  slot: "2026-12-09 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: unexpected outcome, jealousy/curiosity gap
+    - text: "my broke roommate saved more than me"
+      image: { url: "https://images.pexels.com/photos/23495587/pexels-photo-23495587/free-photo-of-a-group-of-people-sitting-on-a-couch-and-using-their-cell-phones.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 40%"
+    # Beat 1: set the context, the income gap
+    - text: "I had a part-time job, she had less"
+      sub: "I made almost double what she did"
+      image: { url: "https://images.pexels.com/photos/37708740/pexels-photo-37708740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 2: the narrator's spending
+    - text: "I spent like I earned it"
+      sub: "Uber Eats, campus coffee, $14 smoothies"
+      image: { url: "https://images.pexels.com/photos/3973207/pexels-photo-3973207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 3: the roommate's system
+    - text: "she did something I thought was pointless"
+      sub: "$25 a week, auto-save, every Friday"
+      image: { url: "https://images.pexels.com/photos/31665280/pexels-photo-31665280/free-photo-of-cozy-winter-evening-with-smartphone-in-hand.jpeg?auto=compress&w=1260&h=750&dpr=1" }
+      focus: "50% 50%"
+    # Beat 4: the roommate's discipline
+    - text: "packed lunch every day, every student discount"
+      sub: "I thought she was being extreme"
+      image: { url: "https://i.pinimg.com/originals/ab/97/43/ab9743d49d1c7a53b22a8925c0d0bc57.jpg" }
+      focus: "50% 50%"
+    # Beat 5: the gut punch comparison
+    - text: "by April she had $1,500"
+      sub: "I had $200 and a lot of Uber receipts"
+      image: { url: "https://images.pexels.com/photos/8937482/pexels-photo-8937482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 6: the realization
+    - text: "she made less money than me"
+      sub: "but she kept more of it"
+      image: { url: "https://images.pexels.com/photos/4376395/pexels-photo-4376395.jpeg?cs=srgb&dl=woman-sitting-on-bench-during-sunset-4376395.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Beat 7: the narrator's change
+    - text: "that was the semester I stopped pretending"
+      sub: "I started the same $25 auto-save"
+      image: { url: "https://i.pinimg.com/originals/cb/d1/86/cbd186d58a4dd4847e5e9667bfe0fd7c.jpg" }
+      focus: "50% 50%"
+    # App slide: bridge to Lodavo
+    - app: hero
+      text: "What if every $25 saved also earned a free ticket?"
+      sub: "Lodavo gives you one for the weekly draw."
+  caption: |
+    She made less money than me. By April she had $1,500 and I had $200.
+
+    I had a part-time job and spent like I earned it. Uber Eats, campus coffee, $14 smoothies. She had less income but one system: $25 a week, auto-save, every Friday. Packed lunch every single day. Every student discount she could find.
+
+    By April the numbers told the whole story. It was never about income. It was about what you keep.
+
+    That was the semester I started the same auto-save.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#studentlife"
+    - "#storytime"
+    - "#lodavo"
+    - "#savingmoney"
+    - "#roommate"
+  sources:
+    - https://lodavo.com/rules
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html
+    - https://www150.statcan.gc.ca/n1/daily-quotidien/241126/dq241126a-eng.htm

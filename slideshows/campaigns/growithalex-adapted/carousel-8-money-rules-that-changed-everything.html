@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8 Money Rules That Changed Everything — MONEY TALK</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #0a0a0a;
+  font-family: 'DM Sans', sans-serif;
+  padding: 20px;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.slide {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(0.39);
+  transform-origin: top left;
+  flex-shrink: 0;
+}
+
+/* Film grain overlay */
+.slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* Header bar */
+.header {
+  position: absolute;
+  top: 40px;
+  left: 48px;
+  right: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.header span {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Content area */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+  z-index: 10;
+  width: 90%;
+}
+
+.quiet {
+  font-size: 52px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.quiet.playfair {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.quiet.grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.loud {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* Bottom navigation bar */
+.nav {
+  position: absolute;
+  bottom: 40px;
+  left: 48px;
+  right: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.nav span {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav .dots {
+  letter-spacing: 4px;
+  opacity: 0.6;
+}
+
+.nav .dots .active {
+  opacity: 1;
+  font-weight: 700;
+}
+
+/* Dark text (for light photos) */
+.dark-text .header span,
+.dark-text .content .quiet,
+.dark-text .content .loud,
+.dark-text .content .label,
+.dark-text .nav span {
+  color: #1a1a1a;
+}
+
+/* Light text (for dark photos) */
+.light-text .header span,
+.light-text .content .quiet,
+.light-text .content .loud,
+.light-text .content .label,
+.light-text .nav span {
+  color: #ffffff;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+/* ========================
+   SLIDE 1 — COVER
+   ======================== */
+.slide-1 .cover-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+  z-index: 10;
+  width: 90%;
+}
+
+.slide-1 .cover-best {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 80px;
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.4);
+  margin-bottom: -20px;
+  text-align: right;
+  padding-right: 60px;
+}
+
+.slide-1 .cover-money {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 220px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 0.85;
+  letter-spacing: -4px;
+  text-shadow: 0 4px 40px rgba(0,0,0,0.5);
+}
+
+.slide-1 .cover-rules {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.4);
+  margin-top: -10px;
+}
+
+.slide-1 .header span {
+  color: #ffffff;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+
+/* ========================
+   SLIDE 8 — CTA
+   ======================== */
+.slide-8 .cta-corners {
+  position: absolute;
+  top: 60px;
+  left: 48px;
+  right: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.slide-8 .corner-left {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  max-width: 200px;
+  line-height: 1.2;
+}
+
+.slide-8 .corner-right {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  text-transform: uppercase;
+  text-align: right;
+  max-width: 240px;
+  line-height: 1.2;
+}
+
+.slide-8 .cta-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  width: 90%;
+}
+
+.slide-8 .cta-save {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 64px;
+  color: #ffffff;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  margin-bottom: -10px;
+}
+
+.slide-8 .cta-post {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 280px;
+  color: #ffffff;
+  line-height: 0.88;
+  letter-spacing: -4px;
+  text-shadow: 0 4px 40px rgba(0,0,0,0.5);
+}
+
+.slide-8 .cta-reminder {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #ffffff;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  opacity: 0.9;
+  margin-top: 16px;
+}
+
+.slide-8 .cta-follow {
+  position: absolute;
+  bottom: 60px;
+  left: 48px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+.slide-8 .header span {
+  color: #ffffff;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+</style>
+</head>
+<body>
+
+<div class="carousel">
+
+  <!-- ============================================
+       SLIDE 1 — COVER
+       ============================================ -->
+  <div class="slide slide-1" style="background-image: url('https://images.pexels.com/photos/2096700/pexels-photo-2096700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+    <div class="header">
+      <span>NOV ©2026</span>
+      <span>MONEY TALK</span>
+      <span>PERSONAL FINANCE</span>
+    </div>
+    <div class="cover-content">
+      <div class="cover-best">best</div>
+      <div class="cover-money">Money</div>
+      <div class="cover-rules">Rules</div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SLIDE 2 — 50/30/20 Rule
+       ============================================ -->
+  <div class="slide dark-text" style="background-image: url('https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+    <div class="header">
+      <span>NOV ©2026</span>
+      <span>MONEY TALK</span>
+      <span>PERSONAL FINANCE</span>
+    </div>
+    <div class="content">
+      <div class="quiet playfair">the budget split</div>
+      <div class="loud" style="font-size: 260px;">50/30/20</div>
+      <div class="label">The Budget Split + The Only Rule You Need</div>
+    </div>
+    <div class="nav">
+      <span class="back">← BACK</span>
+      <span class="dots"><span class="active" style="opacity:1; font-weight:700;">01</span>  02  03  04  05  06  07  08</span>
+      <span class="next">NEXT →</span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SLIDE 3 — Pay Yourself First
+       ============================================ -->
+  <div class="slide light-text" style="background-image: url('https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+    <div class="header">
+      <span>NOV ©2026</span>
+      <span>MONEY TALK</span>
+      <span>PERSONAL FINANCE</span>
+    </div>
+    <div class="content">
+      <div class="quiet grotesk">savings rule</div>
+      <div class="loud" style="font-size: 320px;">FIRST</div>
+      <div class="label">Pay Yourself + First</div>
+    </div>
+    <div class="nav">
+      <span class="back">← BACK</span>
+      <span class="dots">01  <span class="active" style="opacity:1; font-weight:700;">02</span>  03  04  05  06  07  08</span>
+      <span class="next">NEXT →</span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SLIDE 4 — $25 Changes Everything
+       ============================================ -->
+  <div class="slide" style="background-image: url('https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+    <div class="header">
+      <span>NOV ©2026</span>
+      <span>MONEY TALK</span>
+      <span>PERSONAL FINANCE</span>
+    </div>
+    <div class="content">
+      <div class="quiet playfair">weekly savings</div>
+      <div class="loud" style="font-size: 340px;">$25</div>
+      <div class="label">Small Amount + Big Impact</div>
+    </div>
+    <div class="nav">
+      <span class="back">← BACK</span>
+      <span class="dots">01  02  <span class="active" style="opacity:1; font-weight:700;">03</span>  04  05  06  07  08</span>
+      <span class="next">NEXT →</span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SLIDE 5 — TFSA Tax-Free
+       ============================================ -->
+  <div class="slide light-text" style="background-image: url('https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+    <div class="header">
+      <span>NOV ©2026</span>
+      <span>MONEY TALK</span>
+      <span>PERSONAL FINANCE</span>
+    </div>
+    <div class="content">
+      <div class="quiet grotesk">tax-free growth</div>
+      <div class="loud" style="font-size: 300px;">TFSA</div>
+      <div class="label">Tax-Free + Savings Account</div>
+    </div>
+    <div class="nav">
+      <span class="back">← BACK</span>
+      <span class="dots">01  02  03  <span class="active" style="opacity:1; font-weight:700;">04</span>  05  06  07  08</span>
+      <span class="next">NEXT →</span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SLIDE 6 — 3 Months Emergency Fund
+       ============================================ -->
+  <div class="slide dark-text" style="background-image: url('https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+    <div class="header">
+      <span>NOV ©2026</span>
+      <span>MONEY TALK</span>
+      <span>PERSONAL FINANCE</span>
+    </div>
+    <div class="content">
+      <div class="quiet playfair">emergency fund</div>
+      <div class="loud" style="font-size: 220px;">3 MONTHS</div>
+      <div class="label">Emergency Fund + Your Safety Net</div>
+    </div>
+    <div class="nav">
+      <span class="back">← BACK</span>
+      <span class="dots">01  02  03  04  <span class="active" style="opacity:1; font-weight:700;">05</span>  06  07  08</span>
+      <span class="next">NEXT →</span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SLIDE 7 — Credit Score
+       ============================================ -->
+  <div class="slide light-text" style="background-image: url('https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+    <div class="header">
+      <span>NOV ©2026</span>
+      <span>MONEY TALK</span>
+      <span>PERSONAL FINANCE</span>
+    </div>
+    <div class="content">
+      <div class="quiet grotesk">the number</div>
+      <div class="loud" style="font-size: 340px;">760+</div>
+      <div class="label">Credit Score + Best Rates</div>
+    </div>
+    <div class="nav">
+      <span class="back">← BACK</span>
+      <span class="dots">01  02  03  04  05  <span class="active" style="opacity:1; font-weight:700;">06</span>  07  08</span>
+      <span class="next">NEXT →</span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SLIDE 8 — CTA
+       ============================================ -->
+  <div class="slide slide-8" style="background-image: url('https://images.pexels.com/photos/1525612/pexels-photo-1525612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+    <div class="header">
+      <span style="color:#fff; text-shadow:0 2px 20px rgba(0,0,0,0.4);">NOV ©2026</span>
+      <span style="color:#fff; text-shadow:0 2px 20px rgba(0,0,0,0.4);">LODAVO.MONEY</span>
+      <span style="color:#fff; text-shadow:0 2px 20px rgba(0,0,0,0.4);">PERSONAL FINANCE</span>
+    </div>
+    <div class="cta-corners">
+      <span class="corner-left">savings made</span>
+      <span class="corner-right">REWARDING</span>
+    </div>
+    <div class="cta-content">
+      <div class="cta-save">save this</div>
+      <div class="cta-post">POST</div>
+      <div class="cta-reminder">for when you need a money reminder</div>
+    </div>
+    <div class="cta-follow">FOLLOW @LODAVO.MONEY</div>
+  </div>
+
+</div>
+
+</body>
+</html>

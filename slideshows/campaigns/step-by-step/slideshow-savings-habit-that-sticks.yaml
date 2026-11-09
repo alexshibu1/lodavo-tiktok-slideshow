@@ -1,0 +1,69 @@
+slideshow:
+  slug: savings-habit-that-sticks
+  language: en
+  account: lodavo.money
+  series: step-by-step
+  slot: "2026-11-12 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: behavioral/psychology angle on saving
+    - text: "how to build a savings habit that sticks"
+      image: { url: "https://images.pexels.com/photos/9755383/pexels-photo-9755383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Step 1: Start so small it feels trivial
+    - text: "start embarrassingly small"
+      sub: "$10 a week is $520 a year"
+      image: { url: "https://banknoteshobby.com/wp-content/uploads/2022/10/ezgif.com-gif-maker-12.jpg" }
+      focus: "50% 50%"
+    # Step 2: Habit stacking. Tie it to an existing routine.
+    - text: "tie it to payday"
+      sub: "save the same day you get paid, every time"
+      image: { url: "https://images.pexels.com/photos/5234776/pexels-photo-5234776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Step 3: Remove the decision entirely
+    - text: "make it automatic"
+      sub: "set a recurring transfer and forget about it"
+      image: { url: "https://cdsassets.apple.com/live/7WUAS350/images/apple-pay/ios-17-iphone-14-pro-wallet-apple-cash-transactions-more-recurring-payments.png" }
+      focus: "50% 50%"
+    # Step 4: Visual feedback loop. Seeing progress is addictive.
+    - text: "watch the number go up"
+      sub: "a growing balance is surprisingly motivating"
+      image: { url: "https://images.pexels.com/photos/9822733/pexels-photo-9822733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Step 5: The 30-day rule. Don't break the streak.
+    - text: "don't touch it for 30 days"
+      sub: "the urge to spend fades after the first month"
+      image: { url: "https://i.etsystatic.com/26932918/r/il/ceeafe/5798763371/il_794xN.5798763371_d4v3.jpg" }
+      focus: "50% 50%"
+    # Step 6: Gradual increases you barely notice
+    - text: "bump it up by $5 every month"
+      sub: "small increases you barely feel add up fast"
+      image: { url: "https://images.pexels.com/photos/10809685/pexels-photo-10809685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide: bridge habit building to Lodavo
+    - app: hero
+      text: "Want a reason to keep saving?"
+      sub: "On Lodavo, every $25 you save earns a free ticket for the weekly draw"
+  caption: |
+    Saving isn't about willpower. It's about systems.
+
+    Start small, automate it, don't touch it for 30 days. Research says habits take 66 days. Give it two months.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#canadiantiktok"
+    - "#savingsgoals"
+  sources:
+    # Lally et al., "How are habits formed," European Journal of Social Psychology (2009):
+    # average 66 days to form a new habit, range 18 to 254 days
+    - https://onlinelibrary.wiley.com/doi/abs/10.1002/ejsp.674
+    # FCAC: paying yourself first and automating savings
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/save-emergency-fund.html
+    # Contest rules s.4.1(a): every $25 of linked balance earns 1 ticket
+    - https://lodavo.com/rules

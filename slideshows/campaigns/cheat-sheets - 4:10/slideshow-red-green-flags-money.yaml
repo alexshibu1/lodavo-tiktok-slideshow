@@ -1,0 +1,92 @@
+slideshow:
+  slug: red-green-flags-money
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-30 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: trendjack the red/green flag TikTok format
+    - text: "red flags vs green flags"
+      sub: "your money edition"
+      image: { url: "https://i.pinimg.com/originals/58/6b/c6/586bc66bee4e2fee1d19b60dc147636f.jpg" }
+      focus: "50% 50%"
+    # Red flag: credit card minimum
+    - text: "paying the minimum on your credit card"
+      sub: "red flag. $3,000 at 20% takes 11 years to pay off"
+      image: { url: "https://cdn-blog.supermoney.com/wp-content/uploads/2022/04/credit-card-statement-example-scaled.jpg" }
+      focus: "50% 50%"
+    # Green flag: auto-transfer savings
+    - text: "auto-saving $25 every week"
+      sub: "green flag. you won't miss it. that's $1,300 a year"
+      image: { url: "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/04/person-using-banking-app-on-smartphone-feature.jpg" }
+      focus: "50% 50%"
+    # Red flag: streaming overload
+    - text: "3+ streaming services at once"
+      sub: "red flag. $40 to $60 a month for shows you watch once"
+      image: { url: "https://sunday.com.pk/wp-content/uploads/2023/11/20220914_Netflix_bingewatching_3x2.webp" }
+      focus: "50% 50%"
+    # Green flag: knowing net worth
+    - text: "knowing your net worth to the dollar"
+      sub: "green flag. assets minus debt. check it every month"
+      image: { url: "https://i.pinimg.com/originals/80/56/7c/80567c7dc32eb4c3f2122306dbb3eaaa.jpg" }
+      focus: "50% 50%"
+    # Red flag: BNPL for small purchases
+    - text: "buy now pay later for basics"
+      sub: "red flag. if you need 4 payments on $60, rethink it"
+      image: { url: "https://images.pexels.com/photos/6214476/pexels-photo-6214476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Green flag: emergency fund
+    - text: "having 3 months of expenses saved"
+      sub: "green flag. most Canadians have less than $1,000 for emergencies"
+      image: { url: "https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Red flag: no spending awareness
+    - text: "no clue what you spent last month"
+      sub: "red flag. track it for one month. you'll be surprised"
+      image: { url: "https://images.pexels.com/photos/7680681/pexels-photo-7680681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Green flag: TFSA first
+    - text: "maxing your TFSA before anything else"
+      sub: "green flag. tax-free growth. $7,000 room a year. use it"
+      image: { url: "https://blog.remitly.com/wp-content/uploads/2024/02/canadian-dollars-scaled.jpg" }
+      focus: "50% 50%"
+    # App slide: bridge the flag format to Lodavo
+    - app: hero
+      text: "Is saving your biggest green flag yet?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved. Weekly."
+  caption: |
+    Red flags vs green flags, money edition. How many do you have?
+
+    Paying the credit card minimum. Using buy now pay later on a $60 order. Three streaming services you barely watch. No idea what you spent last month. Red flags, all of them.
+
+    Auto-saving $25 a week. Knowing your net worth. Having 3 months saved. Maxing your TFSA. Those are the green flags.
+
+    Be honest. Which side are you on?
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#redflag"
+    - "#greenflag"
+    - "#savingmoney"
+    - "#lodavo"
+  sources:
+    # Credit card minimum payment calculator (FCAC)
+    - https://itools-ioutils.fcac-acfc.gc.ca/CC-CB/CCCalc-CBCalc-eng.aspx
+    # Credit card interest rates in Canada (FCAC, average ~20%)
+    - https://www.canada.ca/en/financial-consumer-agency/services/credit-cards/interest-charges.html
+    # Average Canadian streaming subscription spend (Media Technology Monitor)
+    - https://www.mtm-otm.ca/
+    # Buy now pay later risks and guidance (FCAC)
+    - https://www.canada.ca/en/financial-consumer-agency/services/loans/buy-now-pay-later.html
+    # Canadian emergency savings statistics (FCAC)
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html
+    # TFSA annual contribution limit $7,000 for 2026 (CRA)
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributions.html
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

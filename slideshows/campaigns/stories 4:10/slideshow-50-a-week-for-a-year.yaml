@@ -1,0 +1,73 @@
+slideshow:
+  slug: 50-a-week-for-a-year
+  language: en
+  account: lodavo.money
+  series: savings-stories
+  slot: "2026-11-18 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: curiosity gap with unexpected outcome
+    - text: "I saved $50 a week for one year"
+      image: { url: "https://images.pexels.com/photos/4386476/pexels-photo-4386476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 40%"
+    # Beat 1: the beginning, simple and grounded
+    - text: "started in second year at UBC"
+      sub: "$50 every Friday, straight to savings"
+      image: { url: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f" }
+      focus: "50% 50%"
+    # Beat 2: the early grind
+    - text: "the first month I almost quit twice"
+      sub: "my friends were going out every weekend"
+      image: { url: "https://images.pexels.com/photos/3755761/pexels-photo-3755761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 3: the milestone nobody talks about
+    - text: "at $500 something shifted"
+      sub: "I stopped thinking about money every single day"
+      image: { url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" }
+      focus: "50% 50%"
+    # Beat 4: the compounding weeks
+    - text: "at $1,300 I had an emergency fund"
+      sub: "for the first time in my life"
+      image: { url: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9" }
+      focus: "50% 50%"
+    # Beat 5: the unexpected part, tickets piling up
+    - text: "every $25 saved earned a free draw ticket"
+      sub: "104 a week by year's end"
+      image: { url: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e" }
+      focus: "50% 50%"
+    # Beat 6: the turn, realization about compound habits
+    - text: "at $2,600 I realized the truth"
+      sub: "the savings mattered more than any draw"
+      image: { url: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d" }
+      focus: "50% 50%"
+    # Beat 7: what it means for the reader
+    - text: "one year. $2,600. zero stress."
+      sub: "and a chance to win cash every single week"
+      image: { url: "https://images.unsplash.com/photo-1519681393784-d120267933ba" }
+      focus: "50% 50%"
+    # App slide: bridge to Lodavo
+    - app: hero
+      text: "What would a year of $50 a week change?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved."
+  caption: |
+    $50 a week for a year. Nobody warned me what would happen.
+
+    At $500 I stopped panicking about money. At $1,300 I had a real emergency fund. The draw tickets kept piling up the more I saved.
+
+    $50 a week is one night out in Vancouver. One year later, $2,600 and a chance to win cash every single week.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#foryou"
+    - "#compoundeffect"
+    - "#personalfinance"
+  sources:
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html
+    - https://www150.statcan.gc.ca/n1/daily-quotidien/241126/dq241126a-eng.htm
+    - https://lodavo.com/rules

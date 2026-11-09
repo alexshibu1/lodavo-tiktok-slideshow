@@ -1,0 +1,57 @@
+slideshow:
+  slug: emergency-fund-12-years-1-day
+  language: en
+  account: lodavo.money
+  series: reddit-v2
+  slot: "2026-12-26 19:00"
+  opening: cold
+  end: blue
+  slides:
+    - text: "12 years to build my emergency fund"
+      sub: "1 day to spend it"
+      image: { url: "https://images.pexels.com/photos/17450452/pexels-photo-17450452.jpeg?cs=srgb&dl=pexels-mohammad-ubaid-584981963-17450452.jpg&fm=jpg" }
+      focus: "50% 50%"
+    - text: "I started saving at 19"
+      sub: "*$50* a month, every month"
+      image: { url: "https://images.pexels.com/photos/33940741/pexels-photo-33940741/free-photo-of-young-man-studying-at-night-with-lamp-light.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" }
+      focus: "50% 40%"
+    - text: "by 31 I had *$8,000* saved"
+      sub: "felt untouchable"
+      image: { url: "https://i.pinimg.com/originals/02/f4/67/02f46799834239ed3c96ebf3c0b0e51d.jpg" }
+      focus: "50% 50%"
+    - text: "then my car died"
+      sub: "transmission, *$4,200*"
+      image: { url: "https://i.pinimg.com/originals/db/b1/25/dbb1254a3b713378657b5370c3e279eb.jpg" }
+      focus: "50% 50%"
+    - text: "then my dog got sick"
+      sub: "emergency vet, *$3,100*"
+      image: { url: "https://i.pinimg.com/originals/a3/3e/f6/a33ef6358f62d490981b0fb7782c9426.jpg" }
+      focus: "50% 50%"
+    - text: "8 months of savings left: *$700*"
+      sub: "12 years of discipline, tested in one week"
+      image: { url: "https://i.pinimg.com/originals/dc/ac/cd/dcaccdded74051795decff115f5aaecb.jpg" }
+      focus: "50% 50%"
+    - text: "but I didn't go into debt"
+      sub: "that's what the fund is for"
+      image: { url: "https://images.pexels.com/photos/37606758/pexels-photo-37606758/free-photo-of-breathtaking-ocean-sunrise-with-golden-clouds.jpeg?auto=compress&w=1260&h=750&dpr=1" }
+      focus: "50% 50%"
+    - text: "I'm rebuilding now"
+      sub: "and this time I know it works"
+      image: { url: "https://i.pinimg.com/originals/66/62/7b/66627b37978367a0117220506b3e8256.jpg" }
+      focus: "50% 50%"
+    - app: hero
+      text: "Building your emergency fund?"
+      sub: "Every $25 you save earns a free draw ticket on Lodavo. Every week."
+  caption: |
+    12 years to build my emergency fund. 1 day to spend it.
+    Car died. Dog got sick. $8,000 became $700 in one week.
+    But I didn't go into debt. That's what the fund is for. Rebuilding now.
+    Lodavo is linked in our bio.
+  hashtags:
+    - "#emergencyfund"
+    - "#moneytok"
+    - "#personalfinance"
+    - "#savingmoney"
+    - "#lodavo"
+  sources:
+    - https://www.reddit.com/r/povertyfinance/

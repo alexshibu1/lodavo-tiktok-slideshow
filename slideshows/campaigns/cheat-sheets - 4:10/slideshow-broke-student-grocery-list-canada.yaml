@@ -1,0 +1,79 @@
+slideshow:
+  slug: broke-student-grocery-list-canada
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-26 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: pure save-bait, practical utility
+    - text: "the broke student grocery list"
+      sub: "feeds you for a week. real prices. save this."
+      image: { url: "https://images.pexels.com/photos/3985066/pexels-photo-3985066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 40%"
+    # Carbs: rice, pasta, bread
+    - text: "carbs"
+      sub: "rice 2 kg $4.49, pasta 900 g $1.97, bread $2.29. No Frills prices. three staples, under $9"
+      image: { url: "https://pixnio.com/free-images/food-and-drink/bread/enriched-bread-flour-cornmeal-rice-and-pasta.jpg" }
+      focus: "50% 50%"
+    # Protein: eggs, chicken, canned tuna
+    - text: "protein"
+      sub: "eggs 12 for $3.99, chicken thighs 1 kg $8.49, canned tuna 3-pack $5.49. under $18"
+      image: { url: "https://feelgoodfoodie.net/wp-content/uploads/2024/08/Lemon-Garlic-Chicken-Meal-Prep-10-1024x1536.jpg" }
+      focus: "50% 50%"
+    # Fruits and vegetables
+    - text: "fruits and vegetables"
+      sub: "bananas $0.69/lb, frozen veg $2.99, carrots $2.49, apples $4.99. under $12"
+      image: { url: "https://i.pinimg.com/originals/3e/59/c0/3e59c09bc701c1455867ae36581cce40.jpg" }
+      focus: "50% 50%"
+    # Dairy and basics
+    - text: "dairy and basics"
+      sub: "milk 2 L $4.79, butter $4.99, cheese 400 g $6.49. under $17"
+      image: { url: "https://images.pexels.com/photos/37377279/pexels-photo-37377279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Pantry essentials from Dollarama
+    - text: "pantry from Dollarama"
+      sub: "soy sauce $2.50, cooking oil $3.50, spice packets $1.25 each. stock up for under $10"
+      image: { url: "https://i.pinimg.com/originals/92/a6/9f/92a69f2df4fcd3a2da1be1ca3864bbb5.jpg" }
+      focus: "50% 50%"
+    # The total and the math
+    - text: "your weekly total"
+      sub: "$55 to $65 for everything above. that's under $9 a day"
+      image: { url: "https://images.pexels.com/photos/5632367/pexels-photo-5632367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide: bridge from grocery saving to Lodavo
+    - app: cta
+      text: "Saving on groceries each week?"
+      sub: "Every $25 you save earns a free weekly draw ticket with Lodavo."
+  caption: |
+    The broke student grocery list that actually works. Real prices, real stores. Save this.
+
+    Carbs under $9. Protein under $18. Produce under $12. Dairy under $17. Pantry staples from Dollarama under $10. Full week of meals for $55 to $65.
+
+    Screenshot this before your next grocery run.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#studentlife"
+    - "#grocerytok"
+    - "#mealprep"
+  sources:
+    # No Frills weekly flyer and in-store prices (Loblaw Companies)
+    - https://www.nofrills.ca/print-flyer
+    # Walmart Canada grocery pricing
+    - https://www.walmart.ca/en/grocery
+    # Dollarama product pricing
+    - https://www.dollarama.com
+    # Statistics Canada Consumer Price Index, food component
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000403
+    # Canada Food Price Report 2026 (Dalhousie University)
+    - https://www.dal.ca/sites/agri-food/research/canada-food-price-report.html
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

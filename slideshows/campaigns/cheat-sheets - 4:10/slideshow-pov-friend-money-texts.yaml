@@ -1,0 +1,91 @@
+slideshow:
+  slug: pov-friend-money-texts
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-28 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: screenshot bait, feels like a real iMessage thread
+    - text: "your friend who's good with money"
+      sub: "just sent you this"
+      image: { url: "https://images.pexels.com/photos/4560060/pexels-photo-4560060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Tip 1: cashback extensions
+    - text: "never pay full price for anything"
+      sub: "Honey is free. Rakuten gives cash back. install both"
+      image: { url: "https://images.pexels.com/photos/6969926/pexels-photo-6969926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Tip 2: HISA rates in Canada
+    - text: "move your savings to a HISA rn"
+      sub: "some Canadian banks pay 4%+. your big bank pays 0.01%"
+      image: { url: "https://blog.remitly.com/wp-content/uploads/2024/02/canadian-dollars-scaled.jpg" }
+      focus: "50% 50%"
+    # Tip 3: free credit score check
+    - text: "check your credit score for free"
+      sub: "Borrowell or Credit Karma. won't hurt your score"
+      image: { url: "https://images.pexels.com/photos/4255405/pexels-photo-4255405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Tip 4: student discounts nobody uses
+    - text: "you're leaving student discounts on the table"
+      sub: "UNiDAYS, SPC. Apple, Samsung, Spotify all have student pricing"
+      image: { url: "https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Tip 5: library card hack
+    - text: "get a library card seriously"
+      sub: "free Libby, Kanopy, LinkedIn Learning. your city library has it"
+      image: { url: "https://images.pexels.com/photos/7244576/pexels-photo-7244576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Tip 6: subscription audit
+    - text: "audit your subscriptions right now"
+      sub: "average Canadian pays $65/month on streaming. you're using half of them"
+      image: { url: "https://images.pexels.com/photos/4009402/pexels-photo-4009402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Tip 7: no-spend challenge
+    - text: "try one no-spend week a month"
+      sub: "groceries and bills only. most people save $150 to $200"
+      image: { url: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide: bridge from money tips to Lodavo
+    - app: hero
+      text: "Already saving? Make it count."
+      sub: "Lodavo gives you a free draw ticket for every $25 saved. Every week."
+  caption: |
+    Your friend who's good with money just texted you this. Save it.
+
+    Free browser extensions for cash back. HISAs paying 4%+ while your big bank gives you 0.01%. Credit score checks that don't ding you. Student pricing you forgot existed. A library card that gets you way more than books. And the subscription audit you keep putting off.
+
+    You're welcome.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#studentlife"
+    - "#personalfinance"
+    - "#lodavo"
+  sources:
+    # Rakuten Canada cashback platform
+    - https://www.rakuten.ca/how-it-works
+    # Honey browser extension (PayPal)
+    - https://www.joinhoney.com/
+    # HISA rates in Canada, 2026 comparison (Ratehub)
+    - https://www.ratehub.ca/savings-accounts/accounts/high-interest
+    # Borrowell free credit score (soft check, no impact)
+    - https://www.borrowell.com/free-credit-score/
+    # Credit Karma Canada free credit score
+    - https://www.creditkarma.ca/
+    # UNiDAYS student discounts Canada
+    - https://www.myunidays.com/CA/en-CA
+    # SPC student discount card
+    - https://www.spccard.ca/
+    # Toronto Public Library digital resources (Libby, Kanopy, LinkedIn Learning)
+    - https://www.torontopubliclibrary.ca/using-the-library/your-library-card/
+    # Average Canadian streaming subscription spend (Media Technology Monitor)
+    - https://www.mtm-otm.ca/
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

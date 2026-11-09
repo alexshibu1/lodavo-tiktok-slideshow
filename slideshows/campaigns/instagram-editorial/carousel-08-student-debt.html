@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How I Paid Off $8,000 in Student Debt in 18 Months — Lodavo</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'DM Sans', sans-serif; background: #1a1a1a; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+.ig-frame { width: 420px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+.ig-header { display: flex; align-items: center; gap: 10px; padding: 14px 16px; background: #fff; border-bottom: 1px solid #eee; }
+.ig-avatar { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(165deg, #18007d, #5533e6); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 14px; font-family: 'Playfair Display', serif; }
+.ig-username { font-weight: 600; font-size: 14px; color: #262626; }
+.ig-follow { color: #2200b3; font-weight: 700; font-size: 13px; margin-left: auto; }
+.carousel-viewport { width: 420px; height: 525px; overflow: hidden; position: relative; cursor: grab; }
+.carousel-viewport:active { cursor: grabbing; }
+.carousel-track { display: flex; transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); height: 100%; }
+.slide { width: 420px; height: 525px; flex-shrink: 0; position: relative; display: flex; flex-direction: column; justify-content: center; padding: 40px 36px; overflow: hidden; }
+.slide.light { background: #F8F6F3; color: #1a1a1a; }
+.slide.dark { background: #0F0A1F; color: #F8F6F3; }
+.tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 20px; width: fit-content; }
+.slide.dark .tag { background: rgba(85,51,230,0.25); color: #a88fff; }
+.slide.light .tag { background: rgba(34,0,179,0.08); color: #2200b3; }
+h1, h2 { font-family: 'Playfair Display', serif; }
+.slide h1 { font-size: 32px; font-weight: 900; line-height: 1.15; margin-bottom: 16px; }
+.slide h2 { font-size: 26px; font-weight: 800; line-height: 1.2; margin-bottom: 14px; }
+.slide p { font-size: 15px; line-height: 1.6; opacity: 0.85; }
+.slide .stat { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 900; margin: 10px 0; }
+.slide.dark .stat { color: #a88fff; }
+.slide.light .stat { color: #2200b3; }
+.slide .caption { font-size: 13px; opacity: 0.6; margin-top: 4px; }
+.logo-lockup { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+.logo-circle { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(165deg, #18007d, #5533e6); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Playfair Display', serif; font-weight: 900; font-size: 20px; }
+.logo-text { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 18px; }
+.slide.dark .logo-text { color: #F8F6F3; }
+.slide.light .logo-text { color: #1a1a1a; }
+.cta-btn { display: inline-block; padding: 16px 32px; background: linear-gradient(165deg, #18007d, #5533e6); color: #fff; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 16px; border-radius: 100px; text-decoration: none; margin-top: 20px; text-align: center; border: none; cursor: pointer; }
+.cta-handle { font-size: 13px; opacity: 0.5; margin-top: 16px; }
+.progress-bar { position: absolute; bottom: 0; left: 0; right: 0; display: flex; gap: 3px; padding: 0 3px 3px; }
+.progress-seg { flex: 1; height: 3px; border-radius: 2px; }
+.slide.dark .progress-seg { background: rgba(255,255,255,0.2); }
+.slide.dark .progress-seg.active { background: rgba(255,255,255,0.9); }
+.slide.light .progress-seg { background: rgba(0,0,0,0.1); }
+.slide.light .progress-seg.active { background: rgba(0,0,0,0.5); }
+.swipe-arrow { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; opacity: 0.5; }
+.slide.dark .swipe-arrow { background: rgba(255,255,255,0.1); color: #fff; }
+.slide.light .swipe-arrow { background: rgba(0,0,0,0.06); color: #1a1a1a; }
+.num { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+.slide.dark .num { background: rgba(85,51,230,0.3); color: #a88fff; }
+.slide.light .num { background: rgba(34,0,179,0.1); color: #2200b3; }
+.info-box { padding: 16px; border-radius: 12px; margin: 8px 0; }
+.slide.dark .info-box { background: rgba(255,255,255,0.05); }
+.slide.light .info-box { background: rgba(34,0,179,0.04); border: 1px solid #E8E4DF; }
+.ig-actions { display: flex; gap: 16px; padding: 12px 16px; background: #fff; }
+.ig-actions svg { width: 24px; height: 24px; }
+.ig-actions .bookmark { margin-left: auto; }
+.ig-likes { padding: 4px 16px 8px; font-weight: 600; font-size: 13px; color: #262626; background: #fff; }
+.detail-row { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; }
+.detail-row .label { font-weight: 600; font-size: 13px; opacity: 0.6; min-width: 70px; }
+.detail-row .value { font-size: 14px; font-weight: 500; line-height: 1.5; }
+.phase { margin-bottom: 10px; }
+.phase-label { font-weight: 700; font-size: 13px; margin-bottom: 3px; }
+.slide.dark .phase-label { color: #a88fff; }
+.slide.light .phase-label { color: #2200b3; }
+.phase-desc { font-size: 13px; opacity: 0.8; line-height: 1.5; }
+.number-row { display: flex; justify-content: space-between; margin: 6px 0; }
+.number-item { text-align: center; flex: 1; }
+.number-item .big { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 28px; }
+.slide.dark .number-item .big { color: #a88fff; }
+.slide.light .number-item .big { color: #2200b3; }
+.number-item .small { font-size: 11px; opacity: 0.6; margin-top: 2px; }
+.lesson { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+.lesson-num { font-weight: 700; font-size: 13px; min-width: 16px; }
+.slide.light .lesson-num { color: #2200b3; }
+.slide.dark .lesson-num { color: #a88fff; }
+.lesson-text { font-size: 13.5px; line-height: 1.5; opacity: 0.85; }
+</style>
+</head>
+<body>
+<div class="ig-frame">
+  <div class="ig-header">
+    <div class="ig-avatar">L</div>
+    <span class="ig-username">lodavo.money</span>
+    <span class="ig-follow">Follow</span>
+  </div>
+  <div class="carousel-viewport" id="carousel">
+    <div class="carousel-track" id="track">
+
+      <!-- SLIDE 1 — HERO (dark) -->
+      <div class="slide dark">
+        <div class="tag">DEBT FREE</div>
+        <h1>How I Paid Off $8,000 in Student Debt in 18 Months</h1>
+        <p>The exact plan, the numbers, and what I learned doing it.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 — The Situation (light) -->
+      <div class="slide light">
+        <h2>The Situation</h2>
+        <div class="stat">$8,000</div>
+        <p class="caption">Canada Student Loans</p>
+        <div class="info-box" style="margin-top:16px;">
+          <div class="detail-row"><span class="label">Interest:</span><span class="value">Prime + 0% (federal) = ~5.0%</span></div>
+          <div class="detail-row"><span class="label">Min payment:</span><span class="value">$150/month</span></div>
+          <div class="detail-row"><span class="label">At minimum:</span><span class="value">5+ years to pay off</span></div>
+          <div class="detail-row"><span class="label">Total interest:</span><span class="value">$1,100 wasted</span></div>
+        </div>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 — The Plan (dark) -->
+      <div class="slide dark">
+        <h2>The Plan</h2>
+        <p style="margin-bottom:16px;">Pay <strong style="color:#a88fff;">$445/month</strong> instead of $150. That's $295 extra.</p>
+        <div class="info-box">
+          <p style="font-weight:700;font-size:14px;margin-bottom:10px;opacity:1;">Where I found $295/month:</p>
+          <div class="detail-row"><span class="label" style="min-width:50px;">$150</span><span class="value">Cutting expenses — meal prep, cancel unused subscriptions, cheaper phone plan</span></div>
+          <div class="detail-row"><span class="label" style="min-width:50px;">$145</span><span class="value">Side income — tutoring, freelance work, weekend shifts</span></div>
+        </div>
+        <p style="font-size:13px;font-style:italic;opacity:0.6;margin-top:14px;">Not glamorous. But it worked.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 4 — Month-by-Month Strategy (light) -->
+      <div class="slide light">
+        <h2>Month-by-Month Strategy</h2>
+        <div style="margin-top:8px;">
+          <div class="phase">
+            <div class="phase-label">Months 1-6</div>
+            <div class="phase-desc">Focus all extra money on highest-interest portion first (avalanche method). Build the habit.</div>
+          </div>
+          <div class="phase">
+            <div class="phase-label">Months 7-12</div>
+            <div class="phase-desc">Momentum builds — you can see the balance dropping fast. Stay the course.</div>
+          </div>
+          <div class="phase">
+            <div class="phase-label">Months 13-18</div>
+            <div class="phase-desc">Final stretch — increase payments with any bonuses or tax refunds. Sprint to zero.</div>
+          </div>
+        </div>
+        <p style="font-size:13px;font-style:italic;opacity:0.6;margin-top:14px;">Consistency beats intensity. Every single month.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 5 — The Numbers (dark) -->
+      <div class="slide dark">
+        <h2>The Numbers</h2>
+        <div class="info-box" style="margin-top:8px;">
+          <div class="number-row">
+            <div class="number-item">
+              <div class="big">18</div>
+              <div class="small">months</div>
+            </div>
+            <div class="number-item">
+              <div class="big">$445</div>
+              <div class="small">/month</div>
+            </div>
+            <div class="number-item">
+              <div class="big">$8,010</div>
+              <div class="small">total paid</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:16px;">
+          <div class="detail-row"><span class="label">Interest paid:</span><span class="value">~$340 <span style="opacity:0.5;">(vs $1,100 at minimum)</span></span></div>
+          <div class="detail-row"><span class="label">Money saved:</span><span class="value" style="color:#a88fff;font-weight:700;">$760 in interest</span></div>
+          <div class="detail-row"><span class="label">Time saved:</span><span class="value" style="color:#a88fff;font-weight:700;">3.5 years eliminated</span></div>
+        </div>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 6 — What I Learned (light) -->
+      <div class="slide light">
+        <h2>What I Learned</h2>
+        <div style="margin-top:12px;">
+          <div class="lesson">
+            <span class="lesson-num">1)</span>
+            <span class="lesson-text"><strong>Automate the payments</strong> — don't rely on willpower. Set it and forget it.</span>
+          </div>
+          <div class="lesson">
+            <span class="lesson-num">2)</span>
+            <span class="lesson-text"><strong>Track weekly, not monthly</strong> — it keeps you motivated seeing the balance drop.</span>
+          </div>
+          <div class="lesson">
+            <span class="lesson-num">3)</span>
+            <span class="lesson-text"><strong>Save a small buffer simultaneously</strong> ($25/week in a savings app) so unexpected costs don't derail your plan.</span>
+          </div>
+        </div>
+        <div class="info-box" style="margin-top:16px;">
+          <p style="font-size:13px;opacity:0.8;line-height:1.5;">Debt payoff without savings = one emergency away from more debt.</p>
+        </div>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 7 — CTA (dark) -->
+      <div class="slide dark">
+        <div class="logo-lockup">
+          <div class="logo-circle">L</div>
+          <span class="logo-text">Lodavo</span>
+        </div>
+        <h2 style="font-size:26px;margin-bottom:12px;">Pay off debt AND save at the same time.</h2>
+        <p style="font-size:14px;line-height:1.6;opacity:0.8;">Even $25/week in Lodavo builds an emergency buffer while you crush debt. Every $25 = 1 free prize ticket.</p>
+        <button class="cta-btn">Start saving smarter &rarr;</button>
+        <div class="cta-handle">@lodavo.money</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="ig-actions">
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    <svg class="bookmark" fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+  </div>
+  <div class="ig-likes">1,247 likes</div>
+</div>
+<script>
+const track=document.getElementById('track'),viewport=document.getElementById('carousel'),total=track.children.length;let current=0,startX=0,deltaX=0,dragging=false;
+viewport.addEventListener('pointerdown',e=>{startX=e.clientX;deltaX=0;dragging=true;track.style.transition='none';});
+viewport.addEventListener('pointermove',e=>{if(!dragging)return;deltaX=e.clientX-startX;track.style.transform=`translateX(${-current*420+deltaX}px)`;});
+viewport.addEventListener('pointerup',()=>{if(!dragging)return;dragging=false;track.style.transition='transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94)';if(deltaX<-40&&current<total-1)current++;else if(deltaX>40&&current>0)current--;track.style.transform=`translateX(${-current*420}px)`;});
+viewport.addEventListener('pointerleave',()=>{if(dragging)viewport.dispatchEvent(new Event('pointerup'));});
+</script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Save $10,000 in 12 Months on a Canadian Salary — Lodavo</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'DM Sans', sans-serif; background: #1a1a1a; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+.ig-frame { width: 420px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+.ig-header { display: flex; align-items: center; gap: 10px; padding: 14px 16px; background: #fff; border-bottom: 1px solid #eee; }
+.ig-avatar { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(165deg, #18007d, #5533e6); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 14px; font-family: 'Playfair Display', serif; }
+.ig-username { font-weight: 600; font-size: 14px; color: #262626; }
+.ig-follow { color: #2200b3; font-weight: 700; font-size: 13px; margin-left: auto; }
+.carousel-viewport { width: 420px; height: 525px; overflow: hidden; position: relative; cursor: grab; }
+.carousel-viewport:active { cursor: grabbing; }
+.carousel-track { display: flex; transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); height: 100%; }
+.slide { width: 420px; height: 525px; flex-shrink: 0; position: relative; display: flex; flex-direction: column; justify-content: center; padding: 40px 36px; overflow: hidden; }
+.slide.light { background: #F8F6F3; color: #1a1a1a; }
+.slide.dark { background: #0F0A1F; color: #F8F6F3; }
+.tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 20px; width: fit-content; }
+.slide.dark .tag { background: rgba(85,51,230,0.25); color: #a88fff; }
+.slide.light .tag { background: rgba(34,0,179,0.08); color: #2200b3; }
+h1, h2 { font-family: 'Playfair Display', serif; }
+.slide h1 { font-size: 32px; font-weight: 900; line-height: 1.15; margin-bottom: 16px; }
+.slide h2 { font-size: 26px; font-weight: 800; line-height: 1.2; margin-bottom: 14px; }
+.slide p { font-size: 15px; line-height: 1.6; opacity: 0.85; }
+.slide .stat { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 900; margin: 10px 0; }
+.slide.dark .stat { color: #a88fff; }
+.slide.light .stat { color: #2200b3; }
+.slide .caption { font-size: 13px; opacity: 0.6; margin-top: 4px; }
+.logo-lockup { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+.logo-circle { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(165deg, #18007d, #5533e6); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Playfair Display', serif; font-weight: 900; font-size: 20px; }
+.logo-text { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 18px; }
+.slide.dark .logo-text { color: #F8F6F3; }
+.slide.light .logo-text { color: #1a1a1a; }
+.cta-btn { display: inline-block; padding: 16px 32px; background: linear-gradient(165deg, #18007d, #5533e6); color: #fff; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 16px; border-radius: 100px; text-decoration: none; margin-top: 20px; text-align: center; border: none; cursor: pointer; }
+.cta-handle { font-size: 13px; opacity: 0.5; margin-top: 16px; }
+.progress-bar { position: absolute; bottom: 0; left: 0; right: 0; display: flex; gap: 3px; padding: 0 3px 3px; }
+.progress-seg { flex: 1; height: 3px; border-radius: 2px; }
+.slide.dark .progress-seg { background: rgba(255,255,255,0.2); }
+.slide.dark .progress-seg.active { background: rgba(255,255,255,0.9); }
+.slide.light .progress-seg { background: rgba(0,0,0,0.1); }
+.slide.light .progress-seg.active { background: rgba(0,0,0,0.5); }
+.swipe-arrow { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; opacity: 0.5; }
+.slide.dark .swipe-arrow { background: rgba(255,255,255,0.1); color: #fff; }
+.slide.light .swipe-arrow { background: rgba(0,0,0,0.06); color: #1a1a1a; }
+.num { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+.slide.dark .num { background: rgba(85,51,230,0.3); color: #a88fff; }
+.slide.light .num { background: rgba(34,0,179,0.1); color: #2200b3; }
+.info-box { padding: 16px; border-radius: 12px; margin: 8px 0; }
+.slide.dark .info-box { background: rgba(255,255,255,0.05); }
+.slide.light .info-box { background: rgba(34,0,179,0.04); border: 1px solid #E8E4DF; }
+.ig-actions { display: flex; gap: 16px; padding: 12px 16px; background: #fff; }
+.ig-actions svg { width: 24px; height: 24px; }
+.ig-actions .bookmark { margin-left: auto; }
+.ig-likes { padding: 4px 16px 8px; font-weight: 600; font-size: 13px; color: #262626; background: #fff; }
+
+/* Slide-specific styles */
+.math-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0; }
+.math-cell { padding: 12px; border-radius: 10px; text-align: center; }
+.slide.light .math-cell { background: rgba(34,0,179,0.04); border: 1px solid #E8E4DF; }
+.math-cell .val { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 900; color: #2200b3; }
+.math-cell .lbl { font-size: 11px; opacity: 0.6; margin-top: 2px; }
+
+.budget-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.budget-row:last-child { border-bottom: none; }
+.budget-pct { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; color: #a88fff; min-width: 52px; }
+.budget-label { font-size: 14px; flex: 1; }
+.budget-amt { font-size: 14px; font-weight: 600; opacity: 0.7; }
+
+.sub-item { display: flex; justify-content: space-between; align-items: center; padding: 7px 12px; border-radius: 8px; margin: 4px 0; }
+.slide.light .sub-item { background: rgba(34,0,179,0.04); }
+.sub-item .sub-name { font-size: 13px; }
+.sub-item .sub-price { font-size: 13px; font-weight: 700; color: #2200b3; }
+
+.save-split { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.save-split:last-child { border-bottom: none; }
+.save-split .split-amt { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; color: #a88fff; min-width: 60px; }
+.save-split .split-label { font-size: 13px; flex: 1; }
+.save-split .split-note { font-size: 11px; opacity: 0.5; }
+
+.timeline-row { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; }
+.timeline-phase { min-width: 68px; font-size: 12px; font-weight: 700; color: #2200b3; }
+.timeline-desc { font-size: 13px; flex: 1; line-height: 1.4; }
+.timeline-amt { font-size: 13px; font-weight: 700; color: #2200b3; min-width: 52px; text-align: right; }
+</style>
+</head>
+<body>
+<div class="ig-frame">
+  <div class="ig-header">
+    <div class="ig-avatar">L</div>
+    <span class="ig-username">lodavo.money</span>
+    <span class="ig-follow">Follow</span>
+  </div>
+  <div class="carousel-viewport" id="carousel">
+    <div class="carousel-track" id="track">
+
+      <!-- SLIDE 1: HERO (dark) -->
+      <div class="slide dark">
+        <div class="tag">Savings Plan</div>
+        <h1>How to Save $10,000 in 12 Months on a Canadian Salary</h1>
+        <p>A realistic, step-by-step breakdown for anyone earning around $50K/year.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2: The Math (light) -->
+      <div class="slide light">
+        <div class="tag">The Math</div>
+        <h2>$10,000 in 12 months. Here's what that actually looks like.</h2>
+        <div class="math-grid">
+          <div class="math-cell">
+            <div class="val">$834</div>
+            <div class="lbl">per month</div>
+          </div>
+          <div class="math-cell">
+            <div class="val">$192</div>
+            <div class="lbl">per week</div>
+          </div>
+        </div>
+        <div class="info-box">
+          <p style="font-size:14px; margin:0; opacity:0.85;">On a <strong>$50K salary</strong> (take-home ~$3,200/mo), that's <strong style="color:#2200b3;">26% of your income</strong>.</p>
+          <p style="font-size:13px; margin-top:6px; opacity:0.6;">Aggressive but doable. Here's how to get there.</p>
+        </div>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3: 50/30/20 Reset (dark) -->
+      <div class="slide dark">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+          <div class="num">1</div>
+          <span style="font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; opacity:0.6;">Step One</span>
+        </div>
+        <h2>The 50/30/20 Reset</h2>
+        <p style="font-size:13px; margin-bottom:14px; opacity:0.7;">Standard budget on $3,200/mo take-home:</p>
+        <div class="budget-row">
+          <div class="budget-pct">50%</div>
+          <div class="budget-label">Needs</div>
+          <div class="budget-amt">$1,600</div>
+        </div>
+        <div class="budget-row">
+          <div class="budget-pct">30%</div>
+          <div class="budget-label">Wants</div>
+          <div class="budget-amt">$960</div>
+        </div>
+        <div class="budget-row">
+          <div class="budget-pct">20%</div>
+          <div class="budget-label">Savings</div>
+          <div class="budget-amt">$640</div>
+        </div>
+        <div class="info-box" style="margin-top:12px;">
+          <p style="font-size:13px; margin:0;">To hit <strong style="color:#a88fff;">$834</strong>: shift to <strong>50/24/26</strong>. Cut <strong style="color:#a88fff;">$194 from wants</strong>.</p>
+        </div>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 4: Subscription Audit (light) -->
+      <div class="slide light">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+          <div class="num">2</div>
+          <span style="font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; opacity:0.6;">Step Two</span>
+        </div>
+        <h2>The Subscription Audit</h2>
+        <p style="font-size:13px; margin-bottom:12px; opacity:0.7;">Average Canadian spends <strong style="color:#2200b3;">$200/month</strong> on subscriptions. Cancel what you haven't used in 30 days.</p>
+        <div class="sub-item">
+          <span class="sub-name">Streaming (2-3 services)</span>
+          <span class="sub-price">$35-55/mo</span>
+        </div>
+        <div class="sub-item">
+          <span class="sub-name">Unused gym membership</span>
+          <span class="sub-price">$40-60/mo</span>
+        </div>
+        <div class="sub-item">
+          <span class="sub-name">Food delivery apps</span>
+          <span class="sub-price">$30-50/mo</span>
+        </div>
+        <div class="sub-item">
+          <span class="sub-name">Premium app tiers</span>
+          <span class="sub-price">$15-25/mo</span>
+        </div>
+        <div class="info-box" style="margin-top:10px;">
+          <p style="font-size:14px; margin:0; font-weight:600; color:#2200b3;">Target: save $80-120/month</p>
+          <p style="font-size:12px; margin-top:4px; opacity:0.6;">That's $960-$1,440/year back in your pocket.</p>
+        </div>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 5: Auto-Save (dark) -->
+      <div class="slide dark">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+          <div class="num">3</div>
+          <span style="font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; opacity:0.6;">Step Three</span>
+        </div>
+        <h2>Auto-Save Before You See It</h2>
+        <p style="font-size:13px; margin-bottom:14px; opacity:0.7;">Set up automatic transfers on payday. Out of sight = out of mind.</p>
+        <p style="font-size:12px; font-weight:600; opacity:0.5; margin-bottom:8px; letter-spacing:0.5px;">SPLIT YOUR $834/MONTH:</p>
+        <div class="save-split">
+          <div class="split-amt">$500</div>
+          <div class="split-label">TFSA</div>
+          <div class="split-note">Tax-free growth</div>
+        </div>
+        <div class="save-split">
+          <div class="split-amt">$200</div>
+          <div class="split-label">Emergency Fund</div>
+          <div class="split-note">3-month runway</div>
+        </div>
+        <div class="save-split">
+          <div class="split-amt">$134</div>
+          <div class="split-label">Prize-Linked Savings</div>
+          <div class="split-note">5 tickets/week</div>
+        </div>
+        <div class="info-box" style="margin-top:10px;">
+          <p style="font-size:12px; margin:0; opacity:0.7;">Every $25 saved = 1 free ticket for the weekly draw. Your money stays yours either way.</p>
+        </div>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 6: 12-Month Timeline (light) -->
+      <div class="slide light">
+        <div class="tag">The 12-Month Timeline</div>
+        <h2>Quarter by quarter, here's how it adds up.</h2>
+        <div style="margin:10px 0;">
+          <div class="timeline-row">
+            <div class="timeline-phase">Month 1-3</div>
+            <div class="timeline-desc">Build the habit. Stick to the plan.</div>
+            <div class="timeline-amt">$2,502</div>
+          </div>
+          <div class="timeline-row" style="border-top:1px solid #E8E4DF; padding-top:10px;">
+            <div class="timeline-phase">Month 4-6</div>
+            <div class="timeline-desc">Increase by $50/mo as you adjust.</div>
+            <div class="timeline-amt">$2,652</div>
+          </div>
+          <div class="timeline-row" style="border-top:1px solid #E8E4DF; padding-top:10px;">
+            <div class="timeline-phase">Month 7-9</div>
+            <div class="timeline-desc">Side income boost. Sell, freelance, hustle.</div>
+            <div class="timeline-amt">$2,802</div>
+          </div>
+          <div class="timeline-row" style="border-top:1px solid #E8E4DF; padding-top:10px;">
+            <div class="timeline-phase">Month 10-12</div>
+            <div class="timeline-desc">Final push. You can see the finish line.</div>
+            <div class="timeline-amt">$2,952</div>
+          </div>
+        </div>
+        <div class="info-box" style="text-align:center;">
+          <p style="font-size:12px; opacity:0.5; margin:0;">12-MONTH TOTAL</p>
+          <p style="font-family:'Playfair Display',serif; font-size:36px; font-weight:900; color:#2200b3; margin:4px 0;">$10,908</p>
+          <p style="font-size:12px; opacity:0.6; margin:0;">$908 ahead of your goal.</p>
+        </div>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 7: CTA (dark) -->
+      <div class="slide dark">
+        <div class="logo-lockup">
+          <div class="logo-circle">L</div>
+          <span class="logo-text">Lodavo</span>
+        </div>
+        <h1 style="font-size:30px;">Your $10K starts with $25.</h1>
+        <p style="font-size:14px; line-height:1.65; margin-bottom:4px;">Every $25 saved on Lodavo = 1 free ticket for the weekly draw.</p>
+        <p style="font-size:14px; line-height:1.65;">Save towards your goal and get a shot at winning. Your money stays yours — win or not.</p>
+        <button class="cta-btn">Start saving smarter &rarr;</button>
+        <div class="cta-handle">@lodavo.money</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="ig-actions">
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    <svg class="bookmark" fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+  </div>
+  <div class="ig-likes">1,247 likes</div>
+</div>
+<script>
+const track=document.getElementById('track'),viewport=document.getElementById('carousel'),total=track.children.length;let current=0,startX=0,deltaX=0,dragging=false;
+viewport.addEventListener('pointerdown',e=>{startX=e.clientX;deltaX=0;dragging=true;track.style.transition='none';});
+viewport.addEventListener('pointermove',e=>{if(!dragging)return;deltaX=e.clientX-startX;track.style.transform=`translateX(${-current*420+deltaX}px)`;});
+viewport.addEventListener('pointerup',()=>{if(!dragging)return;dragging=false;track.style.transition='transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94)';if(deltaX<-40&&current<total-1)current++;else if(deltaX>40&&current>0)current--;track.style.transform=`translateX(${-current*420}px)`;});
+viewport.addEventListener('pointerleave',()=>{if(dragging)viewport.dispatchEvent(new Event('pointerup'));});
+</script>
+</body>
+</html>

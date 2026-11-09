@@ -1,0 +1,93 @@
+slideshow:
+  slug: lottery-worst-deal-canada
+  language: en
+  account: lodavo.money
+  series: v2
+  slot: "2026-12-10 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: bold opinion, 9 words, statement, normal case
+    - text: "Lottery tickets are the worst deal in Canada"
+      image: { url: "https://www.lotteriesinusa.com/wp-content/uploads/lotto-vending-machine.jpg" }
+      focus: "50% 50%"
+    # Slide 2: immediate value, the number that makes people stop
+    - text: "Canadians spend $700 a year on lottery tickets"
+      sub: "most of it is never won back"
+      image: { url: "https://thenewcomer.ca/wp-content/uploads/2021/03/bills_emmasiegel_photo_all-five-scaled.jpg" }
+      focus: "50% 50%"
+    # Slide 3: the odds, made visceral
+    - text: "Lotto Max jackpot odds: 1 in 33,294,800"
+      sub: "you'd need 640,000 years of weekly tickets"
+      image: { url: "https://i.pinimg.com/originals/43/56/6f/43566fa0dd95783c7b7a2d0f92df83d7.jpg" }
+      focus: "50% 50%"
+    # Slide 4: the payout ratio nobody talks about
+    - text: "For every $1 played, lotteries return 47 cents"
+      sub: "the other 53 cents is gone forever"
+      image: { url: "https://images.pexels.com/photos/7114273/pexels-photo-7114273.jpeg?cs=srgb&dl=pexels-rudonni-7114273.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Slide 5: what saving that money looks like
+    - text: "$700 saved per year for 5 years is $3,500"
+      sub: "enough to cover 3 months of emergencies"
+      image: { url: "https://www.frugalconfessions.com/wp-content/uploads/2024/04/saving-jar-ideas.jpg" }
+      focus: "50% 50%"
+    # Slide 6: the 10-year version, tied to a real stat
+    - text: "$700 saved for 10 years is $7,000"
+      sub: "half of Canadians can't cover a $2,500 surprise expense"
+      image: { url: "https://us.images.westend61.de/0001186819pw/happy-young-man-looking-at-cell-phone-in-the-city-BSZF01070.jpg" }
+      focus: "50% 50%"
+    # Slide 7: the gambler's fallacy, said plainly
+    - text: "Your 1,000th ticket has the same odds as your 1st"
+      sub: "the math never changes"
+      image: { url: "https://www.jamesowenthomas.com/wp-content/uploads/2022/07/Piles-of-Scratch-Cards.jpg" }
+      focus: "50% 50%"
+    # Slide 8: who it actually hurts
+    - text: "Low-income Canadians spend the biggest share on lottery"
+      sub: "the people who can least afford to lose"
+      image: { url: "https://images.pexels.com/photos/8515596/pexels-photo-8515596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 9: the core contrast, one line each
+    - text: "Every dollar spent on a ticket is gone"
+      sub: "every dollar saved is still yours"
+      image: { url: "https://i.pinimg.com/originals/e9/ba/7e/e9ba7efb4bf5578623852ce0048c51d4.jpg" }
+      focus: "50% 50%"
+    # App slide: names Lodavo, delivers the mechanic
+    - app: hero
+      text: "What if your savings earned free tickets?"
+      sub: "On Lodavo, every $25 saved earns a ticket for the weekly draw"
+  caption: |
+    Lottery tickets are the worst deal in Canada. Here's the math.
+
+    $700 a year, 1 in 33 million odds, 47 cents back on every dollar. The same $700 saved for 5 years is $3,500 you actually keep.
+
+    Agree or disagree? Drop your take below.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#lottery"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#lottomax"
+    - "#personalfinance"
+  sources:
+    # OLG: Lotto Max jackpot odds are 1 in 33,294,800 per $5 play (3 selections from 50 numbers).
+    # 33,294,800 / 52 weeks = 640,284 years of weekly plays to expect one jackpot.
+    - https://www.olg.ca/en/lottery/play-lotto-max-702-encore.html
+    # Canadian Partnership for Responsible Gambling, Canadian Gambling Digest 2023-2024:
+    # total lottery spending in Canada exceeds $9 billion/year; per-adult average ~$700/year
+    # on government-run lottery products. Lower-income households spend a disproportionate
+    # share of income on lottery compared to higher-income households.
+    - https://www.greo.ca/en/canadian-gambling-digest.aspx
+    # Provincial lottery corporation annual reports (OLG, Loto-Quebec, BCLC, WCLC):
+    # prize payout ratio for major draw games (Lotto Max, Lotto 6/49) is approximately 47%
+    # of ticket sales revenue; the remainder goes to government programs and operating costs.
+    - https://about.olg.ca/annual-report/
+    # FP Canada 2024 Financial Stress Index: 46% of Canadians say they would struggle to cover
+    # an unexpected $2,500 expense. BDO Affordability Index shows similar findings.
+    - https://fpcanada.ca/financial-stress-index
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance at the Sunday 8 PM ET
+    # snapshot, rounded down.
+    - https://lodavo.com/rules

@@ -1,0 +1,81 @@
+slideshow:
+  slug: average-canadian-0-emergency-savings
+  language: en
+  account: lodavo.money
+  series: v2
+  slot: "2026-12-16 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: shocking stat, counter-intuitive confession format
+    - text: "the average Canadian has $0 in emergency savings"
+      image: { url: "https://images.pexels.com/photos/8719576/pexels-photo-8719576.jpeg?cs=srgb&dl=pexels-ahsanjaya-8719576.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Slide 2: immediate proof, the stat that backs the hook
+    - text: "48% of Canadians say they couldn't cover a $500 emergency"
+      sub: "BDO affordability survey, 2024"
+      image: { url: "https://images.stockcake.com/public/3/5/2/3521b766-8f3c-4218-8b00-9026c7d3f61f/financial-stress-overwhelms-stockcake.jpg" }
+      focus: "50% 40%"
+    # Slide 3: what that actually means
+    - text: "one car repair from debt. one dental bill from a payment plan."
+      image: { url: "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 5: age-specific data
+    - text: "median savings for Canadians under 35: $4,400"
+      sub: "Statistics Canada Survey of Financial Security"
+      image: { url: "https://images.pexels.com/photos/34532967/pexels-photo-34532967/free-photo-of-man-relaxing-on-park-bench-in-autumn.jpeg?auto=compress&w=1200" }
+      focus: "50% 40%"
+    # Slide 6: but most have far less
+    - text: "but the median is pulled up by the few who saved early"
+      sub: "the most common amount in your 20s is closer to nothing"
+      image: { url: "https://www.visualcapitalist.com/wp-content/uploads/2016/06/us-wealth-inequality-chart.jpg" }
+      focus: "50% 50%"
+    # Slide 7: the reframe, what $25/week actually builds
+    - text: "$25 a week for 6 months is $650"
+      sub: "that IS the emergency fund"
+      image: { url: "https://i.pinimg.com/originals/7a/98/1d/7a981d3e6dc68655ffec80e56fd9a11a.jpg" }
+      focus: "50% 50%"
+    # Slide 8: compound effect of starting
+    - text: "$25 a week for a year is $1,300"
+      sub: "more than most people your age have saved"
+      image: { url: "https://i.pinimg.com/originals/91/ad/34/91ad34e8ff40798a93330dcaaf44e913.jpg" }
+      focus: "50% 50%"
+    # Slide 9: the mindset shift
+    - text: "the bar is on the floor. step over it."
+      sub: "$0 is where most people are. $25 is where it changes."
+      image: { url: "https://images.pexels.com/photos/6886957/pexels-photo-6886957.jpeg?cs=srgb&dl=pexels-max-smirnov-6886957.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Slide 10: make saving feel worth it
+    - text: "every $25 you save earns a free ticket for a weekly cash draw"
+      sub: "a chance to win $100 or the $10,000 jackpot, every week"
+      image: { url: "https://images.pexels.com/photos/8837249/pexels-photo-8837249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide
+    - app: hero
+      text: "You don't need a lot. You need to start."
+      sub: "Connect your account on Lodavo, every $25 saved earns a free ticket"
+  caption: |
+    48% of Canadians say they can't cover a $500 emergency. That's not a stat about other people. That's probably someone you know.
+
+    One car repair. One dental bill. One unexpected expense and you're on a credit card at 20%.
+
+    But $25 a week for 6 months is $650. That's the emergency fund. And on Lodavo, every $25 you save earns a free ticket for the weekly draw. $100 winner every week, $10,000 jackpot.
+
+    The bar is literally on the floor. Step over it.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#emergencyfund"
+    - "#personalfinance"
+  sources:
+    # 48% can't cover $500 emergency: BDO Canada Affordability Index, 2024
+    - https://debtsolutions.bdo.ca/our-people/bdo-in-the-news/bdo-affordability-index/
+    # Median savings under 35: $4,400 from Statistics Canada Survey of Financial Security, 2019
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001601
+    # Lodavo contest rules: $25 = 1 ticket, $100/week prize, $10,000 jackpot
+    - https://lodavo.com/rules

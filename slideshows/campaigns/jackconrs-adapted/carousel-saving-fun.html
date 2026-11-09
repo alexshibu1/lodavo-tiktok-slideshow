@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Make Saving Money Actually Fun — @lodavo.money</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo+Black&family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@500;700&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #111;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #fff;
+    padding: 40px 20px;
+  }
+
+  h1.page-title {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+  }
+
+  .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 2700px;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 60px;
+    scrollbar-width: none;
+  }
+  .carousel-track::-webkit-scrollbar { display: none; }
+
+  .slide-container {
+    flex-shrink: 0;
+    width: 420px;
+    height: 525px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    transform: scale(0.3889);
+    transform-origin: top left;
+  }
+
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.55) contrast(1.1) saturate(0.9);
+    z-index: 1;
+  }
+
+  .slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 2;
+  }
+
+  .slide-content {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 12px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.8);
+  }
+
+  /* Slide 1 — Grid */
+  .grid-slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+  }
+
+  .grid-cell {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .grid-cell-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5) contrast(1.1) saturate(0.85);
+  }
+
+  .grid-cell-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+  }
+
+  .grid-title {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px;
+  }
+
+  .grid-title .line1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 1.1;
+    color: #fff;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.8);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .grid-title .line2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 1.15;
+    color: #fff;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.8);
+    margin-top: 10px;
+  }
+
+  /* Step slides */
+  .step-content {
+    justify-content: flex-start;
+    padding-top: 160px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+  }
+
+  .step-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .step-heading {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-size: 88px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 60px;
+  }
+
+  .step-body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.6;
+    color: #fff;
+  }
+
+  /* Closing slide */
+  .closing-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .closing-main {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 1.2;
+    color: #fff;
+  }
+
+  .closing-handle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #fff;
+    opacity: 0.8;
+    margin-top: 50px;
+  }
+
+  /* Navigation */
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.55);
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background 0.2s;
+    backdrop-filter: blur(4px);
+  }
+  .nav-btn:hover { background: rgba(0,0,0,0.75); }
+  .nav-prev { left: 8px; }
+  .nav-next { right: 8px; }
+
+  .counter {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgba(255,255,255,0.45);
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  /* Download buttons */
+  .download-row {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dl-btn {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.6);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .dl-btn:hover {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+
+<h1 class="page-title">Carousel Preview</h1>
+
+<div class="carousel-wrapper">
+  <button class="nav-btn nav-prev" onclick="scrollCarousel(-1)">&#8249;</button>
+  <button class="nav-btn nav-next" onclick="scrollCarousel(1)">&#8250;</button>
+
+  <div class="carousel-track" id="carouselTrack">
+
+    <!-- SLIDE 1 — Hook: 2x2 Grid -->
+    <div class="slide-container">
+      <div class="slide" id="slide-1">
+        <div class="grid-slide">
+          <div class="grid-cell">
+            <div class="grid-cell-bg" style="background-image: url('https://images.pexels.com/photos/1267697/pexels-photo-1267697.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+            <div class="grid-cell-overlay"></div>
+          </div>
+          <div class="grid-cell">
+            <div class="grid-cell-bg" style="background-image: url('https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+            <div class="grid-cell-overlay"></div>
+          </div>
+          <div class="grid-cell">
+            <div class="grid-cell-bg" style="background-image: url('https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+            <div class="grid-cell-overlay"></div>
+          </div>
+          <div class="grid-cell">
+            <div class="grid-cell-bg" style="background-image: url('https://images.pexels.com/photos/1525612/pexels-photo-1525612.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+            <div class="grid-cell-overlay"></div>
+          </div>
+        </div>
+        <div class="grid-title text-shadow">
+          <div class="line1">How to make saving</div>
+          <div class="line2">money actually fun:</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 — Step 1 -->
+    <div class="slide-container">
+      <div class="slide" id="slide-2">
+        <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content step-content text-shadow">
+          <div class="step-label">Step 1:</div>
+          <div class="step-heading">Gamify it with weekly challenges</div>
+          <div class="step-body">
+            &bull; No-spend weekends<br>
+            &bull; $5 jar every time you skip takeout<br>
+            &bull; Savings bingo with friends<br><br>
+            Make it a game, not a punishment.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 — Step 2 -->
+    <div class="slide-container">
+      <div class="slide" id="slide-3">
+        <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content step-content text-shadow">
+          <div class="step-label">Step 2:</div>
+          <div class="step-heading">Celebrate the small wins</div>
+          <div class="step-body">
+            Your first $100 saved matters more than your first $10K.<br><br>
+            Screenshot your balance. Tell someone. The dopamine hit keeps you going.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4 — Step 3 -->
+    <div class="slide-container">
+      <div class="slide" id="slide-4">
+        <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1267697/pexels-photo-1267697.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content step-content text-shadow">
+          <div class="step-label">Step 3:</div>
+          <div class="step-heading">Save with friends</div>
+          <div class="step-body">
+            Accountability partners save 2x more on average.<br><br>
+            Start a group chat. Share your weekly saves.<br>
+            No shame, just progress.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 5 — Step 4 -->
+    <div class="slide-container">
+      <div class="slide" id="slide-5">
+        <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content step-content text-shadow">
+          <div class="step-label">Step 4:</div>
+          <div class="step-heading">Turn your savings into chances to win</div>
+          <div class="step-body">
+            With prize-linked savings, every $25 saved earns a free draw ticket. Every week.<br><br>
+            Same money. Same bank account.<br>
+            But now saving feels like playing.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 6 — Closing -->
+    <div class="slide-container">
+      <div class="slide" id="slide-6">
+        <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content closing-content text-shadow">
+          <div class="closing-main">Saving doesn&rsquo;t have to<br>feel like sacrifice.</div>
+          <div class="closing-handle">@lodavo.money</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="counter" id="counter">1 / 6</div>
+
+<div class="download-row">
+  <button class="dl-btn" onclick="downloadSlide(1)">Download Slide 1</button>
+  <button class="dl-btn" onclick="downloadSlide(2)">Download Slide 2</button>
+  <button class="dl-btn" onclick="downloadSlide(3)">Download Slide 3</button>
+  <button class="dl-btn" onclick="downloadSlide(4)">Download Slide 4</button>
+  <button class="dl-btn" onclick="downloadSlide(5)">Download Slide 5</button>
+  <button class="dl-btn" onclick="downloadSlide(6)">Download Slide 6</button>
+</div>
+
+<script>
+  const track = document.getElementById('carouselTrack');
+  const counter = document.getElementById('counter');
+  const totalSlides = 6;
+
+  function getCurrentSlide() {
+    const scrollLeft = track.scrollLeft;
+    const slideWidth = 420 + 24; // slide width + gap
+    return Math.round(scrollLeft / slideWidth);
+  }
+
+  function scrollCarousel(dir) {
+    const slideWidth = 420 + 24;
+    const current = getCurrentSlide();
+    const next = Math.max(0, Math.min(totalSlides - 1, current + dir));
+    track.scrollTo({ left: next * slideWidth, behavior: 'smooth' });
+  }
+
+  track.addEventListener('scroll', () => {
+    const idx = getCurrentSlide() + 1;
+    counter.textContent = Math.min(idx, totalSlides) + ' / ' + totalSlides;
+  });
+
+  function downloadSlide(n) {
+    const el = document.getElementById('slide-' + n);
+    // Temporarily remove the transform for full-res capture
+    el.style.transform = 'none';
+    html2canvas(el, {
+      width: 1080,
+      height: 1350,
+      scale: 1,
+      useCORS: true,
+      allowTaint: true,
+      backgroundColor: null,
+      logging: false
+    }).then(canvas => {
+      el.style.transform = 'scale(0.3889)';
+      const link = document.createElement('a');
+      link.download = 'saving-fun-slide-' + n + '.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }).catch(err => {
+      el.style.transform = 'scale(0.3889)';
+      console.error('Download failed:', err);
+      alert('Download failed — check console for details.');
+    });
+  }
+</script>
+
+</body>
+</html>

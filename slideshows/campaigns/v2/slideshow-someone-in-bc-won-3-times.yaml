@@ -1,0 +1,78 @@
+slideshow:
+  slug: someone-in-bc-won-3-times
+  language: en
+  account: lodavo.money
+  series: v2
+  slot: "2026-12-13 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: three-number formula, lead with the result
+    - text: "one person in BC won 3 times in 26 weeks"
+      image: { url: "https://cdn.pixabay.com/photo/2022/09/12/18/38/vancouver-7450141_1280.jpg" }
+      focus: "50% 40%"
+    # Slide 2: deliver value immediately, the payoff
+    - text: "they won the $100 weekly prize. three separate times."
+      sub: "not a glitch. that's the math working."
+      image: { url: "https://thecanadaguide.com/wp-content/uploads/hundred-1600x744.jpg" }
+      focus: "50% 50%"
+    # Slide 3: context
+    - text: "the app has been live for 26 weeks"
+      sub: "a free cash draw every single week"
+      image: { url: "https://i.etsystatic.com/45562186/r/il/a7c674/5352430290/il_fullxfull.5352430290_6424.jpg" }
+      focus: "50% 50%"
+    # Slide 4: how it works
+    - text: "every $25 you save earns a free ticket"
+      sub: "those tickets come back every week, automatically"
+      image: { url: "https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 5: the math behind winning repeatedly
+    - text: "if you have $1,000 saved, that's 40 tickets a week"
+      sub: "every single week, without doing anything"
+      image: { url: "https://blog.remitly.com/wp-content/uploads/2024/02/canadian-dollars-scaled.jpg" }
+      focus: "50% 50%"
+    # Slide 6: scale it over time
+    - text: "over 26 weeks, that's 1,040 chances to win"
+      sub: "from one savings balance"
+      image: { url: "https://turo.com/blog/canada/wp-content/uploads/sites/3/2024/11/tom-winckels-TgQ_ogZUb98-unsplash-edited-scaled.jpg" }
+      focus: "50% 50%"
+    # Slide 8: the pattern
+    - text: "the pattern is simple"
+      sub: "save more, get more tickets, win more often"
+      image: { url: "https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 9: the unclaimed jackpot
+    - text: "the $10,000 jackpot still hasn't been won"
+      sub: "26 weeks and counting"
+      image: { url: "https://images.pexels.com/photos/259027/pexels-photo-259027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 10: what you can do
+    - text: "you don't need to get lucky once. you need to keep showing up."
+      image: { url: "https://images.unsplash.com/photo-1592376780713-ba217b014d6c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
+      focus: "50% 50%"
+    # App slide: bridge
+    - app: hero
+      text: "Save more, get more tickets, win more often."
+      sub: "Connect your account on Lodavo for free"
+  caption: |
+    Someone in BC has won 3 times in 26 weeks. Not a glitch, just the math.
+
+    Every $25 saved earns a free ticket for the weekly draw. Those tickets come back every single week. The more you save, the more chances you get.
+
+    Other repeat winners in BC and Quebec. The $10,000 jackpot still hasn't been claimed.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#moneytips"
+    - "#personalfinance"
+  sources:
+    # Jhan Carlos S. (BC) won 3 times, Kevin B. (BC) won 2x, Martin P. (QC) won 2x
+    - https://lodavo.com
+    # Contest rules s.4.1(a): every $25 of linked balance earns 1 ticket
+    - https://lodavo.com/rules
+    # $10,000 jackpot not won in 26 weeks: Lodavo draw history

@@ -1,0 +1,79 @@
+slideshow:
+  slug: free-apps-that-help-you-save-canada
+  language: en
+  account: lodavo.money
+  series: money-lists
+  slot: "2026-11-15 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook slide
+    - text: "7 free apps that actually help you save in Canada"
+      image: { url: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c" } # phone in hand with apps on screen
+      focus: "50% 45%"
+    # 1: Wealthsimple (investing, TFSA, RRSP)
+    - text: "Wealthsimple"
+      sub: "free TFSA and RRSP accounts. no minimum, no commission on stocks"
+      image: { url: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3" } # stock chart on phone screen
+      focus: "50% 50%"
+    # 2: KOHO (spending insights, prepaid card with roundups)
+    - text: "KOHO"
+      sub: "prepaid card with roundups, spending insights, and cashback"
+      image: { url: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1" } # contactless payment with phone
+      focus: "50% 50%"
+    # 3: Borrowell (free credit score monitoring)
+    - text: "Borrowell"
+      sub: "free weekly credit score updates. no credit card needed"
+      image: { url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f" } # laptop showing financial dashboard
+      focus: "50% 45%"
+    # 4: Flipp (digital flyers, grocery price matching)
+    - text: "Flipp"
+      sub: "every grocery flyer in one app. price match at Walmart"
+      image: { url: "https://images.unsplash.com/photo-1542838132-92c53300491e" } # grocery store aisle with produce
+      focus: "50% 50%"
+    # 5: Too Good To Go (discounted surplus food)
+    - text: "Too Good To Go"
+      sub: "surplus food from local restaurants, usually 70% off"
+      image: { url: "https://images.unsplash.com/photo-1498837167922-ddd27525d352" } # assorted fresh food spread on table
+      focus: "50% 50%"
+    # 6: PocketSmith (budgeting with Canadian bank connections)
+    - text: "PocketSmith"
+      sub: "connects to Canadian accounts. auto-categorizes your spending"
+      image: { url: "https://images.unsplash.com/photo-1554224154-26032ffc0d07" } # person reviewing budget on laptop
+      focus: "50% 50%"
+    # App slide: the 7th app is Lodavo, revealed on the branded slide
+    - app: hero
+      text: "And the 7th? It rewards you for saving."
+      sub: "Lodavo gives you a free ticket for every $25 saved"
+  caption: |
+    Seven free apps every Canadian should have on their phone.
+
+    Wealthsimple for investing. KOHO for spending insights. Borrowell for your credit score. Flipp for groceries. Too Good To Go for cheap food. PocketSmith for budgeting. And Lodavo for turning your savings into free weekly draw tickets.
+
+    All free. All Canadian. No excuses.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#freeapps"
+    - "#savingmoney"
+    - "#canada"
+    - "#moneytips"
+    - "#moneytok"
+    - "#lodavo"
+  sources:
+    # Wealthsimple: $0 commission stock trading, no minimum balance for TFSA/RRSP
+    - https://www.wealthsimple.com/en-ca/product/trade
+    # KOHO: free prepaid Visa with roundups and cashback
+    - https://www.koho.ca/
+    # Borrowell: free Equifax credit score updated weekly
+    - https://borrowell.com/free-credit-score
+    # Flipp: digital flyers and price matching at Canadian retailers
+    - https://flipp.com/
+    # Walmart Canada price matching policy
+    - https://www.walmart.ca/en/help/returns-refunds/price-matching
+    # Too Good To Go: surplus food at a discount, available across Canada
+    - https://www.toogoodtogo.com/en-ca
+    # PocketSmith: budget tracking with Canadian bank connections
+    - https://www.pocketsmith.com/
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

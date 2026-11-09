@@ -1,0 +1,82 @@
+slideshow:
+  slug: back-to-school-money-checklist
+  language: en
+  account: lodavo.money
+  series: student-life
+  slot: "2026-12-02 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: checklist format, urgent and saveable
+    - text: "the back-to-school money checklist (Canada)"
+      image: { url: "https://images.pexels.com/photos/5088017/pexels-photo-5088017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Item 1: open a no-fee student chequing account
+    - text: "open a no-fee student chequing account"
+      sub: "BMO, CIBC, TD all waive fees if you're under 25"
+      image: { url: "https://images.pexels.com/photos/8938735/pexels-photo-8938735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Item 2: apply for OSAP or your province's student aid
+    - text: "apply for OSAP or your provincial aid"
+      sub: "deadlines hit early. Ontario gave out $2.4B in 2023-24"
+      image: { url: "https://images.pexels.com/photos/7055876/pexels-photo-7055876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" }
+      focus: "50% 50%"
+    # Item 3: grab your SPC card
+    - text: "grab your SPC card on day one"
+      sub: "$11.99 a year, 450+ brands, saves you hundreds"
+      image: { url: "https://images.pexels.com/photos/5632371/pexels-photo-5632371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Item 4: set a weekly spending budget
+    - text: "set a weekly budget and stick to it"
+      sub: "most students spend $200-300 a week. know your number"
+      image: { url: "https://images.pexels.com/photos/6963017/pexels-photo-6963017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Item 5: find campus jobs early
+    - text: "apply for campus jobs in the first week"
+      sub: "library, food court, IT help desk. $16-17/hr, flexible hours"
+      image: { url: "https://images.pexels.com/photos/6281132/pexels-photo-6281132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Item 6: check your health coverage
+    - text: "check your health coverage before you need it"
+      sub: "UHIP for internationals, student union plans for domestic. know what's covered"
+      image: { url: "https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide: bridge checklist completion to Lodavo
+    - app: cta
+      text: "Got your money sorted for the semester?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved"
+  caption: |
+    September hits different when your money is sorted.
+
+    Most students don't set up their finances until something goes wrong. Do this checklist before classes start and you'll be ahead of 90% of your campus. No-fee chequing, student aid applications, SPC, a real budget, campus jobs, and health coverage. Save this for September.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#studentlife"
+    - "#uoft"
+    - "#mcgill"
+    - "#savingmoney"
+    - "#lodavo"
+  sources:
+    # BMO student chequing account: no monthly fee for students
+    - https://www.bmo.com/en-ca/main/personal/bank-accounts/student-banking/
+    # CIBC student banking: no-fee chequing for students under 25
+    - https://www.cibc.com/en/student.html
+    # Ontario Student Assistance Program (OSAP) 2023-24: $2.4B distributed
+    - https://www.ontario.ca/page/osap-ontario-student-assistance-program
+    # SPC card details and partner list
+    - https://www.spccard.ca/
+    # Statistics Canada: post-secondary student spending patterns
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3710011801
+    # Ontario minimum wage 2024: $16.55/hr
+    - https://www.ontario.ca/document/your-guide-employment-standards-act-0/minimum-wage
+    # UHIP (University Health Insurance Plan) for international students in Ontario
+    - https://uhip.ca/
+    # FCAC guide: making a budget (Government of Canada)
+    - https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html
+    # Contest rules s.4.1(a): every $25 of linked balance earns 1 ticket
+    - https://lodavo.com/rules

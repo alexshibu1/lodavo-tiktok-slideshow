@@ -1,0 +1,91 @@
+slideshow:
+  slug: every-student-discount-canada
+  language: en
+  account: lodavo.money
+  series: student-life
+  slot: "2026-12-04 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: pure save-bait, dense reference list
+    - text: "every student discount you're not using"
+      sub: "saves you $2,000+ a year. screenshot this."
+      image: { url: "https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # SPC Card
+    - text: "SPC card"
+      sub: "$11.99/year or free with CIBC. 10-15% off at Foot Locker, Garage, Levi's, Jack Astor's, and 450+ brands"
+      image: { url: "https://images.pexels.com/photos/6068969/pexels-photo-6068969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # UNiDAYS and digital discounts
+    - text: "UNiDAYS"
+      sub: "100% free with your .edu email. Samsung 10% off, ASOS 10% off, Nike 10% off. check it before every purchase"
+      image: { url: "https://images.pexels.com/photos/5585790/pexels-photo-5585790.jpeg?cs=srgb&dl=pexels-polina-tankilevitch-5585790.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Apple, Spotify, Adobe
+    - text: "subscriptions you're overpaying for"
+      sub: "Apple Music $5.99/mo (save $5). Spotify $5.99/mo (save $6). Adobe Creative Cloud $21.49/mo (save $43)"
+      image: { url: "https://images.pexels.com/photos/3541365/pexels-photo-3541365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Amazon Prime Student and transit
+    - text: "Amazon and transit"
+      sub: "Prime Student $4.49/mo (half price). Presto: post-secondary discount in the GTA. most cities have U-Pass included in tuition"
+      image: { url: "https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Campus gym, museums, software
+    - text: "free stuff you already paid for"
+      sub: "campus gym (tuition). Microsoft 365 (free). GitHub Pro (free). free museum nights at AGO, ROM"
+      image: { url: "https://images.pexels.com/photos/3888405/pexels-photo-3888405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # The total savings
+    - text: "the math"
+      sub: "SPC saves $200+. UNiDAYS $150+. subscriptions $650+. Prime $55. gym $500+. total: over $1,500 without trying"
+      image: { url: "https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide: bridge from saving money to Lodavo
+    - app: hero
+      text: "Saving hundreds on discounts. Where does it go?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved. Every week."
+  caption: |
+    Every student discount in Canada you're probably not using. Save this.
+
+    SPC card. UNiDAYS. Half-price Prime. Student pricing on Spotify, Apple Music, Adobe. Free gym, free Microsoft 365, free museum nights. It adds up to over $1,500 a year.
+
+    Screenshot this and stop overpaying for stuff.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#studentlife"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#university"
+    - "#studentdiscounts"
+    - "#spc"
+  sources:
+    # SPC Card pricing ($11.99/year) and partner list
+    - https://www.spccard.ca/
+    # CIBC free SPC card with student banking
+    - https://www.cibc.com/en/student.html
+    # UNiDAYS Canada partner discounts
+    - https://www.myunidays.com/CA/en-CA
+    # Apple Music student plan ($5.99/mo)
+    - https://support.apple.com/en-ca/108832
+    # Spotify student plan ($5.99/mo)
+    - https://www.spotify.com/ca-en/student/
+    # Adobe Creative Cloud student pricing ($21.49/mo)
+    - https://www.adobe.com/ca/creativecloud/plans.html
+    # Amazon Prime Student Canada ($4.49/mo)
+    - https://www.amazon.ca/amazonprime?planOptimizationId=WLPStudentMonthlyElig498
+    # Presto post-secondary discount (GTA)
+    - https://www.prestocard.ca/en/about/FAQ/post-secondary-students
+    # GitHub Education (free Pro)
+    - https://education.github.com/students
+    # AGO free admission events
+    - https://ago.ca/visit
+    # ROM free/discounted nights
+    - https://www.rom.on.ca/en/visit-us/accessibility-and-inclusion
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

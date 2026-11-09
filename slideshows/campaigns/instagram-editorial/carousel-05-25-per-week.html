@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Happens When You Save $25/Week for 5 Years — Lodavo</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'DM Sans', sans-serif; background: #1a1a1a; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+.ig-frame { width: 420px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+.ig-header { display: flex; align-items: center; gap: 10px; padding: 14px 16px; background: #fff; border-bottom: 1px solid #eee; }
+.ig-avatar { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(165deg, #18007d, #5533e6); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 14px; font-family: 'Playfair Display', serif; }
+.ig-username { font-weight: 600; font-size: 14px; color: #262626; }
+.ig-follow { color: #2200b3; font-weight: 700; font-size: 13px; margin-left: auto; }
+.carousel-viewport { width: 420px; height: 525px; overflow: hidden; position: relative; cursor: grab; }
+.carousel-viewport:active { cursor: grabbing; }
+.carousel-track { display: flex; transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); height: 100%; }
+.slide { width: 420px; height: 525px; flex-shrink: 0; position: relative; display: flex; flex-direction: column; justify-content: center; padding: 40px 36px; overflow: hidden; }
+.slide.light { background: #F8F6F3; color: #1a1a1a; }
+.slide.dark { background: #0F0A1F; color: #F8F6F3; }
+.tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 20px; width: fit-content; }
+.slide.dark .tag { background: rgba(85,51,230,0.25); color: #a88fff; }
+.slide.light .tag { background: rgba(34,0,179,0.08); color: #2200b3; }
+h1, h2 { font-family: 'Playfair Display', serif; }
+.slide h1 { font-size: 32px; font-weight: 900; line-height: 1.15; margin-bottom: 16px; }
+.slide h2 { font-size: 26px; font-weight: 800; line-height: 1.2; margin-bottom: 14px; }
+.slide p { font-size: 15px; line-height: 1.6; opacity: 0.85; }
+.slide .stat { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 900; margin: 10px 0; }
+.slide.dark .stat { color: #a88fff; }
+.slide.light .stat { color: #2200b3; }
+.slide .caption { font-size: 13px; opacity: 0.6; margin-top: 4px; }
+.logo-lockup { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+.logo-circle { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(165deg, #18007d, #5533e6); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Playfair Display', serif; font-weight: 900; font-size: 20px; }
+.logo-text { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 18px; }
+.slide.dark .logo-text { color: #F8F6F3; }
+.slide.light .logo-text { color: #1a1a1a; }
+.cta-btn { display: inline-block; padding: 16px 32px; background: linear-gradient(165deg, #18007d, #5533e6); color: #fff; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 16px; border-radius: 100px; text-decoration: none; margin-top: 20px; text-align: center; border: none; cursor: pointer; }
+.cta-handle { font-size: 13px; opacity: 0.5; margin-top: 16px; }
+.progress-bar { position: absolute; bottom: 0; left: 0; right: 0; display: flex; gap: 3px; padding: 0 3px 3px; }
+.progress-seg { flex: 1; height: 3px; border-radius: 2px; }
+.slide.dark .progress-seg { background: rgba(255,255,255,0.2); }
+.slide.dark .progress-seg.active { background: rgba(255,255,255,0.9); }
+.slide.light .progress-seg { background: rgba(0,0,0,0.1); }
+.slide.light .progress-seg.active { background: rgba(0,0,0,0.5); }
+.swipe-arrow { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; opacity: 0.5; }
+.slide.dark .swipe-arrow { background: rgba(255,255,255,0.1); color: #fff; }
+.slide.light .swipe-arrow { background: rgba(0,0,0,0.06); color: #1a1a1a; }
+.num { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+.slide.dark .num { background: rgba(85,51,230,0.3); color: #a88fff; }
+.slide.light .num { background: rgba(34,0,179,0.1); color: #2200b3; }
+.info-box { padding: 16px; border-radius: 12px; margin: 8px 0; }
+.slide.dark .info-box { background: rgba(255,255,255,0.05); }
+.slide.light .info-box { background: rgba(34,0,179,0.04); border: 1px solid #E8E4DF; }
+.ig-actions { display: flex; gap: 16px; padding: 12px 16px; background: #fff; }
+.ig-actions svg { width: 24px; height: 24px; }
+.ig-actions .bookmark { margin-left: auto; }
+.ig-likes { padding: 4px 16px 8px; font-weight: 600; font-size: 13px; color: #262626; background: #fff; }
+.check-list { list-style: none; padding: 0; margin: 10px 0; }
+.check-list li { font-size: 14px; line-height: 1.5; padding: 6px 0; display: flex; align-items: flex-start; gap: 8px; }
+.check-list li::before { content: none; }
+.check-icon { flex-shrink: 0; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="ig-frame">
+  <div class="ig-header">
+    <div class="ig-avatar">L</div>
+    <span class="ig-username">lodavo.money</span>
+    <span class="ig-follow">Follow</span>
+  </div>
+  <div class="carousel-viewport" id="carousel">
+    <div class="carousel-track" id="track">
+
+      <!-- SLIDE 1: HERO (dark) -->
+      <div class="slide dark">
+        <div class="tag">COMPOUND GROWTH</div>
+        <h1>What Happens When You Save $25/Week for 5 Years</h1>
+        <p>The math behind small, consistent saving — and how prize-linked savings give you bonus chances to win along the way.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2: Year 1 (light) -->
+      <div class="slide light">
+        <div class="tag">YEAR 1</div>
+        <h2>$25/week = $1,300/year</h2>
+        <div class="info-box">
+          <div class="stat">$1,329</div>
+          <p class="caption">In a HISA at 4.5% interest</p>
+        </div>
+        <p style="margin-top: 14px;">Plus <strong>52 prize tickets</strong> — one every week. That's 52 chances to win cash prizes, completely free.</p>
+        <p style="margin-top: 8px; font-size: 13px; opacity: 0.6;">You didn't buy tickets. You just saved money.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3: Year 2 (dark) -->
+      <div class="slide dark">
+        <div class="tag">YEAR 2</div>
+        <h2>Total saved: $2,600</h2>
+        <div class="info-box">
+          <div class="stat">$2,719</div>
+          <p class="caption">With interest compounding</p>
+        </div>
+        <p style="margin-top: 14px;">You've earned <strong>$119 in interest</strong> doing absolutely nothing. Your money is working while you sleep.</p>
+        <p style="margin-top: 8px; font-size: 14px;"><strong>104 cumulative prize tickets.</strong></p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 4: Year 3 (light) -->
+      <div class="slide light">
+        <div class="tag">YEAR 3</div>
+        <h2>$3,900 saved</h2>
+        <div class="info-box">
+          <div class="stat">$4,173</div>
+          <p class="caption">With compound interest at 4.5%</p>
+        </div>
+        <p style="margin-top: 14px;">Your money earned <strong>$273 on its own</strong>. That's free money from a habit that's now automatic.</p>
+        <p style="margin-top: 8px; font-size: 14px;"><strong>156 tickets entered.</strong> The habit is automatic now.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 5: Year 5 (dark) -->
+      <div class="slide dark">
+        <div class="tag">YEAR 5</div>
+        <h2>$6,500 saved</h2>
+        <div class="info-box">
+          <div class="stat">$7,166</div>
+          <p class="caption">With compound interest at 4.5%</p>
+        </div>
+        <p style="margin-top: 14px;">Your money made <strong>$666 for you</strong>. No extra effort. No risk.</p>
+        <p style="margin-top: 8px; font-size: 14px;"><strong>260 total prize tickets</strong> = 260 chances at the weekly prize.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 6: The Real Win (light) -->
+      <div class="slide light">
+        <div class="tag">THE REAL WIN</div>
+        <h2>Look what $25/week built</h2>
+        <ul class="check-list">
+          <li><svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="rgba(34,0,179,0.1)"/><path d="M5.5 9.5l2 2 5-5" stroke="#2200b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> A <strong>$7,166 emergency fund</strong></li>
+          <li><svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="rgba(34,0,179,0.1)"/><path d="M5.5 9.5l2 2 5-5" stroke="#2200b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> You <strong>never lost a dollar</strong></li>
+          <li><svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="rgba(34,0,179,0.1)"/><path d="M5.5 9.5l2 2 5-5" stroke="#2200b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>260 shots at winning</strong> prizes</li>
+          <li><svg class="check-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="rgba(34,0,179,0.1)"/><path d="M5.5 9.5l2 2 5-5" stroke="#2200b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> You proved you can <strong>save consistently</strong></li>
+        </ul>
+        <p style="margin-top: 12px; font-size: 14px; opacity: 0.7;">All from $25/week — less than a takeout meal.</p>
+        <div class="swipe-arrow">&rsaquo;</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg"></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 7: CTA (dark) -->
+      <div class="slide dark">
+        <div class="logo-lockup">
+          <div class="logo-circle">L</div>
+          <span class="logo-text">Lodavo</span>
+        </div>
+        <h2 style="font-size: 28px; margin-bottom: 16px;">Your first $25 starts everything.</h2>
+        <p style="font-size: 14px; line-height: 1.65; opacity: 0.8;">Every $25 you save on Lodavo earns a free ticket for the weekly draw. Your money stays yours — you just get a bonus shot at winning.</p>
+        <button class="cta-btn">Start saving smarter &rarr;</button>
+        <div class="cta-handle">@lodavo.money</div>
+        <div class="progress-bar">
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+          <div class="progress-seg active"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="ig-actions">
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <svg fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    <svg class="bookmark" fill="none" stroke="#262626" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+  </div>
+  <div class="ig-likes">1,247 likes</div>
+</div>
+<script>
+const track=document.getElementById('track'),viewport=document.getElementById('carousel'),total=track.children.length;let current=0,startX=0,deltaX=0,dragging=false;
+viewport.addEventListener('pointerdown',e=>{startX=e.clientX;deltaX=0;dragging=true;track.style.transition='none';});
+viewport.addEventListener('pointermove',e=>{if(!dragging)return;deltaX=e.clientX-startX;track.style.transform=`translateX(${-current*420+deltaX}px)`;});
+viewport.addEventListener('pointerup',()=>{if(!dragging)return;dragging=false;track.style.transition='transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94)';if(deltaX<-40&&current<total-1)current++;else if(deltaX>40&&current>0)current--;track.style.transform=`translateX(${-current*420}px)`;});
+viewport.addEventListener('pointerleave',()=>{if(dragging)viewport.dispatchEvent(new Event('pointerup'));});
+</script>
+</body>
+</html>

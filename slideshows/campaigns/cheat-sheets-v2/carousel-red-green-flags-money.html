@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Flags vs Green Flags — Your Money Edition</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,900;1,900&family=Space+Grotesk:wght@500&family=JetBrains+Mono:wght@600&family=DM+Sans:wght@500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #0a0a0c;
+  padding: 40px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.slide {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  padding: 64px 60px 72px;
+  transform: scale(0.39);
+  transform-origin: top left;
+  flex-shrink: 0;
+}
+
+.slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+  box-shadow: inset 0 0 200px rgba(0,0,0,0.4);
+}
+
+.slide-dark { background: #111318; color: #F5F0EB; }
+.slide-cream { background: #F5F0EB; color: #1A1614; }
+
+.progress {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  display: flex;
+  gap: 4px;
+  z-index: 50;
+  padding: 0 2px;
+}
+.progress span { flex: 1; background: rgba(255,255,255,0.12); border-radius: 2px; }
+.progress span.active { background: #D4A847; }
+.slide-cream .progress span { background: rgba(0,0,0,0.1); }
+.slide-cream .progress span.active { background: #D4A847; }
+
+.counter {
+  position: absolute;
+  bottom: 28px; right: 40px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px; font-weight: 500;
+  opacity: 0.4; z-index: 50;
+  letter-spacing: 1px;
+}
+
+.glow-circle { position: absolute; border-radius: 50%; pointer-events: none; z-index: 1; }
+.accent-line { position: absolute; pointer-events: none; z-index: 2; }
+.dot-grid {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, 8px);
+  gap: 12px;
+  pointer-events: none;
+  z-index: 2;
+}
+.dot-grid span { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.08); }
+.slide-cream .dot-grid span { background: rgba(0,0,0,0.06); }
+
+.bebas { font-family: 'Bebas Neue', sans-serif; }
+.playfair { font-family: 'Playfair Display', serif; font-weight: 900; }
+.playfair-italic { font-family: 'Playfair Display', serif; font-weight: 900; font-style: italic; }
+.space { font-family: 'Space Grotesk', sans-serif; font-weight: 500; }
+.jetbrains { font-family: 'JetBrains Mono', monospace; font-weight: 600; }
+.dm { font-family: 'DM Sans', sans-serif; font-weight: 500; }
+
+.card-dark { background: rgba(255,255,255,0.07); border-radius: 20px; padding: 28px 32px; width: 100%; }
+.card-cream { background: rgba(0,0,0,0.05); border-radius: 20px; padding: 28px 32px; width: 100%; }
+
+.content {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flag-specific styles */
+.pill {
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.pill-red { background: #E85D5D; }
+.pill-green { background: #2ECDA7; color: #111318; }
+
+.border-red { border-left: 6px solid #E85D5D; }
+.border-green { border-left: 6px solid #2ECDA7; }
+
+.flag-watermark {
+  position: absolute;
+  font-size: 300px;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 2;
+}
+.slide-cream .flag-watermark { opacity: 0.06; }
+
+.diagonal-line {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+</style>
+</head>
+<body>
+
+<div class="carousel">
+
+<!-- SLIDE 1: Hook — Split Design -->
+<div class="slide slide-dark">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress"><span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- Coral glow left -->
+  <div class="glow-circle" style="width:600px;height:600px;top:200px;left:-100px;background:radial-gradient(circle,rgba(232,93,93,0.35) 0%,transparent 70%);"></div>
+  <!-- Teal glow right -->
+  <div class="glow-circle" style="width:600px;height:600px;top:200px;right:-100px;background:radial-gradient(circle,rgba(46,205,167,0.35) 0%,transparent 70%);"></div>
+  <!-- Center diagonal split line -->
+  <div style="position:absolute;top:0;bottom:0;left:50%;width:2px;background:linear-gradient(to bottom,transparent,rgba(255,255,255,0.08) 30%,rgba(255,255,255,0.08) 70%,transparent);z-index:3;"></div>
+  <!-- Decorative diagonal lines -->
+  <div class="diagonal-line" style="top:120px;left:60px;width:200px;height:2px;background:linear-gradient(to right,rgba(232,93,93,0.3),transparent);transform:rotate(-15deg);"></div>
+  <div class="diagonal-line" style="top:120px;right:60px;width:200px;height:2px;background:linear-gradient(to left,rgba(46,205,167,0.3),transparent);transform:rotate(15deg);"></div>
+  <div class="diagonal-line" style="bottom:300px;left:80px;width:160px;height:2px;background:linear-gradient(to right,rgba(232,93,93,0.2),transparent);transform:rotate(-20deg);"></div>
+  <div class="diagonal-line" style="bottom:300px;right:80px;width:160px;height:2px;background:linear-gradient(to left,rgba(46,205,167,0.2),transparent);transform:rotate(20deg);"></div>
+
+  <!-- Dot grids -->
+  <div class="dot-grid" style="top:80px;left:60px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="dot-grid" style="top:80px;right:60px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="dot-grid" style="bottom:120px;left:60px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="dot-grid" style="bottom:120px;right:60px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- Large flag watermarks -->
+  <div class="flag-watermark" style="top:100px;left:40px;color:#E85D5D;opacity:0.06;font-size:260px;">&#9873;</div>
+  <div class="flag-watermark" style="top:100px;right:40px;color:#2ECDA7;opacity:0.06;font-size:260px;">&#9873;</div>
+
+  <div class="content" style="justify-content:center;align-items:center;text-align:center;">
+    <div style="display:flex;align-items:center;gap:40px;margin-bottom:48px;">
+      <div style="text-align:right;">
+        <div class="bebas" style="font-size:120px;line-height:1;color:#E85D5D;letter-spacing:4px;">RED</div>
+        <div class="bebas" style="font-size:120px;line-height:1;color:#E85D5D;letter-spacing:4px;">FLAGS</div>
+      </div>
+      <div class="dm" style="font-size:28px;opacity:0.5;padding:0 8px;">vs</div>
+      <div style="text-align:left;">
+        <div class="bebas" style="font-size:120px;line-height:1;color:#2ECDA7;letter-spacing:4px;">GREEN</div>
+        <div class="bebas" style="font-size:120px;line-height:1;color:#2ECDA7;letter-spacing:4px;">FLAGS</div>
+      </div>
+    </div>
+    <div class="dm" style="font-size:22px;letter-spacing:4px;text-transform:uppercase;opacity:0.7;">Your Money Edition</div>
+    <!-- Decorative bar -->
+    <div style="width:200px;height:3px;background:linear-gradient(to right,#E85D5D,#D4A847,#2ECDA7);margin-top:40px;border-radius:2px;"></div>
+    <!-- Bottom decorative shapes -->
+    <div style="margin-top:60px;display:flex;gap:24px;">
+      <div style="width:16px;height:16px;border-radius:50%;background:#E85D5D;opacity:0.4;"></div>
+      <div style="width:16px;height:16px;border-radius:50%;background:#D4A847;opacity:0.4;"></div>
+      <div style="width:16px;height:16px;border-radius:50%;background:#2ECDA7;opacity:0.4;"></div>
+    </div>
+  </div>
+  <div class="counter">1 / 10</div>
+</div>
+
+<!-- SLIDE 2: RED FLAG — Paying the minimum -->
+<div class="slide slide-dark border-red">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress"><span class="active"></span><span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- Coral glow -->
+  <div class="glow-circle" style="width:500px;height:500px;top:-100px;right:-80px;background:radial-gradient(circle,rgba(232,93,93,0.3) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:400px;height:400px;bottom:100px;left:-80px;background:radial-gradient(circle,rgba(232,93,93,0.15) 0%,transparent 70%);"></div>
+  <!-- Diagonal accents -->
+  <div class="diagonal-line" style="bottom:200px;right:40px;width:300px;height:2px;background:linear-gradient(to left,rgba(232,93,93,0.25),transparent);transform:rotate(-8deg);"></div>
+  <div class="diagonal-line" style="top:250px;right:60px;width:180px;height:2px;background:linear-gradient(to left,rgba(232,93,93,0.15),transparent);transform:rotate(12deg);"></div>
+  <!-- Dot grid -->
+  <div class="dot-grid" style="bottom:140px;right:50px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <!-- Large X watermark -->
+  <div style="position:absolute;bottom:80px;right:60px;font-size:400px;font-family:'Bebas Neue',sans-serif;color:rgba(232,93,93,0.04);line-height:1;pointer-events:none;z-index:2;">X</div>
+
+  <div class="content">
+    <div class="pill pill-red" style="margin-top:40px;">RED FLAG</div>
+    <div class="playfair" style="font-size:46px;line-height:1.2;margin-bottom:40px;max-width:880px;">Paying the minimum on your credit card</div>
+    <div class="space" style="font-size:24px;opacity:0.6;margin-bottom:48px;line-height:1.6;">You think you're keeping up. You're barely treading water.</div>
+    <div class="card-dark" style="padding:40px;margin-bottom:32px;">
+      <div class="dm" style="font-size:16px;letter-spacing:2px;text-transform:uppercase;opacity:0.5;margin-bottom:20px;">The Math</div>
+      <div class="jetbrains" style="font-size:36px;line-height:1.5;color:#E85D5D;">
+        $3,000 at 20%
+      </div>
+      <div style="width:100%;height:2px;background:rgba(232,93,93,0.2);margin:20px 0;"></div>
+      <div class="bebas" style="font-size:100px;line-height:1;color:#E85D5D;margin-bottom:8px;">11 YEARS</div>
+      <div class="space" style="font-size:24px;opacity:0.7;">to pay it off with minimums</div>
+    </div>
+    <div class="card-dark" style="padding:24px 32px;background:rgba(232,93,93,0.08);">
+      <div class="jetbrains" style="font-size:28px;color:#D4A847;">Total interest paid: $2,800+</div>
+    </div>
+  </div>
+  <div class="counter">2 / 10</div>
+</div>
+
+<!-- SLIDE 3: GREEN FLAG — Auto-saving $25 -->
+<div class="slide slide-cream border-green">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/128867/pexels-photo-128867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(245,240,235,0.88);z-index:1;"></div>
+  <div class="progress"><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- Teal glow -->
+  <div class="glow-circle" style="width:500px;height:500px;top:-60px;left:-100px;background:radial-gradient(circle,rgba(46,205,167,0.2) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:400px;height:400px;bottom:50px;right:-80px;background:radial-gradient(circle,rgba(46,205,167,0.12) 0%,transparent 70%);"></div>
+  <!-- Diagonal accents -->
+  <div class="diagonal-line" style="top:200px;left:40px;width:250px;height:2px;background:linear-gradient(to right,rgba(46,205,167,0.25),transparent);transform:rotate(10deg);"></div>
+  <div class="diagonal-line" style="bottom:250px;left:60px;width:200px;height:2px;background:linear-gradient(to right,rgba(46,205,167,0.15),transparent);transform:rotate(-6deg);"></div>
+  <!-- Dot grid -->
+  <div class="dot-grid" style="top:100px;right:50px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <!-- Checkmark watermark -->
+  <div style="position:absolute;top:200px;right:40px;font-size:380px;color:rgba(46,205,167,0.06);line-height:1;pointer-events:none;z-index:2;">&#10003;</div>
+
+  <div class="content">
+    <div class="pill pill-green" style="margin-top:40px;">GREEN FLAG</div>
+    <div class="playfair" style="font-size:46px;line-height:1.2;margin-bottom:32px;max-width:880px;">Auto-saving $25 every week</div>
+    <div class="space" style="font-size:24px;opacity:0.6;margin-bottom:48px;line-height:1.6;">Set it up once. Forget about it. Watch it grow.</div>
+    <div style="text-align:center;margin-bottom:40px;">
+      <div class="bebas" style="font-size:160px;line-height:1;color:#D4A847;">$1,300</div>
+      <div class="dm" style="font-size:20px;letter-spacing:3px;text-transform:uppercase;opacity:0.5;margin-top:8px;">Per Year</div>
+    </div>
+    <div class="card-cream" style="padding:36px;">
+      <div class="space" style="font-size:26px;line-height:1.6;">You won't even miss it. That's one less takeout order a week.</div>
+    </div>
+    <div style="display:flex;gap:16px;margin-top:28px;">
+      <div class="card-cream" style="flex:1;text-align:center;padding:24px;">
+        <div class="jetbrains" style="font-size:32px;color:#2ECDA7;">$25</div>
+        <div class="dm" style="font-size:14px;opacity:0.5;margin-top:8px;">/ week</div>
+      </div>
+      <div class="card-cream" style="flex:1;text-align:center;padding:24px;">
+        <div class="jetbrains" style="font-size:32px;color:#2ECDA7;">$100</div>
+        <div class="dm" style="font-size:14px;opacity:0.5;margin-top:8px;">/ month</div>
+      </div>
+      <div class="card-cream" style="flex:1;text-align:center;padding:24px;">
+        <div class="jetbrains" style="font-size:32px;color:#D4A847;">$1,300</div>
+        <div class="dm" style="font-size:14px;opacity:0.5;margin-top:8px;">/ year</div>
+      </div>
+    </div>
+  </div>
+  <div class="counter" style="color:#1A1614;">3 / 10</div>
+</div>
+
+<!-- SLIDE 4: RED FLAG — 3+ streaming services -->
+<div class="slide slide-dark border-red">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- Coral glow -->
+  <div class="glow-circle" style="width:500px;height:500px;bottom:-80px;left:-60px;background:radial-gradient(circle,rgba(232,93,93,0.3) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:350px;height:350px;top:100px;right:-60px;background:radial-gradient(circle,rgba(232,93,93,0.15) 0%,transparent 70%);"></div>
+  <!-- Diagonals -->
+  <div class="diagonal-line" style="top:160px;right:40px;width:280px;height:2px;background:linear-gradient(to left,rgba(232,93,93,0.2),transparent);transform:rotate(-10deg);"></div>
+  <!-- Dot grid -->
+  <div class="dot-grid" style="top:90px;right:50px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="dot-grid" style="bottom:150px;left:80px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <!-- X watermark -->
+  <div style="position:absolute;top:150px;right:30px;font-size:350px;font-family:'Bebas Neue',sans-serif;color:rgba(232,93,93,0.04);line-height:1;pointer-events:none;z-index:2;">X</div>
+
+  <div class="content">
+    <div class="pill pill-red" style="margin-top:40px;">RED FLAG</div>
+    <div class="playfair" style="font-size:46px;line-height:1.2;margin-bottom:32px;max-width:880px;">3+ streaming services at once</div>
+    <div class="space" style="font-size:24px;opacity:0.6;margin-bottom:48px;line-height:1.6;">You're paying for shows you watched once and content you forgot existed.</div>
+    <div class="card-dark" style="padding:36px;margin-bottom:28px;">
+      <div class="dm" style="font-size:16px;letter-spacing:2px;text-transform:uppercase;opacity:0.5;margin-bottom:20px;">Monthly Damage</div>
+      <div class="bebas" style="font-size:120px;line-height:1;color:#E85D5D;">$40-$60</div>
+      <div class="dm" style="font-size:18px;opacity:0.5;margin-top:8px;">/ month</div>
+    </div>
+    <div style="display:flex;gap:16px;margin-bottom:28px;">
+      <div class="card-dark" style="flex:1;text-align:center;padding:24px 16px;">
+        <div class="jetbrains" style="font-size:22px;color:#E85D5D;">Netflix</div>
+        <div class="dm" style="font-size:14px;opacity:0.4;margin-top:6px;">$16.49</div>
+      </div>
+      <div class="card-dark" style="flex:1;text-align:center;padding:24px 16px;">
+        <div class="jetbrains" style="font-size:22px;color:#E85D5D;">Disney+</div>
+        <div class="dm" style="font-size:14px;opacity:0.4;margin-top:6px;">$11.99</div>
+      </div>
+      <div class="card-dark" style="flex:1;text-align:center;padding:24px 16px;">
+        <div class="jetbrains" style="font-size:22px;color:#E85D5D;">Crave</div>
+        <div class="dm" style="font-size:14px;opacity:0.4;margin-top:6px;">$19.99</div>
+      </div>
+    </div>
+    <div class="card-dark" style="padding:28px 32px;background:rgba(232,93,93,0.06);text-align:center;">
+      <div class="space" style="font-size:26px;">That's <span class="jetbrains" style="color:#D4A847;font-size:30px;">$480-$720</span> a year</div>
+      <div class="space" style="font-size:22px;opacity:0.5;margin-top:8px;">for shows you watch once</div>
+    </div>
+  </div>
+  <div class="counter">4 / 10</div>
+</div>
+
+<!-- SLIDE 5: GREEN FLAG — Knowing your net worth -->
+<div class="slide slide-cream border-green">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(245,240,235,0.88);z-index:1;"></div>
+  <div class="progress"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- Teal glow -->
+  <div class="glow-circle" style="width:500px;height:500px;top:100px;right:-80px;background:radial-gradient(circle,rgba(46,205,167,0.18) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:400px;height:400px;bottom:-60px;left:-60px;background:radial-gradient(circle,rgba(46,205,167,0.12) 0%,transparent 70%);"></div>
+  <!-- Diagonals -->
+  <div class="diagonal-line" style="top:220px;right:40px;width:240px;height:2px;background:linear-gradient(to left,rgba(46,205,167,0.2),transparent);transform:rotate(8deg);"></div>
+  <div class="diagonal-line" style="bottom:280px;left:40px;width:200px;height:2px;background:linear-gradient(to right,rgba(46,205,167,0.15),transparent);transform:rotate(-12deg);"></div>
+  <!-- Dot grid -->
+  <div class="dot-grid" style="bottom:130px;right:50px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <!-- Checkmark watermark -->
+  <div style="position:absolute;bottom:60px;left:40px;font-size:350px;color:rgba(46,205,167,0.05);line-height:1;pointer-events:none;z-index:2;">&#10003;</div>
+
+  <div class="content">
+    <div class="pill pill-green" style="margin-top:40px;">GREEN FLAG</div>
+    <div class="playfair" style="font-size:46px;line-height:1.2;margin-bottom:32px;max-width:880px;">Knowing your net worth to the dollar</div>
+    <div class="space" style="font-size:24px;opacity:0.6;margin-bottom:56px;line-height:1.6;">One number that tells you everything.</div>
+
+    <!-- Equation layout -->
+    <div style="text-align:center;margin-bottom:48px;">
+      <div style="display:flex;align-items:center;justify-content:center;gap:32px;">
+        <div>
+          <div class="card-cream" style="padding:32px 48px;text-align:center;">
+            <div class="dm" style="font-size:16px;letter-spacing:2px;text-transform:uppercase;opacity:0.5;margin-bottom:12px;">What You Own</div>
+            <div class="bebas" style="font-size:80px;line-height:1;color:#2ECDA7;">ASSETS</div>
+          </div>
+        </div>
+        <div class="bebas" style="font-size:80px;color:#1A1614;opacity:0.3;">-</div>
+        <div>
+          <div class="card-cream" style="padding:32px 48px;text-align:center;">
+            <div class="dm" style="font-size:16px;letter-spacing:2px;text-transform:uppercase;opacity:0.5;margin-bottom:12px;">What You Owe</div>
+            <div class="bebas" style="font-size:80px;line-height:1;color:#E85D5D;">DEBT</div>
+          </div>
+        </div>
+      </div>
+      <div style="width:80%;height:3px;background:linear-gradient(to right,transparent,rgba(0,0,0,0.15),transparent);margin:32px auto;"></div>
+      <div class="dm" style="font-size:16px;letter-spacing:2px;text-transform:uppercase;opacity:0.5;margin-bottom:12px;">Your Net Worth</div>
+      <div class="bebas" style="font-size:100px;line-height:1;color:#D4A847;">= YOUR SCORE</div>
+    </div>
+
+    <div class="card-cream" style="padding:28px 32px;text-align:center;">
+      <div class="space" style="font-size:24px;line-height:1.5;">Check monthly. Track the trend.</div>
+    </div>
+  </div>
+  <div class="counter" style="color:#1A1614;">5 / 10</div>
+</div>
+
+<!-- SLIDE 6: RED FLAG — Buy now pay later -->
+<div class="slide slide-dark border-red">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/128867/pexels-photo-128867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- Coral glow -->
+  <div class="glow-circle" style="width:550px;height:550px;top:200px;left:-100px;background:radial-gradient(circle,rgba(232,93,93,0.25) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:400px;height:400px;bottom:-50px;right:-50px;background:radial-gradient(circle,rgba(232,93,93,0.15) 0%,transparent 70%);"></div>
+  <!-- Diagonal accents -->
+  <div class="diagonal-line" style="top:280px;left:60px;width:300px;height:2px;background:linear-gradient(to right,rgba(232,93,93,0.2),transparent);transform:rotate(6deg);"></div>
+  <div class="diagonal-line" style="bottom:220px;right:40px;width:250px;height:2px;background:linear-gradient(to left,rgba(232,93,93,0.15),transparent);transform:rotate(-8deg);"></div>
+  <!-- Dot grid -->
+  <div class="dot-grid" style="top:100px;right:50px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <!-- X watermark -->
+  <div style="position:absolute;bottom:100px;left:60px;font-size:380px;font-family:'Bebas Neue',sans-serif;color:rgba(232,93,93,0.04);line-height:1;pointer-events:none;z-index:2;">X</div>
+
+  <div class="content">
+    <div class="pill pill-red" style="margin-top:40px;">RED FLAG</div>
+    <div class="playfair" style="font-size:46px;line-height:1.2;margin-bottom:40px;max-width:880px;">Buy now pay later for basics</div>
+    <div class="space" style="font-size:24px;opacity:0.6;margin-bottom:56px;line-height:1.6;">Afterpay on a t-shirt? That's not budgeting. That's denial.</div>
+
+    <div class="card-dark" style="padding:40px;text-align:center;margin-bottom:28px;">
+      <div class="dm" style="font-size:16px;letter-spacing:2px;text-transform:uppercase;opacity:0.5;margin-bottom:24px;">The Reality Check</div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:24px;">
+        <div class="bebas" style="font-size:100px;line-height:1;color:#E85D5D;">4</div>
+        <div class="space" style="font-size:28px;opacity:0.7;">payments on</div>
+        <div class="bebas" style="font-size:100px;line-height:1;color:#D4A847;">$60</div>
+      </div>
+      <div style="width:80%;height:2px;background:rgba(232,93,93,0.2);margin:0 auto 24px;"></div>
+      <div class="space" style="font-size:28px;line-height:1.5;">If you need 4 payments on $60,<br><span style="color:#E85D5D;">rethink it.</span></div>
+    </div>
+
+    <div class="card-dark" style="padding:24px 32px;background:rgba(232,93,93,0.06);">
+      <div class="space" style="font-size:22px;text-align:center;">Late fees + missed payments = credit score damage</div>
+    </div>
+  </div>
+  <div class="counter">6 / 10</div>
+</div>
+
+<!-- SLIDE 7: GREEN FLAG — 3 months of expenses saved -->
+<div class="slide slide-cream border-green">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(245,240,235,0.88);z-index:1;"></div>
+  <div class="progress"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span><span></span></div>
+
+  <!-- Teal glow -->
+  <div class="glow-circle" style="width:500px;height:500px;top:-80px;right:-60px;background:radial-gradient(circle,rgba(46,205,167,0.2) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:450px;height:450px;bottom:50px;left:-80px;background:radial-gradient(circle,rgba(46,205,167,0.12) 0%,transparent 70%);"></div>
+  <!-- Diagonals -->
+  <div class="diagonal-line" style="top:300px;right:40px;width:250px;height:2px;background:linear-gradient(to left,rgba(46,205,167,0.2),transparent);transform:rotate(10deg);"></div>
+  <div class="diagonal-line" style="bottom:350px;left:40px;width:180px;height:2px;background:linear-gradient(to right,rgba(46,205,167,0.15),transparent);transform:rotate(-8deg);"></div>
+  <!-- Dot grid -->
+  <div class="dot-grid" style="top:90px;left:60px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="dot-grid" style="bottom:130px;right:50px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <!-- Checkmark watermark -->
+  <div style="position:absolute;top:180px;right:20px;font-size:380px;color:rgba(46,205,167,0.05);line-height:1;pointer-events:none;z-index:2;">&#10003;</div>
+
+  <div class="content">
+    <div class="pill pill-green" style="margin-top:40px;">GREEN FLAG</div>
+    <div class="playfair" style="font-size:46px;line-height:1.2;margin-bottom:32px;max-width:880px;">3 months of expenses saved</div>
+    <div class="space" style="font-size:24px;opacity:0.6;margin-bottom:48px;line-height:1.6;">The safety net that lets you sleep at night.</div>
+
+    <div class="card-cream" style="padding:40px;text-align:center;margin-bottom:28px;">
+      <div class="dm" style="font-size:16px;letter-spacing:2px;text-transform:uppercase;opacity:0.5;margin-bottom:16px;">The Reality</div>
+      <div class="space" style="font-size:26px;line-height:1.5;margin-bottom:24px;">Most Canadians have less than</div>
+      <div class="bebas" style="font-size:160px;line-height:1;color:#E85D5D;">$1,000</div>
+      <div class="space" style="font-size:24px;opacity:0.6;margin-top:12px;">for emergencies</div>
+    </div>
+
+    <div style="display:flex;gap:16px;">
+      <div class="card-cream" style="flex:1;text-align:center;padding:28px 16px;">
+        <div class="bebas" style="font-size:60px;color:#2ECDA7;line-height:1;">1</div>
+        <div class="dm" style="font-size:14px;opacity:0.5;margin-top:8px;">month</div>
+        <div class="dm" style="font-size:13px;opacity:0.3;margin-top:4px;">starter</div>
+      </div>
+      <div class="card-cream" style="flex:1;text-align:center;padding:28px 16px;border:2px solid rgba(46,205,167,0.3);">
+        <div class="bebas" style="font-size:60px;color:#2ECDA7;line-height:1;">3</div>
+        <div class="dm" style="font-size:14px;opacity:0.5;margin-top:8px;">months</div>
+        <div class="dm" style="font-size:13px;opacity:0.3;margin-top:4px;">solid</div>
+      </div>
+      <div class="card-cream" style="flex:1;text-align:center;padding:28px 16px;">
+        <div class="bebas" style="font-size:60px;color:#D4A847;line-height:1;">6</div>
+        <div class="dm" style="font-size:14px;opacity:0.5;margin-top:8px;">months</div>
+        <div class="dm" style="font-size:13px;opacity:0.3;margin-top:4px;">gold</div>
+      </div>
+    </div>
+  </div>
+  <div class="counter" style="color:#1A1614;">7 / 10</div>
+</div>
+
+<!-- SLIDE 8: RED FLAG — No clue what you spent -->
+<div class="slide slide-dark border-red">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span></div>
+
+  <!-- Coral glow -->
+  <div class="glow-circle" style="width:500px;height:500px;top:50px;right:-80px;background:radial-gradient(circle,rgba(232,93,93,0.3) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:400px;height:400px;bottom:100px;left:-60px;background:radial-gradient(circle,rgba(232,93,93,0.15) 0%,transparent 70%);"></div>
+  <!-- Diagonals -->
+  <div class="diagonal-line" style="top:200px;left:50px;width:280px;height:2px;background:linear-gradient(to right,rgba(232,93,93,0.2),transparent);transform:rotate(8deg);"></div>
+  <div class="diagonal-line" style="bottom:300px;right:40px;width:220px;height:2px;background:linear-gradient(to left,rgba(232,93,93,0.15),transparent);transform:rotate(-6deg);"></div>
+  <!-- Dot grids -->
+  <div class="dot-grid" style="top:100px;left:60px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="dot-grid" style="bottom:140px;right:50px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <!-- Question mark watermark -->
+  <div style="position:absolute;top:200px;left:60px;font-size:400px;font-family:'Bebas Neue',sans-serif;color:rgba(232,93,93,0.04);line-height:1;pointer-events:none;z-index:2;">?</div>
+
+  <div class="content">
+    <div class="pill pill-red" style="margin-top:40px;">RED FLAG</div>
+    <div class="playfair" style="font-size:46px;line-height:1.2;margin-bottom:32px;max-width:880px;">No clue what you spent last month</div>
+    <div class="space" style="font-size:24px;opacity:0.6;margin-bottom:48px;line-height:1.6;">If you can't name the number, you're flying blind.</div>
+
+    <div class="card-dark" style="padding:40px;text-align:center;margin-bottom:28px;">
+      <div class="dm" style="font-size:16px;letter-spacing:2px;text-transform:uppercase;opacity:0.5;margin-bottom:24px;">Your Last Month</div>
+      <div class="bebas" style="font-size:160px;line-height:1;color:#E85D5D;">$???</div>
+      <div class="space" style="font-size:24px;opacity:0.5;margin-top:16px;">That's the problem.</div>
+    </div>
+
+    <div class="card-dark" style="padding:32px;background:rgba(255,255,255,0.04);">
+      <div class="playfair" style="font-size:32px;line-height:1.4;margin-bottom:16px;">Track for one month.</div>
+      <div class="space" style="font-size:24px;opacity:0.7;line-height:1.5;">Every coffee. Every Uber. Every random Amazon order.<br><span style="color:#D4A847;">You'll be surprised.</span></div>
+    </div>
+
+    <div style="display:flex;gap:12px;margin-top:24px;">
+      <div style="flex:1;height:8px;border-radius:4px;background:#E85D5D;opacity:0.4;"></div>
+      <div style="flex:1;height:8px;border-radius:4px;background:#E85D5D;opacity:0.3;"></div>
+      <div style="flex:1;height:8px;border-radius:4px;background:#E85D5D;opacity:0.2;"></div>
+      <div style="flex:1;height:8px;border-radius:4px;background:#D4A847;opacity:0.4;"></div>
+    </div>
+  </div>
+  <div class="counter">8 / 10</div>
+</div>
+
+<!-- SLIDE 9: GREEN FLAG — Maxing your TFSA -->
+<div class="slide slide-cream border-green">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/128867/pexels-photo-128867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(245,240,235,0.88);z-index:1;"></div>
+  <div class="progress"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span></div>
+
+  <!-- Teal glow -->
+  <div class="glow-circle" style="width:500px;height:500px;top:-60px;left:-80px;background:radial-gradient(circle,rgba(46,205,167,0.2) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:450px;height:450px;bottom:80px;right:-80px;background:radial-gradient(circle,rgba(46,205,167,0.15) 0%,transparent 70%);"></div>
+  <!-- Diagonal accents -->
+  <div class="diagonal-line" style="top:240px;right:40px;width:260px;height:2px;background:linear-gradient(to left,rgba(46,205,167,0.2),transparent);transform:rotate(8deg);"></div>
+  <div class="diagonal-line" style="bottom:300px;left:40px;width:200px;height:2px;background:linear-gradient(to right,rgba(212,168,71,0.2),transparent);transform:rotate(-10deg);"></div>
+  <!-- Dot grid -->
+  <div class="dot-grid" style="top:90px;right:50px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="dot-grid" style="bottom:120px;left:60px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <!-- Checkmark watermark -->
+  <div style="position:absolute;top:180px;left:40px;font-size:360px;color:rgba(46,205,167,0.05);line-height:1;pointer-events:none;z-index:2;">&#10003;</div>
+
+  <div class="content">
+    <div class="pill pill-green" style="margin-top:40px;">GREEN FLAG</div>
+    <div class="playfair" style="font-size:46px;line-height:1.2;margin-bottom:32px;max-width:880px;">Maxing your TFSA before anything else</div>
+    <div class="space" style="font-size:24px;opacity:0.6;margin-bottom:40px;line-height:1.6;">Tax-free growth. The best account most Canadians ignore.</div>
+
+    <div style="text-align:center;margin-bottom:40px;">
+      <div class="dm" style="font-size:16px;letter-spacing:2px;text-transform:uppercase;opacity:0.5;margin-bottom:12px;">Annual Room</div>
+      <div class="bebas" style="font-size:160px;line-height:1;color:#D4A847;">$7,000</div>
+      <div class="dm" style="font-size:18px;opacity:0.5;margin-top:8px;">/ year</div>
+    </div>
+
+    <div class="card-cream" style="padding:32px;margin-bottom:20px;">
+      <div style="display:flex;align-items:center;gap:20px;margin-bottom:20px;">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(46,205,167,0.15);display:flex;align-items:center;justify-content:center;">
+          <span style="color:#2ECDA7;font-size:24px;">&#10003;</span>
+        </div>
+        <div class="space" style="font-size:24px;line-height:1.4;">Tax-free growth forever</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px;margin-bottom:20px;">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(46,205,167,0.15);display:flex;align-items:center;justify-content:center;">
+          <span style="color:#2ECDA7;font-size:24px;">&#10003;</span>
+        </div>
+        <div class="space" style="font-size:24px;line-height:1.4;">Withdraw anytime, no penalty</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px;">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(46,205,167,0.15);display:flex;align-items:center;justify-content:center;">
+          <span style="color:#2ECDA7;font-size:24px;">&#10003;</span>
+        </div>
+        <div class="space" style="font-size:24px;line-height:1.4;">Room carries forward if unused</div>
+      </div>
+    </div>
+
+    <div class="card-cream" style="padding:20px 28px;background:rgba(212,168,71,0.1);text-align:center;">
+      <div class="space" style="font-size:22px;color:#1A1614;">Use it. <span style="color:#D4A847;">All of it.</span></div>
+    </div>
+  </div>
+  <div class="counter" style="color:#1A1614;">9 / 10</div>
+</div>
+
+<!-- SLIDE 10: App Slide -->
+<div class="slide slide-dark">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+
+  <!-- Mixed glow — teal and gold -->
+  <div class="glow-circle" style="width:600px;height:600px;top:200px;left:-100px;background:radial-gradient(circle,rgba(46,205,167,0.25) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:500px;height:500px;bottom:100px;right:-80px;background:radial-gradient(circle,rgba(212,168,71,0.2) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:350px;height:350px;top:-50px;right:200px;background:radial-gradient(circle,rgba(155,142,196,0.15) 0%,transparent 70%);"></div>
+  <!-- Diagonal accents -->
+  <div class="diagonal-line" style="top:200px;left:60px;width:300px;height:2px;background:linear-gradient(to right,rgba(46,205,167,0.2),transparent);transform:rotate(-10deg);"></div>
+  <div class="diagonal-line" style="bottom:300px;right:40px;width:250px;height:2px;background:linear-gradient(to left,rgba(212,168,71,0.2),transparent);transform:rotate(8deg);"></div>
+  <!-- Dot grids -->
+  <div class="dot-grid" style="top:80px;left:60px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="dot-grid" style="bottom:140px;right:50px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="dot-grid" style="top:400px;right:60px;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- Decorative gradient bar -->
+  <div style="position:absolute;top:50%;left:60px;right:60px;height:3px;background:linear-gradient(to right,#E85D5D,#D4A847,#2ECDA7);opacity:0.15;z-index:2;"></div>
+
+  <div class="content" style="justify-content:center;align-items:center;text-align:center;">
+    <div style="display:flex;gap:16px;margin-bottom:48px;">
+      <div style="width:12px;height:12px;border-radius:50%;background:#E85D5D;"></div>
+      <div style="width:12px;height:12px;border-radius:50%;background:#D4A847;"></div>
+      <div style="width:12px;height:12px;border-radius:50%;background:#2ECDA7;"></div>
+    </div>
+    <div class="playfair-italic" style="font-size:52px;line-height:1.3;margin-bottom:40px;max-width:800px;">Your savings could<br>win you cash</div>
+    <div style="width:120px;height:3px;background:#D4A847;margin:0 auto 40px;border-radius:2px;"></div>
+    <div class="card-dark" style="padding:40px;max-width:800px;margin-bottom:40px;">
+      <div class="space" style="font-size:26px;line-height:1.6;">Every $25 saved = 1 free draw ticket weekly on Lodavo</div>
+    </div>
+    <div class="space" style="font-size:22px;opacity:0.5;margin-bottom:16px;">The more green flags, the more tickets.</div>
+    <div class="dm" style="font-size:20px;color:#D4A847;letter-spacing:1px;">@lodavo.money</div>
+  </div>
+  <div class="counter">10 / 10</div>
+</div>
+
+</div>
+</body>
+</html>

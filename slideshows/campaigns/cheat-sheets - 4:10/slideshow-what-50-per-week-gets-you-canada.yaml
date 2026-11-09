@@ -1,0 +1,84 @@
+slideshow:
+  slug: what-50-per-week-gets-you-canada
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-25 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: universal relatability, everyone spends $50 differently
+    - text: "what $50 a week actually gets you"
+      sub: "Canadian edition. save this."
+      image: { url: "https://www.fool.ca/wp-content/uploads/2024/06/GettyImages-1628615422-1200x800.jpg" }
+      focus: "50% 50%"
+    # $50 at a grocery store (real basket)
+    - text: "$50 in groceries"
+      sub: "a full week of meals. rice, eggs, chicken, vegetables, bread, and milk at No Frills"
+      image: { url: "https://i.pinimg.com/originals/6b/c4/b5/6bc4b540d7e508c18b3566449bd52517.jpg" }
+      focus: "50% 50%"
+    # $50 eating out
+    - text: "$50 eating out"
+      sub: "about 3 meals. one Skip order runs $18 to $25 after fees"
+      image: { url: "https://i.pinimg.com/originals/f2/f1/67/f2f167c4f0733dbbb143d202712d5e3b.jpg" }
+      focus: "50% 50%"
+    # $50 on coffee
+    - text: "$50 on coffee"
+      sub: "about 19 medium coffees at Tim Hortons ($2.60 each) or 8 lattes at Starbucks ($6.25)"
+      image: { url: "https://images.rawpixel.com/image_social_portrait/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAxL3Jhd3BpeGVsX29mZmljZV80NV9waG90b19vZl9hX2hhbmRfaG9sZGluZ19kaXNwb3NhYmxlX2NvZmZlZV9jdV9mODBhYmUyZi05NWQ3LTRhNzMtYmQzNi0zODhlNDM5ZGRkMmYtcm0xNDI0LTAxLmpwZw.jpg" }
+      focus: "50% 45%"
+    # $50 on subscriptions
+    - text: "$50 in subscriptions"
+      sub: "Netflix $16.49, Spotify $11.99, iCloud $3.99, gym $15. that's $47.47 a month gone"
+      image: { url: "https://i.pinimg.com/originals/d2/67/70/d26770e2908a57237e1f0eae058d8ab4.jpg" }
+      focus: "50% 50%"
+    # $50 on transit
+    - text: "$50 on transit"
+      sub: "TTC student pass is $128/month. that's $32 a week just to get around"
+      image: { url: "https://images.pexels.com/photos/32656388/pexels-photo-32656388/free-photo-of-commuter-at-subway-station-platform-waiting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # $50 saved every week for a year
+    - text: "$50 saved every week"
+      sub: "$2,600 in one year. that's first and last month rent, or a whole emergency fund"
+      image: { url: "https://mydailycrate.com/cdn/shop/files/piggybank01-WOSKU-01.jpg?v=1777269524&width=3840" }
+      focus: "50% 50%"
+    # App slide: bridge $50/week saving to Lodavo
+    - app: hero
+      text: "What if saving that $50 also won you cash?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved. Every week."
+  caption: |
+    What $50 a week actually gets you in Canada. Save this for a reality check.
+
+    Groceries, eating out, coffee, subscriptions, transit. Same $50, completely different value. $50 saved every week is $2,600 in a year, enough for first and last month rent.
+
+    Bookmark this and rethink your next $50.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#studentlife"
+    - "#budgeting"
+  sources:
+    # No Frills weekly flyer average grocery prices (Loblaw Companies)
+    - https://www.nofrills.ca/print-flyer
+    # Skip The Dishes average order cost including fees (SkipTheDishes)
+    - https://www.skipthedishes.com
+    # Tim Hortons menu prices Canada 2026
+    - https://www.timhortons.ca/menu
+    # Starbucks Canada menu prices (latte pricing)
+    - https://www.starbucks.ca/menu
+    # Netflix Canada subscription pricing 2026
+    - https://help.netflix.com/en/node/24926
+    # Spotify Premium Canada pricing 2026
+    - https://www.spotify.com/ca-en/premium/
+    # TTC student monthly pass pricing (Toronto Transit Commission)
+    - https://www.ttc.ca/Fares-and-passes
+    # Compound savings calculator ($50/week x 52 weeks)
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

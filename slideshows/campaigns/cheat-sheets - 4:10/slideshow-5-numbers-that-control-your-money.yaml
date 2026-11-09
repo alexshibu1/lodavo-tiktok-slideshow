@@ -1,0 +1,82 @@
+slideshow:
+  slug: 5-numbers-that-control-your-money
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-23 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: mysterious number hook, curiosity gap
+    - text: "5 numbers that control your entire financial life"
+      image: { url: "https://images.pexels.com/photos/8036661/pexels-photo-8036661.jpeg?cs=srgb&dl=pexels-shvets-production-8036661.jpg&fm=jpg" }
+      focus: "50% 45%"
+    # 1: Credit score ranges
+    - text: "your credit score"
+      sub: "300 to 900 in Canada. 660+ gets you approved. 760+ gets the best rates. check free on Borrowell"
+      image: { url: "https://images.pexels.com/photos/7109243/pexels-photo-7109243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # 2: Debt-to-income ratio
+    - text: "your debt-to-income ratio"
+      sub: "total monthly debt payments divided by gross income. lenders want under 36%. over 44% and most will decline you"
+      image: { url: "https://americanmoneyplace.com/wp-content/uploads/2026/02/hands-using-a-calculator-and-notepad-to-plan-a-monthly-budget-3-16x9-1.webp" }
+      focus: "50% 50%"
+    # 3: 50/30/20 split
+    - text: "the 50/30/20 rule"
+      sub: "50% needs (rent, groceries, transit). 30% wants (eating out, subscriptions). 20% savings and debt repayment"
+      image: { url: "https://images.pexels.com/photos/3962285/pexels-photo-3962285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # 4: Emergency fund months
+    - text: "your emergency fund number"
+      sub: "3 months of expenses, minimum. average Canadian monthly spending: $3,900. that means $11,700 as a floor"
+      image: { url: "https://images.pexels.com/photos/4056856/pexels-photo-4056856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # 5: Net worth formula
+    - text: "your net worth"
+      sub: "everything you own minus everything you owe. average Canadian aged 20 to 24: $44,500. check yours quarterly"
+      image: { url: "https://i.pinimg.com/originals/1b/fd/a5/1bfda5fa481fb184b68ad0fa0942977c.jpg" }
+      focus: "50% 50%"
+    # Bonus: the one that ties it together
+    - text: "the number most people forget"
+      sub: "your savings rate. even 10% changes everything. $400 a month at 22 is $180,000+ by 35 in a TFSA"
+      image: { url: "https://images.pexels.com/photos/1178684/pexels-photo-1178684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide
+    - app: hero
+      text: "Know your numbers. Want saving to feel rewarding?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved. Every week."
+  caption: |
+    Five numbers that control your money, and most people don't know a single one. Save this.
+
+    Your credit score. Your debt-to-income ratio. The 50/30/20 split. Your emergency fund target. Your net worth. These five numbers decide whether you get approved, how much you pay, and how fast you build wealth.
+
+    Bookmark this. Check your numbers this weekend.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#creditscore"
+    - "#personalfinance"
+    - "#financialliteracy"
+    - "#lodavo"
+  sources:
+    # Equifax Canada credit score range (300-900) and approval thresholds
+    - https://www.consumer.equifax.ca/personal/education/credit-score/what-is-a-good-credit-score/
+    # CMHC debt service ratios (GDS/TDS guidelines for lenders)
+    - https://www.cmhc-schl.gc.ca/professionals/project-funding-and-mortgage-financing/mortgage-loan-insurance/mortgage-loan-insurance-homeownership/cmhc-mortgage-loan-insurance-underwriting
+    # 50/30/20 budgeting rule (FCAC guidance)
+    - https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html
+    # Emergency fund recommendation (3-6 months)
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html
+    # Average household spending in Canada (Statistics Canada)
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110022201
+    # Survey of Financial Security, net worth by age group
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001601
+    # TFSA growth projections and contribution room
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributions.html
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

@@ -1,0 +1,98 @@
+slideshow:
+  slug: savings-math-high-school
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-29 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: educational outrage, stop-scroll energy
+    - text: "savings math they should teach in school"
+      sub: "but never will"
+      image: { url: "https://nationaltoday.com/wp-content/uploads/2022/08/22-National-Math-Day-1200x834.jpg" }
+      focus: "50% 50%"
+    # $5/day coffee math
+    - text: "$5 a day on coffee"
+      sub: "= $1,825 a year. = $18,250 over 10 years. before any growth"
+      image: { url: "https://images.pexels.com/photos/13650152/pexels-photo-13650152.jpeg?cs=srgb&dl=pexels-lisa-fotios-13650152.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Subscriptions add up
+    - text: "$14 a month seems small"
+      sub: "Netflix + Spotify + iCloud + gym = $85/month = $1,020 a year"
+      image: { url: "https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?cs=srgb&dl=pexels-fotios-photos-1092671.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # The $25/week rule
+    - text: "$25 a week saved"
+      sub: "= $1,300 a year. = $13,000 in 10 years. just $25 a week"
+      image: { url: "https://preview.redd.it/c4xisxo38wg61.jpg?width=3419&format=pjpg&auto=webp&s=e3946bae694b351b3b372ed581642f25e9429113" }
+      focus: "50% 50%"
+    # HISA vs big bank
+    - text: "2% on $10,000 in a HISA"
+      sub: "= $200 a year. at 0.01% your big bank pays $1. switch"
+      image: { url: "https://c.pxhere.com/photos/6b/dc/calculator_calculation_insurance_finance_accounting_pen_investment_office-676191.jpg!d" }
+      focus: "50% 50%"
+    # Student debt reality
+    - text: "average student debt at graduation"
+      sub: "$28,000. at 6.5%, that's $1,820 a year in interest alone"
+      image: { url: "https://images.pexels.com/photos/7713343/pexels-photo-7713343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Credit card minimum trap
+    - text: "$5,000 credit card balance"
+      sub: "paying minimum = 20+ years to pay off. $7,000+ in interest on top"
+      image: { url: "https://images.pexels.com/photos/6214476/pexels-photo-6214476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Eating out vs meal prep
+    - text: "eating out 3x a week at $20"
+      sub: "= $3,120 a year. meal prep is $4 a meal. save $2,496"
+      image: { url: "https://nypost.com/wp-content/uploads/sites/2/2021/12/mp2.jpg?quality=90&strip=all" }
+      focus: "50% 50%"
+    # 50/30/20 rule
+    - text: "the 50/30/20 rule"
+      sub: "50% needs. 30% wants. 20% savings. on $3,000 a month that's $600 saved"
+      image: { url: "https://cdn.shopify.com/s/files/1/1201/4358/files/20230528_121139.jpg?v=1685308094" }
+      focus: "50% 50%"
+    # App slide: bridge from math to Lodavo with ticket accumulation
+    - app: cta
+      text: "What if every $25 saved earned you something?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved. Weekly."
+  caption: |
+    The savings math no one taught you in school. It should make you a little angry.
+
+    $5 a day on coffee is $18,250 over a decade. Your streaming subs add up to $1,000+ a year. Paying the minimum on $5K in credit card debt means 20+ years and $7,000 in interest.
+
+    But flip it. $25 a week is $1,300 a year. Move to a HISA and your $10K earns $200 instead of $1. Meal prep saves $2,496 a year. The math works both ways.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#personalfinance"
+    - "#studentlife"
+    - "#lodavo"
+  sources:
+    # Average daily coffee spend in Canada (Ratehub)
+    - https://www.ratehub.ca/blog/how-much-do-canadians-spend-on-coffee/
+    # Netflix Canada subscription pricing, 2026
+    - https://www.netflix.com/ca/
+    # Spotify Canada subscription pricing
+    - https://www.spotify.com/ca-en/premium/
+    # FCAC savings and investment guidance
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html
+    # HISA rates in Canada, 2026 (Ratehub comparison)
+    - https://www.ratehub.ca/savings-accounts/accounts/high-interest
+    # Average student debt at graduation, Canada (Statistics Canada)
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3710003601
+    # Federal student loan interest rate (Canada.ca)
+    - https://www.canada.ca/en/services/benefits/education/student-aid/grants-loans/repay.html
+    # Credit card minimum payment calculator (FCAC)
+    - https://itools-ioutils.fcac-acfc.gc.ca/CC-CB/CCCalc-CBCalc-eng.aspx
+    # Food prices and consumer spending (Statistics Canada CPI)
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401
+    # 50/30/20 budgeting guideline (FCAC)
+    - https://www.canada.ca/en/financial-consumer-agency/services/budget/budget-guidelines.html
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance each week
+    - https://lodavo.com/rules

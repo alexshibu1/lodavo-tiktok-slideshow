@@ -1,0 +1,71 @@
+slideshow:
+  slug: money-mistakes-canadian-students
+  language: en
+  account: lodavo.money
+  series: money-lists
+  slot: "2026-11-13 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook slide: number + surprising angle
+    - text: "5 money mistakes almost every student makes"
+      image: { url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f" } # crumpled receipts and coins on a table
+      focus: "50% 50%"
+    # Mistake 1: Overdraft fees from ignoring a low balance
+    - text: "ignoring your chequing balance"
+      sub: "one $45 overdraft fee wipes out a week of coffee savings"
+      image: { url: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" } # person looking at phone with worried expression, finances
+      focus: "50% 40%"
+    # Mistake 2: Not using student discounts
+    - text: "skipping student discounts"
+      sub: "SPC, UNiDAYS, campus deals. you're leaving hundreds on the table"
+      image: { url: "https://images.unsplash.com/photo-1523240795612-9a054b0db644" } # university students walking on campus
+      focus: "50% 50%"
+    # Mistake 3: Leaving money in a 0% chequing account
+    - text: "leaving everything in a 0% chequing account"
+      sub: "a basic HISA pays you something. 0% pays nothing"
+      image: { url: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e" } # piggy bank and coins
+      focus: "50% 50%"
+    # Mistake 4: Impulse buying when stressed
+    - text: "stress buying after midterms"
+      sub: "that $80 Uber Eats order hits different on your statement"
+      image: { url: "https://images.unsplash.com/photo-1512850183-6d7990f42385" } # takeout food containers on a table
+      focus: "50% 55%"
+    # Mistake 5: Not tracking where money goes
+    - text: "never once checking where your money goes"
+      sub: "you can't fix what you can't see"
+      image: { url: "https://images.unsplash.com/photo-1554224154-22dec7ec8818" } # notebook with budget tracking, pen
+      focus: "50% 50%"
+    # App slide
+    - app: hero
+      text: "Want to actually start saving this semester?"
+      sub: "Lodavo gives you a free jackpot ticket for every $25 saved"
+  caption: |
+    These five mistakes cost Canadian students hundreds every year.
+
+    Overdraft fees, skipping free student discounts, leaving money in a 0% chequing account, stress buying, and never tracking spending. Most of us have done at least three.
+
+    The good news: every one of them is fixable this week.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneymistakes"
+    - "#studentlife"
+    - "#canada"
+    - "#savingmoney"
+    - "#moneytips"
+    - "#moneytok"
+    - "#lodavo"
+  sources:
+    # TD overdraft fee: $45 per item (as of 2026)
+    - https://www.td.com/ca/en/personal-banking/how-to/manage-my-accounts/overdraft-protection
+    # SPC membership and student discounts in Canada
+    - https://www.spccard.ca/
+    # UNiDAYS student discounts
+    - https://www.myunidays.com/CA/en-CA
+    # Bank of Canada interest rate environment, high-interest savings accounts comparison (2026)
+    - https://www.ratehub.ca/savings-accounts/best-savings-accounts
+    # Statistics Canada, average household spending patterns (food delivery and impulse spending)
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110022201
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

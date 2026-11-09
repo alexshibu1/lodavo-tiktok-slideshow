@@ -1,0 +1,70 @@
+slideshow:
+  slug: stop-paycheck-to-paycheck
+  language: en
+  account: lodavo.money
+  series: step-by-step
+  slot: "2026-11-11 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: addresses the pain point directly
+    - text: "how to stop living paycheck to paycheck"
+      image: { url: "https://images.pexels.com/photos/29205840/pexels-photo-29205840/free-photo-of-empty-wallet-opened-by-hands-in-financial-struggle.jpeg?auto=compress&cs=tinysrgb&w=1600" }
+      focus: "50% 50%"
+    # Step 1: Awareness first. Track everything for one week.
+    - text: "track every dollar for one week"
+      sub: "write it down. all of it."
+      image: { url: "https://images.pexels.com/photos/7504756/pexels-photo-7504756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Step 2: Find the leak that's draining your money
+    - text: "find your biggest money leak"
+      sub: "subscriptions, takeout, or impulse shopping"
+      image: { url: "https://www.ijunkie.com/wp-content/uploads/2021/05/active-subscriptions-app-store_iphone12black_portrait.png" }
+      focus: "50% 50%"
+    # Step 3: Build a small buffer before anything else
+    - text: "build a $500 buffer first"
+      sub: "$25 a week gets you there in 5 months"
+      image: { url: "https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Step 4: The 50/30/20 rule as a starting framework
+    - text: "try the 50/30/20 rule"
+      sub: "50% needs, 30% wants, 20% savings"
+      image: { url: "https://images.pexels.com/photos/6963017/pexels-photo-6963017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Step 5: Cooking at home saves more than people realize
+    - text: "cook at home 5 days a week"
+      sub: "eating out adds up faster than you think"
+      image: { url: "https://images.pexels.com/photos/4746518/pexels-photo-4746518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Step 6: Savings should come off the top, not the bottom
+    - text: "pay yourself first, not last"
+      sub: "savings come off the top, before spending"
+      image: { url: "https://cdn-rdstaticassets.readdle.com/assets/readdle/modern_2019/products/calendars/index/illustration-calendars-notification.png?1712921132" }
+      focus: "50% 50%"
+    # App slide: bridge breaking the cycle to Lodavo
+    - app: cta
+      text: "Breaking the cycle?"
+      sub: "Lodavo rewards you for saving. Every $25 earns a free draw ticket, every week."
+  caption: |
+    Paycheck to paycheck? Here's how to stop. For real.
+
+    Track your spending for one week. You'll find the leaks. Then build a $500 buffer and pay yourself first.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#canadiantiktok"
+    - "#budgeting"
+  sources:
+    # 50/30/20 rule origin: Elizabeth Warren and Amelia Warren Tyagi, "All Your Worth" (2005)
+    - https://www.investopedia.com/ask/answers/022916/what-502030-budget-rule.asp
+    # FCAC: building an emergency fund and paying yourself first
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/save-emergency-fund.html
+    # FCAC guide on making a budget
+    - https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html
+    # Contest rules s.4.1(a): every $25 of linked balance earns 1 ticket
+    - https://lodavo.com/rules

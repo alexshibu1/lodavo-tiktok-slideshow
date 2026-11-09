@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>The Only 3 Accounts You Need in Your 20s</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #F5E6D3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .slide-sizer {
+    width: 421px;
+    height: 525px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    transform: scale(0.38889);
+    transform-origin: top left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .slide-warm {
+    background: #FAF4ED;
+    color: #2C1810;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 90px;
+    text-align: center;
+    position: relative;
+  }
+
+  .slide-warm::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(210,170,120,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 80%, rgba(180,140,100,0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .slide-photo {
+    position: relative;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  .slide-photo .bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+
+  .slide-photo .warm-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(250,244,237,0.2) 0%,
+      rgba(250,244,237,0.1) 30%,
+      rgba(44,24,16,0.5) 70%,
+      rgba(44,24,16,0.85) 100%
+    );
+    z-index: 1;
+  }
+
+  .slide-photo .content {
+    position: relative;
+    z-index: 2;
+    padding: 80px 80px 120px;
+  }
+
+  .hook-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    line-height: 1.0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2C1810;
+  }
+
+  .hook-sub {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 52px;
+    line-height: 1.3;
+    color: #6B4C3B;
+    margin-top: 30px;
+  }
+
+  .highlight {
+    background: linear-gradient(180deg, transparent 55%, rgba(210,170,120,0.4) 55%, rgba(210,170,120,0.4) 90%, transparent 90%);
+    padding: 0 8px;
+  }
+
+  .highlight-strong {
+    background: linear-gradient(180deg, transparent 50%, #D4A847 50%, #D4A847 92%, transparent 92%);
+    padding: 0 10px;
+    color: #2C1810;
+  }
+
+  .photo-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 88px;
+    line-height: 1.05;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FAF4ED;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
+
+  .photo-sub {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: rgba(250,244,237,0.85);
+    margin-top: 20px;
+  }
+
+  .amount {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 160px;
+    line-height: 1.0;
+    color: #D4A847;
+    text-shadow: 0 4px 30px rgba(212,168,71,0.3);
+  }
+
+  .amount-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(250,244,237,0.7);
+    margin-top: 10px;
+  }
+
+  .warm-card {
+    background: rgba(250,244,237,0.95);
+    border-radius: 24px;
+    padding: 70px 60px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin: 0 60px;
+    box-shadow: 0 8px 40px rgba(44,24,16,0.1);
+  }
+
+  .warm-card .card-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    line-height: 1.05;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2C1810;
+  }
+
+  .warm-card .card-body {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 44px;
+    line-height: 1.4;
+    color: #6B4C3B;
+    margin-top: 20px;
+  }
+
+  .divider {
+    width: 80px;
+    height: 3px;
+    background: #D4A847;
+    margin: 30px auto;
+    border-radius: 2px;
+  }
+
+  .num-badge {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #D4A847;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    color: #2C1810;
+    margin: 0 auto 30px;
+  }
+
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 100px 80px;
+    text-align: center;
+  }
+
+  .cta-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    line-height: 1.05;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2C1810;
+  }
+
+  .cta-body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #6B4C3B;
+    margin-top: 30px;
+    max-width: 800px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 28px 80px;
+    background: #2C1810;
+    color: #FAF4ED;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 60px;
+  }
+
+  .cta-handle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(44,24,16,0.4);
+    margin-top: 40px;
+  }
+
+  .page-num {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(44,24,16,0.3);
+  }
+
+  .page-num-light {
+    color: rgba(250,244,237,0.35);
+  }
+
+  .slide::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: Hook -->
+<div class="slide-sizer"><div class="slide slide-photo">
+  <div class="bg" style="background-image:url('https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-position:50% 40%"></div>
+  <div class="warm-overlay" style="background:linear-gradient(180deg,rgba(250,244,237,0.55) 0%,rgba(250,244,237,0.8) 35%,rgba(250,244,237,0.95) 100%)"></div>
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:100px 80px;text-align:center">
+    <div style="font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#D4A847">money basics</div>
+    <div class="hook-text" style="font-size:120px;line-height:0.95;margin-top:20px">THE ONLY<br><span class="highlight-strong">3 ACCOUNTS</span><br>YOU NEED<br>IN YOUR 20S</div>
+    <div class="hook-sub" style="font-size:48px">Canada edition</div>
+    <div class="divider" style="margin-top:40px"></div>
+  </div>
+  <div class="page-num">1 / 10</div>
+</div></div>
+
+<!-- SLIDE 2: No-fee chequing -->
+<div class="slide-sizer"><div class="slide slide-warm">
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center">
+    <div class="num-badge">1</div>
+    <div class="hook-text" style="font-size:90px">NO-FEE<br><span class="highlight-strong">CHEQUING</span></div>
+    <div class="divider"></div>
+    <div style="font-family:'Space Grotesk',sans-serif;font-size:42px;font-weight:600;color:#2C1810;margin-top:10px">Simplii, Tangerine, or CIBC</div>
+    <div class="hook-sub" style="font-size:44px">stop paying $15/month to hold your own money</div>
+  </div>
+  <div class="page-num">2 / 10</div>
+</div></div>
+
+<!-- SLIDE 3: TFSA -->
+<div class="slide-sizer"><div class="slide slide-photo">
+  <div class="bg" style="background-image:url('https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-position:50% 50%"></div>
+  <div class="warm-overlay"></div>
+  <div class="content" style="display:flex;flex-direction:column;align-items:center;text-align:center">
+    <div style="width:100px;height:100px;border-radius:50%;background:#D4A847;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:60px;color:#2C1810;margin-bottom:20px">2</div>
+    <div class="photo-heading" style="font-size:100px">TFSA</div>
+    <div class="photo-sub" style="font-size:38px;color:rgba(250,244,237,0.7)">tax-free savings account</div>
+    <div class="divider" style="background:rgba(250,244,237,0.5);margin:30px auto"></div>
+    <div class="photo-sub" style="font-size:46px;color:#FAF4ED">this is where your money<br>actually grows</div>
+  </div>
+  <div class="page-num page-num-light">3 / 10</div>
+</div></div>
+
+<!-- SLIDE 4: $49,000 TFSA room -->
+<div class="slide-sizer"><div class="slide slide-warm">
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center">
+    <div style="font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#D4A847">contribution room</div>
+    <div class="hook-text" style="font-size:80px;margin-top:20px">$7,000 EVERY YEAR<br>STARTING AT 18</div>
+    <div class="divider"></div>
+    <div class="amount" style="font-size:150px;margin-top:10px">$49,000</div>
+    <div style="font-family:'Bebas Neue',sans-serif;font-size:56px;letter-spacing:3px;color:#2C1810">OF TAX-FREE ROOM BY 25</div>
+    <div class="hook-sub" style="font-size:40px;margin-top:20px">and it carries over if you don't use it</div>
+  </div>
+  <div class="page-num">4 / 10</div>
+</div></div>
+
+<!-- SLIDE 5: HISA -->
+<div class="slide-sizer"><div class="slide slide-photo">
+  <div class="bg" style="background-image:url('https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-position:50% 50%"></div>
+  <div class="warm-overlay"></div>
+  <div class="content" style="display:flex;flex-direction:column;align-items:center;text-align:center">
+    <div style="width:100px;height:100px;border-radius:50%;background:#D4A847;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:60px;color:#2C1810;margin-bottom:20px">3</div>
+    <div class="photo-heading" style="font-size:80px">HIGH-INTEREST<br>SAVINGS ACCOUNT</div>
+    <div class="divider" style="background:rgba(250,244,237,0.5);margin:30px auto"></div>
+    <div class="photo-sub" style="font-size:44px;color:#FAF4ED">where your emergency fund<br>sits and earns 4 to 5%</div>
+  </div>
+  <div class="page-num page-num-light">5 / 10</div>
+</div></div>
+
+<!-- SLIDE 6: Best HISA rates -->
+<div class="slide-sizer"><div class="slide slide-warm">
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center">
+    <div style="font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#D4A847">best rates right now</div>
+    <div class="amount" style="font-size:170px;margin-top:10px">4-4.75%</div>
+    <div class="divider"></div>
+    <div class="hook-text" style="font-size:60px;line-height:1.2">EQ BANK<br>WEALTHSIMPLE<br>TANGERINE</div>
+    <div class="hook-sub" style="font-size:40px">all offer competitive rates in Canada</div>
+  </div>
+  <div class="page-num">6 / 10</div>
+</div></div>
+
+<!-- SLIDE 7: The missing layer -->
+<div class="slide-sizer"><div class="slide slide-warm">
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center">
+    <div class="hook-text" style="font-size:100px;line-height:1.0">THE <span class="highlight-strong">MISSING</span><br>LAYER</div>
+    <div class="divider"></div>
+    <div class="hook-sub" style="font-size:48px">opening the accounts is step 1</div>
+    <div class="hook-sub" style="font-size:48px;color:#D4A847;margin-top:15px">actually putting money in is harder</div>
+  </div>
+  <div class="page-num">7 / 10</div>
+</div></div>
+
+<!-- SLIDE 8: What NOT to open: RRSP -->
+<div class="slide-sizer"><div class="slide slide-photo">
+  <div class="bg" style="background-image:url('https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-position:50% 40%"></div>
+  <div class="warm-overlay" style="background:linear-gradient(180deg,rgba(44,24,16,0.6) 0%,rgba(44,24,16,0.85) 100%)"></div>
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:80px;text-align:center">
+    <div class="photo-heading" style="font-size:80px">WHAT <span style="color:#D4A847">NOT</span> TO<br>OPEN YET</div>
+    <div class="divider" style="background:#D4A847;margin:40px auto"></div>
+    <div class="photo-heading" style="font-size:100px">AN RRSP</div>
+    <div class="photo-sub" style="font-size:42px;color:rgba(250,244,237,0.85)">the tax deduction is worth more<br>when your income is higher</div>
+    <div class="photo-sub" style="font-size:38px;color:#D4A847;margin-top:20px">wait until you're earning $50,000+</div>
+  </div>
+  <div class="page-num page-num-light">8 / 10</div>
+</div></div>
+
+<!-- SLIDE 9: Ticket pitch -->
+<div class="slide-sizer"><div class="slide slide-warm">
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center">
+    <div style="font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#D4A847">make saving worth it</div>
+    <div class="hook-text" style="font-size:80px;margin-top:20px">EVERY <span class="highlight-strong">$25</span> EARNS<br>A FREE TICKET</div>
+    <div class="divider"></div>
+    <div class="hook-sub" style="font-size:46px">a chance to win $100 or<br>the $10,000 jackpot, every week</div>
+  </div>
+  <div class="page-num">9 / 10</div>
+</div></div>
+
+<!-- SLIDE 10: CTA -->
+<div class="slide-sizer"><div class="slide slide-warm" style="background:#FAF4ED">
+  <div class="cta-content">
+    <div style="font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#D4A847">start with 3 accounts</div>
+    <div class="cta-heading" style="margin-top:20px">CONNECT YOUR<br>ACCOUNT ON LODAVO</div>
+    <div class="divider" style="margin:40px auto"></div>
+    <div class="cta-body">Every $25 saved earns a free ticket for the weekly draw. Download Lodavo free.</div>
+    <div class="cta-button">DOWNLOAD LODAVO</div>
+    <div class="cta-handle">@lodavo.money</div>
+  </div>
+  <div class="page-num">10 / 10</div>
+</div></div>
+
+</body>
+</html>

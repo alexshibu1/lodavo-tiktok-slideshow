@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Actually Start Saving in Canada — @lodavo.money</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo+Black&family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@500;700&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #111;
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  h1.page-title {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ccc;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0 20px;
+  }
+
+  .carousel-track::-webkit-scrollbar { height: 6px; }
+  .carousel-track::-webkit-scrollbar-track { background: #222; border-radius: 3px; }
+  .carousel-track::-webkit-scrollbar-thumb { background: #555; border-radius: 3px; }
+
+  .slide-container {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    transform: scale(0.3889);
+    transform-origin: top left;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .slide-sizer {
+    width: 421px; /* 1080 * 0.3889 */
+    height: 525px; /* 1350 * 0.3889 */
+    overflow: hidden;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  /* --- Slide backgrounds --- */
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+
+  .slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 2;
+  }
+
+  .slide-content {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 12px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.8);
+  }
+
+  /* --- Slide 1: Grid --- */
+  .slide-grid {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    z-index: 1;
+  }
+
+  .grid-cell {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .grid-cell-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .grid-cell-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+  }
+
+  .slide1-text {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px;
+  }
+
+  .slide1-text .line1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 140px;
+    color: #fff;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .slide1-text .line2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    color: #fff;
+    line-height: 1.15;
+    margin-top: 10px;
+  }
+
+  /* --- Step slides --- */
+  .step-heading {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-size: 88px;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+
+  .step-label {
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin-bottom: 12px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .step-body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.65;
+    max-width: 900px;
+  }
+
+  /* --- Slide 6: Closing --- */
+  .slide6-content {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+  }
+
+  .closing-heading {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-size: 104px;
+    color: #fff;
+    line-height: 1.25;
+  }
+
+  .closing-handle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #fff;
+    opacity: 0.8;
+    margin-top: 50px;
+  }
+
+  /* --- Navigation --- */
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    backdrop-filter: blur(4px);
+  }
+
+  .nav-btn:hover { background: rgba(0,0,0,0.8); }
+  .nav-prev { left: -56px; }
+  .nav-next { right: -56px; }
+
+  .slide-counter {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #888;
+    margin-top: 16px;
+    letter-spacing: 2px;
+  }
+
+  /* --- Download button --- */
+  .download-btn {
+    margin-top: 12px;
+    padding: 8px 20px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #1a1a1a;
+    color: #aaa;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.5px;
+  }
+
+  .download-btn:hover {
+    background: #2a2a2a;
+    color: #fff;
+    border-color: #666;
+  }
+
+  .download-btn:disabled {
+    opacity: 0.4;
+    cursor: wait;
+  }
+</style>
+</head>
+<body>
+
+<h1 class="page-title">Carousel Preview — Start Saving in Canada</h1>
+
+<div class="carousel-wrapper">
+  <button class="nav-btn nav-prev" onclick="scrollSlide(-1)" aria-label="Previous slide">&#8592;</button>
+  <button class="nav-btn nav-next" onclick="scrollSlide(1)" aria-label="Next slide">&#8594;</button>
+
+  <div class="carousel-track" id="carouselTrack">
+
+    <!-- ======================== SLIDE 1 — Hook (2x2 Grid) ======================== -->
+    <div class="slide-container">
+      <div class="slide-sizer">
+        <div class="slide" id="slide-1">
+          <div class="slide-grid">
+            <div class="grid-cell">
+              <div class="grid-cell-bg" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+              <div class="grid-cell-overlay"></div>
+            </div>
+            <div class="grid-cell">
+              <div class="grid-cell-bg" style="background-image: url('https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+              <div class="grid-cell-overlay"></div>
+            </div>
+            <div class="grid-cell">
+              <div class="grid-cell-bg" style="background-image: url('https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+              <div class="grid-cell-overlay"></div>
+            </div>
+            <div class="grid-cell">
+              <div class="grid-cell-bg" style="background-image: url('https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+              <div class="grid-cell-overlay"></div>
+            </div>
+          </div>
+          <div class="slide1-text text-shadow">
+            <span class="line1">How to actually</span>
+            <span class="line2">start saving in Canada:</span>
+          </div>
+        </div>
+      </div>
+      <button class="download-btn" onclick="downloadSlide('slide-1', 'slide-1-hook')">Download Slide</button>
+    </div>
+
+    <!-- ======================== SLIDE 2 — Step 1: TFSA ======================== -->
+    <div class="slide-container">
+      <div class="slide-sizer">
+        <div class="slide" id="slide-2">
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+          <div class="slide-overlay"></div>
+          <div class="slide-content text-shadow">
+            <div class="step-heading">
+              <span class="step-label">Step 1:</span>
+              Open a TFSA before anything else
+            </div>
+            <div class="step-body">
+              You get $7,000 in contribution room every year. It grows tax-free. Most people don't open one until their 30s.
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="download-btn" onclick="downloadSlide('slide-2', 'slide-2-tfsa')">Download Slide</button>
+    </div>
+
+    <!-- ======================== SLIDE 3 — Step 2: Auto-save ======================== -->
+    <div class="slide-container">
+      <div class="slide-sizer">
+        <div class="slide" id="slide-3">
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+          <div class="slide-overlay"></div>
+          <div class="slide-content text-shadow">
+            <div class="step-heading">
+              <span class="step-label">Step 2:</span>
+              Set up a $25 auto-save on payday
+            </div>
+            <div class="step-body">
+              The money you don't see, you don't spend. Pick a number that doesn't hurt. Auto-save it before you budget anything else.
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="download-btn" onclick="downloadSlide('slide-3', 'slide-3-autosave')">Download Slide</button>
+    </div>
+
+    <!-- ======================== SLIDE 4 — Step 3: 50/30/20 ======================== -->
+    <div class="slide-container">
+      <div class="slide-sizer">
+        <div class="slide" id="slide-4">
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+          <div class="slide-overlay"></div>
+          <div class="slide-content text-shadow">
+            <div class="step-heading">
+              <span class="step-label">Step 3:</span>
+              Use the 50/30/20 rule
+            </div>
+            <div class="step-body">
+              • 50% needs — rent, groceries, transit<br>
+              • 30% wants — eating out, clothes<br>
+              • 20% savings — before you think about it<br>
+              <br>
+              Adjust as you go. The split doesn't have to be perfect.
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="download-btn" onclick="downloadSlide('slide-4', 'slide-4-budget-rule')">Download Slide</button>
+    </div>
+
+    <!-- ======================== SLIDE 5 — Step 4: Lodavo ======================== -->
+    <div class="slide-container">
+      <div class="slide-sizer">
+        <div class="slide" id="slide-5">
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+          <div class="slide-overlay"></div>
+          <div class="slide-content text-shadow">
+            <div class="step-heading">
+              <span class="step-label">Step 4:</span>
+              Make your savings do more
+            </div>
+            <div class="step-body">
+              With prize-linked savings, every $25 you save earns a free draw ticket. Every week. Your money stays in your own bank account. You just get chances to win for saving it.
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="download-btn" onclick="downloadSlide('slide-5', 'slide-5-lodavo')">Download Slide</button>
+    </div>
+
+    <!-- ======================== SLIDE 6 — Closing ======================== -->
+    <div class="slide-container">
+      <div class="slide-sizer">
+        <div class="slide" id="slide-6">
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1525612/pexels-photo-1525612.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+          <div class="slide-overlay"></div>
+          <div class="slide6-content text-shadow">
+            <div class="closing-heading">
+              Start with $25.<br>Build from there.
+            </div>
+            <div class="closing-handle">@lodavo.money</div>
+          </div>
+        </div>
+      </div>
+      <button class="download-btn" onclick="downloadSlide('slide-6', 'slide-6-closing')">Download Slide</button>
+    </div>
+
+  </div>
+
+  <div class="slide-counter" id="slideCounter">1 / 6</div>
+</div>
+
+<script>
+  const track = document.getElementById('carouselTrack');
+  const counter = document.getElementById('slideCounter');
+  const totalSlides = 6;
+
+  function getSlideWidth() {
+    const container = track.querySelector('.slide-container');
+    return container.offsetWidth + 24; /* width + gap */
+  }
+
+  function getCurrentSlide() {
+    const scrollLeft = track.scrollLeft;
+    const slideW = getSlideWidth();
+    return Math.round(scrollLeft / slideW);
+  }
+
+  function scrollSlide(dir) {
+    const current = getCurrentSlide();
+    const next = Math.max(0, Math.min(totalSlides - 1, current + dir));
+    const slideW = getSlideWidth();
+    track.scrollTo({ left: next * slideW, behavior: 'smooth' });
+  }
+
+  track.addEventListener('scroll', () => {
+    const idx = getCurrentSlide() + 1;
+    counter.textContent = idx + ' / ' + totalSlides;
+  });
+
+  async function downloadSlide(slideId, filename) {
+    const slide = document.getElementById(slideId);
+    const btn = slide.closest('.slide-container').querySelector('.download-btn');
+    btn.disabled = true;
+    btn.textContent = 'Rendering...';
+
+    try {
+      /* Clone the slide for full-resolution rendering */
+      const clone = slide.cloneNode(true);
+      clone.style.transform = 'none';
+      clone.style.width = '1080px';
+      clone.style.height = '1350px';
+      clone.style.position = 'absolute';
+      clone.style.left = '-9999px';
+      clone.style.top = '0';
+      clone.id = '';
+      document.body.appendChild(clone);
+
+      /* Wait for images to settle */
+      await new Promise(r => setTimeout(r, 300));
+
+      const canvas = await html2canvas(clone, {
+        width: 1080,
+        height: 1350,
+        scale: 1,
+        useCORS: true,
+        allowTaint: true,
+        backgroundColor: '#000',
+        logging: false,
+      });
+
+      document.body.removeChild(clone);
+
+      const link = document.createElement('a');
+      link.download = filename + '.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    } catch (err) {
+      console.error('Download error:', err);
+      alert('Download failed. Check console for details.');
+    }
+
+    btn.disabled = false;
+    btn.textContent = 'Download Slide';
+  }
+</script>
+
+</body>
+</html>

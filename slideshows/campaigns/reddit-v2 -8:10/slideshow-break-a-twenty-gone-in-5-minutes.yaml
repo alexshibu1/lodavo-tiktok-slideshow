@@ -1,0 +1,53 @@
+slideshow:
+  slug: break-a-twenty-gone-in-5-minutes
+  language: en
+  account: lodavo.money
+  series: reddit-v2
+  slot: "2026-12-25 19:00"
+  opening: cold
+  end: white
+  slides:
+    - text: "every time I break a twenty"
+      sub: "it's gone in 5 minutes"
+      image: { url: "https://i.pinimg.com/originals/5d/29/77/5d2977f679fbd9bda5ae7321029385f0.jpg" }
+      focus: "50% 50%"
+    - text: "you tap *$4.50* for coffee"
+      sub: "and suddenly you're spending mode"
+      image: { url: "https://images.pexels.com/photos/5242822/pexels-photo-5242822.jpeg?cs=srgb&dl=pexels-anna-tarazevich-5242822.jpg&fm=jpg" }
+      focus: "50% 50%"
+    - text: "*$6* for a snack"
+      sub: "because you're already out"
+      image: { url: "https://i.pinimg.com/originals/fa/11/cd/fa11cd3190d2d8dd4fe7bd607e8b359a.jpg" }
+      focus: "50% 50%"
+    - text: "*$3* for water you didn't need"
+      sub: "your bottle is in your bag"
+      image: { url: "https://i.pinimg.com/originals/4a/4a/19/4a4a19f3cf63bce695024b97d86e205b.jpg" }
+      focus: "50% 50%"
+    - text: "tap makes spending invisible"
+      sub: "your brain doesn't register the loss"
+      image: { url: "https://images.pexels.com/videos/6611945/pexels-photo-6611945.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-6611945.jpg&fm=jpg" }
+      focus: "50% 50%"
+    - text: "try the 48-hour rule"
+      sub: "wait 2 days before any non-essential buy"
+      image: { url: "https://i.pinimg.com/originals/bc/7d/86/bc7d8677311ce2afe6ebb1db44216a5b.jpg" }
+      focus: "50% 50%"
+    - text: "most of the time you'll forget"
+      sub: "which means you never needed it"
+      image: { url: "https://images.unsplash.com/photo-1759673824580-d5fdf453482f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=jpg&q=60&w=3000" }
+      focus: "50% 50%"
+    - app: hero
+      text: "Ready to keep more of what you earn?"
+      sub: "Every $25 saved earns a free weekly draw ticket on Lodavo"
+  caption: |
+    Every time I break a twenty it's gone in 5 minutes.
+    Tap makes spending invisible. Your brain doesn't register the loss.
+    Try the 48-hour rule: wait 2 days before any non-essential buy. Most times you'll forget.
+    Lodavo is linked in our bio.
+  hashtags:
+    - "#moneytok"
+    - "#spendinghabits"
+    - "#savingmoney"
+    - "#canadiantiktok"
+    - "#lodavo"
+  sources:
+    - https://www.reddit.com/r/povertyfinance/

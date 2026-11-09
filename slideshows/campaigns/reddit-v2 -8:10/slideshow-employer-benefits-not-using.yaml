@@ -1,0 +1,53 @@
+slideshow:
+  slug: employer-benefits-not-using
+  language: en
+  account: lodavo.money
+  series: reddit-v2
+  slot: "2026-12-29 19:00"
+  opening: cold
+  end: white
+  slides:
+    - text: "your employer benefits"
+      sub: "you're probably not using"
+      image: { url: "https://i.pinimg.com/originals/7e/4e/b0/7e4eb0ef04db3400918f6f2964c5e316.jpg" }
+      focus: "50% 40%"
+    - text: "health spending account"
+      sub: "glasses, dental, physio, therapy"
+      image: { url: "https://i.pinimg.com/originals/1c/78/58/1c785872b7d129093a25214092041586.jpg" }
+      focus: "50% 50%"
+    - text: "RRSP matching"
+      sub: "your employer matches what you put in, *free money*"
+      image: { url: "https://i.pinimg.com/originals/4e/e8/fc/4ee8fcde62e3bec3f1b8d32128ce4fae.jpg" }
+      focus: "50% 50%"
+    - text: "tuition reimbursement"
+      sub: "most people don't even ask"
+      image: { url: "https://i.pinimg.com/originals/f2/76/b6/f276b63204fa0e2ed1a5f10c70e0fc36.jpg" }
+      focus: "50% 50%"
+    - text: "employee assistance program"
+      sub: "free therapy, legal advice, financial counselling"
+      image: { url: "https://i.pinimg.com/originals/70/78/a2/7078a22c4f3c4aa52aa9a3e68e4532dd.jpg" }
+      focus: "50% 50%"
+    - text: "gym membership discount"
+      sub: "sometimes *50%* off or fully covered"
+      image: { url: "https://i.pinimg.com/originals/7b/78/81/7b7881d8955a363752333d67ff6700f4.jpg" }
+      focus: "50% 50%"
+    - text: "check your benefits portal this week"
+      sub: "you're leaving hundreds on the table"
+      image: { url: "https://images.pexels.com/photos/6073151/pexels-photo-6073151.jpeg?cs=srgb&dl=pexels-andrei-selezniov-3868028-6073151.jpg&fm=jpg" }
+      focus: "50% 50%"
+    - app: hero
+      text: "Found money feels good. Saving it feels better."
+      sub: "Every $25 saved earns a free draw ticket on Lodavo. Weekly."
+  caption: |
+    Your employer benefits you're probably not using.
+    Health spending, RRSP matching, tuition reimbursement, free therapy, gym discounts.
+    Check your benefits portal this week. You're leaving hundreds on the table.
+    Lodavo is linked in our bio.
+  hashtags:
+    - "#employeebenefits"
+    - "#moneytok"
+    - "#personalfinance"
+    - "#canadiantiktok"
+    - "#lodavo"
+  sources:
+    - https://www.reddit.com/r/PersonalFinanceCanada/

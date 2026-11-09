@@ -1,0 +1,54 @@
+slideshow:
+  slug: phone-scams-getting-too-good
+  language: en
+  account: lodavo.money
+  series: reddit-v2
+  slot: "2026-12-28 19:00"
+  opening: cold
+  end: blue
+  slides:
+    - text: "phone scams are getting too good"
+      sub: "protect yourself"
+      image: { url: "https://i.pinimg.com/originals/1c/5e/b5/1c5eb5963ce23b7333d25119bd3c2e49.jpg" }
+      focus: "50% 40%"
+    - text: "CRA will never call you"
+      sub: "and they'll never threaten arrest"
+      image: { url: "https://i.pinimg.com/originals/5d/53/72/5d5372f38b9cffa404cd68d742b3ad54.jpg" }
+      focus: "50% 50%"
+    - text: "your bank will never ask for your PIN"
+      sub: "not by phone, not by text, not by email"
+      image: { url: "https://i.pinimg.com/originals/81/19/e7/8119e78702d19daf6d279f897f49040d.jpg" }
+      focus: "50% 50%"
+    - text: "if it's urgent, it's a scam"
+      sub: "real problems give you time"
+      image: { url: "https://images.pexels.com/photos/16672358/pexels-photo-16672358.jpeg?cs=srgb&dl=pexels-16672358.jpg&fm=jpg" }
+      focus: "50% 50%"
+    - text: "Canadians lost *$569M* to fraud in 2023"
+      sub: "most of it started with a text or call"
+      image: { url: "https://images.pexels.com/photos/8036661/pexels-photo-8036661.jpeg?cs=srgb&dl=pexels-shvets-production-8036661.jpg&fm=jpg" }
+      focus: "50% 50%"
+    - text: "never click a link from a number you don't know"
+      sub: "go to the real website yourself"
+      image: { url: "https://images.pexels.com/videos/6611940/pexels-photo-6611940.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-6611940.jpg&fm=jpg" }
+      focus: "50% 50%"
+    - text: "save these red flags"
+      sub: "share this with someone who needs it"
+      image: { url: "https://i.pinimg.com/originals/b9/59/b8/b959b8244660f3ad0b4db063de814530.jpg" }
+      focus: "50% 50%"
+    - app: hero
+      text: "Protecting your money matters."
+      sub: "On Lodavo, every $25 you save earns a free draw ticket. Weekly."
+  caption: |
+    Phone scams are getting too good now.
+    CRA never calls. Your bank never asks for your PIN. If it's urgent, it's a scam.
+    Canadians lost $569M to fraud in 2023. Save these red flags.
+    Lodavo is linked in our bio.
+  hashtags:
+    - "#scamalert"
+    - "#moneytok"
+    - "#protectyourmoney"
+    - "#canadiantiktok"
+    - "#lodavo"
+  sources:
+    - https://www.reddit.com/r/PersonalFinanceCanada/
+    - https://www.antifraudcentre-centreantifraude.ca/

@@ -1,0 +1,74 @@
+slideshow:
+  slug: checked-account-after-frosh
+  language: en
+  account: lodavo.money
+  series: student-life
+  slot: "2026-12-07 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: the universally dreaded post-frosh balance check
+    - text: "I checked my account after frosh week"
+      image: { url: "https://images.pexels.com/photos/9787782/pexels-photo-9787782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 40%"
+    # Beat 1: the damage, specific and relatable
+    - text: "three bars, two Uber Eats orders, campus merch"
+      sub: "all in five days"
+      image: { url: "https://images.pexels.com/photos/12944058/pexels-photo-12944058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 2: the gut punch, the number
+    - text: "then I looked at my balance"
+      sub: "$47 left. for the whole month."
+      image: { url: "https://images.pexels.com/photos/8938729/pexels-photo-8938729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 3: the decision, the one rule
+    - text: "so I made one rule for myself"
+      sub: "$25 a week to savings, no matter what"
+      image: { url: "https://plus.unsplash.com/premium_photo-1724061886540-7549a1d90b95?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3w4fHx8ZW58MHx8fHx8" }
+      focus: "50% 50%"
+    # Beat 4: the struggle, week one grind
+    - text: "week one was painful"
+      sub: "ramen from the campus store, three nights straight"
+      image: { url: "https://images.pexels.com/photos/10950869/pexels-photo-10950869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 5: the first sign it's working
+    - text: "by October I had $200"
+      sub: "first time my savings went up, not down"
+      image: { url: "https://images.pexels.com/photos/31744946/pexels-photo-31744946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 6: the shift, it becomes identity
+    - text: "by December I stopped checking every day"
+      sub: "the panic just faded"
+      image: { url: "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 7: the reframe, what frosh week really taught
+    - text: "frosh week cost me $400"
+      sub: "it taught me more than any class"
+      image: { url: "https://images.pexels.com/photos/9654939/pexels-photo-9654939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide: bridge to Lodavo
+    - app: hero
+      text: "What if every $25 saved earned a free ticket?"
+      sub: "Lodavo gives you one for the weekly draw."
+  caption: |
+    Checked my account after frosh week. $47 left for the entire month.
+
+    Three bars. Two Uber Eats orders. Campus merch I wore once. All in five days. I made one rule after that: $25 a week goes to savings before anything else.
+
+    Week one was ramen. By October I had $200. By December I stopped panicking about money every single day.
+
+    Frosh week cost me $400. It taught me everything I needed to know about money.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#studentlife"
+    - "#storytime"
+    - "#lodavo"
+    - "#froshweek"
+    - "#unilife"
+  sources:
+    - https://lodavo.com/rules
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html

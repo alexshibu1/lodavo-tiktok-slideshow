@@ -1,0 +1,75 @@
+slideshow:
+  slug: canadian-student-money-cheat-sheet
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-19 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: screams "save this", signals dense reference content
+    - text: "the student money cheat sheet"
+      sub: "save this. you'll need it."
+      image: { url: "https://static.producer.com/wp-content/uploads/2025/07/15163201/07-money-canadian-bills-and-loonies-MC-1200.jpg" }
+      focus: "50% 50%"
+    # TFSA contribution limit 2026
+    - text: "your TFSA limit"
+      sub: "$7,000 per year. starts the year you turn 18. tax-free growth forever"
+      image: { url: "https://images.pexels.com/photos/3943882/pexels-photo-3943882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 45%"
+    # Rent as percentage of income
+    - text: "how much rent should cost you"
+      sub: "30% of gross income, max. $3,000 a month means $900"
+      image: { url: "https://images.pexels.com/photos/29726512/pexels-photo-29726512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Emergency fund target
+    - text: "your emergency fund target"
+      sub: "3 months of expenses. for most students that's $4,500 to $6,000"
+      image: { url: "https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Student loan grace period
+    - text: "student loan grace period"
+      sub: "federal: 6 months after graduation. interest still adds up. provincial varies"
+      image: { url: "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Key tax dates every student needs
+    - text: "tax dates you need"
+      sub: "T4 by Feb 28. file by April 30. most get $300+ back"
+      image: { url: "https://images.pexels.com/photos/6170653/pexels-photo-6170653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide: bridge from money knowledge to Lodavo
+    - app: hero
+      text: "Know the numbers. Now make saving rewarding?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved. Every week."
+  caption: |
+    Every number a Canadian student needs to know, on one page. Save this.
+
+    TFSA limit, rent math, emergency fund targets, loan grace periods, tax deadlines. These are the numbers nobody teaches you in class but everyone expects you to know.
+
+    Bookmark this and come back when you need it.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#savingmoney"
+    - "#canada"
+    - "#studentlife"
+    - "#canadiantiktok"
+    - "#personalfinance"
+    - "#lodavo"
+  sources:
+    # TFSA annual contribution limit for 2026 ($7,000)
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributions.html
+    # 30% rent-to-income guideline (CMHC housing affordability standard)
+    - https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-research/research-reports/housing-needs/identifying-core-housing-need
+    # Emergency fund recommendation (3-6 months of expenses)
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html
+    # Canada Student Loans grace period (6 months, interest accrues)
+    - https://www.canada.ca/en/services/benefits/education/student-aid/grants-loans/repay.html
+    # T4 deadline (Feb 28) and personal tax filing deadline (April 30)
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html
+    # Average student tax refund range
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-32300-tuition-education-textbook-amounts.html
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Numbers That Control Your Money</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,900;1,900&family=Space+Grotesk:wght@500&family=JetBrains+Mono:wght@600&family=DM+Sans:wght@500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #0a0a0c;
+  padding: 40px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.slide {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  padding: 64px 60px 72px;
+  transform: scale(0.39);
+  transform-origin: top left;
+  flex-shrink: 0;
+}
+
+/* Film grain overlay */
+.slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* Vignette */
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+  box-shadow: inset 0 0 200px rgba(0,0,0,0.4);
+}
+
+/* Dark bg */
+.slide-dark {
+  background: #111318;
+  color: #F5F0EB;
+}
+
+/* Cream bg */
+.slide-cream {
+  background: #F5F0EB;
+  color: #1A1614;
+}
+
+/* Cool dark bg (was purple) */
+.slide-purple {
+  background: #0D1117;
+  color: #F5F0EB;
+}
+
+/* Progress bar */
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  display: flex;
+  gap: 4px;
+  z-index: 50;
+  padding: 0 2px;
+}
+.progress span {
+  flex: 1;
+  background: rgba(255,255,255,0.12);
+  border-radius: 2px;
+}
+.progress span.active {
+  background: #D4A847;
+}
+.slide-cream .progress span {
+  background: rgba(0,0,0,0.1);
+}
+.slide-cream .progress span.active {
+  background: #D4A847;
+}
+
+/* Slide counter */
+.counter {
+  position: absolute;
+  bottom: 28px;
+  right: 40px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.4;
+  z-index: 50;
+  letter-spacing: 1px;
+}
+
+/* Decorative elements */
+.glow-circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+.accent-line {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+.dot-grid {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, 8px);
+  gap: 12px;
+  pointer-events: none;
+  z-index: 2;
+}
+.dot-grid span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+}
+.slide-cream .dot-grid span {
+  background: rgba(0,0,0,0.06);
+}
+
+/* Typography */
+.bebas { font-family: 'Bebas Neue', sans-serif; }
+.playfair { font-family: 'Playfair Display', serif; font-weight: 900; }
+.playfair-italic { font-family: 'Playfair Display', serif; font-weight: 900; font-style: italic; }
+.space { font-family: 'Space Grotesk', sans-serif; font-weight: 500; }
+.jetbrains { font-family: 'JetBrains Mono', monospace; font-weight: 600; }
+.dm { font-family: 'DM Sans', sans-serif; font-weight: 500; }
+
+/* Cards */
+.card-dark {
+  background: rgba(255,255,255,0.07);
+  border-radius: 20px;
+  padding: 28px 32px;
+  width: 100%;
+  backdrop-filter: blur(4px);
+}
+.card-cream {
+  background: rgba(0,0,0,0.05);
+  border-radius: 20px;
+  padding: 28px 32px;
+  width: 100%;
+}
+.card-accent {
+  border-radius: 16px;
+  padding: 24px 32px;
+  width: 100%;
+}
+
+/* Content z-index */
+.content {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+</style>
+</head>
+<body>
+
+<div class="carousel">
+
+<!-- SLIDE 1: Hook -->
+<div class="slide slide-dark">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <!-- Decorative -->
+  <div class="glow-circle" style="width:600px;height:600px;top:-100px;right:-120px;background:radial-gradient(circle,rgba(212,168,71,0.14) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:400px;height:400px;bottom:-80px;left:-100px;background:radial-gradient(circle,rgba(46,205,167,0.08) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:200px;height:2px;background:linear-gradient(90deg,#D4A847,transparent);top:320px;left:60px;transform:rotate(-5deg);"></div>
+  <div class="accent-line" style="width:120px;height:2px;background:linear-gradient(90deg,transparent,#2ECDA7);bottom:280px;right:80px;transform:rotate(8deg);"></div>
+  <div class="dot-grid" style="bottom:180px;left:60px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content" style="justify-content:center;align-items:flex-start;">
+    <div class="dm" style="font-size:18px;letter-spacing:4px;color:#D4A847;margin-bottom:32px;text-transform:uppercase;">Financial Literacy</div>
+    <div class="bebas" style="font-size:200px;line-height:0.9;color:#D4A847;letter-spacing:4px;">5 NUMBERS</div>
+    <div class="playfair" style="font-size:52px;line-height:1.15;margin-top:24px;max-width:880px;">THAT CONTROL YOUR ENTIRE FINANCIAL LIFE</div>
+    <div style="width:100%;height:3px;background:linear-gradient(90deg,#D4A847,#2ECDA7,transparent);margin-top:48px;border-radius:2px;"></div>
+    <div class="space" style="font-size:24px;opacity:0.5;margin-top:auto;margin-bottom:0;">Most people don't track any of them.</div>
+    <div style="margin-top:28px;background:rgba(212,168,71,0.12);border:1px solid rgba(212,168,71,0.25);border-radius:12px;padding:16px 28px;display:inline-block;">
+      <span class="dm" style="font-size:16px;color:#D4A847;letter-spacing:3px;text-transform:uppercase;">&#9733; Save This Post</span>
+    </div>
+  </div>
+  <div class="counter">1 / 7</div>
+</div>
+
+<!-- SLIDE 2: Credit Score (CREAM) -->
+<div class="slide slide-cream">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(245,240,235,0.88);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="glow-circle" style="width:500px;height:500px;top:-160px;right:-80px;background:radial-gradient(circle,rgba(46,205,167,0.1) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:160px;height:2px;background:linear-gradient(90deg,rgba(212,168,71,0.4),transparent);top:260px;right:60px;"></div>
+  <div class="dot-grid" style="top:100px;right:80px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content">
+    <div class="dm" style="font-size:16px;letter-spacing:4px;color:#2ECDA7;text-transform:uppercase;margin-bottom:8px;">#1 &mdash; Credit Score</div>
+    <div class="bebas" style="font-size:220px;line-height:0.85;color:#1A1614;">660+</div>
+    <div class="playfair" style="font-size:44px;line-height:1.2;color:#1A1614;margin-top:8px;">THE APPROVAL THRESHOLD</div>
+    <div style="width:80px;height:3px;background:#2ECDA7;margin-top:28px;border-radius:2px;"></div>
+    <div style="display:flex;flex-direction:column;gap:16px;margin-top:36px;width:100%;">
+      <div class="card-cream" style="display:flex;align-items:center;gap:20px;">
+        <div class="jetbrains" style="font-size:36px;color:#2ECDA7;">300–900</div>
+        <div class="space" style="font-size:24px;color:#1A1614;">Full range in Canada</div>
+      </div>
+      <div class="card-cream" style="display:flex;align-items:center;gap:20px;">
+        <div class="jetbrains" style="font-size:36px;color:#D4A847;">660+</div>
+        <div class="space" style="font-size:24px;color:#1A1614;">Approved for most products</div>
+      </div>
+      <div class="card-cream" style="display:flex;align-items:center;gap:20px;">
+        <div class="jetbrains" style="font-size:36px;color:#9B8EC4;">760+</div>
+        <div class="space" style="font-size:24px;color:#1A1614;">Best rates &amp; premium cards</div>
+      </div>
+    </div>
+    <div class="card-accent" style="background:rgba(46,205,167,0.1);border:1px solid rgba(46,205,167,0.2);margin-top:auto;display:flex;align-items:center;gap:16px;">
+      <div style="width:8px;height:60px;background:#2ECDA7;border-radius:4px;flex-shrink:0;"></div>
+      <div>
+        <div class="dm" style="font-size:15px;color:#2ECDA7;letter-spacing:2px;text-transform:uppercase;">Free Check</div>
+        <div class="space" style="font-size:26px;color:#1A1614;margin-top:4px;">Borrowell &mdash; no impact on your score</div>
+      </div>
+    </div>
+  </div>
+  <div class="counter" style="color:#1A1614;">2 / 7</div>
+</div>
+
+<!-- SLIDE 3: Debt-to-Income (DARK) -->
+<div class="slide slide-dark">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="glow-circle" style="width:550px;height:550px;bottom:-120px;right:-100px;background:radial-gradient(circle,rgba(212,168,71,0.12) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:350px;height:350px;top:-60px;left:-80px;background:radial-gradient(circle,rgba(232,93,93,0.08) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:180px;height:2px;background:linear-gradient(90deg,#D4A847,transparent);bottom:320px;left:60px;transform:rotate(-3deg);"></div>
+  <div class="dot-grid" style="top:140px;right:60px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content">
+    <div class="dm" style="font-size:16px;letter-spacing:4px;color:#D4A847;text-transform:uppercase;margin-bottom:8px;">#2 &mdash; Debt-to-Income Ratio</div>
+    <div class="bebas" style="font-size:240px;line-height:0.85;color:#D4A847;">36%</div>
+    <div class="playfair" style="font-size:48px;line-height:1.15;margin-top:8px;">THE LINE LENDERS DRAW</div>
+    <div style="width:80px;height:3px;background:#D4A847;margin-top:32px;border-radius:2px;"></div>
+    <div class="space" style="font-size:24px;opacity:0.6;margin-top:24px;line-height:1.5;">Monthly debt payments &divide; gross monthly income</div>
+    <div style="display:flex;flex-direction:column;gap:16px;margin-top:36px;width:100%;">
+      <div class="card-dark" style="border-left:4px solid #2ECDA7;">
+        <div style="display:flex;align-items:center;gap:16px;">
+          <div class="jetbrains" style="font-size:36px;color:#2ECDA7;">Under 36%</div>
+        </div>
+        <div class="space" style="font-size:24px;margin-top:8px;opacity:0.8;">Safe zone &mdash; you'll get approved</div>
+      </div>
+      <div class="card-dark" style="border-left:4px solid #E85D5D;">
+        <div style="display:flex;align-items:center;gap:16px;">
+          <div class="jetbrains" style="font-size:36px;color:#E85D5D;">Over 44%</div>
+        </div>
+        <div class="space" style="font-size:24px;margin-top:8px;opacity:0.8;">Red zone &mdash; most lenders decline</div>
+      </div>
+      <div class="card-dark" style="border-left:4px solid #D4A847;">
+        <div style="display:flex;align-items:center;gap:16px;">
+          <div class="jetbrains" style="font-size:36px;color:#D4A847;">36–44%</div>
+        </div>
+        <div class="space" style="font-size:24px;margin-top:8px;opacity:0.8;">Grey zone &mdash; case-by-case, higher rates</div>
+      </div>
+    </div>
+    <div class="space" style="font-size:20px;opacity:0.35;margin-top:auto;">GDS + TDS — the two ratios banks actually use</div>
+  </div>
+  <div class="counter">3 / 7</div>
+</div>
+
+<!-- SLIDE 4: 50/30/20 (CREAM) -->
+<div class="slide slide-cream">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(245,240,235,0.88);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span><span></span>
+  </div>
+  <div class="glow-circle" style="width:400px;height:400px;top:-100px;left:-100px;background:radial-gradient(circle,rgba(155,142,196,0.1) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:140px;height:2px;background:linear-gradient(90deg,rgba(212,168,71,0.3),transparent);top:200px;right:60px;"></div>
+  <div class="content">
+    <div class="dm" style="font-size:16px;letter-spacing:4px;color:#D4A847;text-transform:uppercase;margin-bottom:8px;">#3 &mdash; The Budget Split</div>
+    <div class="playfair" style="font-size:60px;line-height:1;color:#1A1614;">50 / 30 / 20</div>
+    <div class="space" style="font-size:24px;color:rgba(26,22,20,0.6);margin-top:12px;">The simplest budget that actually works</div>
+    <div style="width:80px;height:3px;background:#D4A847;margin-top:28px;border-radius:2px;"></div>
+
+    <!-- 50% bar -->
+    <div style="margin-top:40px;width:100%;">
+      <div style="background:#D4A847;border-radius:16px;padding:28px 32px;width:100%;">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="bebas" style="font-size:72px;color:#1A1614;line-height:1;">50%</div>
+          <div class="playfair" style="font-size:32px;color:#1A1614;">NEEDS</div>
+        </div>
+        <div class="space" style="font-size:22px;color:rgba(26,22,20,0.8);margin-top:8px;">Rent &bull; Groceries &bull; Transit &bull; Insurance &bull; Utilities</div>
+      </div>
+    </div>
+
+    <!-- 30% bar -->
+    <div style="margin-top:16px;width:100%;">
+      <div style="background:#9B8EC4;border-radius:16px;padding:28px 32px;width:100%;">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="bebas" style="font-size:72px;color:#1A1614;line-height:1;">30%</div>
+          <div class="playfair" style="font-size:32px;color:#1A1614;">WANTS</div>
+        </div>
+        <div class="space" style="font-size:22px;color:rgba(26,22,20,0.8);margin-top:8px;">Dining &bull; Entertainment &bull; Shopping &bull; Subscriptions</div>
+      </div>
+    </div>
+
+    <!-- 20% bar -->
+    <div style="margin-top:16px;width:100%;">
+      <div style="background:#2ECDA7;border-radius:16px;padding:28px 32px;width:100%;">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="bebas" style="font-size:72px;color:#1A1614;line-height:1;">20%</div>
+          <div class="playfair" style="font-size:32px;color:#1A1614;">SAVINGS</div>
+        </div>
+        <div class="space" style="font-size:22px;color:rgba(26,22,20,0.8);margin-top:8px;">Emergency fund &bull; TFSA &bull; RRSP &bull; Debt payoff</div>
+      </div>
+    </div>
+
+    <!-- Breakdown card -->
+    <div class="card-cream" style="margin-top:auto;border:1px solid rgba(0,0,0,0.08);">
+      <div class="dm" style="font-size:15px;color:rgba(26,22,20,0.5);letter-spacing:2px;text-transform:uppercase;">On $4,000/mo take-home</div>
+      <div style="display:flex;justify-content:space-between;margin-top:12px;">
+        <div style="text-align:center;">
+          <div class="jetbrains" style="font-size:32px;color:#D4A847;">$2,000</div>
+          <div class="dm" style="font-size:14px;color:rgba(26,22,20,0.5);margin-top:4px;">Needs</div>
+        </div>
+        <div style="text-align:center;">
+          <div class="jetbrains" style="font-size:32px;color:#9B8EC4;">$1,200</div>
+          <div class="dm" style="font-size:14px;color:rgba(26,22,20,0.5);margin-top:4px;">Wants</div>
+        </div>
+        <div style="text-align:center;">
+          <div class="jetbrains" style="font-size:32px;color:#2ECDA7;">$800</div>
+          <div class="dm" style="font-size:14px;color:rgba(26,22,20,0.5);margin-top:4px;">Savings</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="counter" style="color:#1A1614;">4 / 7</div>
+</div>
+
+<!-- SLIDE 5: Emergency Fund (DARK) -->
+<div class="slide slide-dark">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span>
+  </div>
+  <div class="glow-circle" style="width:600px;height:600px;top:-150px;left:-120px;background:radial-gradient(circle,rgba(212,168,71,0.12) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:350px;height:350px;bottom:-60px;right:-60px;background:radial-gradient(circle,rgba(46,205,167,0.08) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:180px;height:2px;background:linear-gradient(90deg,transparent,#D4A847);top:400px;right:60px;transform:rotate(5deg);"></div>
+  <div class="accent-line" style="width:100px;height:2px;background:linear-gradient(90deg,#2ECDA7,transparent);bottom:400px;left:60px;transform:rotate(-8deg);"></div>
+  <div class="dot-grid" style="bottom:200px;right:60px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content">
+    <div class="dm" style="font-size:16px;letter-spacing:4px;color:#D4A847;text-transform:uppercase;margin-bottom:8px;">#4 &mdash; Emergency Fund</div>
+    <div class="bebas" style="font-size:200px;line-height:0.85;color:#D4A847;">$11,700</div>
+    <div class="playfair" style="font-size:52px;line-height:1.1;margin-top:12px;">YOUR FLOOR</div>
+    <div style="width:80px;height:3px;background:#D4A847;margin-top:32px;border-radius:2px;"></div>
+    <div style="display:flex;flex-direction:column;gap:16px;margin-top:40px;width:100%;">
+      <div class="card-dark" style="border-left:4px solid #2ECDA7;">
+        <div class="dm" style="font-size:15px;color:#2ECDA7;letter-spacing:2px;text-transform:uppercase;">The Rule</div>
+        <div class="space" style="font-size:28px;margin-top:8px;">3 months of essential expenses, minimum</div>
+        <div class="space" style="font-size:22px;opacity:0.5;margin-top:8px;">6 months if self-employed or single income</div>
+      </div>
+      <div class="card-dark" style="border-left:4px solid #D4A847;">
+        <div class="dm" style="font-size:15px;color:#D4A847;letter-spacing:2px;text-transform:uppercase;">Average Canadian</div>
+        <div class="jetbrains" style="font-size:40px;color:#D4A847;margin-top:8px;">$3,900/month</div>
+        <div class="space" style="font-size:22px;opacity:0.5;margin-top:8px;">in essential expenses (StatsCan)</div>
+      </div>
+      <div class="card-dark">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:40px;height:40px;border-radius:10px;background:rgba(46,205,167,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <span style="color:#2ECDA7;font-size:20px;">&#10003;</span>
+          </div>
+          <div class="space" style="font-size:22px;">$3,900 &times; 3 = <span class="jetbrains" style="color:#D4A847;">$11,700</span> bare minimum</div>
+        </div>
+      </div>
+    </div>
+    <div class="space" style="font-size:20px;opacity:0.35;margin-top:auto;">Keep it in a HISA — not invested, not locked</div>
+  </div>
+  <div class="counter">5 / 7</div>
+</div>
+
+<!-- SLIDE 6: Net Worth + Savings Rate (PURPLE DARK) -->
+<div class="slide slide-purple">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span>
+  </div>
+  <div class="glow-circle" style="width:500px;height:500px;top:-100px;right:-80px;background:radial-gradient(circle,rgba(46,205,167,0.06) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:400px;height:400px;bottom:-100px;left:-100px;background:radial-gradient(circle,rgba(212,168,71,0.1) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:160px;height:2px;background:linear-gradient(90deg,#2ECDA7,transparent);top:320px;left:60px;transform:rotate(-4deg);"></div>
+  <div class="accent-line" style="width:120px;height:2px;background:linear-gradient(90deg,transparent,#D4A847);bottom:350px;right:80px;transform:rotate(6deg);"></div>
+  <div class="dot-grid" style="top:120px;right:80px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content">
+    <div class="dm" style="font-size:16px;letter-spacing:4px;color:#9B8EC4;text-transform:uppercase;margin-bottom:16px;">#5 &mdash; The Compound Duo</div>
+
+    <!-- Net Worth Card -->
+    <div style="background:rgba(255,255,255,0.06);border-radius:24px;padding:40px 36px;width:100%;border:1px solid rgba(255,255,255,0.08);margin-bottom:20px;">
+      <div class="dm" style="font-size:15px;letter-spacing:3px;color:#9B8EC4;text-transform:uppercase;">Net Worth</div>
+      <div class="bebas" style="font-size:140px;line-height:0.9;color:#9B8EC4;margin-top:8px;">$44,500</div>
+      <div class="space" style="font-size:24px;opacity:0.6;margin-top:8px;">Average for Canadians age 20–24</div>
+      <div style="width:100%;height:1px;background:rgba(255,255,255,0.08);margin:20px 0;"></div>
+      <div class="space" style="font-size:22px;opacity:0.5;">Assets minus debts. Track it quarterly.</div>
+    </div>
+
+    <!-- Savings Rate Card -->
+    <div style="background:rgba(255,255,255,0.06);border-radius:24px;padding:40px 36px;width:100%;border:1px solid rgba(212,168,71,0.15);">
+      <div class="dm" style="font-size:15px;letter-spacing:3px;color:#D4A847;text-transform:uppercase;">Savings Rate</div>
+      <div class="bebas" style="font-size:140px;line-height:0.9;color:#D4A847;margin-top:8px;">10%</div>
+      <div class="space" style="font-size:24px;opacity:0.6;margin-top:8px;">Minimum target of take-home pay</div>
+      <div style="width:100%;height:1px;background:rgba(212,168,71,0.15);margin:20px 0;"></div>
+      <div class="space" style="font-size:22px;opacity:0.7;">
+        <span class="jetbrains" style="color:#D4A847;">$400/mo</span> at age 22 = <span class="jetbrains" style="color:#2ECDA7;">$180K+</span> by 35
+      </div>
+      <div class="space" style="font-size:20px;opacity:0.4;margin-top:6px;">(7% avg return, compounded monthly)</div>
+    </div>
+  </div>
+  <div class="counter">6 / 7</div>
+</div>
+
+<!-- SLIDE 7: App CTA -->
+<div class="slide slide-dark">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span>
+  </div>
+  <div class="glow-circle" style="width:700px;height:700px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(212,168,71,0.1) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:400px;height:400px;bottom:-80px;left:-80px;background:radial-gradient(circle,rgba(46,205,167,0.08) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:200px;height:2px;background:linear-gradient(90deg,#D4A847,transparent);top:380px;left:60px;transform:rotate(-3deg);"></div>
+  <div class="accent-line" style="width:140px;height:2px;background:linear-gradient(90deg,transparent,#2ECDA7);top:420px;right:80px;transform:rotate(5deg);"></div>
+  <div class="dot-grid" style="top:200px;left:80px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="dot-grid" style="bottom:200px;right:80px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content" style="justify-content:center;align-items:center;text-align:center;">
+    <div style="width:80px;height:80px;border-radius:20px;background:linear-gradient(135deg,#D4A847,#2ECDA7);margin-bottom:40px;"></div>
+    <div class="playfair-italic" style="font-size:56px;line-height:1.15;max-width:800px;">Your savings could win you cash</div>
+    <div style="width:120px;height:3px;background:linear-gradient(90deg,#D4A847,#2ECDA7);margin:36px auto;border-radius:2px;"></div>
+    <div class="space" style="font-size:28px;opacity:0.7;max-width:740px;line-height:1.5;">Every $25 saved = 1 free draw ticket weekly on Lodavo</div>
+    <div style="margin-top:48px;background:rgba(212,168,71,0.1);border:1px solid rgba(212,168,71,0.2);border-radius:16px;padding:20px 40px;">
+      <div class="space" style="font-size:24px;color:#D4A847;">Prize-linked savings for Canadians</div>
+    </div>
+    <div class="dm" style="font-size:18px;opacity:0.35;margin-top:auto;">@lodavo.money</div>
+  </div>
+  <div class="counter">7 / 7</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+slideshow:
+  slug: first-real-paycheque
+  language: en
+  account: lodavo.money
+  series: reddit-v2
+  slot: "2026-12-23 19:00"
+  opening: cold
+  end: blue
+  slides:
+    - text: "your first real paycheque"
+      sub: "where every dollar should go"
+      image: { url: "https://i.pinimg.com/originals/82/81/86/828186629d4a6cb5893109a2437f55e1.jpg" }
+      focus: "50% 40%"
+    - text: "*50%* goes to needs"
+      sub: "rent, groceries, transit, phone"
+      image: { url: "https://i.pinimg.com/originals/80/ea/2f/80ea2f7756a200d8ea64c019d30a015f.jpg" }
+      focus: "50% 50%"
+    - text: "*30%* goes to wants"
+      sub: "eating out, clothes, entertainment"
+      image: { url: "https://i.pinimg.com/originals/c1/9d/40/c19d40ecba9a2d3dc6e292c895e42714.jpg" }
+      focus: "50% 40%"
+    - text: "*20%* goes to savings"
+      sub: "before you even think about it"
+      image: { url: "https://i.pinimg.com/originals/82/f7/50/82f7509c7da2c1c65930231f1b23ad64.jpg" }
+      focus: "50% 50%"
+    - text: "set up auto-save on payday"
+      sub: "the money you don't see you don't spend"
+      image: { url: "https://i.pinimg.com/originals/c6/9d/ef/c69def2d5a5b5ad3711fb7a0986c03d3.jpg" }
+      focus: "50% 50%"
+    - text: "open a TFSA immediately"
+      sub: "you get *$7,000* contribution room per year"
+      image: { url: "https://i.pinimg.com/originals/35/ec/a2/35eca212610a063289df37af692569fc.jpg" }
+      focus: "50% 50%"
+    - text: "your future self will thank you"
+      sub: "most people wait until 30 to start"
+      image: { url: "https://i.pinimg.com/originals/87/44/bc/8744bcd6b47a218cb6ac7ff46627a73e.jpg" }
+      focus: "50% 50%"
+    - app: hero
+      text: "Starting your first savings habit?"
+      sub: "Every $25 you save earns a free draw ticket on Lodavo. Every week."
+  caption: |
+    Your first real paycheque. Here's where every dollar should go.
+    50% needs. 30% wants. 20% savings. Auto-save on payday so you don't think about it.
+    Open a TFSA on day one. Most people wait until 30. Don't be most people.
+    Lodavo is linked in our bio.
+  hashtags:
+    - "#firstjob"
+    - "#moneytok"
+    - "#budgeting"
+    - "#canadiantiktok"
+    - "#lodavo"
+  sources:
+    - https://www.reddit.com/r/PersonalFinanceCanada/
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account.html

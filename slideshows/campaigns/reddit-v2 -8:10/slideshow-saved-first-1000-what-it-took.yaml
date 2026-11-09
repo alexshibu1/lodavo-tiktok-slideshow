@@ -1,0 +1,57 @@
+slideshow:
+  slug: saved-first-1000-what-it-took
+  language: en
+  account: lodavo.money
+  series: reddit-v2
+  slot: "2026-12-20 19:00"
+  opening: cold
+  end: blue
+  slides:
+    - text: "I saved my first *$1,000*"
+      sub: "and here's what it actually took"
+      image: { url: "https://i.pinimg.com/originals/7e/42/04/7e4204bc94177a3dc1a9822e2491523e.jpg" }
+      focus: "50% 50%"
+    - text: "I made *$16* an hour"
+      sub: "part-time, 20 hours a week"
+      image: { url: "https://images.pexels.com/photos/16999510/pexels-photo-16999510/free-photo-of-barista-behind-the-cafe-counter.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" }
+      focus: "50% 40%"
+    - text: "step 1: I stopped eating out"
+      sub: "meal prep Sunday became my religion"
+      image: { url: "https://i.pinimg.com/originals/5b/2e/63/5b2e63db42418b9b0a8c8b25aab53b0e.jpg" }
+      focus: "50% 50%"
+    - text: "step 2: auto-save *$25* every Friday"
+      sub: "before I could spend it"
+      image: { url: "https://i.pinimg.com/originals/23/22/95/232295bd334982e9025e2dfaee465b4f.jpg" }
+      focus: "50% 40%"
+    - text: "step 3: I said no to everything"
+      sub: "bars, concerts, spontaneous trips"
+      image: { url: "https://i.pinimg.com/originals/e2/1b/f0/e21bf0032d4a084627b81a154e987aba.jpg" }
+      focus: "50% 50%"
+    - text: "month 4 I almost quit"
+      sub: "my friends thought I was weird"
+      image: { url: "https://i.pinimg.com/originals/15/e2/1a/15e21ac2d2d809ea204a47396b318c01.jpg" }
+      focus: "50% 50%"
+    - text: "month 8: I checked my balance"
+      sub: "*$1,047*"
+      image: { url: "https://images.pexels.com/photos/8036661/pexels-photo-8036661.jpeg?cs=srgb&dl=pexels-shvets-production-8036661.jpg&fm=jpg" }
+      focus: "50% 40%"
+    - text: "it's not the amount"
+      sub: "it's knowing you can do it"
+      image: { url: "https://images.unsplash.com/photo-1616862442726-492dc29b975e?fm=jpg&q=60&w=3000&auto=format&fit=crop" }
+      focus: "50% 60%"
+    - app: hero
+      text: "Want your savings to do more?"
+      sub: "Every $25 you save earns a free weekly draw ticket on Lodavo"
+  caption: |
+    I saved my first $1,000. Here's what it actually took.
+    $16/hr, part-time, meal prep, auto-save, and saying no to a lot.
+    It took 8 months. It changed everything.
+    Lodavo is linked in our bio.
+  hashtags:
+    - "#moneytok"
+    - "#savingmoney"
+    - "#personalfinance"
+    - "#canadiantiktok"
+    - "#lodavo"
+  sources:
+    - https://www.reddit.com/r/povertyfinance/

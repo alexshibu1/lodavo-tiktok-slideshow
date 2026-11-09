@@ -1,0 +1,78 @@
+slideshow:
+  slug: how-much-saved-by-age-canada
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-20 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: triggers the "am I behind?" anxiety that drives saves
+    - text: "how much you need saved by age"
+      sub: "Canada. save this."
+      image: { url: "https://blog.remitly.com/wp-content/uploads/2024/02/canadian-dollars-scaled.jpg" }
+      focus: "50% 50%"
+    # By 20: just getting started
+    - text: "by 20"
+      sub: "$1,000 to $2,000. an emergency fund that covers one bad month"
+      image: { url: "https://images.pexels.com/photos/6549588/pexels-photo-6549588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # By 25: one year of expenses
+    - text: "by 25"
+      sub: "$10,000 to $15,000. roughly 3 to 6 months of expenses in Canada"
+      image: { url: "https://images.pexels.com/photos/3760514/pexels-photo-3760514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # By 30: salary benchmark
+    - text: "by 30"
+      sub: "$30,000 to $50,000. about one year of your after-tax income saved"
+      image: { url: "https://pixnio.com/free-images/2017/02/23/2017-02-23-11-20-41.jpg" }
+      focus: "50% 50%"
+    # By 35: double your salary
+    - text: "by 35"
+      sub: "$75,000 to $100,000. two times your annual salary. TFSA should be maxed"
+      image: { url: "https://photos.zolo.ca/106-couples-gallery-whitchurch-stouffville-N12397177-1.jpg?2026-02-02+01:52:24" }
+      focus: "50% 50%"
+    # The reality check: where most Canadians actually are
+    - text: "the reality"
+      sub: "median Canadian under 35 has $10,400 saved. you're not behind, just start now"
+      image: { url: "https://images.pexels.com/photos/2307042/pexels-photo-2307042.jpeg?cs=srgb&dl=pexels-felipe-vallin-2307042.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Context slide: average salary to anchor the numbers
+    - text: "for context"
+      sub: "average Canadian salary is $59,300. these targets assume you start small and stay consistent"
+      image: { url: "https://i.pinimg.com/originals/57/c9/0d/57c90d2155a83efa3f7017c6350e7184.jpg" }
+      focus: "50% 50%"
+    # App slide: bridge from benchmarks to action
+    - app: cta
+      text: "Behind on your savings target?"
+      sub: "Lodavo makes every $25 saved earn a free weekly draw ticket. Start now."
+  caption: |
+    How much should you have saved by your age? Here are the Canadian benchmarks.
+
+    By 20: $1K to $2K. By 25: $10K to $15K. By 30: one year of income. By 35: double your salary.
+
+    The median Canadian under 35 has $10,400. If you're behind, the move is to start now, not stress about it. Save this so you can check back.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#savingmoney"
+    - "#canada"
+    - "#canadiantiktok"
+    - "#personalfinance"
+    - "#lodavo"
+  sources:
+    # Statistics Canada Survey of Financial Security, median net worth under 35
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001601
+    # Average Canadian salary (2025 data, Statistics Canada)
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410006401
+    # TFSA cumulative contribution room by age (CRA)
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributions.html
+    # Savings benchmarks by age (Fidelity guideline adapted for Canadian context)
+    - https://www.fidelity.ca/en/insights/articles/how-much-should-i-save/
+    # Financial Consumer Agency of Canada, emergency fund and savings guidance
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

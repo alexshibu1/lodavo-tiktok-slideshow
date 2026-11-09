@@ -1,0 +1,80 @@
+slideshow:
+  slug: tfsa-vs-rrsp-only-guide
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-22 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: clean utility label, screams "save this reference"
+    - text: "TFSA vs RRSP: the only guide you need"
+      image: { url: "https://thenewcomer.ca/wp-content/uploads/2021/03/bills_emmasiegel_photo_all-five-scaled.jpg" }
+      focus: "50% 50%"
+    # TFSA contribution room 2026
+    - text: "TFSA contribution room"
+      sub: "$7,000 per year in 2026. lifetime max $95,000 if you were 18 in 2009. grows tax-free, withdrawals are tax-free"
+      image: { url: "https://i.pinimg.com/originals/f3/9d/ad/f39dad50ea62bc0e4e98299a86d7980b.jpg" }
+      focus: "50% 50%"
+    # RRSP contribution room
+    - text: "RRSP contribution room"
+      sub: "18% of last year's earned income, up to $32,490 in 2025. contributions lower your taxable income"
+      image: { url: "https://images.unsplash.com/photo-1772588627354-ca3617853217?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
+      focus: "50% 45%"
+    # When TFSA wins
+    - text: "use the TFSA when"
+      sub: "you earn under $55,000. you want access anytime. you already have employer RRSP matching"
+      image: { url: "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # When RRSP wins
+    - text: "use the RRSP when"
+      sub: "you earn over $55,000. you want a tax refund now. you're buying your first home (HBP lets you withdraw $60,000)"
+      image: { url: "https://i.pinimg.com/originals/40/3c/fb/403cfbf61f507db4364ec34ef62dcede.jpg" }
+      focus: "50% 50%"
+    # Withdrawal rules side by side
+    - text: "withdrawal rules"
+      sub: "TFSA: withdraw anytime, room comes back Jan 1. RRSP: withdrawals are taxed as income, room is gone forever"
+      image: { url: "https://blog.remitly.com/wp-content/uploads/2024/02/canadian-dollars-scaled.jpg" }
+      focus: "50% 50%"
+    # The age rule nobody tells you
+    - text: "the age rule nobody mentions"
+      sub: "TFSA starts at 18. RRSP needs earned income, no age minimum. converts to RRIF at 71"
+      image: { url: "https://get.pxhere.com/photo/wish-celebration-food-chocolate-frosting-dessert-delicious-cake-bakery-festive-celebrate-happy-birthday-birthday-cake-candles-happiness-party-decorated-event-frosted-special-birthday-occasion-sweetness-surprise-treat-sprinkles-1349803.jpg" }
+      focus: "50% 50%"
+    # App slide
+    - app: hero
+      text: "Got the account. Now make saving rewarding?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved. Every week."
+  caption: |
+    TFSA vs RRSP, once and for all. Save this.
+
+    When to use the TFSA: earning under $55K, want tax-free growth, need access to your money anytime. When to use the RRSP: earning over $55K, want a tax refund, saving for your first home.
+
+    The real answer? Most people under 30 should max the TFSA first. Bookmark this and come back.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#tfsa"
+    - "#rrsp"
+    - "#personalfinance"
+    - "#lodavo"
+  sources:
+    # TFSA annual contribution limit 2026 ($7,000) and cumulative room
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributions.html
+    # RRSP contribution limit 2025 ($32,490) and 18% rule
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/rrsp-mp-prpp-contributions.html
+    # TFSA withdrawal rules and contribution room restoration
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/making-replacing-withdrawals-a-tfsa.html
+    # Home Buyers' Plan (HBP) $60,000 withdrawal limit
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/what-home-buyers-plan.html
+    # RRSP to RRIF conversion deadline (year you turn 71)
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-retirement-income-fund-rrif.html
+    # Federal income tax brackets 2025 (context for $55K threshold)
+    - https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

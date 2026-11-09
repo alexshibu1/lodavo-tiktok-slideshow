@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canadian Student Money Cheat Sheet</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,900;1,900&family=Space+Grotesk:wght@500&family=JetBrains+Mono:wght@600&family=DM+Sans:wght@500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #0a0a0c;
+  padding: 40px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.slide {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  padding: 64px 60px 72px;
+  transform: scale(0.39);
+  transform-origin: top left;
+  flex-shrink: 0;
+}
+
+.slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+  box-shadow: inset 0 0 200px rgba(0,0,0,0.4);
+}
+
+.slide-dark { background: #111318; color: #F5F0EB; }
+.slide-cream { background: #F5F0EB; color: #1A1614; }
+.slide-green { background: #14231a; color: #F5F0EB; }
+
+.progress {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  display: flex;
+  gap: 4px;
+  z-index: 50;
+  padding: 0 2px;
+}
+.progress span { flex: 1; background: rgba(255,255,255,0.12); border-radius: 2px; }
+.progress span.active { background: #D4A847; }
+.slide-cream .progress span { background: rgba(0,0,0,0.1); }
+.slide-cream .progress span.active { background: #D4A847; }
+
+.counter {
+  position: absolute;
+  bottom: 28px; right: 40px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px; font-weight: 500;
+  opacity: 0.4; z-index: 50;
+  letter-spacing: 1px;
+}
+
+.glow-circle { position: absolute; border-radius: 50%; pointer-events: none; z-index: 1; }
+.accent-line { position: absolute; pointer-events: none; z-index: 2; }
+.dot-grid {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, 8px);
+  gap: 12px;
+  pointer-events: none;
+  z-index: 2;
+}
+.dot-grid span { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.08); }
+.slide-cream .dot-grid span { background: rgba(0,0,0,0.06); }
+
+.bebas { font-family: 'Bebas Neue', sans-serif; }
+.playfair { font-family: 'Playfair Display', serif; font-weight: 900; }
+.playfair-italic { font-family: 'Playfair Display', serif; font-weight: 900; font-style: italic; }
+.space { font-family: 'Space Grotesk', sans-serif; font-weight: 500; }
+.jetbrains { font-family: 'JetBrains Mono', monospace; font-weight: 600; }
+.dm { font-family: 'DM Sans', sans-serif; font-weight: 500; }
+
+.card-dark { background: rgba(255,255,255,0.07); border-radius: 20px; padding: 28px 32px; width: 100%; }
+.card-cream { background: rgba(0,0,0,0.05); border-radius: 20px; padding: 28px 32px; width: 100%; }
+
+.content {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+</style>
+</head>
+<body>
+
+<div class="carousel">
+
+<!-- SLIDE 1: Hook -->
+<div class="slide slide-dark">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="glow-circle" style="width:600px;height:600px;bottom:-120px;right:-120px;background:radial-gradient(circle,rgba(46,205,167,0.14) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:450px;height:450px;top:-80px;left:-100px;background:radial-gradient(circle,rgba(212,168,71,0.1) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:200px;height:2px;background:linear-gradient(90deg,#2ECDA7,transparent);top:350px;right:60px;transform:rotate(-6deg);"></div>
+  <div class="accent-line" style="width:160px;height:2px;background:linear-gradient(90deg,transparent,#D4A847);bottom:350px;left:60px;transform:rotate(4deg);"></div>
+  <div class="dot-grid" style="top:160px;right:60px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="dot-grid" style="bottom:180px;left:60px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content" style="justify-content:center;align-items:flex-start;">
+    <div style="background:rgba(46,205,167,0.12);border:1px solid rgba(46,205,167,0.2);border-radius:12px;padding:12px 24px;display:inline-block;margin-bottom:36px;">
+      <span class="dm" style="font-size:16px;color:#2ECDA7;letter-spacing:3px;text-transform:uppercase;">&#127464;&#127462; Canada Edition</span>
+    </div>
+    <div class="playfair" style="font-size:66px;line-height:1.08;max-width:900px;">THE STUDENT MONEY CHEAT SHEET</div>
+    <div style="width:100%;height:3px;background:linear-gradient(90deg,#D4A847,#2ECDA7,transparent);margin-top:40px;border-radius:2px;"></div>
+    <div class="bebas" style="font-size:48px;color:#D4A847;letter-spacing:4px;margin-top:36px;">SAVE THIS. YOU'LL NEED IT.</div>
+    <div class="space" style="font-size:24px;opacity:0.45;margin-top:auto;">6 rules that put you ahead of 90% of students</div>
+    <div style="display:flex;gap:16px;margin-top:24px;">
+      <div style="width:48px;height:6px;background:#D4A847;border-radius:3px;"></div>
+      <div style="width:48px;height:6px;background:#2ECDA7;border-radius:3px;"></div>
+      <div style="width:48px;height:6px;background:#9B8EC4;border-radius:3px;"></div>
+    </div>
+  </div>
+  <div class="counter">1 / 7</div>
+</div>
+
+<!-- SLIDE 2: TFSA (CREAM) -->
+<div class="slide slide-cream">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(245,240,235,0.88);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="glow-circle" style="width:500px;height:500px;top:-120px;right:-80px;background:radial-gradient(circle,rgba(46,205,167,0.1) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:140px;height:2px;background:linear-gradient(90deg,rgba(46,205,167,0.4),transparent);top:280px;right:60px;"></div>
+  <div class="dot-grid" style="bottom:200px;right:60px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content">
+    <div class="dm" style="font-size:16px;letter-spacing:4px;color:#2ECDA7;text-transform:uppercase;margin-bottom:8px;">#1 &mdash; TFSA Limit</div>
+    <div class="bebas" style="font-size:220px;line-height:0.85;color:#1A1614;">$7,000</div>
+    <div class="playfair" style="font-size:40px;line-height:1.2;color:#1A1614;margin-top:8px;">PER YEAR, TAX-FREE</div>
+    <div style="width:80px;height:3px;background:#2ECDA7;margin-top:28px;border-radius:2px;"></div>
+    <div style="display:flex;flex-direction:column;gap:16px;margin-top:36px;width:100%;">
+      <div class="card-cream" style="border-left:4px solid #2ECDA7;">
+        <div class="jetbrains" style="font-size:32px;color:#2ECDA7;">$7,000</div>
+        <div class="space" style="font-size:24px;color:#1A1614;margin-top:6px;">Annual contribution limit (2024-2025)</div>
+      </div>
+      <div class="card-cream" style="border-left:4px solid #D4A847;">
+        <div class="jetbrains" style="font-size:32px;color:#D4A847;">Age 18</div>
+        <div class="space" style="font-size:24px;color:#1A1614;margin-top:6px;">Room starts accumulating the year you turn 18</div>
+      </div>
+      <div class="card-cream" style="border-left:4px solid #9B8EC4;">
+        <div class="playfair" style="font-size:28px;color:#9B8EC4;">Tax-Free Growth</div>
+        <div class="space" style="font-size:24px;color:#1A1614;margin-top:6px;">All gains &amp; withdrawals are completely tax-free, forever</div>
+      </div>
+    </div>
+    <div style="background:rgba(46,205,167,0.08);border:1px solid rgba(46,205,167,0.15);border-radius:16px;padding:24px 28px;margin-top:auto;width:100%;">
+      <div class="space" style="font-size:22px;color:#1A1614;">
+        <span style="color:#2ECDA7;font-weight:700;">Pro tip:</span> Withdraw any time. Room comes back January 1 next year.
+      </div>
+    </div>
+  </div>
+  <div class="counter" style="color:#1A1614;">2 / 7</div>
+</div>
+
+<!-- SLIDE 3: Rent Rule (DARK) -->
+<div class="slide slide-dark">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="glow-circle" style="width:550px;height:550px;top:-100px;right:-80px;background:radial-gradient(circle,rgba(212,168,71,0.12) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:350px;height:350px;bottom:-80px;left:-80px;background:radial-gradient(circle,rgba(232,93,93,0.08) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:200px;height:2px;background:linear-gradient(90deg,#D4A847,transparent);top:400px;left:60px;transform:rotate(-4deg);"></div>
+  <div class="dot-grid" style="top:160px;right:80px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content">
+    <div class="dm" style="font-size:16px;letter-spacing:4px;color:#D4A847;text-transform:uppercase;margin-bottom:8px;">#2 &mdash; Rent Rule</div>
+    <div class="bebas" style="font-size:240px;line-height:0.85;color:#D4A847;">30%</div>
+    <div class="playfair" style="font-size:48px;line-height:1.15;margin-top:8px;">OF GROSS INCOME, MAX</div>
+    <div style="width:80px;height:3px;background:#D4A847;margin-top:32px;border-radius:2px;"></div>
+    <div class="space" style="font-size:24px;opacity:0.55;margin-top:24px;line-height:1.5;">Spending more than 30% on rent means you're housing-cost burdened</div>
+
+    <div class="card-dark" style="margin-top:36px;border-left:4px solid #D4A847;">
+      <div class="dm" style="font-size:15px;color:#D4A847;letter-spacing:2px;text-transform:uppercase;">Example</div>
+      <div style="display:flex;align-items:center;gap:16px;margin-top:12px;">
+        <div class="jetbrains" style="font-size:36px;color:#F5F0EB;">$3,000 income</div>
+        <div class="space" style="font-size:28px;opacity:0.4;">&rarr;</div>
+        <div class="jetbrains" style="font-size:36px;color:#D4A847;">$900 rent max</div>
+      </div>
+    </div>
+
+    <div class="card-dark" style="margin-top:16px;border-left:4px solid #E85D5D;">
+      <div class="dm" style="font-size:15px;color:#E85D5D;letter-spacing:2px;text-transform:uppercase;">Reality Check</div>
+      <div class="space" style="font-size:24px;margin-top:8px;opacity:0.8;">Toronto avg 1BR: $2,300 &mdash; roommates aren't optional, they're strategic</div>
+    </div>
+
+    <div class="card-dark" style="margin-top:16px;border-left:4px solid #2ECDA7;">
+      <div class="dm" style="font-size:15px;color:#2ECDA7;letter-spacing:2px;text-transform:uppercase;">Student Move</div>
+      <div class="space" style="font-size:24px;margin-top:8px;opacity:0.8;">Split a 2BR &mdash; keep rent under $1,200 and you can actually save</div>
+    </div>
+
+    <div class="space" style="font-size:20px;opacity:0.3;margin-top:auto;">Before-tax income, not take-home</div>
+  </div>
+  <div class="counter">3 / 7</div>
+</div>
+
+<!-- SLIDE 4: Emergency Fund (CREAM) -->
+<div class="slide slide-cream">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(245,240,235,0.88);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span><span></span>
+  </div>
+  <div class="glow-circle" style="width:450px;height:450px;bottom:-100px;right:-80px;background:radial-gradient(circle,rgba(212,168,71,0.08) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:140px;height:2px;background:linear-gradient(90deg,rgba(46,205,167,0.35),transparent);top:280px;left:60px;"></div>
+  <div class="dot-grid" style="top:120px;right:60px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content">
+    <div class="dm" style="font-size:16px;letter-spacing:4px;color:#2ECDA7;text-transform:uppercase;margin-bottom:8px;">#3 &mdash; Emergency Fund</div>
+    <div class="bebas" style="font-size:140px;line-height:0.85;color:#1A1614;">$4,500 &ndash; $6,000</div>
+    <div class="playfair" style="font-size:44px;line-height:1.15;color:#1A1614;margin-top:12px;">3 MONTHS OF EXPENSES</div>
+    <div style="width:80px;height:3px;background:#2ECDA7;margin-top:28px;border-radius:2px;"></div>
+    <div class="space" style="font-size:24px;color:rgba(26,22,20,0.6);margin-top:24px;line-height:1.5;">The money that sits between you and a crisis</div>
+
+    <div class="card-cream" style="margin-top:32px;border-left:4px solid #2ECDA7;">
+      <div class="dm" style="font-size:15px;color:#2ECDA7;letter-spacing:2px;text-transform:uppercase;">Why 3 Months?</div>
+      <div class="space" style="font-size:24px;color:#1A1614;margin-top:8px;">Covers: job loss, medical bills, car repair, surprise move, or all of them at once</div>
+    </div>
+
+    <div class="card-cream" style="margin-top:16px;border-left:4px solid #D4A847;">
+      <div class="dm" style="font-size:15px;color:#D4A847;letter-spacing:2px;text-transform:uppercase;">Student Budget</div>
+      <div class="space" style="font-size:24px;color:#1A1614;margin-top:8px;">$1,500&ndash;$2,000/month in expenses is realistic for most students</div>
+      <div class="jetbrains" style="font-size:32px;color:#D4A847;margin-top:8px;">$1,500 &times; 3 = $4,500</div>
+    </div>
+
+    <div class="card-cream" style="margin-top:16px;border-left:4px solid #9B8EC4;">
+      <div class="dm" style="font-size:15px;color:#9B8EC4;letter-spacing:2px;text-transform:uppercase;">How to Build It</div>
+      <div class="space" style="font-size:24px;color:#1A1614;margin-top:8px;">Auto-transfer $100/paycheque to a HISA. Done in 2 years.</div>
+    </div>
+
+    <div style="background:rgba(46,205,167,0.08);border:1px solid rgba(46,205,167,0.12);border-radius:12px;padding:18px 24px;margin-top:auto;">
+      <div class="space" style="font-size:20px;color:#1A1614;">Keep it liquid &mdash; HISA, not locked in investments</div>
+    </div>
+  </div>
+  <div class="counter" style="color:#1A1614;">4 / 7</div>
+</div>
+
+<!-- SLIDE 5: Student Loans (DARK) -->
+<div class="slide slide-dark">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span>
+  </div>
+  <div class="glow-circle" style="width:500px;height:500px;top:-80px;left:-100px;background:radial-gradient(circle,rgba(212,168,71,0.12) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:400px;height:400px;bottom:-80px;right:-100px;background:radial-gradient(circle,rgba(155,142,196,0.1) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:180px;height:2px;background:linear-gradient(90deg,#D4A847,transparent);bottom:380px;right:60px;transform:rotate(5deg);"></div>
+  <div class="accent-line" style="width:120px;height:2px;background:linear-gradient(90deg,transparent,#9B8EC4);top:340px;left:60px;transform:rotate(-6deg);"></div>
+  <div class="dot-grid" style="bottom:160px;left:60px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content">
+    <div class="dm" style="font-size:16px;letter-spacing:4px;color:#D4A847;text-transform:uppercase;margin-bottom:8px;">#4 &mdash; Student Loans</div>
+    <div class="bebas" style="font-size:200px;line-height:0.85;color:#D4A847;">6 MONTHS</div>
+    <div class="playfair" style="font-size:52px;line-height:1.1;margin-top:12px;">GRACE PERIOD</div>
+    <div style="width:80px;height:3px;background:#D4A847;margin-top:32px;border-radius:2px;"></div>
+    <div class="space" style="font-size:24px;opacity:0.55;margin-top:24px;">After you graduate — then payments start</div>
+
+    <div style="display:flex;flex-direction:column;gap:16px;margin-top:36px;width:100%;">
+      <div class="card-dark" style="border-left:4px solid #2ECDA7;">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:36px;height:36px;border-radius:10px;background:rgba(46,205,167,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <span style="color:#2ECDA7;font-size:18px;">&#10003;</span>
+          </div>
+          <div>
+            <div class="space" style="font-size:26px;">Federal loans only</div>
+            <div class="space" style="font-size:20px;opacity:0.5;margin-top:4px;">NSLSC manages your Canada Student Loan</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-dark" style="border-left:4px solid #E85D5D;">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:36px;height:36px;border-radius:10px;background:rgba(232,93,93,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <span style="color:#E85D5D;font-size:18px;">!</span>
+          </div>
+          <div>
+            <div class="space" style="font-size:26px;">Interest still accrues</div>
+            <div class="space" style="font-size:20px;opacity:0.5;margin-top:4px;">No payments due, but the balance grows during grace period</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-dark" style="border-left:4px solid #9B8EC4;">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:36px;height:36px;border-radius:10px;background:rgba(155,142,196,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <span style="color:#9B8EC4;font-size:18px;">?</span>
+          </div>
+          <div>
+            <div class="space" style="font-size:26px;">Provincial varies</div>
+            <div class="space" style="font-size:20px;opacity:0.5;margin-top:4px;">ON has 6mo, BC has 6mo, AB has 0 grace &mdash; check yours</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-dark" style="margin-top:auto;border:1px solid rgba(212,168,71,0.15);">
+      <div class="space" style="font-size:22px;opacity:0.7;">Avg Canadian student debt at grad: <span class="jetbrains" style="color:#D4A847;">$26,000</span></div>
+    </div>
+  </div>
+  <div class="counter">5 / 7</div>
+</div>
+
+<!-- SLIDE 6: Tax Dates (CREAM) -->
+<div class="slide slide-cream">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(245,240,235,0.88);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span>
+  </div>
+  <div class="glow-circle" style="width:400px;height:400px;top:-80px;left:-80px;background:radial-gradient(circle,rgba(155,142,196,0.1) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:160px;height:2px;background:linear-gradient(90deg,rgba(212,168,71,0.3),transparent);bottom:340px;right:60px;"></div>
+  <div class="dot-grid" style="bottom:120px;left:60px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content">
+    <div class="dm" style="font-size:16px;letter-spacing:4px;color:#D4A847;text-transform:uppercase;margin-bottom:8px;">#5 &mdash; Tax Dates</div>
+    <div class="playfair" style="font-size:44px;line-height:1.15;color:#1A1614;">THE TWO DATES YOU CAN'T MISS</div>
+    <div style="width:80px;height:3px;background:#D4A847;margin-top:24px;border-radius:2px;"></div>
+
+    <div style="display:flex;gap:20px;margin-top:36px;width:100%;">
+      <!-- FEB 28 Card -->
+      <div style="flex:1;background:rgba(0,0,0,0.05);border-radius:24px;padding:36px 28px;text-align:center;border:2px solid rgba(46,205,167,0.15);">
+        <div class="dm" style="font-size:14px;color:#2ECDA7;letter-spacing:3px;text-transform:uppercase;">Employer Deadline</div>
+        <div class="bebas" style="font-size:120px;line-height:0.85;color:#1A1614;margin-top:12px;">FEB 28</div>
+        <div style="width:60px;height:3px;background:#2ECDA7;margin:20px auto;border-radius:2px;"></div>
+        <div class="space" style="font-size:22px;color:rgba(26,22,20,0.7);">T4 slips must be issued by your employer</div>
+        <div class="space" style="font-size:20px;color:rgba(26,22,20,0.5);margin-top:12px;">If you don't have yours, follow up</div>
+      </div>
+      <!-- APR 30 Card -->
+      <div style="flex:1;background:rgba(0,0,0,0.05);border-radius:24px;padding:36px 28px;text-align:center;border:2px solid rgba(212,168,71,0.15);">
+        <div class="dm" style="font-size:14px;color:#D4A847;letter-spacing:3px;text-transform:uppercase;">Filing Deadline</div>
+        <div class="bebas" style="font-size:120px;line-height:0.85;color:#1A1614;margin-top:12px;">APR 30</div>
+        <div style="width:60px;height:3px;background:#D4A847;margin:20px auto;border-radius:2px;"></div>
+        <div class="space" style="font-size:22px;color:rgba(26,22,20,0.7);">Your tax return is due to CRA</div>
+        <div class="space" style="font-size:20px;color:rgba(26,22,20,0.5);margin-top:12px;">Late = penalties + interest</div>
+      </div>
+    </div>
+
+    <!-- Refund accent card -->
+    <div style="background:rgba(46,205,167,0.08);border:1px solid rgba(46,205,167,0.15);border-radius:20px;padding:32px;margin-top:28px;width:100%;text-align:center;">
+      <div class="dm" style="font-size:14px;color:#2ECDA7;letter-spacing:3px;text-transform:uppercase;">Average Student Refund</div>
+      <div class="jetbrains" style="font-size:48px;color:#1A1614;margin-top:8px;">$300+</div>
+      <div class="space" style="font-size:22px;color:rgba(26,22,20,0.6);margin-top:8px;">Tuition credits, GST/HST credit, moving expenses</div>
+    </div>
+
+    <div style="background:rgba(0,0,0,0.04);border-radius:14px;padding:20px 24px;margin-top:auto;">
+      <div class="space" style="font-size:20px;color:rgba(26,22,20,0.6);">File even if you earned $0 &mdash; it registers you for benefits like GST/HST credit</div>
+    </div>
+  </div>
+  <div class="counter" style="color:#1A1614;">6 / 7</div>
+</div>
+
+<!-- SLIDE 7: App CTA -->
+<div class="slide slide-dark">
+  <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size:cover;background-position:center;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(17,19,24,0.85);z-index:1;"></div>
+  <div class="progress">
+    <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span>
+  </div>
+  <div class="glow-circle" style="width:700px;height:700px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(212,168,71,0.1) 0%,transparent 70%);"></div>
+  <div class="glow-circle" style="width:400px;height:400px;bottom:-80px;left:-80px;background:radial-gradient(circle,rgba(46,205,167,0.08) 0%,transparent 70%);"></div>
+  <div class="accent-line" style="width:200px;height:2px;background:linear-gradient(90deg,#D4A847,transparent);top:380px;left:60px;transform:rotate(-3deg);"></div>
+  <div class="accent-line" style="width:140px;height:2px;background:linear-gradient(90deg,transparent,#2ECDA7);top:420px;right:80px;transform:rotate(5deg);"></div>
+  <div class="dot-grid" style="top:200px;left:80px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="dot-grid" style="bottom:200px;right:80px;">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="content" style="justify-content:center;align-items:center;text-align:center;">
+    <div style="width:80px;height:80px;border-radius:20px;background:linear-gradient(135deg,#D4A847,#2ECDA7);margin-bottom:40px;"></div>
+    <div class="playfair-italic" style="font-size:56px;line-height:1.15;max-width:800px;">Your savings could win you cash</div>
+    <div style="width:120px;height:3px;background:linear-gradient(90deg,#D4A847,#2ECDA7);margin:36px auto;border-radius:2px;"></div>
+    <div class="space" style="font-size:28px;opacity:0.7;max-width:740px;line-height:1.5;">Every $25 saved = 1 free draw ticket weekly on Lodavo</div>
+    <div style="margin-top:48px;background:rgba(212,168,71,0.1);border:1px solid rgba(212,168,71,0.2);border-radius:16px;padding:20px 40px;">
+      <div class="space" style="font-size:24px;color:#D4A847;">Prize-linked savings for Canadians</div>
+    </div>
+    <div class="dm" style="font-size:18px;opacity:0.35;margin-top:auto;">@lodavo.money</div>
+  </div>
+  <div class="counter">7 / 7</div>
+</div>
+
+</div>
+</body>
+</html>

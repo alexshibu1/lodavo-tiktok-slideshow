@@ -1,0 +1,85 @@
+slideshow:
+  slug: monthly-costs-nobody-warns-you-about
+  language: en
+  account: lodavo.money
+  series: cheat-sheets
+  slot: "2026-11-27 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: truth bomb, the stuff parents didn't mention
+    - text: "monthly costs nobody warns you about"
+      sub: "after 18 edition. bookmark this."
+      image: { url: "https://images.pexels.com/photos/10994723/pexels-photo-10994723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Phone bill
+    - text: "your phone bill"
+      sub: "$50 to $85 a month. student plans start at $50 with Fido or Koodo"
+      image: { url: "https://i.pinimg.com/originals/3f/0c/14/3f0c14b55be2b6fd769883996fdb0727.jpg" }
+      focus: "50% 45%"
+    # Transit pass
+    - text: "getting around"
+      sub: "TTC student pass $128/month. Calgary transit $112. Vancouver U-Pass $41. gas plus insurance if you drive: $400+"
+      image: { url: "https://images.pexels.com/photos/35632215/pexels-photo-35632215/free-photo-of-snowy-winter-day-at-city-bus-stop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Groceries (not just food, everything)
+    - text: "feeding yourself"
+      sub: "$250 to $350 a month for one person. that's the StatCan average. meal prep or it's higher"
+      image: { url: "https://images.pexels.com/photos/7696494/pexels-photo-7696494.jpeg?cs=srgb&dl=pexels-cottonbro-studio-7696494.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Subscriptions and streaming
+    - text: "subscriptions you forgot about"
+      sub: "Netflix, Spotify, cloud storage, gym, app trials. Canadians spend $60 to $80 a month without noticing"
+      image: { url: "https://images.pexels.com/photos/7720712/pexels-photo-7720712.jpeg?cs=srgb&dl=pexels-the-masked-guy-7720712.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # Laundry and random fees
+    - text: "laundry and random fees"
+      sub: "coin laundry $4 to $6 per load, twice a week. bank fees $4 to $17/month. it all adds up"
+      image: { url: "https://images.unsplash.com/photo-1776356829215-37929a717f0d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
+      focus: "50% 50%"
+    # The real total
+    - text: "the actual total"
+      sub: "$700 to $1,100 a month before rent. that's $8,400 to $13,200 a year just to exist"
+      image: { url: "https://get.pxhere.com/photo/alone-bills-calculator-desk-finance-financial-hand-indoors-invoice-mathematics-numbers-office-papers-pen-person-single-solo-woman-working-workplace-workspace-writing-royalty-free-images-1559887.jpg" }
+      focus: "50% 50%"
+    # App slide: bridge from hidden costs to Lodavo
+    - app: hero
+      text: "Spending this much just to exist?"
+      sub: "Every $25 you save with Lodavo earns a free weekly draw ticket. Make your savings work."
+  caption: |
+    Monthly costs nobody warns you about after 18. Bookmark this.
+
+    Phone bill, transit, groceries, subscriptions, laundry, random fees. Before rent, you're spending $700 to $1,100 a month just to exist. That's up to $13,200 a year nobody told you about.
+
+    Save this so it doesn't catch you off guard.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#studentlife"
+    - "#adulting"
+    - "#costoflivingcanada"
+  sources:
+    # Fido and Koodo student plan pricing (Rogers/Telus)
+    - https://www.fido.ca/phones/bring-your-own-device
+    # TTC monthly pass pricing (Toronto Transit Commission)
+    - https://www.ttc.ca/Fares-and-passes
+    # Calgary Transit monthly pass pricing
+    - https://www.calgarytransit.com/fares-passes
+    # TransLink U-Pass BC program pricing
+    - https://upassbc.translink.ca
+    # Statistics Canada household food expenditure survey
+    - https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110012501
+    # Canadian subscription spending (J.D. Power Canada digital media study)
+    - https://www.jdpower.com/business/press-releases/2025-canada-digital-media-study
+    # Bank fee comparison (Financial Consumer Agency of Canada)
+    - https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-fees.html
+    # Average auto insurance by province (Insurance Bureau of Canada)
+    - https://www.ibc.ca/on/auto/buying-auto-insurance
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

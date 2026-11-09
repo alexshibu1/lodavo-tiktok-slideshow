@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saving Milestones for Canadians by Age</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #111; display: flex; flex-wrap: wrap; gap: 16px; padding: 24px; }
+
+.slide {
+  width: 1080px; height: 1350px; position: relative; overflow: hidden;
+  background-size: cover; background-position: center;
+  transform: scale(0.39); transform-origin: top left;
+  flex-shrink: 0;
+}
+
+/* Film grain overlay */
+.slide::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; opacity: 0.15; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='512' height='512' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+}
+
+.slide .header, .slide .content, .slide .nav { position: relative; z-index: 2; }
+
+.slide .header {
+  display: flex; justify-content: space-between; padding: 40px 48px 0;
+  font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 16px;
+  text-transform: uppercase; letter-spacing: 2px;
+}
+
+.slide .content {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  text-align: center; width: 90%;
+}
+
+.slide .loud {
+  font-family: 'Bebas Neue', sans-serif; line-height: 0.85;
+}
+
+.slide .quiet {
+  margin-bottom: 8px;
+}
+
+.slide .label {
+  margin-top: 16px; font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500; font-size: 32px;
+}
+
+.slide .nav {
+  position: absolute; bottom: 40px; left: 48px; right: 48px;
+  display: flex; justify-content: space-between;
+  font-family: 'DM Sans', sans-serif; font-size: 14px; letter-spacing: 2px;
+}
+
+/* White text default */
+.slide .header span, .slide .content, .slide .nav span { color: #fff; }
+.slide .content .loud { text-shadow: 0 4px 30px rgba(0,0,0,0.5); }
+.slide .content .quiet { text-shadow: 0 2px 20px rgba(0,0,0,0.4); }
+
+/* Dark text variant for bright photos */
+.slide.dark-text .header span, .slide.dark-text .content, .slide.dark-text .nav span { color: #1a1a1a; }
+.slide.dark-text .content .loud { text-shadow: none; }
+.slide.dark-text .content .quiet { text-shadow: none; }
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Cover -->
+<div class="slide" style="background-image: url('https://images.pexels.com/photos/1563355/pexels-photo-1563355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+  <div class="header">
+    <span>NOV &copy;2026</span>
+    <span>MONEY TALK</span>
+    <span>PERSONAL FINANCE</span>
+  </div>
+  <div class="content">
+    <div class="quiet" style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 80px;">best</div>
+    <div class="loud" style="font-family: 'Playfair Display', serif; font-weight: 900; font-size: 220px; line-height: 0.85;">SAVING</div>
+    <div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 100px; margin-top: 8px;">Milestones</div>
+  </div>
+  <div class="nav">
+    <span></span>
+    <span>01 02 03 04 05 06 07 08</span>
+    <span>NEXT &rarr;</span>
+  </div>
+</div>
+
+<!-- Slide 2: $1,000 Emergency Fund -->
+<div class="slide dark-text" style="background-image: url('https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+  <div class="header">
+    <span>NOV &copy;2026</span>
+    <span>MONEY TALK</span>
+    <span>PERSONAL FINANCE</span>
+  </div>
+  <div class="content">
+    <div class="quiet" style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 48px;">your first goal</div>
+    <div class="loud" style="font-size: 280px;">$1,000</div>
+    <div class="label">Emergency Fund + Age 20</div>
+  </div>
+  <div class="nav">
+    <span>&larr; BACK</span>
+    <span>01 02 03 04 05 06 07 08</span>
+    <span>NEXT &rarr;</span>
+  </div>
+</div>
+
+<!-- Slide 3: $15K Six Months -->
+<div class="slide" style="background-image: url('https://images.pexels.com/photos/1755683/pexels-photo-1755683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+  <div class="header">
+    <span>NOV &copy;2026</span>
+    <span>MONEY TALK</span>
+    <span>PERSONAL FINANCE</span>
+  </div>
+  <div class="content">
+    <div class="quiet" style="font-family: 'Space Grotesk', sans-serif; font-weight: 400; font-size: 48px;">by twenty-five</div>
+    <div class="loud" style="font-size: 320px;">$15K</div>
+    <div class="label">Six Months Expenses + Saved</div>
+  </div>
+  <div class="nav">
+    <span>&larr; BACK</span>
+    <span>01 02 03 04 05 06 07 08</span>
+    <span>NEXT &rarr;</span>
+  </div>
+</div>
+
+<!-- Slide 4: $50K One Year Income -->
+<div class="slide dark-text" style="background-image: url('https://images.pexels.com/photos/1624076/pexels-photo-1624076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+  <div class="header">
+    <span>NOV &copy;2026</span>
+    <span>MONEY TALK</span>
+    <span>PERSONAL FINANCE</span>
+  </div>
+  <div class="content">
+    <div class="quiet" style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 48px;">age thirty</div>
+    <div class="loud" style="font-size: 340px;">$50K</div>
+    <div class="label">One Year Income + Saved</div>
+  </div>
+  <div class="nav">
+    <span>&larr; BACK</span>
+    <span>01 02 03 04 05 06 07 08</span>
+    <span>NEXT &rarr;</span>
+  </div>
+</div>
+
+<!-- Slide 5: $100K TFSA Maxed -->
+<div class="slide" style="background-image: url('https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+  <div class="header">
+    <span>NOV &copy;2026</span>
+    <span>MONEY TALK</span>
+    <span>PERSONAL FINANCE</span>
+  </div>
+  <div class="content">
+    <div class="quiet" style="font-family: 'Space Grotesk', sans-serif; font-weight: 400; font-size: 48px;">by thirty-five</div>
+    <div class="loud" style="font-size: 280px;">$100K</div>
+    <div class="label">TFSA Maxed + Two Years Salary</div>
+  </div>
+  <div class="nav">
+    <span>&larr; BACK</span>
+    <span>01 02 03 04 05 06 07 08</span>
+    <span>NEXT &rarr;</span>
+  </div>
+</div>
+
+<!-- Slide 6: $10,400 Median -->
+<div class="slide dark-text" style="background-image: url('https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+  <div class="header">
+    <span>NOV &copy;2026</span>
+    <span>MONEY TALK</span>
+    <span>PERSONAL FINANCE</span>
+  </div>
+  <div class="content">
+    <div class="quiet" style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 48px;">the reality</div>
+    <div class="loud" style="font-size: 240px;">$10,400</div>
+    <div class="label">Median Under 35 + Start Now</div>
+  </div>
+  <div class="nav">
+    <span>&larr; BACK</span>
+    <span>01 02 03 04 05 06 07 08</span>
+    <span>NEXT &rarr;</span>
+  </div>
+</div>
+
+<!-- Slide 7: 10% Savings Rate -->
+<div class="slide" style="background-image: url('https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+  <div class="header">
+    <span>NOV &copy;2026</span>
+    <span>MONEY TALK</span>
+    <span>PERSONAL FINANCE</span>
+  </div>
+  <div class="content">
+    <div class="quiet" style="font-family: 'Space Grotesk', sans-serif; font-weight: 400; font-size: 48px;">your savings rate</div>
+    <div class="loud" style="font-size: 340px;">10%</div>
+    <div class="label">Changes Everything + Start Small</div>
+  </div>
+  <div class="nav">
+    <span>&larr; BACK</span>
+    <span>01 02 03 04 05 06 07 08</span>
+    <span>NEXT &rarr;</span>
+  </div>
+</div>
+
+<!-- Slide 8: CTA -->
+<div class="slide" style="background-image: url('https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+  <div class="header">
+    <span>savings made</span>
+    <span></span>
+    <span>REWARDING</span>
+  </div>
+  <div class="content">
+    <div class="quiet" style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 48px;">save this</div>
+    <div class="loud" style="font-size: 320px;">POST</div>
+    <div class="label">for when you need motivation</div>
+  </div>
+  <div class="nav">
+    <span></span>
+    <span>FOLLOW @LODAVO.MONEY</span>
+    <span></span>
+  </div>
+</div>
+
+</body>
+</html>

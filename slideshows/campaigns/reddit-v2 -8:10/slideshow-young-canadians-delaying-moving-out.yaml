@@ -1,0 +1,54 @@
+slideshow:
+  slug: young-canadians-delaying-moving-out
+  language: en
+  account: lodavo.money
+  series: reddit-v2
+  slot: "2026-12-22 19:00"
+  opening: cold
+  end: white
+  slides:
+    - text: "the only way young Canadians get ahead"
+      sub: "is delaying moving out"
+      image: { url: "https://images.pexels.com/photos/31660809/pexels-photo-31660809/free-photo-of-foggy-toronto-high-rise-buildings-at-dusk.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 40%"
+    - text: "average rent in Toronto: *$2,400*"
+      sub: "that's *$28,800* a year gone"
+      image: { url: "https://i.pinimg.com/originals/30/52/b3/3052b364d1eea1608c9b8fe1a2854238.jpg" }
+      focus: "50% 50%"
+    - text: "average rent in Vancouver: *$2,600*"
+      sub: "and that's for a one-bedroom"
+      image: { url: "https://i.pinimg.com/originals/72/68/06/726806345ba411bea171a535de169f58.jpg" }
+      focus: "50% 50%"
+    - text: "2 years at home instead"
+      sub: "that's *$57,600* saved"
+      image: { url: "https://i.pinimg.com/originals/d0/e3/72/d0e3720fe544a75f119d1329198d0d3a.jpg" }
+      focus: "50% 50%"
+    - text: "no shame in staying longer"
+      sub: "76% of Canadians under 25 live with parents"
+      image: { url: "https://i.pinimg.com/originals/74/ff/a3/74ffa3d2f2e44aadca12d1b7020af3bc.jpg" }
+      focus: "50% 40%"
+    - text: "use the time to build your savings"
+      sub: "not pay someone else's mortgage"
+      image: { url: "https://i.pinimg.com/originals/3d/86/34/3d86347a2b62268e14ebf3809a3771fe.jpg" }
+      focus: "50% 50%"
+    - text: "*$57,600* saved at 20"
+      sub: "that changes your entire trajectory"
+      image: { url: "https://i.pinimg.com/originals/ad/36/19/ad36191c1057022f2e3a68cee8612cc3.jpg" }
+      focus: "50% 60%"
+    - app: hero
+      text: "Building your savings while you can?"
+      sub: "Every $25 you save earns a free weekly draw ticket on Lodavo"
+  caption: |
+    The only way young Canadians get ahead right now is delaying moving out.
+    Average rent is $2,400 in Toronto, $2,600 in Vancouver. Two years at home saves $57,600.
+    76% of Canadians under 25 still live with parents. There's no shame in that.
+    Lodavo is linked in our bio.
+  hashtags:
+    - "#canadiantiktok"
+    - "#rentincanada"
+    - "#savingmoney"
+    - "#moneytok"
+    - "#lodavo"
+  sources:
+    - https://www.reddit.com/r/PersonalFinanceCanada/
+    - https://rentals.ca/national-rent-report

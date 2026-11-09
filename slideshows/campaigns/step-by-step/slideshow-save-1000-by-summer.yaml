@@ -1,0 +1,68 @@
+slideshow:
+  slug: save-1000-by-summer
+  language: en
+  account: lodavo.money
+  series: step-by-step
+  slot: "2026-11-10 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: clear result promise with specific dollar amount
+    - text: "how to save $1,000 by next summer"
+      image: { url: "https://images.squarespace-cdn.com/content/v1/64ef58b26b3ba443499c2182/70f62d43-6f8f-46d2-9b48-4147f19671db/Subject-Cash+Handling+-+Canadian+Denominations+of+Currency.jpg" }
+      focus: "50% 50%"
+    # Step 1: Set a deadline and break it down into monthly chunks
+    - text: "set a deadline"
+      sub: "$143 a month for 7 months gets you there"
+      image: { url: "https://plus.unsplash.com/premium_photo-1706259481452-f857c96ceaca?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
+      focus: "50% 50%"
+    # Step 2: Automate so you never have to think about it
+    - text: "automate a transfer on every payday"
+      sub: "money you never see is money you never spend"
+      image: { url: "https://images.pexels.com/photos/8938735/pexels-photo-8938735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Step 3: One no-spend week per month to accelerate
+    - text: "try one no-spend week per month"
+      sub: "skip takeout and impulse buys for 7 days"
+      image: { url: "https://cdn.pixabay.com/photo/2024/05/10/10/51/cooking-8752876_1280.jpg" }
+      focus: "50% 50%"
+    # Step 4: Cut the small daily spending that adds up
+    - text: "make your own coffee and lunch"
+      sub: "$5 a day adds up to $150 a month"
+      image: { url: "https://i.pinimg.com/originals/cb/3b/a7/cb3ba749a308ebd9545164a7ff460812.jpg" }
+      focus: "50% 50%"
+    # Step 5: Turn unused stuff into cash
+    - text: "sell what you're not using"
+      sub: "old textbooks, clothes, electronics"
+      image: { url: "https://images.pexels.com/photos/7578847/pexels-photo-7578847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Step 6: Weekly check-ins keep you accountable
+    - text: "check your balance every Sunday"
+      sub: "watching it grow keeps you on track"
+      image: { url: "https://images.pexels.com/photos/8837249/pexels-photo-8837249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide: bridge savings topic to Lodavo
+    - app: hero
+      text: "Want your savings to do more?"
+      sub: "Every $25 you save earns a free weekly draw ticket on Lodavo"
+  caption: |
+    $1,000 by summer. $143/month. Here's the plan.
+
+    Set a target, automate it, cut the small stuff. It stacks up faster than you think.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#foryou"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#canadiantiktok"
+    - "#moneytips"
+  sources:
+    # FCAC guide on making a budget and saving (Government of Canada)
+    - https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html
+    # FCAC: paying yourself first and automating savings
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/save-emergency-fund.html
+    # Contest rules s.4.1(a): every $25 of linked balance earns 1 ticket
+    - https://lodavo.com/rules

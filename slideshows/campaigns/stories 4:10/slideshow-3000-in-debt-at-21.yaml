@@ -1,0 +1,73 @@
+slideshow:
+  slug: 3000-in-debt-at-21
+  language: en
+  account: lodavo.money
+  series: savings-stories
+  slot: "2026-11-16 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: bold temporal contrast, scroll-stopper for TikTok
+    - text: "I was $3,000 in debt at 21"
+      image: { url: "https://images.unsplash.com/photo-1554672408-730436b60dde" }
+      focus: "50% 40%"
+    # Beat 1: set the scene, relatable Canadian student life
+    - text: "OSAP, credit card, two semesters of takeout"
+      sub: "classic Toronto student combo"
+      image: { url: "https://images.unsplash.com/photo-1526367790999-0150786686a2" }
+      focus: "50% 50%"
+    # Beat 2: the low point, emotional and specific
+    - text: "I checked my balance after rent"
+      sub: "negative $347"
+      image: { url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f" }
+      focus: "50% 50%"
+    # Beat 3: the small shift, not a windfall
+    - text: "so I started putting away $25 a week"
+      sub: "not a lot. but something."
+      image: { url: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e" }
+      focus: "50% 50%"
+    # Beat 4: building momentum through consistency
+    - text: "month one felt pointless"
+      sub: "month three, I stopped checking my overdraft"
+      image: { url: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173" }
+      focus: "50% 45%"
+    # Beat 5: the compound effect kicking in
+    - text: "by month eight I had $800 saved"
+      sub: "first time I ever had a cushion"
+      image: { url: "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Beat 6: the turn, the realization
+    - text: "the debt didn't disappear overnight"
+      sub: "but the panic did"
+      image: { url: "https://images.unsplash.com/photo-1506784365847-bbad939e9335" }
+      focus: "50% 50%"
+    # Beat 7: what it means for the reader
+    - text: "$25 a week is a Tim Hortons habit"
+      sub: "that one redirect changed everything for me"
+      image: { url: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" }
+      focus: "50% 50%"
+    # App slide: bridge to Lodavo
+    - app: hero
+      text: "What if saving also earned you free tickets?"
+      sub: "Lodavo gives you one for every $25 saved. Every week."
+  caption: |
+    $3,000 in debt at 21. No windfall. No viral side hustle. Just $25 a week.
+
+    Month one felt pointless. Month three I stopped dreading my balance. Month eight I had actual savings for the first time ever.
+
+    The part nobody tells you: the stress goes away way before the debt does.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#savingmoney"
+    - "#debtfree"
+    - "#lodavo"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#personalfinance"
+    - "#foryou"
+  sources:
+    - https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/savings-your-future.html
+    - https://www150.statcan.gc.ca/n1/daily-quotidien/241126/dq241126a-eng.htm
+    - https://lodavo.com/rules

@@ -1,0 +1,85 @@
+slideshow:
+  slug: osap-cheat-sheet-nobody-gives-you
+  language: en
+  account: lodavo.money
+  series: student-life
+  slot: "2026-12-05 19:00"
+  opening: cold
+  end: blue
+  slides:
+    # Hook: screams practical, "nobody teaches this"
+    - text: "the OSAP cheat sheet nobody gives you"
+      sub: "real numbers. real deadlines. save this."
+      image: { url: "https://images.unsplash.com/photo-1760121788536-9797394e210e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
+      focus: "50% 50%"
+    # How much you actually get
+    - text: "how much you actually get"
+      sub: "living away: up to $16,300/year. at home: ~$9,400. varies by family income"
+      image: { url: "https://images.pexels.com/photos/6549588/pexels-photo-6549588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Grants vs loans breakdown
+    - text: "grants vs loans"
+      sub: "grants are free. loans you repay. OSAP gives both in one package"
+      image: { url: "https://melissajanelee.com/wp-content/uploads/2026/05/college-survival-kit-study-desk-planner-laptop-highlighters-water-bottle.jpg" }
+      focus: "50% 50%"
+    # When repayment starts
+    - text: "when repayment starts"
+      sub: "6 months after graduation. federal grace period is interest-free since 2023"
+      image: { url: "https://www.oist.jp/sites/default/files/photos/20190525_graduation_caps.jpg" }
+      focus: "50% 40%"
+    # Interest rates
+    - text: "interest rates"
+      sub: "federal: 0% since 2023. provincial: prime rate (~5.45%). pay provincial first"
+      image: { url: "https://plus.unsplash.com/premium_photo-1676585567527-d25dbeec5b37?fm=jpg&q=60&w=3000" }
+      focus: "50% 50%"
+    # RAP (repayment assistance)
+    - text: "RAP: if you can't afford payments"
+      sub: "earning under $40K? payments drop to $0. most people don't know this exists"
+      image: { url: "https://images.pexels.com/photos/7534771/pexels-photo-7534771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # How summer income affects it
+    - text: "summer jobs and OSAP"
+      sub: "earn over $5,600 in summer and your grant shrinks. report it accurately"
+      image: { url: "https://www.thebalancemoney.com/thmb/QntWwi_oKShACo9ibXCtAjHPpE8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mixed-race-teenage-boy-working-as-supermarket-cashier-1198660047-74f350ed1cfe4b0b81f0e1bfd512ec89.jpg" }
+      focus: "50% 50%"
+    # App slide: bridge from student debt to savings
+    - app: cta
+      text: "Know what you owe. Now start saving alongside it?"
+      sub: "Lodavo gives you a free draw ticket for every $25 saved. Even $25 counts."
+  caption: |
+    The OSAP cheat sheet your school never hands out. Save this.
+
+    How much you actually get. Grants vs loans. When repayment starts. Interest rates. RAP if you can't afford payments. How your summer job affects your funding.
+
+    Send this to every Ontario student you know.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#studentlife"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#university"
+    - "#osap"
+    - "#ontariostudent"
+  sources:
+    # OSAP maximum funding amounts (living away from home and at home)
+    - https://www.ontario.ca/page/osap-ontario-student-assistance-program
+    # OSAP grants vs loans explanation and funding summary
+    - https://www.ontario.ca/page/learn-about-osap
+    # 6-month grace period and repayment timeline
+    - https://www.canada.ca/en/services/benefits/education/student-aid/grants-loans/repay.html
+    # Federal student loan interest eliminated (2023 budget measure)
+    - https://www.canada.ca/en/department-finance/news/2023/03/budget-2023-student-loan-interest.html
+    # Ontario provincial student loan interest (prime rate)
+    - https://www.ontario.ca/page/pay-back-osap
+    # Repayment Assistance Program (RAP) eligibility and thresholds
+    - https://www.canada.ca/en/services/benefits/education/student-aid/grants-loans/repay/assistance.html
+    # Summer income and OSAP eligibility thresholds
+    - https://www.ontario.ca/page/osap-definitions
+    # Bank of Canada prime rate (reference for provincial interest)
+    - https://www.bankofcanada.ca/rates/daily-digest/
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance
+    - https://lodavo.com/rules

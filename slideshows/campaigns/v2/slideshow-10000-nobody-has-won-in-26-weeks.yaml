@@ -1,0 +1,92 @@
+slideshow:
+  slug: 10000-nobody-has-won-in-26-weeks
+  language: en
+  account: lodavo.money
+  series: v2
+  slot: "2026-12-15 19:00"
+  opening: cold
+  end: white
+  slides:
+    # Hook: urgency — let the unclaimed prize do the talking
+    - text: "the $10,000 nobody has won in 26 weeks"
+      image: { url: "https://images.pexels.com/photos/12092991/pexels-photo-12092991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Slide 2: immediate stakes
+    - text: "the jackpot is $10,000"
+      sub: "it's been sitting there since launch"
+      image: { url: "https://images.pexels.com/photos/14866072/pexels-photo-14866072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # $100 weekly winners — tension contrast
+    - text: "at least $100 is won every week"
+      sub: "but the $10,000? still unclaimed"
+      image: { url: "https://images.pexels.com/photos/4605240/pexels-photo-4605240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # How the draw works
+    - text: "7 numbers from 0 to 99"
+      sub: "match all 7 and it's yours"
+      image: { url: "https://images.pexels.com/photos/36402490/pexels-photo-36402490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Provably fair
+    - text: "the draw is provably fair"
+      sub: "a SHA-256 hash is published before anyone chooses"
+      image: { url: "https://wallpapers.com/images/hd/green-programming-code-hacking-android-eo5e44uuo8oygejm.jpg" }
+      focus: "50% 50%"
+    # Nightly reveal
+    - text: "one winning number revealed every night"
+      sub: "8 PM ET. Monday through Sunday."
+      image: { url: "https://images.pexels.com/photos/4664063/pexels-photo-4664063.jpeg?cs=srgb&dl=pexels-g-tan-4664063.jpg&fm=jpg" }
+      focus: "50% 50%"
+    # More tickets = more combinations
+    - text: "save more, hold more tickets"
+      sub: "$1,000 saved = 40 tickets every week"
+      image: { url: "https://images.pexels.com/photos/9755383/pexels-photo-9755383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # The tension: still unclaimed
+    - text: "26 weeks and counting"
+      sub: "nobody has matched all 7. yet."
+      image: { url: "https://images.pexels.com/photos/1178684/pexels-photo-1178684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # Bridge: reframe to action
+    - text: "the question isn't if someone wins"
+      sub: "it's whether you have tickets when they do"
+      image: { url: "https://images.pexels.com/photos/5819302/pexels-photo-5819302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+      focus: "50% 50%"
+    # App slide
+    - app: hero
+      text: "The $10,000 is still there"
+      sub: "Every $25 saved earns a free ticket. Every week. Download Lodavo free."
+  caption: |
+    The jackpot is $10,000. It's been 26 weeks. Nobody has matched all 7 numbers.
+
+    Every week someone wins at least $100. But the big one is still sitting there.
+
+    7 numbers from 0 to 99. One revealed every night at 8 PM. The draw is provably fair.
+
+    Nobody has won it. Yet.
+
+    Download Lodavo free, link in bio.
+  hashtags:
+    - "#moneytok"
+    - "#fyp"
+    - "#canadiantiktok"
+    - "#savingmoney"
+    - "#lodavo"
+    - "#jackpot"
+    - "#financetok"
+  sources:
+    # Contest rules s.7.2: $10,000 jackpot for matching all 7 numbers
+    - https://lodavo.com/rules
+    # Contest rules s.7.1: $100 weekly guaranteed prize (not awarded in a jackpot week)
+    - https://lodavo.com/rules
+    # Contest rules s.4.3: 7 numbers from 0-99, no duplicates per ticket
+    - https://lodavo.com/rules
+    # Contest rules s.5: SHA-256 hash published before entries, one number revealed nightly 8 PM ET Mon-Sun
+    - https://lodavo.com/rules
+    # Provably fair verification page
+    - https://lodavo.com/en-ca/provably-fair
+    # Contest rules s.4.1(a): 1 ticket per $25 of total linked balance ($1,000 / $25 = 40 tickets)
+    - https://lodavo.com/rules
+    # Past winners by province — Lodavo winning numbers archive
+    - https://lodavo.com/en-ca/winning-numbers
+    # 26 weeks without a jackpot winner — Lodavo draw history since May 2026 launch
+    - https://lodavo.com/en-ca/winning-numbers

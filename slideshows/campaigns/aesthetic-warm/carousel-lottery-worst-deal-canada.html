@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Lottery Tickets Are the Worst Deal in Canada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #F5E6D3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .slide-sizer {
+    width: 421px;
+    height: 525px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    transform: scale(0.38889);
+    transform-origin: top left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .slide-warm {
+    background: #FAF4ED;
+    color: #2C1810;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 90px;
+    text-align: center;
+    position: relative;
+  }
+
+  .slide-warm::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(210,170,120,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 80%, rgba(180,140,100,0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .slide-photo {
+    position: relative;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  .slide-photo .bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+
+  .slide-photo .warm-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(250,244,237,0.2) 0%,
+      rgba(250,244,237,0.1) 30%,
+      rgba(44,24,16,0.5) 70%,
+      rgba(44,24,16,0.85) 100%
+    );
+    z-index: 1;
+  }
+
+  .slide-photo .content {
+    position: relative;
+    z-index: 2;
+    padding: 80px 80px 120px;
+  }
+
+  .hook-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    line-height: 1.0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2C1810;
+  }
+
+  .hook-sub {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 52px;
+    line-height: 1.3;
+    color: #6B4C3B;
+    margin-top: 30px;
+  }
+
+  .highlight {
+    background: linear-gradient(180deg, transparent 55%, rgba(210,170,120,0.4) 55%, rgba(210,170,120,0.4) 90%, transparent 90%);
+    padding: 0 8px;
+  }
+
+  .highlight-strong {
+    background: linear-gradient(180deg, transparent 50%, #D4A847 50%, #D4A847 92%, transparent 92%);
+    padding: 0 10px;
+    color: #2C1810;
+  }
+
+  .photo-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 88px;
+    line-height: 1.05;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FAF4ED;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
+
+  .photo-sub {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: rgba(250,244,237,0.85);
+    margin-top: 20px;
+  }
+
+  .amount {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 160px;
+    line-height: 1.0;
+    color: #D4A847;
+    text-shadow: 0 4px 30px rgba(212,168,71,0.3);
+  }
+
+  .amount-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(250,244,237,0.7);
+    margin-top: 10px;
+  }
+
+  .divider {
+    width: 80px;
+    height: 3px;
+    background: #D4A847;
+    margin: 30px auto;
+    border-radius: 2px;
+  }
+
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 100px 80px;
+    text-align: center;
+  }
+
+  .cta-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    line-height: 1.05;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2C1810;
+  }
+
+  .cta-body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #6B4C3B;
+    margin-top: 30px;
+    max-width: 800px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 28px 80px;
+    background: #2C1810;
+    color: #FAF4ED;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 60px;
+  }
+
+  .cta-handle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(44,24,16,0.4);
+    margin-top: 40px;
+  }
+
+  .page-num {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(44,24,16,0.3);
+  }
+
+  .page-num-light {
+    color: rgba(250,244,237,0.35);
+  }
+
+  .slide::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: Hook -->
+<div class="slide-sizer"><div class="slide slide-photo">
+  <div class="bg" style="background-image:url('https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-position:50% 50%"></div>
+  <div class="warm-overlay" style="background:linear-gradient(180deg,rgba(250,244,237,0.6) 0%,rgba(250,244,237,0.85) 40%,rgba(250,244,237,0.95) 100%)"></div>
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:100px 80px;text-align:center">
+    <div class="hook-text" style="font-size:120px;line-height:0.95">LOTTERY TICKETS<br>ARE THE <span class="highlight-strong">WORST DEAL</span><br>IN CANADA</div>
+    <div class="divider" style="margin-top:50px"></div>
+    <div style="font-family:'DM Sans',sans-serif;font-size:30px;color:rgba(44,24,16,0.5);margin-top:20px;letter-spacing:3px;text-transform:uppercase">Here's the math</div>
+  </div>
+  <div class="page-num">1 / 10</div>
+</div></div>
+
+<!-- SLIDE 2: $700 a year -->
+<div class="slide-sizer"><div class="slide slide-warm">
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center">
+    <div style="font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#D4A847">every year</div>
+    <div class="hook-text" style="font-size:90px;margin-top:20px">CANADIANS SPEND<br><span class="highlight-strong">$700 A YEAR</span><br>ON LOTTERY TICKETS</div>
+    <div class="divider"></div>
+    <div class="hook-sub">most of it is never won back</div>
+  </div>
+  <div class="page-num">2 / 10</div>
+</div></div>
+
+<!-- SLIDE 3: Lotto Max odds -->
+<div class="slide-sizer"><div class="slide slide-photo">
+  <div class="bg" style="background-image:url('https://images.pexels.com/photos/3483098/pexels-photo-3483098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-position:50% 50%"></div>
+  <div class="warm-overlay" style="background:linear-gradient(180deg,rgba(44,24,16,0.6) 0%,rgba(44,24,16,0.85) 100%)"></div>
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:80px;text-align:center">
+    <div class="photo-heading" style="font-size:72px">LOTTO MAX JACKPOT ODDS</div>
+    <div class="divider" style="background:#D4A847;margin:40px auto"></div>
+    <div class="amount" style="font-size:100px">1 IN 33,294,800</div>
+    <div class="photo-sub" style="font-size:44px;color:rgba(250,244,237,0.9)">you'd need <span style="color:#D4A847">640,000 years</span> of weekly tickets</div>
+  </div>
+  <div class="page-num page-num-light">3 / 10</div>
+</div></div>
+
+<!-- SLIDE 4: 47 cents -->
+<div class="slide-sizer"><div class="slide slide-warm">
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center">
+    <div style="font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#D4A847">payout ratio</div>
+    <div class="hook-text" style="font-size:82px;margin-top:20px">FOR EVERY $1 PLAYED<br>LOTTERIES RETURN</div>
+    <div class="amount" style="font-size:180px;margin-top:10px">47¢</div>
+    <div class="divider"></div>
+    <div class="hook-sub" style="font-size:46px">the other 53 cents is gone forever</div>
+  </div>
+  <div class="page-num">4 / 10</div>
+</div></div>
+
+<!-- SLIDE 5: $3,500 saved -->
+<div class="slide-sizer"><div class="slide slide-photo">
+  <div class="bg" style="background-image:url('https://images.pexels.com/photos/4386476/pexels-photo-4386476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-position:50% 50%"></div>
+  <div class="warm-overlay"></div>
+  <div class="content" style="display:flex;flex-direction:column;align-items:center;text-align:center">
+    <div class="photo-heading" style="font-size:68px">$700 SAVED PER YEAR<br>FOR 5 YEARS</div>
+    <div class="divider" style="margin:30px auto;background:rgba(250,244,237,0.5)"></div>
+    <div class="amount" style="font-size:160px">$3,500</div>
+    <div class="amount-label">enough for 3 months of emergencies</div>
+  </div>
+  <div class="page-num page-num-light">5 / 10</div>
+</div></div>
+
+<!-- SLIDE 6: $7,000 saved -->
+<div class="slide-sizer"><div class="slide slide-warm">
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center">
+    <div class="hook-text" style="font-size:82px">$700 SAVED FOR<br><span class="highlight-strong">10 YEARS</span></div>
+    <div class="amount" style="font-size:160px;margin-top:20px">$7,000</div>
+    <div class="divider"></div>
+    <div class="hook-sub" style="font-size:44px">half of Canadians can't cover a $2,500 surprise expense</div>
+  </div>
+  <div class="page-num">6 / 10</div>
+</div></div>
+
+<!-- SLIDE 7: 1000th ticket -->
+<div class="slide-sizer"><div class="slide slide-photo">
+  <div class="bg" style="background-image:url('https://images.pexels.com/photos/6347720/pexels-photo-6347720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-position:50% 50%"></div>
+  <div class="warm-overlay" style="background:linear-gradient(180deg,rgba(44,24,16,0.65) 0%,rgba(44,24,16,0.85) 100%)"></div>
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:80px;text-align:center">
+    <div class="photo-heading" style="font-size:76px">YOUR 1,000TH TICKET<br>HAS THE SAME ODDS<br>AS YOUR 1ST</div>
+    <div class="divider" style="background:#D4A847;margin:40px auto"></div>
+    <div class="photo-sub" style="font-size:48px;color:rgba(250,244,237,0.9)">the math <span style="color:#D4A847">never changes</span></div>
+  </div>
+  <div class="page-num page-num-light">7 / 10</div>
+</div></div>
+
+<!-- SLIDE 8: Low-income -->
+<div class="slide-sizer"><div class="slide slide-warm">
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center">
+    <div class="hook-text" style="font-size:86px;line-height:1.05"><span class="highlight">LOW-INCOME</span> CANADIANS<br>SPEND THE BIGGEST<br>SHARE ON LOTTERY</div>
+    <div class="divider"></div>
+    <div class="hook-sub" style="font-size:46px">the people who can least afford to lose</div>
+  </div>
+  <div class="page-num">8 / 10</div>
+</div></div>
+
+<!-- SLIDE 9: Every dollar -->
+<div class="slide-sizer"><div class="slide slide-photo">
+  <div class="bg" style="background-image:url('https://images.pexels.com/photos/4968391/pexels-photo-4968391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-position:50% 30%"></div>
+  <div class="warm-overlay" style="background:linear-gradient(180deg,rgba(250,244,237,0.5) 0%,rgba(250,244,237,0.8) 30%,rgba(250,244,237,0.95) 100%)"></div>
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:100px 80px;text-align:center">
+    <div class="hook-text" style="font-size:90px;line-height:1.05">EVERY DOLLAR SPENT<br>ON A TICKET IS <span class="highlight-strong">GONE</span></div>
+    <div class="divider" style="margin:40px auto"></div>
+    <div class="hook-sub" style="font-size:52px">every dollar saved is still yours</div>
+  </div>
+  <div class="page-num">9 / 10</div>
+</div></div>
+
+<!-- SLIDE 10: CTA -->
+<div class="slide-sizer"><div class="slide slide-warm" style="background:#FAF4ED">
+  <div class="cta-content">
+    <div style="font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#D4A847">keep your money</div>
+    <div class="cta-heading" style="margin-top:20px">WHAT IF YOUR SAVINGS<br>EARNED FREE TICKETS?</div>
+    <div class="divider" style="margin:40px auto"></div>
+    <div class="cta-body">On Lodavo, every $25 saved earns a ticket for the weekly draw. A chance to win $100 or the $10,000 jackpot.</div>
+    <div class="cta-button">DOWNLOAD LODAVO</div>
+    <div class="cta-handle">@lodavo.money</div>
+  </div>
+  <div class="page-num">10 / 10</div>
+</div></div>
+
+</body>
+</html>
